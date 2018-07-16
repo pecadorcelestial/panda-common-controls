@@ -138,13 +138,24 @@ export class BasicSelect extends React.Component {
 	//*** CONSTRUCTOR ***
 	constructor(props) {
 		super(props);
+
+		//1. Se busca el elemento correspondiente al índice seleccionado.
+		let item;
+		for(let i=0; i < this.props.options.length; i++) {
+			if(this.props.options[i].id == this.props.selectedOption) {
+				item = this.props.options[i];
+				break;
+			}
+		}
+
+		//2. Se crea el estado inicial.
 		this.state={
             correct: false,
             complete: false,
 			errors: {
 				isEmpty: false
 			},
-			item: undefined,
+			item,
 			selectedOption: this.props.selectedOption
 		};
 	}
@@ -165,7 +176,7 @@ export class BasicSelect extends React.Component {
 	//*** HANDLERS ***
 	handleOnChange = (item) => {
 		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target: ', item.target);
-		let id = item.target.value;
+		let id = this.props.idIsNumeric ? parseInt(item.target.value) : item.target.value;
 		//NOTA: Se cambió la manera de obtener la descripción del elemento.
 		let description = '';
 		for(let i=0; i<this.props.options.length; i++) {
@@ -179,7 +190,7 @@ export class BasicSelect extends React.Component {
 			description
 		};
 		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', selectedItem);
-		this.setState({ item: selectedItem, selectedOption: id }, () => {
+		this.setState({ item: (id == '' || id < 0) ? undefined : selectedItem, selectedOption: id }, () => {
 			this.validate();
 		});
 		this.props.onChange(item);
@@ -245,7 +256,7 @@ export class BasicSelect extends React.Component {
 		return this.state.item;
     }
     setValue = (value) => {
-        this.setState({ item: value, selectedOption: value });
+        this.setState({ item: value, selectedOption: value.id });
         /*
         for(let i=0; i < nextProps.options.length; i++) {
             if(nextProps.options[i].id == nextProps.selectedOption) {
@@ -265,7 +276,7 @@ export class BasicSelect extends React.Component {
 		//EEEEE SSSS    T   IIIII LLLLL  OOO
 		
 		let status;
-		if(this.state.disabled) {
+		if(this.props.disabled) {
 			status = 'disabled';
 		} else if(this.state.errors.isEmpty) {
 			status = 'error';
@@ -283,7 +294,7 @@ export class BasicSelect extends React.Component {
 		
 		let error;
 		if(this.state.errors.isEmpty) {
-			error = <Error>Debe seleccionar una opción.</Error>;
+			error = <Error ref={label => { this.ErrorRef = label; }}>Debe seleccionar una opción.</Error>;
 		} else {
 			error = null;
 		}

@@ -1,0 +1,293 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe pintar el componente con los siguientes modificadores: (Deshabilitado: cierto)(ID: numérico). 1`] = `
+.c0 {
+  display: inline-block;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eabajo%3C/title%3E%3Cpath d='M7.916 8.636a.718.718 0 0 1-.509-.21L.211 1.228A.719.719 0 1 1 1.229.21l6.687 6.688L14.604.21a.719.719 0 1 1 1.017 1.018L8.425 8.425a.718.718 0 0 1-.509.211' fill='%238B8B8B' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 1px solid #BFBFBF;
+  border-radius: 0px;
+  color: #BFBFBF;
+  cursor: pointer;
+  height: 30px;
+  left: 0px;
+  padding: 0px 25px 0px 0px;
+  position: absolute;
+  top: 15px;
+  text-indent: 1px;
+  text-overflow: hidden;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2:focus {
+  border-bottom: 1px solid #1476FB;
+  color: #000;
+  outline: none;
+}
+
+.c3 {
+  color: #BFBFBF;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.c1:focus .cpmQsC {
+  color: #1476FB;
+}
+
+.c4 {
+  color: #BFBFBF;
+  height: 15px;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  left: 0px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c1:focus .c4 {
+  color: #1476FB;
+}
+
+<div
+  className="c0"
+>
+  <select
+    className="c1 c2"
+    disabled={true}
+    id="options"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Seleccione una opción"
+    value={1}
+  >
+    <option
+      className="c3"
+      value="-1"
+    >
+      Seleccione una opción
+    </option>
+    <option
+      className="c3"
+      value={1}
+    >
+      Opción #1
+    </option>
+    <option
+      className="c3"
+      value={2}
+    >
+      Opción #2
+    </option>
+    <option
+      className="c3"
+      value={3}
+    >
+      Opción #3
+    </option>
+    <option
+      className="c3"
+      value={4}
+    >
+      Opción #4
+    </option>
+    <option
+      className="c3"
+      value={5}
+    >
+      Opción #5
+    </option>
+  </select>
+  <label
+    className="c4"
+  >
+    Estado: normal
+  </label>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe pintar el componente con los siguientes modificadores: (Deshabilitado: falso)(ID: numérico). 1`] = `
+.c0 {
+  display: inline-block;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.c2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eabajo%3C/title%3E%3Cpath d='M7.916 8.636a.718.718 0 0 1-.509-.21L.211 1.228A.719.719 0 1 1 1.229.21l6.687 6.688L14.604.21a.719.719 0 1 1 1.017 1.018L8.425 8.425a.718.718 0 0 1-.509.211' fill='%238B8B8B' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 1px solid #BFBFBF;
+  border-radius: 0px;
+  color: #A7A7A7;
+  cursor: pointer;
+  height: 30px;
+  left: 0px;
+  padding: 0px 25px 0px 0px;
+  position: absolute;
+  top: 15px;
+  text-indent: 1px;
+  text-overflow: hidden;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2:focus {
+  border-bottom: 1px solid #1476FB;
+  color: #000;
+  outline: none;
+}
+
+.c3 {
+  color: #242424;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.c4 {
+  color: #242424;
+  height: 15px;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  left: 0px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.c1:focus .c4 {
+  color: #1476FB;
+}
+
+<div
+  className="c0"
+>
+  <select
+    className="c1 c2"
+    disabled={false}
+    id="options"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Seleccione una opción"
+    value={1}
+  >
+    <option
+      className="c3"
+      value="-1"
+    >
+      Seleccione una opción
+    </option>
+    <option
+      className="c3"
+      value={1}
+    >
+      Opción #1
+    </option>
+    <option
+      className="c3"
+      value={2}
+    >
+      Opción #2
+    </option>
+    <option
+      className="c3"
+      value={3}
+    >
+      Opción #3
+    </option>
+    <option
+      className="c3"
+      value={4}
+    >
+      Opción #4
+    </option>
+    <option
+      className="c3"
+      value={5}
+    >
+      Opción #5
+    </option>
+  </select>
+  <label
+    className="c4"
+  >
+    Estado: normal
+  </label>
+</div>
+`;
