@@ -66,15 +66,24 @@ const Title = styled.label`
 `;
 
 export class CheckBox extends Component {
+    //*** CONSTRUCTOR ***
     constructor(props) {
         super(props);
         this.state = {
             checked: this.props.checked
         };
     }
+    //*** MÉTODOS ***
+    getValue = () => {
+        return this.state.checked;
+    }
+    setValue = (value) => {
+        this.setState({ checked: value });
+    }
+    //*** RESULTADO ***
     render() {
         return(
-            <Layout onClick={(event) => { let checked = !this.state.checked; this.setState({ checked }); if(this.props.onChange) { this.props.onChange(checked); } }}>
+            <Layout onClick={() => { let checked = !this.state.checked; this.setState({ checked }); if(this.props.onChange) this.props.onChange(checked); }}>
                 <CheckMark checked={this.state.checked}/>
                 <Title checked={this.state.checked}>{this.props.children}</Title>
             </Layout>
@@ -82,7 +91,7 @@ export class CheckBox extends Component {
     }
 }
 
-CheckBox.PropTypes = {
-    checked: PropTypes.bool.isRequered,
+CheckBox.propTypes = {
+    checked: PropTypes.bool.isRequired,
     onChange: PropTypes.func
 };

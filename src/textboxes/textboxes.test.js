@@ -30,35 +30,6 @@ enzyme.configure({ adapter: new Adapter() });
 import 'jest-enzyme';
 import 'jest-styled-components';
 
-//JJJJJ  SSSS DDDD   OOO  M   M
-//    J S     D   D O   O MM MM
-//    J  SSS  D   D O   O M M M
-//J   J     S D   D O   O M   M
-// JJJ  SSSS  DDDD   OOO  M   M
-
-//NOTA: Se requiere de un DOM "virtual" para poder utilizar el módulo "mount" en ENZYME.
-//https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md
-import { JSDOM } from 'jsdom';
-const jsdom = new JSDOM('<!doctype html><html><body><div id="app" /></body></html>');
-const { window } = jsdom;
-
-const copyProps = (src, target) => {
-    const props = Object.getOwnPropertyNames(src)
-        .filter(prop => typeof target[prop] === 'undefined')
-        .reduce((result, prop) => ({
-            ...result,
-            [prop]: Object.getOwnPropertyDescriptor(src, prop),
-        }), {});
-    Object.defineProperties(target, props);
-};
-
-global.window = window;
-global.document = window.document;
-global.navigator = {
-    userAgent: 'node.js',
-};
-copyProps(window, global);
-
 // CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT EEEEE  SSSS
 //C     O   O MM MM P   P O   O NN  N E     NN  N   T   E     S
 //C     O   O M M M PPPP  O   O N N N EEE   N N N   T   EEE    SSS
@@ -199,7 +170,7 @@ describe('[FLUJO][Componentes][Common][BasicTextBox] - Validar campo por expresi
         //Opcionales.
         disabled: false,
         id: 'email',
-        inputType: 'email',
+        inputType: 'text',
         valueType: 'text',
         //Validación.
         isRequired: true,
@@ -212,7 +183,7 @@ describe('[FLUJO][Componentes][Common][BasicTextBox] - Validar campo por expresi
 	//Se crea el componente.
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
     const component = enzyme.mount(<BasicTextBox {...textboxProps}/>);
-    const input = component.find('input[type="email"]');
+    let input = component.find('input[type="text"]');
     it('Se revisa que exista 1 objeto tipo "input".', () => {
         expect(input).toHaveLength(1);
     });
@@ -227,7 +198,23 @@ describe('[FLUJO][Componentes][Common][BasicTextBox] - Validar campo por expresi
 	it('Se verifica que la información inicial esté vacía.', () => {
 		//Expectativas.
 		expect(component.state().text).toEqual('');
+		expect(component.state().inputType).toEqual('text');
 		expect(input.instance().value).toEqual('');
+	});
+
+	// CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT W   W IIIII L     L     RRRR  EEEEE  CCCC EEEEE IIIII V   V EEEEE PPPP  RRRR   OOO  PPPP   SSSS
+	//C     O   O MM MM P   P O   O NN  N E     NN  N   T   W   W   I   L     L     R   R E     C     E       I   V   V E     P   P R   R O   O P   P S
+	//C     O   O M M M PPPP  O   O N N N EEE   N N N   T   W W W   I   L     L     RRRR  EEE   C     EEE     I   V   V EEE   PPPP  RRRR  O   O PPPP   SSS
+	//C     O   O M   M P     O   O N  NN E     N  NN   T   WW WW   I   L     L     R   R E     C     E       I    V V  E     P     R   R O   O P         S
+	// CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   W   W IIIII LLLLL LLLLL R   R EEEEE  CCCC EEEEE IIIII   V   EEEEE P     R   R  OOO  P     SSSS
+
+	it('Se modifica el tipo de input y el estado debe cambiar.', () => {
+		//Se cambian las propiedades configuradas.
+		component.setProps({ inputType: 'email' });
+		//Expectativas.
+		expect(component.state().inputType).toEqual('email');
+		input = component.find('input[type="email"]');
+		expect(input).toHaveLength(1);
 	});
 
 	// OOO  N   N FFFFF  OOO   CCCC U   U  SSSS
@@ -909,7 +896,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - No se valida el campo, s�
 	it('Se verifica que la información inicial esté vacía.', () => {
 		//Expectativas.
 		expect(component.state().text).toEqual('');
-		expect(input.instance().value).toEqual('blah');
+		expect(input.instance().value).toEqual('');
 	});
 
 	// OOO  N   N FFFFF  OOO   CCCC U   U  SSSS
@@ -979,7 +966,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - No se valida el campo, s�
 });
 
 //Métodos.
-describe("[MÉTODOS][Componentes][Common][BasicTextBox]: Pinta correctamente el componente <<textbox>>.", () => {
+describe("[MÉTODOS][Componentes][Common][BasicTextBox] - Valida las llamadas a los métodos dentro del componente.", () => {
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
 		//Nada que hacer aquí.

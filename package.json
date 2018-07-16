@@ -64,7 +64,7 @@
     "roots": [
       "<rootDir>"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/node_modules/jest-enzyme/lib/index.js",
+    "setupTestFrameworkScriptFile": "./jest.config.js",
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/bin/",
