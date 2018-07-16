@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabilidato. Debe pintar el componente con los siguientes modificadores: (Estado: deshabilitado)(Tipo: correo electrónido). 1`] = `
+.c0 {
+  display: inline-block;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.c3 {
+  border-bottom: 1px solid #BFBFBF;
+  box-sizing: border-box;
+  color: #BFBFBF;
+  height: 45px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  left: 0px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+  -webkit-transition: color 0.3s ease-in-out,font 0.1s linear,padding 0.1s linear;
+  transition: color 0.3s ease-in-out,font 0.1s linear,padding 0.1s linear;
+}
+
+.c3:after {
+  background: #1476FB;
+  bottom: -1px;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 0px;
+}
+
+.jSENYy:focus ~ .c2 {
+  color: #1476FB;
+  font-size: 11px;
+  padding: 0px;
+}
+
+.jSENYy:focus ~ .c2:after {
+  left: 0px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  color: #BFBFBF;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  padding: 0px;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1:focus ~ .c2 {
+  color: #1476FB;
+  font-size: 11px;
+  padding: 0px;
+}
+
+.c1:focus ~ .c2:after {
+  left: 0px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    disabled={true}
+    id="email"
+    maxLength={500}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    type="email"
+  />
+  <label
+    className="c2 c3"
+  >
+    Estado: normal
+  </label>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. Debe pintar el componente con los siguientes modificadores: (Estado: normal)(Tipo: correo electrónico). 1`] = `
+.c0 {
+  display: inline-block;
+  height: 60px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+
+.c3 {
+  border-bottom: 1px solid #BFBFBF;
+  box-sizing: border-box;
+  color: #A7A7A7;
+  height: 45px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  left: 0px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 15px 0px 0px 0px;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+  -webkit-transition: color 0.3s ease-in-out,font 0.1s linear,padding 0.1s linear;
+  transition: color 0.3s ease-in-out,font 0.1s linear,padding 0.1s linear;
+}
+
+.c3:after {
+  background: #1476FB;
+  bottom: -1px;
+  content: '';
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 0px;
+}
+
+.c1 {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 0px;
+  color: #242424;
+  display: inline-block;
+  font-size: 16px;
+  height: 30px;
+  outline: none;
+  padding: 0px;
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1:focus ~ .c2 {
+  color: #1476FB;
+  font-size: 11px;
+  padding: 0px;
+}
+
+.c1:focus ~ .c2:after {
+  left: 0px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <input
+    className="c1"
+    disabled={false}
+    id="email"
+    maxLength={500}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyPress={[Function]}
+    type="email"
+  />
+  <label
+    className="c2 c3"
+  >
+    Estado: normal
+  </label>
+</div>
+`;

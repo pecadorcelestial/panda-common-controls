@@ -1,0 +1,785 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "blue" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #1476FB;
+  border: 1px solid #1476FB;
+  color: #FFF;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #0960D3;
+  border: 1px solid #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "blue" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #1476FB;
+  border: 1px solid #1476FB;
+  color: #FFF;
+  font-size: 16px;
+  height: 40px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #0960D3;
+  border: 1px solid #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "blue" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #1476FB;
+  border: 1px solid #1476FB;
+  color: #FFF;
+  font-size: 18px;
+  height: 46px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #0960D3;
+  border: 1px solid #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="big"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flat" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #FF456A;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FF456A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flat" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #FF456A;
+  font-size: 16px;
+  height: 40px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FF456A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flat" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #FF456A;
+  font-size: 18px;
+  height: 46px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FF456A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="big"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flatBlue" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  color: #1476FB;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flatBlue" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  color: #1476FB;
+  font-size: 16px;
+  height: 40px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "flatBlue" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  color: #1476FB;
+  font-size: 18px;
+  height: 46px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="big"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "main" con estilo para "float" y "width". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FF456A;
+  border: 1px solid #FF456A;
+  color: #FFF;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+  style={
+    Object {
+      "float": "left",
+      "width": "100%",
+    }
+  }
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "main" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FF456A;
+  border: 1px solid #FF456A;
+  color: #FFF;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "main" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FF456A;
+  border: 1px solid #FF456A;
+  color: #FFF;
+  font-size: 16px;
+  height: 40px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "main" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FF456A;
+  border: 1px solid #FF456A;
+  color: #FFF;
+  font-size: 18px;
+  height: 46px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="big"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "secondary" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FF456A;
+  color: #FF456A;
+  font-size: 14px;
+  height: 30px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="small"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "secondary" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FF456A;
+  color: #FF456A;
+  font-size: 16px;
+  height: 40px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="medium"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue. Debe pintar el componente con el tema "secondary" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  border-radius: 5px;
+  cursor: pointer;
+  float: unset;
+  font-family: Open Sans;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  padding: 0px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: #FFF;
+  border: 1px solid #FF456A;
+  color: #FF456A;
+  font-size: 18px;
+  height: 46px;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+<button
+  className="c0"
+  size="big"
+/>
+`;
