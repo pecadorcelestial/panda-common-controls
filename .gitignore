@@ -2,5 +2,6 @@
 .vscode/
 bin/
 coverage/
+lib/
 node_modules/
 package-lock.json

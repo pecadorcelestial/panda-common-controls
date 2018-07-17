@@ -1,2 +1,16 @@
+.storybook/
+.vscode/
+bin/
+coverage/
+lib/**/*.test.js
+lib/app.js
+lib/client.js
+node_modules/
+src/
+stories/
 .babelrc
-src
+jest.config.js
+package-lock.json
+server-body.js
+server.js
+webpack.config.js

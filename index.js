@@ -13,8 +13,10 @@ Until support shows up natively, you'll have to continue using classic require s
 const express = require("express");
 */
 
-const { BasicTextBox: TextBox } = require('./src/textboxes/textboxes.jsx');
-const { Button } = require('./src/buttons/buttons.jsx');
+require('babel-register');
+
+const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
+const { Button } = require('./lib/buttons/buttons');
 
 module.exports = {
     TextBox,
