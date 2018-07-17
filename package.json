@@ -4,8 +4,6 @@
   "description": "Libreria de componentes comunes.",
   "main": "index.js",
   "scripts": {
-    "build": "babel lib -d build",
-    "prepublish": "npm run build",
     "test": "jest --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
