@@ -1,5 +1,5 @@
-import { BasicTextBox as TextBox } from './src/textboxes/textboxes';
-import { Button } from './src/buttons/buttons';
+const { BasicTextBox: TextBox } = require('./src/textboxes/textboxes');
+const { Button } = require('./src/buttons/buttons');
 
 module.exports = {
     TextBox,

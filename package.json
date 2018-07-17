@@ -1,7 +1,7 @@
 {
   "name": "panda-common-controls",
-  "version": "1.0.0",
-  "description": "Libreria de componentes comunes.",
+  "version": "1.0.1",
+  "description": "Common controls library for websites.",
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
