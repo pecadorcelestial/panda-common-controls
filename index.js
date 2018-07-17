@@ -15,10 +15,14 @@ const express = require("express");
 
 require('babel-register');
 
-const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
 const { Button } = require('./lib/buttons/buttons');
+const { CheckBox } = require('./lib/checkboxes/checkboxes');
+const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
+const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
 
 module.exports = {
-    TextBox,
-    Button
+    Button,
+    CheckBox,
+    Select,
+    TextBox
 };
