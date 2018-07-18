@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 4. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={4}
+  width="100%"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 8. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={8}
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 10. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={10}
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 14. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 14px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={14}
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 18. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 18px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={18}
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente con una elevación en la sombra de 32. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: 0 1px 32px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+  elevation={32}
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes de elevacion en la sombra. Debe pintar el componente sin elevación en la sombra. 1`] = `
+.c0 {
+  background-color: #FFF;
+  border-radius: 5px;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  box-shadow: unset;
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    border-radius: 0px;
+    box-shadow: unset;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

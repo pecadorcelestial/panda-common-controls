@@ -4,9 +4,11 @@
   "description": "Common controls library for websites.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib",
-    "prepublish": "npm run build",
-    "test": "jest --coverage",
+    "clean": "bash scripts/clean-lib.sh",
+    "prebuild": "npm run clean",
+    "build": "babel src --out-dir lib --ignore **/*.test.js,app.js,client.js",
+    "prepublishOnly": "npm run test && npm run build",
+    "test": "cls && jest --coverage",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -54,13 +56,13 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/**.{js,jsx}",
-      "!**/node_modules/**",
-      "!**/bin/**",
-      "!config.js",
-      "!*.config.js",
-      "!src/**/**.storybook.jsx",
+      "!bin/**",
+      "!node_modules/**",
+      "!src/**/*.storybook.jsx",
       "!src/app.js",
-      "!src/client.js"
+      "!src/client.js",
+      "!config.js",
+      "!*.config.js"
     ],
     "roots": [
       "<rootDir>"
@@ -69,7 +71,8 @@
     "testEnvironment": "node",
     "testPathIgnorePatterns": [
       "<rootDir>/bin/",
-      "<rootDir>/node_modules/"
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
     ]
   }
 }
