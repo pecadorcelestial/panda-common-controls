@@ -19,9 +19,11 @@ const { Button } = require('./lib/buttons/buttons');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
 const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
 const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
+const { BasicCard: Card } = require('./lib/cards/cards')
 
 module.exports = {
     Button,
+    Card,
     CheckBox,
     Select,
     TextBox
