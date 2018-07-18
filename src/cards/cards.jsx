@@ -17,7 +17,6 @@ const getCardBoxShadow = (elevation) => {
 			return `box-shadow:  0 1px 18px rgba(0, 0, 0, 0.1);`;
 		case 32:
 			return `box-shadow:  0 1px 32px rgba(0, 0, 0, 0.1);`;
-		case 0:
 		default:
 			return `box-shadow: unset;`;
 	}
