@@ -27,14 +27,18 @@ This will install the following files into your project:
 ```
     .
     ├── lib                             # Transformed files (from .jsx to .js)
-    |     ├── buttons                   # Component folder.
-    |     |       └── buttons.js        # TextBox component file.
-    |     ├── checkboxes                # Component folder.
-    |     |       └── checkboxes.js     # TextBox component file.
-    |     ├── dropdownlists             # Component folder.
-    |     |       └── dropdownlists.js  # TextBox component file.
-    |     └── textboxes                 # Component folder.
-    |             └── textboxes.js      # TextBox component file.
+    |     ├── animations
+    |     |       └── animations.js
+    |     ├── buttons
+    |     |       └── buttons.js
+    |     ├── cards
+    |     |       └── cards.js
+    |     ├── checkboxes
+    |     |       └── checkboxes.js
+    |     ├── dropdownlists
+    |     |       └── dropdownlists.js
+    |     └── textboxes
+    |             └── textboxes.js
     ├── index.js
     ├── package.json
     └── README.md
@@ -46,7 +50,9 @@ For a complete list of the files, including a running examples and tests, you ca
 
 ### Components
 
+* Animations (coming soon...)
 * [Buttons](/docs/api/buttons.md)
+* Cards (coming soon...)
 * [CheckBoxes](/docs/api/checkboxes.md)
 * [DropDown Lists](/docs/api/dropdownlists.md)
 * [TextBoxes](/docs/api/textboxes.md)
