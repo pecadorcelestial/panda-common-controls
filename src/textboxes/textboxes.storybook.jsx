@@ -7,6 +7,7 @@ import { BasicTextBox } from './textboxes';
 import { Button } from '../buttons/buttons';
 import { CheckBox } from '../checkboxes/checkboxes';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
+//import { FadeIn } from '../animations/animations';
 
 const Layout = styled.div`
     display: inline-block;
@@ -39,11 +40,19 @@ const RightColumn = styled.div`
 
 const Control = styled.div`
     display: inline-block;
+    float: left;
     height: auto;
     margin: 0px;
-    max-width: 200px;
     padding: 0px;
     width: 100%;
+`;
+
+const AnimationWrapper = styled.div`
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100px;
 `;
 
 const Option = styled.div`
@@ -115,6 +124,12 @@ const OptionButtonWrapper = styled.div`
     width: auto;
 `;
 
+const ColoredDiv = styled.div`
+    background-color: #8394DE;
+    height: 100px;
+    width: 100px;
+`;
+
 class TextboxStorybook extends Component {
     constructor() {
         super();
@@ -134,8 +149,15 @@ class TextboxStorybook extends Component {
             validRegEx: '^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)\.([a-zA-Z]{2,4})+$',
             //Métodos.
             customError: '',
-            customValue: ''
+            customValue: '',
+            //Componentes "dinámicos"
+            Animate: undefined
         };
+    }
+    componentDidMount() {
+        const { Animate } = require('../animations/animations');
+        console.log('[STORYBOOK][TEXTBOOK][componentDidMount] Animate: ', Animate);
+        this.setState({ Animate });
     }
     render() {
 
@@ -253,7 +275,7 @@ class TextboxStorybook extends Component {
                         <OptionInput type='number' min='1' max='250' onChange={(event) => { this.setState({ maxLength: event.target.value }); }} value={this.state.maxLength}/>
                     </Option>
                     <Option>
-                        <CheckBox checked={this.state.checked} onChange={(checked) => { this.setState({ disabled: checked }); }}>¿Deshabilidato?</CheckBox>
+                        <CheckBox checked={this.state.disabled} onChange={(checked) => { this.setState({ disabled: checked }); }}>¿Deshabilidato?</CheckBox>
                     </Option>
                     <Option>
                         <BasicSelect {...inputTypesProps}/>
@@ -297,10 +319,30 @@ class TextboxStorybook extends Component {
                             <Button theme='blue' size='small' onClick={(event) => { this.TextBoxRef.setValue(this.state.customValue); }}>setValue</Button>
                         </OptionButtonWrapper>
                     </Option>
+                    <Title>Animación:</Title>
+                    <Option>
+                        <OptionButtonWrapper>
+                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateRef.triggerExitAnimation(); }}>triggerExit</Button>
+                        </OptionButtonWrapper>
+                    </Option>
                 </LeftColumn>
                 <RightColumn>
                     <Control>
                         <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
+                    </Control>
+                    <Control>
+                        <AnimationWrapper>
+                        {
+                            this.state.Animate ?
+                            <this.state.Animate type='zoom' executeWhen='isMounted' ref={animate => { this.AnimateRef = animate; }}>
+                                <ColoredDiv/>
+                            </this.state.Animate> :
+                            null
+                        }
+                        </AnimationWrapper>
                     </Control>
                 </RightColumn>
             </Layout>
