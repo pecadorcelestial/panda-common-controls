@@ -1,10 +1,13 @@
 # Card
 
+This component wraps its content in a card-like ``div`` with a ``shadow-box`` and ``border`` of 5px.
+
 ## Properties, funcitons and methods
 
-```
-coming soon...
-```
+| Name       | Type   | Optional | Comments |
+| -----------|--------|----------|----------|
+| elevation  | number | true     | Sets the size of the shadow in the card. If no value is passed the box-shadow will be unset. |
+| width      | string | true     | Sets the width of the card. If no value is passed the width is set to ``auto``. |
 
 ## Usage
 
