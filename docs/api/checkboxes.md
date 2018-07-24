@@ -16,7 +16,7 @@
 
 | Name     | Parameters | Type | Description |
 |----------|------------|------|-------------|
-| getValue | N/A        | N/A  | Returns the state of the **checkbox** when it changes. |
+| getValue | N/A        | N/A  | Returns the state of the **checkbox**. |
 | setValue | value      | bool | Changes the value of the **checkbox**. |
 
 ## Usage

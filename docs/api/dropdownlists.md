@@ -30,8 +30,6 @@
 
 ## Usage
 
-## Usage
-
 ```javascript
 import React, { Component } from 'react';
 import { Select } from 'panda-common-controls';
