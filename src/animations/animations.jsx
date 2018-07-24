@@ -417,7 +417,7 @@ export class Animate extends React.Component {
 }
 
 FadeIn.propTypes = {
-    type: PropTypes.oneOf(['fade', 'flip', 'zoom']),
-    from: PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'vertical', 'horizontal']),
-    executeWhen: PropTypes.oneOf(['isMounted', 'isVisible', 'onDemand']).isRequired
+    type: PropTypes.oneOf(['fade', 'flip', 'zoom']).isRequired,
+    from: PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'vertical', 'horizontal']).isRequired,
+    executeWhen: PropTypes.oneOf(['isMounted', 'isVisible', 'onDemand'])
 }

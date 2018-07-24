@@ -20,7 +20,7 @@ class BasicForm extends Component {
         //Result.
         return(
             <div>
-                <Card elevation={14} wdith='100px'>
+                <Card elevation={14} width='100px'>
                     {/* Put content here... */}
                 </Card>
             <div>
