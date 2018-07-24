@@ -19,8 +19,8 @@ As for now, there are only 2 components inside the **animations** part of the li
 | Name        | Type   | Optional | Comments |
 | ------------|--------|----------|----------|
 | type        | string | false    | It describes the animation style: a)``fade``, b)``flip`` and c)``zoom``. |
-| from        | string | false    | Set the animation direction. For **fade**: - ``left`` - ``right`` - ``top`` - ``bottom`` For **flip**: - ``vertical`` - ``horizontal``. |
-| executeWhen | string | true     | Sets when the animation should be triggered. - ``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively. -``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively. |
+| from        | string | false    | Set the animation direction. <br/>For **fade**:<ul><li>``left``</li><li>``right``</li><li>``top``</li><li>``bottom``</li></ul><br/>For **flip**:<ul><li>``vertical``</li><li>``horizontal``</li></ul>. |
+| executeWhen | string | true     | Sets when the animation should be triggered. <ul><li>``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively.</li><li>``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively.</li></ul>|
 
 ## Usage
 
