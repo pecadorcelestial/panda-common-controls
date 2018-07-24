@@ -3,12 +3,14 @@
 This library came out as a personal project to create a list of reusable components and also as a test to build my first public module to use with NPM.
 
 It contains some "fancy looking" components like:
-- TextBox (an input tag with a little more functionality)
+- Animations
 - Button
+- Card
 - Checkbox
 - Dropdown List
+- TextBox (an input tag with a little more functionality)
 
-These components where created using the [styled-componets](https://www.styled-components.com/) ligrary.
+These components where created using the [styled-componets](https://www.styled-components.com/) library.
 
 ## Getting Started
 
@@ -26,7 +28,7 @@ This will install the following files into your project:
 
 ```
     .
-    ├── lib                             # Transformed files (from .jsx to .js)
+    ├── lib
     |     ├── animations
     |     |       └── animations.js
     |     ├── buttons
@@ -50,12 +52,12 @@ For a complete list of the files, including a running examples and tests, you ca
 
 ### Components
 
-* Animations (coming soon...)
-* [Buttons](/docs/api/buttons.md)
-* Cards (coming soon...)
-* [CheckBoxes](/docs/api/checkboxes.md)
-* [DropDown Lists](/docs/api/dropdownlists.md)
-* [TextBoxes](/docs/api/textboxes.md)
+* [Animations](docs/api/animations.md)
+* [Buttons](docs/api/buttons.md)
+* [Cards](docs/api/cards.md)
+* [CheckBoxes](docs/api/checkboxes.md)
+* [DropDown Lists](docs/api/dropdownlists.md)
+* [TextBoxes](docs/api/textboxes.md)
 
 ## Running the tests
 

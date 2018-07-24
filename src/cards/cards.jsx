@@ -48,5 +48,5 @@ export const BasicCard = styled.div`
 
 BasicCard.propTypes = {
     elevation: PropTypes.number,
-    widht: PropTypes.string
+    width: PropTypes.string
 };
