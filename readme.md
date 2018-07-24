@@ -1,5 +1,7 @@
 # Panda Common Controls
 
+[![npm version](https://badge.fury.io/js/panda-common-controls.svg)](https://badge.fury.io/js/panda-common-controls)
+
 This library came out as a personal project to create a list of reusable components and also as a test to build my first public module to use with NPM.
 
 It contains some "fancy looking" components like:
