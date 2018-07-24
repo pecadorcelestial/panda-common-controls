@@ -52,16 +52,20 @@ For a complete list of the files, including a running examples and tests, you ca
 
 ### Components
 
-* [Animations](docs/api/animations.md)
-* [Buttons](docs/api/buttons.md)
-* [Cards](docs/api/cards.md)
-* [CheckBoxes](docs/api/checkboxes.md)
-* [DropDown Lists](docs/api/dropdownlists.md)
-* [TextBoxes](docs/api/textboxes.md)
+* [Animations](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/animations.md)
+* [Buttons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/buttons.md)
+* [Cards](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/cards.md)
+* [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
+* [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
+* [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 
-You can download the code, run it and check the **_meta-storybook_** page to see some of the components in action.
+You can clone the [repository](https://github.com/pecadorcelestial/panda-common-controls), start it and check the **_meta-storybook_** page to see some of the components in action.
 
 ```
+**To clone it**
+git clone https://github.com/pecadorcelestial/panda-common-controls.git
+
+**To start it**
 npm start
 ```
 
