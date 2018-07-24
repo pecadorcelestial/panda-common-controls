@@ -5,9 +5,10 @@ import styled from 'styled-components';
 //Componentes locales.
 import { BasicTextBox } from './textboxes';
 import { Button } from '../buttons/buttons';
+import { BasicCard } from '../cards/cards';
 import { CheckBox } from '../checkboxes/checkboxes';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
-//import { FadeIn } from '../animations/animations';
+import { Loading, Animate } from '../animations/animations';
 
 const Layout = styled.div`
     display: inline-block;
@@ -47,9 +48,17 @@ const Control = styled.div`
     width: 100%;
 `;
 
-const AnimationWrapper = styled.div`
+const CardContent = styled.div`
+    box-sizing: border-box;
     height: 100px;
     margin: 0px;
+    padding: 20px;
+    width: 100%;
+`;
+
+const AnimationWrapper = styled.div`
+    height: 100px;
+    margin: 10px 0px 0px 0px;
     padding: 0px;
     position: relative;
     width: 100px;
@@ -125,7 +134,7 @@ const OptionButtonWrapper = styled.div`
 `;
 
 const ColoredDiv = styled.div`
-    background-color: #8394DE;
+    background-color: ${props => props.color};
     height: 100px;
     width: 100px;
 `;
@@ -135,13 +144,13 @@ class TextboxStorybook extends Component {
         super();
         this.state = {
             //Obligatorios.
-            title: 'Título',
-            error: 'Error configurado en propiedades.',
+            title: 'Title',
+            error: 'Error setup by properties.',
             maxLength: 50,
             //Opcionales.
             //backgroundImage: PropTypes.string,
             disabled: false,
-            id: 'identificador',
+            id: 'identifier',
             inputType: 'password',
             valueType: 'text',
             //Validación.
@@ -150,13 +159,16 @@ class TextboxStorybook extends Component {
             //Métodos.
             customError: '',
             customValue: '',
+            //Animaciones.
+            fadeFrom: 'right',
+            flipFrom: 'vertical',
             //Componentes "dinámicos"
             Animate: undefined
         };
     }
     componentDidMount() {
         const { Animate } = require('../animations/animations');
-        console.log('[STORYBOOK][TEXTBOOK][componentDidMount] Animate: ', Animate);
+        //console.log('[STORYBOOK][TEXTBOOK][componentDidMount] Animate: ', Animate);
         this.setState({ Animate });
     }
     render() {
@@ -170,7 +182,7 @@ class TextboxStorybook extends Component {
         const inputTypes = [
             {
                 id: 'text',
-                description: 'Texto'
+                description: 'Text'
             },
             {
                 id: 'password',
@@ -178,18 +190,18 @@ class TextboxStorybook extends Component {
             },
             {
                 id: 'email',
-                description: 'Correo electrónico'
+                description: 'Email'
             },
             {
                 id: 'number',
-                description: 'Número'
+                description: 'Number'
             },
         ];
 
         const valueTypes = [
             {
                 id: 'number',
-                description: 'Númerico'
+                description: 'Numeric'
             },
             {
                 id: 'decimal',
@@ -197,7 +209,37 @@ class TextboxStorybook extends Component {
             },
             {
                 id: 'text',
-                description: 'Texto'
+                description: 'Text'
+            }
+        ];
+
+        const fadeFromOptions = [
+            {
+                id: 'left',
+                description: 'Left'
+            },
+            {
+                id: 'right',
+                description: 'Right'
+            },
+            {
+                id: 'top',
+                description: 'Top'
+            },
+            {
+                id: 'bottom',
+                description: 'Bottom'
+            }
+        ];
+
+        const flipFromOptions = [
+            {
+                id: 'vertical',
+                description: 'Vertical'
+            },
+            {
+                id: 'horizontal',
+                description: 'Horizontal'
             }
         ];
 
@@ -221,36 +263,62 @@ class TextboxStorybook extends Component {
             isRequired: this.state.isRequired,
             validRegEx: this.state.validRegEx,
             //Funciones.
-            onChange: (event) => {console.log('[STORYBOOK][TEXTBOX][onChange] Valor: ', event.target.value);},
+            onChange: (event) => {console.log('[STORYBOOK][TEXTBOX][onChange] Value: ', event.target.value);},
             onFocus: () => {console.log('[STORYBOOK][TEXTBOX][onFocus]');},
-            onKeyPress: (event) => {console.log('[STORYBOOK][TEXTBOX][onKeyPress] Tecla: ', event.which);}
+            onKeyPress: (event) => {console.log('[STORYBOOK][TEXTBOX][onKeyPress] Key: ', event.which);}
         };
 
         const inputTypesProps = {
-            title: 'Tipo de dato:',
-            error: 'Debe seleccionar un valor.',
+            title: 'Data type:',
+            error: 'You must select an option.',
             options: inputTypes,
             selectedOption: this.state.inputType,
             onChange: (event) => { this.setState({ inputType: event.target.value }); },
             id: '',
-            placeHolder: 'Selecciona un tipo',
+            placeHolder: 'Select a type',
             disabled: false,
             isRequired: false,
             idIsNumeric: false
-        }
+        };
 
         const valueTypesProps = {
-            title: 'Tipo de valor:',
-            error: 'Debe seleccionar un valor.',
+            title: 'Value type:',
+            error: 'You must select an option.',
             options: valueTypes,
             selectedOption: this.state.valueType,
             onChange: (event) => { this.setState({ valueType: event.target.value }); },
             id: '',
-            placeHolder: 'Selecciona un tipo',
+            placeHolder: 'Select a type',
             disabled: false,
             isRequired: false,
             idIsNumeric: false
-        }
+        };
+
+        const fadeFromProps = {
+            title: 'Fade animation (from):',
+            error: 'You must select an option.',
+            options: fadeFromOptions,
+            selectedOption: this.state.fadeFrom,
+            onChange: (event) => { this.setState({ fadeFrom: event.target.value }); },
+            id: '',
+            placeHolder: 'Select a type',
+            disabled: false,
+            isRequired: false,
+            idIsNumeric: false
+        };
+
+        const flipFromProps = {
+            title: 'Flip animation (from):',
+            error: 'You must select an option.',
+            options: flipFromOptions,
+            selectedOption: this.state.flipFrom,
+            onChange: (event) => { this.setState({ flipFrom: event.target.value }); },
+            id: '',
+            placeHolder: 'Select a type',
+            disabled: false,
+            isRequired: false,
+            idIsNumeric: false
+        };
 
 		//RRRR  EEEEE  SSSS U   U L     TTTTT  AAA  DDDD   OOO
 		//R   R E     S     U   U L       T   A   A D   D O   O
@@ -261,9 +329,9 @@ class TextboxStorybook extends Component {
         return(
             <Layout>
                 <LeftColumn>
-                    <Title>Propiedades:</Title>
+                    <Title>Properties:</Title>
                     <Option>
-                        <OptionTitle>Título:</OptionTitle>
+                        <OptionTitle>Title:</OptionTitle>
                         <OptionInput onChange={(event) => { this.setState({ title: event.target.value }); }} value={this.state.title}/>
                     </Option>
                     <Option>
@@ -271,11 +339,11 @@ class TextboxStorybook extends Component {
                         <OptionInput onChange={(event) => { this.setState({ error: event.target.value }); }} value={this.state.error}/>
                     </Option>
                     <Option>
-                        <OptionTitle>Longitud:</OptionTitle>
+                        <OptionTitle>Length:</OptionTitle>
                         <OptionInput type='number' min='1' max='250' onChange={(event) => { this.setState({ maxLength: event.target.value }); }} value={this.state.maxLength}/>
                     </Option>
                     <Option>
-                        <CheckBox checked={this.state.disabled} onChange={(checked) => { this.setState({ disabled: checked }); }}>¿Deshabilidato?</CheckBox>
+                        <CheckBox checked={this.state.disabled} onChange={(checked) => { this.setState({ disabled: checked }); }}>Disabled?</CheckBox>
                     </Option>
                     <Option>
                         <BasicSelect {...inputTypesProps}/>
@@ -284,7 +352,7 @@ class TextboxStorybook extends Component {
                         <BasicSelect {...valueTypesProps}/>
                     </Option>
                     <Option>
-                        <CheckBox checked={this.state.isRequired} onChange={(checked) => { this.setState({ isRequired: checked }); }}>¿Es requerido?</CheckBox>
+                        <CheckBox checked={this.state.isRequired} onChange={(checked) => { this.setState({ isRequired: checked }); }}>Required?</CheckBox>
                     </Option>
                     <Option>
                         <OptionTitle>RegEx:</OptionTitle>
@@ -292,7 +360,7 @@ class TextboxStorybook extends Component {
                     </Option>
                 </LeftColumn>
                 <LeftColumn>
-                    <Title>Métodos:</Title>
+                    <Title>Methods:</Title>
                     <Option>
                         <OptionButtonWrapper>
                             <Button theme='blue' size='small' onClick={(event) => { this.TextBoxRef.focus(); }}>focus</Button>
@@ -319,29 +387,52 @@ class TextboxStorybook extends Component {
                             <Button theme='blue' size='small' onClick={(event) => { this.TextBoxRef.setValue(this.state.customValue); }}>setValue</Button>
                         </OptionButtonWrapper>
                     </Option>
-                    <Title>Animación:</Title>
+                    <Title>Animations:</Title>
+                    <Option>
+                        <Loading size={{ height: 60, width: 60 }}/>
+                    </Option>
+                    <Option>
+                        <BasicSelect {...fadeFromProps}/>
+                    </Option>
+                    <Option>
+                        <BasicSelect {...flipFromProps}/>
+                    </Option>
                     <Option>
                         <OptionButtonWrapper>
-                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
+                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateFadeRef.triggerEntranceAnimation(); this.AnimateFlipRef.triggerEntranceAnimation(); this.AnimateZoomRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateRef.triggerExitAnimation(); }}>triggerExit</Button>
+                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateFadeRef.triggerExitAnimation(); this.AnimateFlipRef.triggerExitAnimation(); this.AnimateZoomRef.triggerExitAnimation(); }}>triggerExit</Button>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>
                 <RightColumn>
                     <Control>
-                        <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
+                        <BasicCard elevation={32} width='100%'>
+                            <CardContent>
+                                <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
+                            </CardContent>
+                        </BasicCard>
                     </Control>
                     <Control>
                         <AnimationWrapper>
-                        {
-                            this.state.Animate ?
-                            <this.state.Animate type='zoom' executeWhen='isVisible' ref={animate => { this.AnimateRef = animate; }}>
-                                <ColoredDiv/>
-                            </this.state.Animate> :
-                            null
-                        }
+                            <Animate type='fade' from={this.state.fadeFrom} executeWhen='isVisible' ref={animate => { this.AnimateFadeRef = animate; }}>
+                                <ColoredDiv color='#800080'/>
+                            </Animate>
+                        </AnimationWrapper>
+                    </Control>
+                    <Control>
+                        <AnimationWrapper>
+                            <Animate type='flip' from={this.state.flipFrom} executeWhen='isVisible' ref={animate => { this.AnimateFlipRef = animate; }}>
+                                <ColoredDiv color='#FF0033'/>
+                            </Animate>
+                        </AnimationWrapper>
+                    </Control>
+                    <Control>
+                        <AnimationWrapper>
+                            <Animate type='zoom' executeWhen='isVisible' ref={animate => { this.AnimateZoomRef = animate; }}>
+                                <ColoredDiv color='#00FF7F'/>
+                            </Animate>
                         </AnimationWrapper>
                     </Control>
                     <div style={{ height: '2000px', width: '100%' }}/>

@@ -6,17 +6,17 @@ import styled from 'styled-components';
 const getCardBoxShadow = (elevation) => {
 	switch(elevation) {
 		case 4:
-			return `box-shadow:  0 1px 4px rgba(0, 0, 0, 0.05);`;
+			return `box-shadow:  0px 0px 4px 1px rgba(0, 0, 0, 0.05);`;
 		case 8:
-			return `box-shadow:  0 1px 8px rgba(0, 0, 0, 0.05);`;
+			return `box-shadow:  0px 0px 8px 1px rgba(0, 0, 0, 0.05);`;
 		case 10:
-			return `box-shadow:  0 1px 10px rgba(0, 0, 0, 0.1);`;
+			return `box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, 0.1);`;
 		case 14:
-			return `box-shadow:  0 1px 14px rgba(0, 0, 0, 0.1);`;
+			return `box-shadow:  0px 0px 14px 1px rgba(0, 0, 0, 0.1);`;
 		case 18:
-			return `box-shadow:  0 1px 18px rgba(0, 0, 0, 0.1);`;
+			return `box-shadow:  0px 0px 18px 1px rgba(0, 0, 0, 0.1);`;
 		case 32:
-			return `box-shadow:  0 1px 32px rgba(0, 0, 0, 0.1);`;
+			return `box-shadow:  0px 0px 32px 1px rgba(0, 0, 0, 0.1);`;
 		default:
 			return `box-shadow: unset;`;
 	}

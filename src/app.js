@@ -25,13 +25,13 @@ class App extends Component {
                         <Link to='/secondpage'>Información de usuario</Link>
                     </li>
                     <li>
-                        <Link to='/textbox'>Storybook: Textboxes</Link>
+                        <Link to='/meta-storybook'>Meta Storybook</Link>
                     </li>
                 </ul>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route exact path='/secondpage' component={SecondPage}/>
-                    <Route exact path='/textbox' component={TextboxStorybook}/>
+                    <Route exact path='/meta-storybook' component={TextboxStorybook}/>
                 </Switch>
             </div>            
         );

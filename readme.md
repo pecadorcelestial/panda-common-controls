@@ -59,6 +59,12 @@ For a complete list of the files, including a running examples and tests, you ca
 * [DropDown Lists](docs/api/dropdownlists.md)
 * [TextBoxes](docs/api/textboxes.md)
 
+You can download the code, run it and check the **_meta-storybook_** page to see some of the components in action.
+
+```
+npm start
+```
+
 ## Running the tests
 
 The test where build using [Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme), to run them just copy the repository and type:
