@@ -9,7 +9,21 @@
 
 //NOTA [2]: Al parecer se debe utilizar la nomenclatura de Node.JS, es decir "require" en lugar de "import" (°~°).
 const { JSDOM } = require('jsdom');
-const jsdom = new JSDOM('<!doctype html><html><body><div id="app" /></body></html>');
+
+const options = {
+    resources: 'usable',
+    runScripts: 'dangerously',
+    beforeParse(window) {
+        window.alert = window.console.log.bind(window.console);
+        window.innerWidth = 300;
+        window.innerHeight = 100;
+        window.scrollTo = (xPos, yPos) => {
+            console.log('[JSDOM][CONFIGURATION][window.scrollTo]');
+        }
+    }
+};
+
+const jsdom = new JSDOM('<!doctype html><html><body><div id="app" style="margin-top: 150px;"/></body></html>', options);
 const { window } = jsdom;
 
 const copyProps = (src, target) => {

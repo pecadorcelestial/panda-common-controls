@@ -333,9 +333,72 @@ export class Animate extends React.Component {
     }
     //*** FUNCIONES DEL COMPONENTE ***
     componentDidMount() {
-        //console.log('[ANIMATIONS][ANIMATE][componentDidMount]');
-        if(this.props.executeWhen === 'isMounted') this.setState({ entrance: true, exit: false });
-    }
+		//console.log('[ANIMATIONS][ANIMATE][componentDidMount]');
+		//isMounted
+		if(this.props.executeWhen === 'isMounted') this.setState({ entrance: true, exit: false });
+		//isVisible
+		if(this.props.executeWhen === 'isVisible') {
+			//1. Se agrega el "event listener".
+			window.addEventListener('scroll', this.handleScroll);
+			//2. Se revisa si el componente es visible.
+			let event = {
+				path: [
+					{},
+					{
+						innerHeight: window.innerHeight,
+						innerWidth: window.innerWidth
+					}
+				]
+			};
+			this.handleScroll(event);
+		}
+	}
+	componentWillUnmount() {
+		if(this.props.executeWhen === 'isVisible') window.removeEventListener('scroll', this.handleScroll);
+	}
+	//*** HANDLERS ***
+	handleScroll = (event) => {
+		//if (!this.AnimationInnerRef) return false;
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] event.path[1](window): ', event.path[1]);
+		/*
+		event: {
+			path: [
+				document,
+				window: {
+					innerHeight: ###,
+					innerWidth: ###
+				}
+			]
+		}
+		*/
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] getBoundingClientRect = ', this.AnimationInnerRef.getBoundingClientRect());
+		/*
+			DOMRect: {
+				bottom: 2173,
+				height: 100,
+				left: 618,
+				right: 718,
+				top: 2073,
+				width: 100,
+				x: 618,
+				y: 2073
+			}
+		*/
+		const top = this.AnimationInnerRef.getBoundingClientRect().top;
+		const height = this.AnimationInnerRef.getBoundingClientRect().height;
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] Top = ', top);
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] Top + Height = ', top + height);
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] innerHeight = ', window.innerHeight);
+		let innerHeight = event.path[1].innerHeight;
+		//let innerWidth = event.path[1].innerWidth;
+		if (this.amIVisible(innerHeight, top, height)) this.triggerEntranceAnimation();
+		else if (!this.amIVisible(innerHeight, top, height) && this.state.entrance) this.triggerExitAnimation();
+	}
+	//*** FUNCIONES ***
+	amIVisible = (innerHeight, top, height) => {
+		if (top >= 0 && ((top) < innerHeight && (top + height) <= innerHeight)) return true;
+		else return false;
+	}
 	//*** MÉTODOS ***
 	triggerEntranceAnimation = () => {
         this.setState({ entrance: true, exit: false });
@@ -346,7 +409,7 @@ export class Animate extends React.Component {
 	//*** RESULTADO ***
 	render() {
         return(
-            <Animation entrance={this.state.entrance} exit={this.state.exit} type={this.props.type} from={this.props.from}>
+            <Animation entrance={this.state.entrance} exit={this.state.exit} type={this.props.type} from={this.props.from} innerRef={animation => { this.AnimationInnerRef = animation; }}>
                 {this.props.children}
             </Animation>
         );

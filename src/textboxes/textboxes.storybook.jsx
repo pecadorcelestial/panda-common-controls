@@ -337,13 +337,14 @@ class TextboxStorybook extends Component {
                         <AnimationWrapper>
                         {
                             this.state.Animate ?
-                            <this.state.Animate type='zoom' executeWhen='isMounted' ref={animate => { this.AnimateRef = animate; }}>
+                            <this.state.Animate type='zoom' executeWhen='isVisible' ref={animate => { this.AnimateRef = animate; }}>
                                 <ColoredDiv/>
                             </this.state.Animate> :
                             null
                         }
                         </AnimationWrapper>
                     </Control>
+                    <div style={{ height: '2000px', width: '100%' }}/>
                 </RightColumn>
             </Layout>
         );

@@ -196,6 +196,15 @@ describe("[MÉTODOS][Componentes][Common][Animate][flip] - Valida las llamadas a
         expect(component.state().exit).toBe(true);
     });
 
+	//U   U N   N M   M  OOO  U   U N   N TTTTT
+	//U   U NN  N MM MM O   O U   U NN  N   T
+	//U   U N N N M M M O   O U   U N N N   T
+	//U   U N  NN M   M O   O U   U N  NN   T
+	// UUU  N   N M   M  OOO   UUU  N   N   T
+
+    it('Desmonta el componente.', () => {
+        component.unmount();
+    });
 });
 
 //Métodos (ANIMATE - zoom).
@@ -204,39 +213,87 @@ describe("[MÉTODOS][Componentes][Common][Animate][zoom] - Valida las llamadas a
 	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".
     //NOTA [2]: Además, con "mount" se puede utilizar el método "attachTo" para utilizar "document".
     const child = <div style={{ backgroundColor: '#8394DE', height: '100px', width: '100px' }}/>;
-    const component = enzyme.mount(<Animate type='zoom' executeWhen='onDemand'>{child}</Animate>);
+    const component = enzyme.mount(<Animate type='zoom' executeWhen='isVisible'>{child}</Animate>);
 	
 	// CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT DDDD  IIIII DDDD  M   M  OOO  U   U N   N TTTTT
 	//C     O   O MM MM P   P O   O NN  N E     NN  N   T   D   D   I   D   D MM MM O   O U   U NN  N   T
 	//C     O   O M M M PPPP  O   O N N N EEE   N N N   T   D   D   I   D   D M M M O   O U   U N N N   T
 	//C     O   O M   M P     O   O N  NN E     N  NN   T   D   D   I   D   D M   M O   O U   U N  NN   T
 	// CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   DDDD  IIIII DDDD  M   M  OOO   UUU  N   N   T
-
+    
 	//La única propiedad que se revisa en la función 'componentWillReceiveProps' es el valor por defecto.
 	it('Se verifica que la información inicial sea correcta.', () => {
 		//Expectativas.
-        expect(component.state().entrance).toBe(false);
-        expect(component.state().exit).toBe(false);
-	});
-
-    //TTTTT RRRR  IIIII  GGGG  GGGG EEEEE RRRR  EEEEE N   N TTTTT RRRR   AAA  N   N  CCCC EEEEE  AAA  N   N IIIII M   M  AAA  TTTTT IIIII  OOO  N   N
-    //  T   R   R   I   G     G     E     R   R E     NN  N   T   R   R A   A NN  N C     E     A   A NN  N   I   MM MM A   A   T     I   O   O NN  N
-    //  T   RRRR    I   G  GG G  GG EEE   RRRR  EEE   N N N   T   RRRR  AAAAA N N N C     EEE   AAAAA N N N   I   M M M AAAAA   T     I   O   O N N N
-    //  T   R   R   I   G   G G   G E     R   R E     N  NN   T   R   R A   A N  NN C     E     A   A N  NN   I   M   M A   A   T     I   O   O N  NN
-    //  T   R   R IIIII  GGGG  GGGG EEEEE R   R EEEEE N   N   T   R   R A   A N   N  CCCC EEEEE A   A N   N IIIII M   M A   A   T   IIIII  OOO  N   N
-
-    it('Debe detonar la animación de entrada.', () => {
-        //Simulación.
-        component.instance().triggerEntranceAnimation();
-        //Expectativas.
-		expect(component.state().entrance).toBe(true);
+        expect(component.state().entrance).toBe(true);
         expect(component.state().exit).toBe(false);
     });
-    it('Debe detonar la animación de salida.', () => {
-        //Simulación.
-        component.instance().triggerExitAnimation();
-        //Expectativas.
-		expect(component.state().entrance).toBe(false);
+    
+    // OOO  N   N  SSSS  CCCC RRRR   OOO  L     L
+    //O   O NN  N S     C     R   R O   O L     L
+    //O   O N N N  SSS  C     RRRR  O   O L     L
+    //O   O N  NN     S C     R   R O   O L     L
+    // OOO  N   N SSSS   CCCC R   R  OOO  LLLLL LLLLL
+
+    it('Debe detonar la animación de salida al ya no ser visible el componente.', () => {
+        //Simulación
+        //window.scrollTo({ xPos: 0 , yPos: 300 });
+        /*
+		event: {
+			path: [
+				document,
+				window: {
+					innerHeight: ###,
+					innerWidth: ###
+				}
+			]
+		}
+		*/
+        let event = {
+            path: [
+                {},
+                {
+                    innerHeight: 0,
+                    innerWidth: 100
+                }
+            ]
+        };
+        component.instance().handleScroll(event);
+		//Expectativas.
+        expect(component.state().entrance).toBe(false);
         expect(component.state().exit).toBe(true);
     });
+
+    // OOO  N   N  SSSS  CCCC RRRR   OOO  L     L
+    //O   O NN  N S     C     R   R O   O L     L
+    //O   O N N N  SSS  C     RRRR  O   O L     L
+    //O   O N  NN     S C     R   R O   O L     L
+    // OOO  N   N SSSS   CCCC R   R  OOO  LLLLL LLLLL
+
+    it('Debe simula el "scroll" otra vez pero el estado del componente no debe cambiar.', () => {
+        //Simulación
+        let event = {
+            path: [
+                {},
+                {
+                    innerHeight: 0,
+                    innerWidth: 100
+                }
+            ]
+        };
+        component.instance().handleScroll(event);
+		//Expectativas.
+        expect(component.state().entrance).toBe(false);
+        expect(component.state().exit).toBe(true);
+    });
+
+	//U   U N   N M   M  OOO  U   U N   N TTTTT
+	//U   U NN  N MM MM O   O U   U NN  N   T
+	//U   U N N N M M M O   O U   U N N N   T
+	//U   U N  NN M   M O   O U   U N  NN   T
+	// UUU  N   N M   M  OOO   UUU  N   N   T
+
+    it('Se desmonta el componente.', () => {
+        component.unmount();
+    });
+
 });
