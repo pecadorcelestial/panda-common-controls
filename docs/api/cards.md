@@ -2,7 +2,7 @@
 
 This component wraps its content in a card-like ``div`` with a ``shadow-box`` and ``border`` of 5px.
 
-## Properties, funcitons and methods
+### Properties
 
 | Name       | Type   | Optional | Comments |
 | -----------|--------|----------|----------|
