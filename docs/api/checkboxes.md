@@ -1,10 +1,23 @@
 # CheckBox
 
-## Properties, funcitons and methods
+### Properties
 
-```
-coming soon...
-```
+| Name    | Type | Required | Comments |
+| --------|------|----------|----------|
+| checked | bool | false    | Sets the initial state of the **checkbox**. |
+
+### Functions
+
+| Name     | Parameters | Type | Description |
+|----------|------------|------|-------------|
+| onChange | checked    | bool | Returns the state of the **checkbox** when it changes. |
+
+### Methods
+
+| Name     | Parameters | Type | Description |
+|----------|------------|------|-------------|
+| getValue | N/A        | N/A  | Returns the state of the **checkbox** when it changes. |
+| setValue | value      | bool | Changes the value of the **checkbox**. |
 
 ## Usage
 

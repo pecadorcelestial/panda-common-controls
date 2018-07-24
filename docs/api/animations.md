@@ -8,28 +8,28 @@ As for now, there are only 2 components inside the **animations** part of the li
 
 ### Properties
 
-| Name        | Type   | Optional | Comments |
+| Name        | Type   | Required | Comments |
 | ------------|--------|----------|----------|
-| size        | object | false    | Object that needs to contain the ``height`` and the ``width`` of the component. |
-| size.height | number | false    | Sets the heigth of the _spinner_. |
-| size.width  | number | false    | Sets the width of the _spinner_.  |
+| size        | object | true     | Object that needs to contain the ``height`` and the ``width`` of the component. |
+| size.height | number | true     | Sets the heigth of the _spinner_. |
+| size.width  | number | true     | Sets the width of the _spinner_.  |
 
 ## Animate
 
 ### Properties
 
-| Name        | Type   | Optional | Comments |
+| Name        | Type   | Required | Comments |
 | ------------|--------|----------|----------|
-| type        | string | false    | It describes the animation style: a)``fade``, b)``flip`` and c)``zoom``. |
-| from        | string | false    | Sets the animation direction. <br/>For **fade**:<ul><li>``left``</li><li>``right``</li><li>``top``</li><li>``bottom``</li></ul>For **flip**:<ul><li>``vertical``</li><li>``horizontal``</li></ul> |
-| executeWhen | string | true     | Sets when the animation should be triggered. <ul><li>``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively.</li><li>``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively.</li></ul>_Note: By default the ``onDemand`` option can be use, just add a **reference** to the declaration of the animation and call the **trigger** methods._|
+| type        | string | true     | It describes the animation style: a)``fade``, b)``flip`` and c)``zoom``. |
+| from        | string | true     | Sets the animation direction. <br/>For **fade**:<ul><li>``left``</li><li>``right``</li><li>``top``</li><li>``bottom``</li></ul>For **flip**:<ul><li>``vertical``</li><li>``horizontal``</li></ul> |
+| executeWhen | string | false    | Sets when the animation should be triggered. <ul><li>``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively.</li><li>``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively.</li></ul>_Note: By default the ``onDemand`` option can be use, just add a **reference** to the declaration of the animation and call the **trigger** methods._|
 
 ### Methods
 
-| Name                     | Parameters | Description |
-|--------------------------|------------|-------------|
-| triggerEntranceAnimation | N/A        | Triggers the _entrance_ animation... obviously. |
-| triggerExitAnimation     | N/A        | Triggers the _exit_ animation... also obvious. |
+| Name                     | Parameters | Type | Description |
+|--------------------------|------------|------|-------------|
+| triggerEntranceAnimation | N/A        | N/A  | Triggers the _entrance_ animation... obviously. |
+| triggerExitAnimation     | N/A        | N/A  | Triggers the _exit_ animation... also obvious. |
 
 ## Usage
 

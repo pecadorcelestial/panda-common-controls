@@ -92,6 +92,10 @@ export class CheckBox extends Component {
 }
 
 CheckBox.propTypes = {
-    checked: PropTypes.bool.isRequired,
+    checked: PropTypes.bool,
     onChange: PropTypes.func
+};
+
+CheckBox.defaultProps = {
+    checked: false
 };

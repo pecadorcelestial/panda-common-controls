@@ -1,10 +1,14 @@
 # Button
 
-## Properties, funcitons and methods
+### Properties
 
-```
-coming soon...
-```
+| Name  | Type   | Required | Comments |
+| ------|--------|----------|----------|
+| theme | string | false     | Sets the theme (color scheme) for the button, these are the options currently available: ``main``*, ``secondary``, ``flat``, ``blue`` and ``flatBlue``. |
+| size  | string | false     | Sets the size of the button, 3 options are available: ``small``*, ``medium`` and ``big``. |
+
+**\*** _default_ value.
+_Note: The **style** values for **width** and **float** can be overriden._
 
 ## Usage
 
