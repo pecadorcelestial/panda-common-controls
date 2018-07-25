@@ -8,7 +8,7 @@
     "prebuild": "npm run clean",
     "build": "babel src --out-dir lib --ignore **/*.test.js,app.js,client.js",
     "prepublishOnly": "npm run test && npm run build",
-    "test": "jest --coverage",
+    "test": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -41,6 +41,7 @@
     "babel-register": "6.26.0",
     "babel-runtime": "6.26.0",
     "clean-webpack-plugin": "0.1.19",
+    "coveralls": "^3.0.2",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-16": "1.1.1",
     "jest": "23.4.0",
