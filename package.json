@@ -8,7 +8,7 @@
     "prebuild": "npm run clean",
     "build": "babel src --out-dir lib --ignore **/*.test.js,app.js,client.js",
     "prepublishOnly": "npm run test && npm run build",
-    "test": "jest --coverage",
+    "test": "jest --coverage | coveralls",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
