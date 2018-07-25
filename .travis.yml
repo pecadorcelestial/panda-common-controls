@@ -4,7 +4,7 @@ node_js:
   - "8"
 
 after_success: 
-  - CI=true TRAVIS=true coveralls --verbose
+  - coveralls
 
 notifications:
   email:
