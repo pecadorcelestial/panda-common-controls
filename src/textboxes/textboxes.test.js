@@ -707,8 +707,8 @@ describe('[FLUJO][Componentes][Common][BasicTextBox] - Validar el evento "KeyPre
 	});
 });
 
-//Flujo #5 (Mostrar/Ocultar Contraseña).
-describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar / ocultar contraseña.", () => {
+//Flujo #5 (Mostrar/Ocultar Contraseña)(Habilitado).
+describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar / ocultar contraseña (habilitado).", () => {
 	//Eventos (por pasos):
 	//1. onMouseDown - para mostrar la contraseña.
 	//2. onMouseUp   - para ocultarla.
@@ -747,16 +747,23 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".
 	//NOTA [2]: Además, con "mount" se puede utilizar el método "attachTo" para utilizar "document".
 	const component = enzyme.mount(<BasicTextBox {...textboxProps}/>);
-    const input = component.find('input[type="password"]');
-    const button = component.find('button');
+    let input = component.find('input[type="password"]');
+    let svgButton = component.find('svg');
     //Expectativas.
     it('Se revisa que el tipo el "input" sea contraseña.', () => {
         expect(input.instance().type).toEqual('password');
     });
     it('Se revisa que exista 1 objeto tipo "input".', () => {
-        expect(button).toHaveLength(1);
-    });
-
+		expect(svgButton).toHaveLength(1);
+		expect(svgButton.props().disabled).toBe(false);
+	});
+	
+	//EEEEE N   N  AAA  BBBB  L     EEEEE DDDD
+	//E     NN  N A   A B   B L     E     D   D
+	//EEE   N N N AAAAA BBBB  L     EEE   D   D
+	//E     N  NN A   A B   B L     E     D   D
+	//EEEEE N   N A   A BBBB  LLLLL EEEEE DDDD
+	
 	// OOO  N   N M   M  OOO  U   U  SSSS EEEEE DDDD   OOO  W   W N   N
 	//O   O NN  N MM MM O   O U   U S     E     D   D O   O W   W NN  N
 	//O   O N N N M M M O   O U   U  SSS  EEE   D   D O   O W W W N N N
@@ -765,7 +772,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 
 	it('Debe cambiar el tipo del componente "input" a texto [onMouseDown].', () => {
 		//Simulación.
-		button.simulate('mousedown', {});
+		svgButton.simulate('mousedown', {});
 		//Expectativa #2.
 		expect(input.instance().type).toEqual('text');
 	});
@@ -778,7 +785,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 
 	it('Debe cambiar el tipo del componente "input" a contraseña [onMouseUp].', () => {
 		//Simulación.
-		button.simulate('mouseup', {});
+		svgButton.simulate('mouseup', {});
 		//Expectativa.
 		expect(input.instance().type).toEqual('password');
 	});
@@ -791,7 +798,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 
 	it('Debe cambiar el tipo del componente "input" a texto otra vez [onMouseDown].', () => {
 		//Simulación.
-		button.simulate('mousedown', {});
+		svgButton.simulate('mousedown', {});
 		//Expectativa.
 		expect(input.instance().type).toEqual('text');
 	});
@@ -802,9 +809,9 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 	//O   O N  NN M   M O   O U   U     S E     O   O U   U   T
 	// OOO  N   N M   M  OOO   UUU  SSSS  EEEEE  OOO   UUU    T
 
-	it('Debe cambiar el tipo del componente "input" a contraseña otra vez [onMouseOut].', () => {
+	it('Debe cambiar el tipo del componente "input" a contraseña otra vez [onMouseLeave].', () => {
 		//Simulación.
-		button.simulate('mouseout', {});
+		svgButton.simulate('mouseleave', {});
 		//Expectativa.
 		expect(input.instance().type).toEqual('password');
     });
@@ -823,7 +830,7 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 
 	it('Debe cambiar el tipo del componente "input" a texto [onTouchStart].', () => {
 		//Simulación.
-		button.simulate('touchstart', {});
+		svgButton.simulate('touchstart', {});
 		//Expectativa #2.
 		expect(input.instance().type).toEqual('text');
 	});
@@ -836,14 +843,65 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 
 	it('Debe cambiar el tipo del componente "input" a contraseña otra vez [onTouchEnd].', () => {
 		//Simulación.
-		button.simulate('touchend', {});
+		svgButton.simulate('touchend', {});
 		//Expectativa.
 		expect(input.instance().type).toEqual('password');
     });
-    
 });
 
-//Flujo #3 (Completo con referencias nulas a las funciones).
+//Flujo #6 (Mostrar/Ocultar Contraseña)(Deshabilitado).
+describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar / ocultar contraseña (deshabilitado).", () => {
+	//Eventos (por pasos):
+	//1. onMouseDown - para mostrar la contraseña.
+	//2. onMouseUp   - para ocultarla.
+	//3. onMouseDown - para volver a mostrarla.
+	//4. onMouseOut  - para ocultarla nuevamente.
+	//Funciones 'dummy'.
+	const handleOnChange = jest.fn(event => {
+		//Nada que hacer aquí.
+	});
+	const handleOnFocus = jest.fn(() => {
+		//Nada que hacer aquí.
+	});
+	const handleOnKeyPress = jest.fn(event => {
+		//Nada que hacer aquí.
+	});
+    //Propiedades.		
+    const textboxProps = {
+        //Obligatorios.
+        title: 'Contraseña',
+        error: 'El campo es requerido.',
+        maxLength: 50,
+        //Opcionales.
+        disabled: true,
+        id: 'pwd',
+        inputType: 'password',
+        valueType: 'text',
+        //Validación.
+        isRequired: true,
+        validRegEx: '',
+        //Funciones.
+        onChange: handleOnChange,
+        onFocus: handleOnFocus,
+        onKeyPress: handleOnKeyPress
+    };
+	//Se crea el componente.
+	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".
+	//NOTA [2]: Además, con "mount" se puede utilizar el método "attachTo" para utilizar "document".
+	const component = enzyme.mount(<BasicTextBox {...textboxProps}/>);
+    let input = component.find('input[type="password"]');
+    let svgButton = component.find('svg');
+    //Expectativas.
+    it('Se revisa que el tipo el "input" sea contraseña.', () => {
+        expect(input.instance().type).toEqual('password');
+    });
+    it('Se revisa que exista 1 objeto tipo "input".', () => {
+		expect(svgButton).toHaveLength(1);
+		expect(svgButton.props().disabled).toBe(true);
+	});
+});
+
+//Flujo #7 (Completo con referencias nulas a las funciones).
 describe("[FLUJO][Componentes][Common][BasicTextBox] - No se valida el campo, sólo se completa (referencias nulas).", () => {
 	//Eventos (por pasos):
 	//1. componentDidMount

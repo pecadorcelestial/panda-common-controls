@@ -3,12 +3,13 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //Componentes locales.
-import { BasicTextBox } from './textboxes';
+import { BasicTextBox } from '../textboxes/textboxes';
 import { Button } from '../buttons/buttons';
 import { BasicCard } from '../cards/cards';
 import { CheckBox } from '../checkboxes/checkboxes';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
+import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
 
 const Layout = styled.div`
     display: inline-block;
@@ -155,7 +156,7 @@ class TextboxStorybook extends Component {
             valueType: 'text',
             //Validación.
             isRequired: true,
-            validRegEx: '^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)\.([a-zA-Z]{2,4})+$',
+            validRegEx: '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$',
             //Métodos.
             customError: '',
             customValue: '',
@@ -405,6 +406,12 @@ class TextboxStorybook extends Component {
                             <Button theme='blue' size='small' onClick={(event) => { this.AnimateFadeRef.triggerExitAnimation(); this.AnimateFlipRef.triggerExitAnimation(); this.AnimateZoomRef.triggerExitAnimation(); }}>triggerExit</Button>
                         </OptionButtonWrapper>
                     </Option>
+                    <Title>Notifications:</Title>
+                    <Option>
+                        <OptionButtonWrapper>
+                            <Button theme='main' size='small' onClick={(event) => { this.ToastNotificationRef.show(); }}>Show toast</Button>
+                        </OptionButtonWrapper>
+                    </Option>
                 </LeftColumn>
                 <RightColumn>
                     <Control>
@@ -437,6 +444,8 @@ class TextboxStorybook extends Component {
                     </Control>
                     <div style={{ height: '2000px', width: '100%' }}/>
                 </RightColumn>
+                {/* NOTIFICACIONES */}
+                <ToastNotifiaction notificationType='success' from='bottom' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.ToastNotificationRef = notification; }}/>
             </Layout>
         );
     }

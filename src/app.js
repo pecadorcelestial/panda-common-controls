@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
 //Componentes locales.
-import TextboxStorybook from './textboxes/textboxes.storybook';
+import TextboxStorybook from './storybooks/textboxes.storybook';
 
 const Home = (props) => {
     return(<div>¡Hola mundo!</div>);
