@@ -13,6 +13,7 @@ It contains some "fancy looking" components like:
 - Checkbox
 - Dropdown List
 - TextBox (an input tag with a little more functionality)
+- Toast Notifications
 
 These components where created using the [styled-componets](https://www.styled-components.com/) library.
 
@@ -43,8 +44,10 @@ This will install the following files into your project:
     |     |       └── checkboxes.js
     |     ├── dropdownlists
     |     |       └── dropdownlists.js
-    |     └── textboxes
-    |             └── textboxes.js
+    |     ├── textboxes
+    |     |       └── textboxes.js
+    |     └── toastnotifications
+|             └── toastnotifications.js
     ├── index.js
     ├── package.json
     └── README.md

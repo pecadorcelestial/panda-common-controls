@@ -408,8 +408,23 @@ export class Animate extends React.Component {
     }
 	//*** RESULTADO ***
 	render() {
+
+		//PPPP  RRRR   OOO  PPPP  IIIII EEEEE DDDD   AAA  DDDD  EEEEE  SSSS
+		//P   P R   R O   O P   P   I   E     D   D A   A D   D E     S
+		//PPPP  RRRR  O   O PPPP    I   EEE   D   D AAAAA D   D EEE    SSS
+		//P     R   R O   O P       I   E     D   D A   A D   D E         S
+		//P     R   R  OOO  P     IIIII EEEEE DDDD  A   A DDDD  EEEEE SSSS
+		
+		const animationProps = {
+			entrance: this.state.entrance,
+			exit: this.state.exit,
+			type: this.props.type,
+			from: this.props.from,
+			innerRef: animation => { this.AnimationInnerRef = animation; }
+		};
+
         return(
-            <Animation entrance={this.state.entrance} exit={this.state.exit} type={this.props.type} from={this.props.from} innerRef={animation => { this.AnimationInnerRef = animation; }}>
+            <Animation {...animationProps}>
                 {this.props.children}
             </Animation>
         );

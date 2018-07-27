@@ -11,6 +11,8 @@ import { BasicSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
 import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
 
+import { Calendar } from '../calendar/calendar';
+
 const Layout = styled.div`
     display: inline-block;
     height: auto;
@@ -420,6 +422,9 @@ class TextboxStorybook extends Component {
                                 <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
                             </CardContent>
                         </BasicCard>
+                    </Control>
+                    <Control>
+                        <Calendar selectedDate='32-11-2018' language='es-ES' minDate='07/27/2018'/>
                     </Control>
                     <Control>
                         <AnimationWrapper>
