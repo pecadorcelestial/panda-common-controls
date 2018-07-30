@@ -19,11 +19,15 @@ const notificationIcon = theme('type', {
 });
 
 const show = (from) => keyframes`
-	from {
+	0% {
 		${from}: -100%;
 		opacity: 0;
 	}
-  	to {
+	90% {
+		${from}: 50px;
+		opacity: 1;
+	}
+  	100% {
 		${from}: 30px;
 		opacity: 1;
 	}
@@ -57,7 +61,6 @@ const Layout = styled.div`
 	
     ${props => props.show ? `animation: ${show(props.from)} 0.6s ease forwards;` : ``}
     ${props => props.hide ? `animation: ${hide(props.from)} 0.6s ease forwards;` : ``}
-	
 	
 	@media screen and (max-width: 767px) {
 		border-radius: 0px;

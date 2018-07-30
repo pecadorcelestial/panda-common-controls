@@ -235,6 +235,10 @@ const FadeIn = (from) => keyframes`
         ${from}: -100%;
         opacity: 0;
     }
+	90% { 
+        ${from}: 10px;
+        opacity: 1;
+    }
 	100% { 
         ${from}: 0px;
         opacity: 1;
@@ -262,7 +266,11 @@ const FlipIn = (from) => keyframes`
     0% {
         opacity: 0;
         transform: rotate${from == 'vertical' ? `X` : `Y`}(90deg);
-    }
+	}
+	90% {
+		opacity: 1;
+		transform: rotate${from == 'vertical' ? `X` : `Y`}(-20deg);
+	}
     100% {
         opacity: 1;
         transform: rotate${from == 'vertical' ? `X` : `Y`}(0deg);
@@ -290,7 +298,11 @@ const ZoomIn = () => keyframes`
     0% {
         opacity: 0;
         transform: scale(0);
-    }
+	}
+	90% {
+		opacity: 1;
+        transform: scale(1.1);
+	}
     100% {
         opacity: 1;
         transform: scale(1);
@@ -318,8 +330,8 @@ const Animation = styled.div`
     position: absolute;
     width: auto;
 
-    ${props => props.entrance ? `animation: ${getEntranceAnimation(props.type, props.from)} 1s ease forwards;` : ``}
-    ${props => props.exit ? `animation: ${getExitAnimation(props.type, props.from)} 1s ease forwards;` : ``}
+    ${props => props.entrance ? `animation: ${getEntranceAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
+    ${props => props.exit ? `animation: ${getExitAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
 `;
 
 export class Animate extends React.Component {

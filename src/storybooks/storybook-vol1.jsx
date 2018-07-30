@@ -8,8 +8,6 @@ import { Button } from '../buttons/buttons';
 import { BasicCard } from '../cards/cards';
 import { CheckBox } from '../checkboxes/checkboxes';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
-import { Loading, Animate } from '../animations/animations';
-import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
 
 import { Calendar } from '../calendar/calendar';
 
@@ -57,14 +55,6 @@ const CardContent = styled.div`
     margin: 0px;
     padding: 20px;
     width: 100%;
-`;
-
-const AnimationWrapper = styled.div`
-    height: 100px;
-    margin: 10px 0px 0px 0px;
-    padding: 0px;
-    position: relative;
-    width: 100px;
 `;
 
 const Option = styled.div`
@@ -136,13 +126,7 @@ const OptionButtonWrapper = styled.div`
     width: auto;
 `;
 
-const ColoredDiv = styled.div`
-    background-color: ${props => props.color};
-    height: 100px;
-    width: 100px;
-`;
-
-class TextboxStorybook extends Component {
+class StorybookVol1 extends Component {
     constructor() {
         super();
         this.state = {
@@ -161,18 +145,11 @@ class TextboxStorybook extends Component {
             validRegEx: '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$',
             //Métodos.
             customError: '',
-            customValue: '',
-            //Animaciones.
-            fadeFrom: 'right',
-            flipFrom: 'vertical',
-            //Componentes "dinámicos"
-            Animate: undefined
+            customValue: ''
         };
     }
     componentDidMount() {
-        const { Animate } = require('../animations/animations');
-        //console.log('[STORYBOOK][TEXTBOOK][componentDidMount] Animate: ', Animate);
-        this.setState({ Animate });
+       
     }
     render() {
 
@@ -213,36 +190,6 @@ class TextboxStorybook extends Component {
             {
                 id: 'text',
                 description: 'Text'
-            }
-        ];
-
-        const fadeFromOptions = [
-            {
-                id: 'left',
-                description: 'Left'
-            },
-            {
-                id: 'right',
-                description: 'Right'
-            },
-            {
-                id: 'top',
-                description: 'Top'
-            },
-            {
-                id: 'bottom',
-                description: 'Bottom'
-            }
-        ];
-
-        const flipFromOptions = [
-            {
-                id: 'vertical',
-                description: 'Vertical'
-            },
-            {
-                id: 'horizontal',
-                description: 'Horizontal'
             }
         ];
 
@@ -290,32 +237,6 @@ class TextboxStorybook extends Component {
             options: valueTypes,
             selectedOption: this.state.valueType,
             onChange: (event) => { this.setState({ valueType: event.target.value }); },
-            id: '',
-            placeHolder: 'Select a type',
-            disabled: false,
-            isRequired: false,
-            idIsNumeric: false
-        };
-
-        const fadeFromProps = {
-            title: 'Fade animation (from):',
-            error: 'You must select an option.',
-            options: fadeFromOptions,
-            selectedOption: this.state.fadeFrom,
-            onChange: (event) => { this.setState({ fadeFrom: event.target.value }); },
-            id: '',
-            placeHolder: 'Select a type',
-            disabled: false,
-            isRequired: false,
-            idIsNumeric: false
-        };
-
-        const flipFromProps = {
-            title: 'Flip animation (from):',
-            error: 'You must select an option.',
-            options: flipFromOptions,
-            selectedOption: this.state.flipFrom,
-            onChange: (event) => { this.setState({ flipFrom: event.target.value }); },
             id: '',
             placeHolder: 'Select a type',
             disabled: false,
@@ -390,30 +311,6 @@ class TextboxStorybook extends Component {
                             <Button theme='blue' size='small' onClick={(event) => { this.TextBoxRef.setValue(this.state.customValue); }}>setValue</Button>
                         </OptionButtonWrapper>
                     </Option>
-                    <Title>Animations:</Title>
-                    <Option>
-                        <Loading size={{ height: 60, width: 60 }}/>
-                    </Option>
-                    <Option>
-                        <BasicSelect {...fadeFromProps}/>
-                    </Option>
-                    <Option>
-                        <BasicSelect {...flipFromProps}/>
-                    </Option>
-                    <Option>
-                        <OptionButtonWrapper>
-                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateFadeRef.triggerEntranceAnimation(); this.AnimateFlipRef.triggerEntranceAnimation(); this.AnimateZoomRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
-                        </OptionButtonWrapper>
-                        <OptionButtonWrapper>
-                            <Button theme='blue' size='small' onClick={(event) => { this.AnimateFadeRef.triggerExitAnimation(); this.AnimateFlipRef.triggerExitAnimation(); this.AnimateZoomRef.triggerExitAnimation(); }}>triggerExit</Button>
-                        </OptionButtonWrapper>
-                    </Option>
-                    <Title>Notifications:</Title>
-                    <Option>
-                        <OptionButtonWrapper>
-                            <Button theme='main' size='small' onClick={(event) => { this.ToastNotificationRef.show(); }}>Show toast</Button>
-                        </OptionButtonWrapper>
-                    </Option>
                 </LeftColumn>
                 <RightColumn>
                     <Control>
@@ -423,37 +320,10 @@ class TextboxStorybook extends Component {
                             </CardContent>
                         </BasicCard>
                     </Control>
-                    <Control>
-                        <Calendar selectedDate='32-11-2018' language='es-ES' minDate='07/27/2018'/>
-                    </Control>
-                    <Control>
-                        <AnimationWrapper>
-                            <Animate type='fade' from={this.state.fadeFrom} executeWhen='isVisible' ref={animate => { this.AnimateFadeRef = animate; }}>
-                                <ColoredDiv color='#800080'/>
-                            </Animate>
-                        </AnimationWrapper>
-                    </Control>
-                    <Control>
-                        <AnimationWrapper>
-                            <Animate type='flip' from={this.state.flipFrom} executeWhen='isVisible' ref={animate => { this.AnimateFlipRef = animate; }}>
-                                <ColoredDiv color='#FF0033'/>
-                            </Animate>
-                        </AnimationWrapper>
-                    </Control>
-                    <Control>
-                        <AnimationWrapper>
-                            <Animate type='zoom' executeWhen='isVisible' ref={animate => { this.AnimateZoomRef = animate; }}>
-                                <ColoredDiv color='#00FF7F'/>
-                            </Animate>
-                        </AnimationWrapper>
-                    </Control>
-                    <div style={{ height: '2000px', width: '100%' }}/>
                 </RightColumn>
-                {/* NOTIFICACIONES */}
-                <ToastNotifiaction notificationType='success' from='bottom' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.ToastNotificationRef = notification; }}/>
             </Layout>
         );
     }
 }
 
-export default TextboxStorybook;
+export default StorybookVol1;
