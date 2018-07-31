@@ -4,9 +4,6 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styled-theming';
 
-//Funciones.
-import { getMonthName, getAllDaysInMonth } from '../scripts/date-functions';
-
 const headerBackgroundColor = theme('theme', {
     default: '#1476FB'
 });
@@ -31,7 +28,7 @@ const Layout = styled.div`
 const Header = styled.div`
     background-color: ${headerBackgroundColor};
     box-sizing: border-box;
-    height: 60px;
+    height: 35px;
     margin: 0px;
     padding: 5px;
     position: relative;
@@ -39,62 +36,21 @@ const Header = styled.div`
     width: 100%;
 `;
 
-const MonthYearButton = styled.button`
+const Title = styled.label`
     background-color: transparent;
     border: none;
-    border-radius: 5px;
     box-sizing: border-box;
     color: ${headerFontColor};
-    cursor: pointer;
+    display: inline-block;
     font-family: Open Sans;
     font-size: 14px;
     font-weight: bold;
     height: 25px;
     margin: 0px 0px 5px 0px;
-    padding: 2px 15px;
+    padding: 3px 15px;
     width: auto;
-    
-    &:hover {
-        background-color: ${headerButtonsHover};
-        text-decoration: none;
-    }
-    
-	&:focus {
-		outline: none;
-	}
 `;
 
-const Row = styled.div`
-    display: flex;
-    height: auto;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-`;
-
-const WeekDayName = styled.label`
-    box-sizing: border-box;
-    color: ${headerFontColor};
-    font-family: Open Sans;
-    font-size: 12px;
-    font-weight: bold;
-    height: 20px;
-    margin: 0px;
-    padidng: 2px;
-    width: 20px;
-`;
-
-/*
-background: repeating-linear-gradient(
-    45deg,
-    #999,
-    #999 10px,
-    #555 10px,
-    #555 20px
-);
-*/
-//135px
 const Body = styled.div`
     background-color: #FFF;
     box-sizing: border-box;
@@ -152,43 +108,41 @@ const Next = styled.button`
 	}
 `;
 
-export default class Month extends Component {
+export default class Years extends Component {
     //*** CONSTRUCTOR ***
     constructor(props) {
         super(props);
-        //NOTA: Los meses comienzan en 0, enero = 0.
-        const month = getMonthName(this.props.selectedDate, this.props.language);
-        //Listado con los días del mes.
-        const days = getAllDaysInMonth(this.props.selectedDate);
-        //Se inicializa el estado interno.
+        let currentYear = this.props.selectedDate.getFullYear();
+        let firstYear = Math.floor(currentYear / 10) * 10;
+        let years = [];
+        for(let i=0; i<10; i++) {
+            years.push(firstYear + i);
+        }
         this.state = {
-            innerDate: this.props.selectedDate,
-            month,
-            days
+            years
         };
     }
-    //*** FUNCIONES ***
-    updateMonth = (date) => {
-        const month = getMonthName(date, this.props.language);
-        const days = getAllDaysInMonth(date);
-        this.setState({ innerDate: date, month, days });
-    }
     //*** HANDLERS ***
-    handleNextMonthOnClick = (event) => {
-        let nextMonth = new Date(this.state.innerDate);
-        nextMonth.setMonth(nextMonth.getMonth() + 1);
-        this.updateMonth(nextMonth);
+    handlePreviousYearsRangeOnClick = (event) => {
+        let firstYear = this.state.years[0] - 10;
+        let years = [];
+        for(let i=0; i<10; i++) {
+            years.push(firstYear + i);
+        }
+        this.setState({ years });
     }
-    handlePreviousMonthOnClick = (event) => {
-        let previousMonth = new Date(this.state.innerDate);
-        previousMonth.setMonth(previousMonth.getMonth() - 1);
-        this.updateMonth(previousMonth);
+    handleNextYearsRangeOnClick = (event) => {
+        let firstYear = this.state.years[0] + 10;
+        let years = [];
+        for(let i=0; i<10; i++) {
+            years.push(firstYear + i);
+        }
+        this.setState({ years });
     }
-    handleDayOnClick = (event, day) => {
-        event.preventDefault();
-        this.setState({ innerDate: day }, () => {
-            this.props.onChange(day);
-        });
+    handleYearOnClick = (event, year) => {
+        let date = new Date(this.props.selectedDate);
+        date.setFullYear(year);
+        this.props.onChange(date);
     }
     //*** RESULTADO ***
     render() {
@@ -196,36 +150,24 @@ export default class Month extends Component {
             <ThemeProvider theme={{ theme: this.props.theme }}>
                 <Layout>
                     <Header>
-                        <MonthYearButton type='button' onClick={() => this.props.monthOnClick()}>{`${this.state.month} ${this.state.innerDate.getFullYear()}`}</MonthYearButton>
-                        <Previous onClick={this.handlePreviousMonthOnClick}/>
-                        <Next onClick={this.handleNextMonthOnClick}/>
-                        <Row>
-                            <WeekDayName>Do</WeekDayName>
-                            <WeekDayName>Lu</WeekDayName>
-                            <WeekDayName>Ma</WeekDayName>
-                            <WeekDayName>Mi</WeekDayName>
-                            <WeekDayName>Ju</WeekDayName>
-                            <WeekDayName>Vi</WeekDayName>
-                            <WeekDayName>Sa</WeekDayName>
-                        </Row>
+                        <Title>{`${this.state.years[0]} - ${this.state.years[9]}`}</Title>
+                        <Previous onClick={this.handlePreviousYearsRangeOnClick}/>
+                        <Next onClick={this.handleNextYearsRangeOnClick}/>
                     </Header>
                     <Body>
                         {
-                            this.state.days.length > 0 ?
-                            this.state.days.map((day, index) => {
-                                const selected = day.getDate() === this.props.selectedDate.getDate() && day.getMonth() === this.props.selectedDate.getMonth();
-                                const different = day.getMonth() !== this.state.innerDate.getMonth();
-                                const disabled = (this.props.minDate && day < this.props.minDate);
-                                const state = selected ? 'selected' : (different ? 'different' : (disabled ? 'disabled' : 'normal'));
-                                const dayProps = {
-                                    key: `day-${day.getDate()}-${index}`,
+                            this.state.years.map((year, index) => {
+                                const selected = year === this.props.selectedDate.getFullYear();
+                                const disabled = (this.props.minDate && year < this.props.minDate.getFullYear());
+                                const state = selected ? 'selected' : (disabled ? 'disabled' : 'normal');
+                                const yearProps = {
+                                    key: `year-${year}-${index}`,
                                     state,
                                     disabled,
-                                    onClick: (event) => this.handleDayOnClick(event, day)
+                                    onClick: (event) => this.handleYearOnClick(event, year)
                                 };
-                                return(<Day type='button' {...dayProps}>{day.getDate()}</Day>);
-                            }) :
-                            null
+                                return(<Year type='button' {...yearProps}>{year}</Year>);
+                            })
                         }
                     </Body>
                 </Layout>
@@ -234,18 +176,17 @@ export default class Month extends Component {
     }
 }
 
-Month.propTypes = {
+Years.propTypes = {
     //Obligatorios.
     selectedDate: PropTypes.instanceOf(Date).isRequired,
     //Opcionales.
     language: PropTypes.string,
     minDate: PropTypes.instanceOf(Date),
     //Funciones.
-    monthOnClick: PropTypes.func.isRequired,
     onChange: PropTypes.func.isRequired
 };
 
-const getDayButtonTheme = (state) => {
+const getYearButtonTheme = (state) => {
     switch(state) {
         case 'selected':
             return `
@@ -297,9 +238,9 @@ const getDayButtonTheme = (state) => {
     }
 }
 
-const Day = styled.button`
+const Year = styled.button`
     border: none;
-    border-radius: 50%;
+    border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
     font-family: Open Sans;
@@ -308,15 +249,15 @@ const Day = styled.button`
     height: 25px;
     margin: 0px;
     padding: 0px;
-    width: 25px;
+    width: 50%;
     
-    ${props => getDayButtonTheme(props.state)}
+    ${props => getYearButtonTheme(props.state)}
 
     &:focus {
 		outline: none;
 	}
 `;
 
-Day.propTypes = {
+Year.propTypes = {
     state: PropTypes.oneOf(['normal', 'selected', 'different', 'disabled']).isRequired
 };
