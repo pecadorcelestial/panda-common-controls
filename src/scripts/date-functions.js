@@ -12,21 +12,6 @@ export const getMonthName = (date, language) => {
     return month;
 };
 
-//Descripción: Devuelve un arreglo con los nombres de los 12 meses del año en el idioma seleccionado.
-//Parámetros:
-//      language: Lenguaje en el que se desea obtener los nombres (p. ej.: 'es-ES').
-//Resultado: Un arreglo de cadenas de texto con los nombres de los 12 meses.
-export const getAllMonthsName = (language) => {
-    let months = [];
-    let date = new Date();
-    for(let i=0; i<12; i++) {
-        date.setMonth(i);
-        let monthName = getMonthName(date, language);
-        months.push(monthName);
-    }
-    return months;
-};
-
 //Descripción: Devuelve un arreglo con todos los días del mes pedido.
 //Parámetros:
 //      date: Objeto tipo Date del que se obtendran los días.

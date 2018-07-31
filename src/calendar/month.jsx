@@ -157,12 +157,11 @@ export default class Month extends Component {
     constructor(props) {
         super(props);
         //NOTA: Los meses comienzan en 0, enero = 0.
-        const month = getMonthName(this.props.selectedDate, this.props.language);
+        const month = getMonthName(this.props.innerDate, this.props.language);
         //Listado con los días del mes.
-        const days = getAllDaysInMonth(this.props.selectedDate);
+        const days = getAllDaysInMonth(this.props.innerDate);
         //Se inicializa el estado interno.
         this.state = {
-            innerDate: this.props.selectedDate,
             month,
             days
         };
@@ -171,24 +170,24 @@ export default class Month extends Component {
     updateMonth = (date) => {
         const month = getMonthName(date, this.props.language);
         const days = getAllDaysInMonth(date);
-        this.setState({ innerDate: date, month, days });
+        this.setState({ month, days }, () => {
+            this.props.onInnerChange(date);
+        });
     }
     //*** HANDLERS ***
     handleNextMonthOnClick = (event) => {
-        let nextMonth = new Date(this.state.innerDate);
+        let nextMonth = new Date(this.props.innerDate);
         nextMonth.setMonth(nextMonth.getMonth() + 1);
         this.updateMonth(nextMonth);
     }
     handlePreviousMonthOnClick = (event) => {
-        let previousMonth = new Date(this.state.innerDate);
+        let previousMonth = new Date(this.props.innerDate);
         previousMonth.setMonth(previousMonth.getMonth() - 1);
         this.updateMonth(previousMonth);
     }
     handleDayOnClick = (event, day) => {
         event.preventDefault();
-        this.setState({ innerDate: day }, () => {
-            this.props.onChange(day);
-        });
+        this.props.onChange(day);
     }
     //*** RESULTADO ***
     render() {
@@ -196,7 +195,7 @@ export default class Month extends Component {
             <ThemeProvider theme={{ theme: this.props.theme }}>
                 <Layout>
                     <Header>
-                        <MonthYearButton type='button' onClick={() => this.props.monthOnClick()}>{`${this.state.month} ${this.state.innerDate.getFullYear()}`}</MonthYearButton>
+                        <MonthYearButton type='button' onClick={() => this.props.monthOnClick()}>{`${this.state.month} ${this.props.innerDate.getFullYear()}`}</MonthYearButton>
                         <Previous onClick={this.handlePreviousMonthOnClick}/>
                         <Next onClick={this.handleNextMonthOnClick}/>
                         <Row>
@@ -213,8 +212,8 @@ export default class Month extends Component {
                         {
                             this.state.days.length > 0 ?
                             this.state.days.map((day, index) => {
-                                const selected = day.getDate() === this.props.selectedDate.getDate() && day.getMonth() === this.props.selectedDate.getMonth();
-                                const different = day.getMonth() !== this.state.innerDate.getMonth();
+                                const selected = day.getDate() === this.props.selectedDate.getDate() && day.getMonth() === this.props.selectedDate.getMonth() && day.getFullYear() === this.props.selectedDate.getFullYear();
+                                const different = day.getMonth() !== this.props.innerDate.getMonth();
                                 const disabled = (this.props.minDate && day < this.props.minDate);
                                 const state = selected ? 'selected' : (different ? 'different' : (disabled ? 'disabled' : 'normal'));
                                 const dayProps = {
@@ -242,7 +241,8 @@ Month.propTypes = {
     minDate: PropTypes.instanceOf(Date),
     //Funciones.
     monthOnClick: PropTypes.func.isRequired,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,            //Función que detona el cambio en la selección de fecha, esta devuelve el resultado general.
+    onInnerChange: PropTypes.func.isRequired        //Función que cambia la fecha interna, sólo para rastreo.
 };
 
 const getDayButtonTheme = (state) => {

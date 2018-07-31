@@ -5,7 +5,7 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styled-theming';
 
 //Funciones.
-import { getAllMonthsName } from '../scripts/date-functions';
+import { getMonthName } from '../scripts/date-functions';
 
 const headerBackgroundColor = theme('theme', {
     default: '#1476FB'
@@ -75,6 +75,7 @@ const Body = styled.div`
 
 export default class Months extends Component {
     //*** CONSTRUCTOR ***
+    /*
     constructor(props) {
         super(props);
         let months = getAllMonthsName(this.props.language);
@@ -82,25 +83,30 @@ export default class Months extends Component {
             months
         };
     }
+    */
     //*** HANDLERS ***
     handleMonthOnClick = (event, month) => {
-        let date = new Date(this.props.selectedDate);
+        let date = new Date(this.props.innerDate);
         date.setMonth(month);
         this.props.onChange(date);
     }
     //*** RESULTADO ***
     render() {
+        const months = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
         return(
             <ThemeProvider theme={{ theme: this.props.theme }}>
                 <Layout>
                     <Header>
-                        <YearButton type='button' onClick={() => this.props.yearOnClick()}>{`${this.props.selectedDate.getFullYear()}`}</YearButton>
+                        <YearButton type='button' onClick={() => this.props.yearOnClick()}>{`${this.props.innerDate.getFullYear()}`}</YearButton>
                     </Header>
                     <Body>
                         {
-                            this.state.months.map((month, index) => {
-                                const selected = index === this.props.selectedDate.getMonth();
-                                const disabled = false;
+                            months.map((month, index) => {
+                                let date = new Date();
+                                date.setMonth(month, 1);
+                                date.setFullYear(this.props.innerDate.getFullYear());
+                                const selected = (month === this.props.selectedDate.getMonth() && date.getFullYear() === this.props.selectedDate.getFullYear());
+                                const disabled = (this.props.minDate && (month < this.props.minDate.getMonth() && date.getFullYear() <= this.props.minDate.getFullYear()));
                                 const state = selected ? 'selected' : (disabled ? 'disabled' : 'normal');
                                 const monthProps = {
                                     key: `month-${month}-${index}`,
@@ -108,7 +114,7 @@ export default class Months extends Component {
                                     disabled,
                                     onClick: (event) => this.handleMonthOnClick(event, index)
                                 };
-                                return(<Month type='button' {...monthProps}>{month}</Month>);
+                                return(<Month type='button' {...monthProps}>{getMonthName(date)}</Month>);
                             })
                         }
                     </Body>

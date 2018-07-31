@@ -30,7 +30,8 @@ export class Calendar extends Component {
         //Se configura el estado inicial.
         this.state = {
             mode: 'month',
-            selectedDate,
+            selectedDate,               //Fecha seleccionada, se inicializa con la fecha proporcionada en las propiedades.
+            innerDate: selectedDate,    //Fecha interna, se utiliza para todas las modificaciones en meses y años, es decir, es de uso intero hasta seleccionar una fecha final.
             minDate
         };
     }
@@ -45,9 +46,13 @@ export class Calendar extends Component {
     handleMonthOnClick = () => {
         this.setState({ mode: 'months' });
     }
-
+    //NOTA:Esta función se manda llamar cuando se recorre un mes hacía delante o atrás.
+    handleDayOnInnerChange = (date) => {
+        this.setState({ innerDate: date });
+    }
+    //NOTA: Es la única función que va a modificar la fecha seleccionada.
     handleDayOnChange = (date) => {
-        this.setState({ selectedDate: date }, () => {
+        this.setState({ selectedDate: date, innerDate: date }, () => {
             this.props.onChange(date);
         });
     }
@@ -59,9 +64,8 @@ export class Calendar extends Component {
     //M   M EEEEE SSSS
 
     handleMonthOnChange = (date) => { 
-        this.setState({ selectedDate: date, mode: 'month' });
+        this.setState({ innerDate: date, mode: 'month' });
     }
-
     handleYearOnClick = () => {
         this.setState({ mode: 'years' });
     }
@@ -73,7 +77,7 @@ export class Calendar extends Component {
     //A   A n   n  OOO
 
     handleYearOnChange = (date) => {
-        this.setState({ selectedDate: date, mode: 'months' });
+        this.setState({ innerDate: date, mode: 'months' });
     }
 
     //*** RESULTADO ***
@@ -88,13 +92,13 @@ export class Calendar extends Component {
         let content;
         switch(this.state.mode) {
             case 'month':
-                content = <Month {...this.props} selectedDate={this.state.selectedDate} minDate={this.state.minDate} onChange={this.handleDayOnChange} monthOnClick={this.handleMonthOnClick}/>;
+                content = <Month {...this.props} selectedDate={this.state.selectedDate} innerDate={this.state.innerDate} minDate={this.state.minDate} onChange={this.handleDayOnChange} onInnerChange={this.handleDayOnInnerChange} monthOnClick={this.handleMonthOnClick}/>;
                 break;
             case 'months':
-                content = <Months {...this.props} selectedDate={this.state.selectedDate} minDate={this.state.minDate} onChange={this.handleMonthOnChange} yearOnClick={this.handleYearOnClick}/>;
+                content = <Months {...this.props} selectedDate={this.state.selectedDate} innerDate={this.state.innerDate} minDate={this.state.minDate} onChange={this.handleMonthOnChange} yearOnClick={this.handleYearOnClick}/>;
                 break;
             case 'years':
-                content = <Years {...this.props} selectedDate={this.state.selectedDate} minDate={this.state.minDate} onChange={this.handleYearOnChange}/>;
+                content = <Years {...this.props} selectedDate={this.state.selectedDate} innerDate={this.state.innerDate} minDate={this.state.minDate} onChange={this.handleYearOnChange}/>;
                 break;
         }
 

@@ -112,7 +112,7 @@ export default class Years extends Component {
     //*** CONSTRUCTOR ***
     constructor(props) {
         super(props);
-        let currentYear = this.props.selectedDate.getFullYear();
+        let currentYear = this.props.innerDate.getFullYear();
         let firstYear = Math.floor(currentYear / 10) * 10;
         let years = [];
         for(let i=0; i<10; i++) {
