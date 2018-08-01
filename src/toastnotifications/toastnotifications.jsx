@@ -189,7 +189,7 @@ export class ToastNotifiaction extends React.Component {
 		return (
             <ThemeProvider theme={{ type: this.props.notificationType }}>
                 <Layout show={this.state.show} hide={this.state.hide} from={this.props.from} side={this.props.side}>
-                    <CloseButton onClick={(event) => {event.preventDefault(); this.setState({ show: false, hide: true });}}/>
+                    <CloseButton type='button' onClick={(event) => {this.setState({ show: false, hide: true });}}/>
                     <LeftColumn>
                         <Icon/>
                     </LeftColumn>

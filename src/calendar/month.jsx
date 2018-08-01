@@ -186,7 +186,6 @@ export default class Month extends Component {
         this.updateMonth(previousMonth);
     }
     handleDayOnClick = (event, day) => {
-        event.preventDefault();
         this.props.onChange(day);
     }
     //*** RESULTADO ***
@@ -195,9 +194,9 @@ export default class Month extends Component {
             <ThemeProvider theme={{ theme: this.props.theme }}>
                 <Layout>
                     <Header>
-                        <MonthYearButton type='button' onClick={() => this.props.monthOnClick()}>{`${this.state.month} ${this.props.innerDate.getFullYear()}`}</MonthYearButton>
-                        <Previous onClick={this.handlePreviousMonthOnClick}/>
-                        <Next onClick={this.handleNextMonthOnClick}/>
+                        <MonthYearButton type='button' id='btn-month-year' onClick={() => this.props.monthOnClick()}>{`${this.state.month} ${this.props.innerDate.getFullYear()}`}</MonthYearButton>
+                        <Previous type='button' id='btn-previous-month' onClick={this.handlePreviousMonthOnClick}/>
+                        <Next type='button' id='btn-next-month' onClick={this.handleNextMonthOnClick}/>
                         <Row>
                             <WeekDayName>Do</WeekDayName>
                             <WeekDayName>Lu</WeekDayName>
@@ -210,7 +209,6 @@ export default class Month extends Component {
                     </Header>
                     <Body>
                         {
-                            this.state.days.length > 0 ?
                             this.state.days.map((day, index) => {
                                 const selected = day.getDate() === this.props.selectedDate.getDate() && day.getMonth() === this.props.selectedDate.getMonth() && day.getFullYear() === this.props.selectedDate.getFullYear();
                                 const different = day.getMonth() !== this.props.innerDate.getMonth();
@@ -223,8 +221,7 @@ export default class Month extends Component {
                                     onClick: (event) => this.handleDayOnClick(event, day)
                                 };
                                 return(<Day type='button' {...dayProps}>{day.getDate()}</Day>);
-                            }) :
-                            null
+                            })
                         }
                     </Body>
                 </Layout>
@@ -236,6 +233,7 @@ export default class Month extends Component {
 Month.propTypes = {
     //Obligatorios.
     selectedDate: PropTypes.instanceOf(Date).isRequired,
+    innerDate: PropTypes.instanceOf(Date).isRequired,
     //Opcionales.
     language: PropTypes.string,
     minDate: PropTypes.instanceOf(Date),

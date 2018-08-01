@@ -7,7 +7,7 @@
 //      language: Lenguaje en el que se desea obtener el nombre (p. ej.: 'es-ES').
 //Resultado: Una cadena con el nombre del mes.
 export const getMonthName = (date, language) => {
-    const locale = language || 'es-ES';
+    const locale = language || 'es-MX';
     const month = date.toLocaleString(locale, { month: 'long' });
     return month;
 };

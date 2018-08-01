@@ -98,6 +98,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
   <button
     className="c1"
     onClick={[Function]}
+    type="button"
   />
   <div
     className="c2"
@@ -226,6 +227,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
   <button
     className="c1"
     onClick={[Function]}
+    type="button"
   />
   <div
     className="c2"
@@ -349,6 +351,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
   <button
     className="c1"
     onClick={[Function]}
+    type="button"
   />
   <div
     className="c2"
@@ -480,6 +483,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (é
   <button
     className="c1"
     onClick={[Function]}
+    type="button"
   />
   <div
     className="c2"

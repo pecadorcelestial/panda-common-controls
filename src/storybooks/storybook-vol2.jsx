@@ -272,7 +272,7 @@ class StorybookVol2 extends Component {
                 </LeftColumn>
                 <RightColumn>
                     <Control>
-                        <Calendar selectedDate='08/15/2018' language='es-ES' minDate='07/27/2018' theme='default' onChange={(date) => { console.log('[STORYBOOK vol.2][render][CALENDARIO][onChange] Fecha: ', date); }}/>
+                        <Calendar selectedDate='08/15/2018' language='es-ES' theme='default' onChange={(date) => { console.log('[STORYBOOK vol.2][render][CALENDARIO][onChange] Fecha: ', date); }}/>
                     </Control>
                     <Control>
                         <AnimationWrapper>
