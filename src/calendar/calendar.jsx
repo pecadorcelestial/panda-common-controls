@@ -29,7 +29,7 @@ export class Calendar extends Component {
         if(!minDate instanceof Date || isNaN(minDate)) minDate = undefined;
         //Se configura el estado inicial.
         this.state = {
-            mode: 'month',
+            mode: this.props.mode,
             selectedDate,               //Fecha seleccionada, se inicializa con la fecha proporcionada en las propiedades.
             innerDate: selectedDate,    //Fecha interna, se utiliza para todas las modificaciones en meses y años, es decir, es de uso intero hasta seleccionar una fecha final.
             minDate
@@ -117,13 +117,15 @@ export class Calendar extends Component {
 }
 
 Calendar.propTypes = {
-    //Obligatorios.
-
     //Opcionales.
-    dateOutputFormat: PropTypes.string,
     language: PropTypes.string,
     minDate: PropTypes.string,
+    mode: PropTypes.oneOf(['month', 'months', 'years']),
     selectedDate: PropTypes.string,
     //Funciones.
     onChange: PropTypes.func.isRequired
+};
+
+Calendar.defaultProps = {
+    mode: 'month'
 };

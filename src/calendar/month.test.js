@@ -162,8 +162,10 @@ describe('[FLUJO][Componentes][Common][Month] - Mes.', () => {
 
     let previousMonthButton = component.find('button#btn-previous-month');
     let nextMonthButton = component.find('button#btn-next-month');
-    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-month-year".', () => {
+    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-previous-month".', () => {
         expect(previousMonthButton).toHaveLength(1);
+    });
+    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-next-month".', () => {
         expect(nextMonthButton).toHaveLength(1);
     });
 	it('Debe mandar llamar la función "handleMonthOnClick" que se pasa como propiedad.', () => {

@@ -151,8 +151,8 @@ export default class Years extends Component {
                 <Layout>
                     <Header>
                         <Title>{`${this.state.years[0]} - ${this.state.years[9]}`}</Title>
-                        <Previous onClick={this.handlePreviousYearsRangeOnClick}/>
-                        <Next onClick={this.handleNextYearsRangeOnClick}/>
+                        <Previous type='button' id='btn-previous-years-range' onClick={this.handlePreviousYearsRangeOnClick}/>
+                        <Next type='button' id='btn-next-years-range' onClick={this.handleNextYearsRangeOnClick}/>
                     </Header>
                     <Body>
                         {
@@ -179,6 +179,7 @@ export default class Years extends Component {
 Years.propTypes = {
     //Obligatorios.
     selectedDate: PropTypes.instanceOf(Date).isRequired,
+    innerDate: PropTypes.instanceOf(Date).isRequired,
     //Opcionales.
     language: PropTypes.string,
     minDate: PropTypes.instanceOf(Date),
@@ -195,17 +196,6 @@ const getYearButtonTheme = (state) => {
 
                 &:hover {
                     background-color: #0960D3;
-                    color: #FFF;
-                    text-decoration: none;
-                }
-            `;
-        case 'different':
-            return `
-                background-color: transparent;
-                color: #BFBFBF;
-
-                &:hover {
-                    background-color: #BFBFBF;
                     color: #FFF;
                     text-decoration: none;
                 }

@@ -36,24 +36,21 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import Months from './months';
+import Years from './years';
 
 //Snapshot #1.
-describe('[SNAPSHOT][Componentes][Common][Months] - Meses.', () => {
+describe('[SNAPSHOT][Componentes][Common][Years] - Años.', () => {
 	//Tipo: Texto.
-	it('Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 15/08/1981).', () => {
+	it('Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 15/08/2018).', () => {
 		//Funciones 'dummy'.
-		const handleYearOnClick = event => {
-			//Nada que hacer aquí.
-        };
         const handleOnChange = date => {
 			//Nada que hacer aquí.
         };
         //Variables.
-        let selectedDate = new Date('08/15/1981');
-        let minDate = new Date('08/10/1981');
+        let selectedDate = new Date('08/15/2018');
+        let minDate = new Date('08/10/2018');
 		//Propiedades.
-        const monthsProps = {
+        const yearsProps = {
             //Obligatorios.
             selectedDate,
             innerDate: selectedDate,
@@ -61,7 +58,6 @@ describe('[SNAPSHOT][Componentes][Common][Months] - Meses.', () => {
             language: 'es-MX',
             minDate,
             //Funciones.
-            yearOnClick: handleYearOnClick,
             onChange: handleOnChange
         };
         //Se crea el componente.
@@ -73,7 +69,7 @@ describe('[SNAPSHOT][Componentes][Common][Months] - Meses.', () => {
         //N   N  OOO  R   R M   M A   A LLLLL
 
         //Snapshot inicial.
-        const component = renderer.create(<Months {...monthsProps}/>).toJSON();
+        const component = renderer.create(<Years {...yearsProps}/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
@@ -81,17 +77,14 @@ describe('[SNAPSHOT][Componentes][Common][Months] - Meses.', () => {
 //Flujo #1.
 describe('[FLUJO][Componentes][Common][Months] - Meses.', () => {
 	//Funciones 'dummy'.
-	const handleYearOnClick = jest.fn(event => {
-        //Nada que hacer aquí.
-	});
 	const handleOnChange = jest.fn(date => {
 		//Nada que hacer aquí.
 	});
     //Variables.
-    let selectedDate = new Date('08/15/1981');
-    let minDate = new Date('08/10/1981');
+    let selectedDate = new Date('08/15/2018');
+    let minDate = new Date('08/10/2018');
     //Propiedades.
-    const monthsProps = {
+    const yearsProps = {
         //Obligatorios.
         selectedDate,
         innerDate: selectedDate,
@@ -99,29 +92,11 @@ describe('[FLUJO][Componentes][Common][Months] - Meses.', () => {
         language: 'es-MX',
         minDate,
         //Funciones.
-        yearOnClick: handleYearOnClick,
         onChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
-    const component = enzyme.mount(<Months {...monthsProps}/>);
-
-    //Y   Y EEEEE  AAA  RRRR   OOO  N   N  CCCC L     IIIII  CCCC K   K
-    // Y Y  E     A   A R   R O   O NN  N C     L       I   C     K  K
-    //  Y   EEE   AAAAA RRRR  O   O N N N C     L       I   C     KKK
-    //  Y   E     A   A R   R O   O N  NN C     L       I   C     K  K
-    // YYY  EEEEE A   A R   R  OOO  N   N  CCCC LLLLL IIIII  CCCC K   K
-
-    let yearButton = component.find('button#btn-years');
-    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-years".', () => {
-        expect(yearButton).toHaveLength(1);
-    });
-	it('Debe mandar llamar la función "handleYearOnClick" que se pasa como propiedad.', () => {
-		//Simulación.
-        yearButton.prop('onClick')();
-		//Expectativa.
-		expect(handleYearOnClick).toHaveBeenCalled();
-	});
+    const component = enzyme.mount(<Years {...yearsProps}/>);
 
 	// OOO  N   N  CCCC H   H  AAA  N   N  GGGG EEEEE
 	//O   O NN  N C     H   H A   A NN  N G     E
@@ -129,19 +104,42 @@ describe('[FLUJO][Componentes][Common][Months] - Meses.', () => {
 	//O   O N  NN C     H   H A   A N  NN G   G E
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
     
-    let monthButtons = component.findWhere(node => {
-        let regEx = /month-\d{1,2}-\d{1,2}/gi;
+    let yearButtons = component.findWhere(node => {
+        let regEx = /year-\d{4}-\d{1,2}/gi;
         return node.key() && node.key().match(regEx);
     });
-    let bdMonthButton = component.findWhere(node => node.key() && node.key() === 'month-8-8');
-    it('Se revisa que existan 12 objetos tipo "button" con displayName "Month".', () => {
-        expect(monthButtons).toHaveLength(12);
-        expect(bdMonthButton).toHaveLength(1);
+    let currentYearButton = component.findWhere(node => node.key() && node.key() === 'year-2018-8');
+    it('Se revisa que existan 10 objetos tipo "button" con displayName "Year".', () => {
+        expect(yearButtons).toHaveLength(10);
+        expect(currentYearButton).toHaveLength(1);
     });
 	it('Debe mandar llamar la función "handleOnChange" que se pasa como propiedad.', () => {
         //Simulación.
-        bdMonthButton.prop('onClick')();
+        currentYearButton.prop('onClick')();
 		//Expectativas.
 		expect(handleOnChange).toHaveBeenCalled();
     });
+
+    //H   H  AAA  N   N DDDD  L     EEEEE RRRR   SSSS
+    //H   H A   A NN  N D   D L     E     R   R S
+    //HHHHH AAAAA N N N D   D L     EEE   RRRR   SSS
+    //H   H A   A N  NN D   D L     E     R   R     S
+    //H   H A   A N   N DDDD  LLLLL EEEEE R   R SSSS
+
+    let previousButton = component.find('button#btn-previous-years-range');
+    let nextButton = component.find('button#btn-next-years-range');
+    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-previous-years-range".', () => {
+        expect(previousButton).toHaveLength(1);
+    });
+    it('Se revisa que exista 1 objeto tipo "button" con identificador "btn-next-years-range".', () => {
+        expect(nextButton).toHaveLength(1);
+    });
+	it('Debe mandar llamar la función interna "handlePreviousYearsRangeOnClick".', () => {
+		//Simulación.
+        previousButton.prop('onClick')();
+	});
+	it('Debe mandar llamar la función interna "handleNextYearsRangeOnClick".', () => {
+		//Simulación.
+        nextButton.prop('onClick')();
+	});
 });

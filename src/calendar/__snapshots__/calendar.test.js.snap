@@ -1,0 +1,1112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Calendar] - Años. Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 15/08/2018)(Modo: years). 1`] = `
+.c1 {
+  box-sizing: border-box;
+  min-height: 195px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c3 {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px 0px 5px 0px;
+  padding: 3px 15px;
+  width: auto;
+}
+
+.c6 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c4 {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjkycHgiIGhlaWdodD0iMjkycHgiIHZpZXdCb3g9IjAgMCAyOTIuMzU5IDI5Mi4zNTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5Mi4zNTkgMjkyLjM1OTsgZmlsbDogd2hpdGU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgxODAsIDE0NiwgMTQ2KSI+PHBhdGggZD0iTTIyMi45NzksMTMzLjMzMUw5NS4wNzMsNS40MjRDOTEuNDU2LDEuODA3LDg3LjE3OCwwLDgyLjIyNiwwYy00Ljk1MiwwLTkuMjMzLDEuODA3LTEyLjg1LDUuNDI0Yy0zLjYxNywzLjYxNy01LjQyNCw3Ljg5OC01LjQyNCwxMi44NDd2MjU1LjgxM2MwLDQuOTQ4LDEuODA3LDkuMjMyLDUuNDI0LDEyLjg0N2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOGM0Ljk0OSwwLDkuMjMtMS44MTEsMTIuODQ3LTUuNDI4bDEyNy45MDYtMTI3LjkwN2MzLjYxNC0zLjYxMyw1LjQyOC03Ljg5Nyw1LjQyOC0xMi44NDdDMjI4LjQwNywxNDEuMjI5LDIyNi41OTQsMTM2Ljk0OCwyMjIuOTc5LDEzMy4zMzF6Ii8+PC9nPjwvc3ZnPg==");
+  background-position: 1px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 22px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 22px;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c5 {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjkycHgiIGhlaWdodD0iMjkycHgiIHZpZXdCb3g9IjAgMCAyOTIuMzU5IDI5Mi4zNTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5Mi4zNTkgMjkyLjM1OTsgZmlsbDogd2hpdGU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNMjIyLjk3OSwxMzMuMzMxTDk1LjA3Myw1LjQyNEM5MS40NTYsMS44MDcsODcuMTc4LDAsODIuMjI2LDBjLTQuOTUyLDAtOS4yMzMsMS44MDctMTIuODUsNS40MjRjLTMuNjE3LDMuNjE3LTUuNDI0LDcuODk4LTUuNDI0LDEyLjg0N3YyNTUuODEzYzAsNC45NDgsMS44MDcsOS4yMzIsNS40MjQsMTIuODQ3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI4LDEyLjg1LDUuNDI4YzQuOTQ5LDAsOS4yMy0xLjgxMSwxMi44NDctNS40MjhsMTI3LjkwNi0xMjcuOTA3YzMuNjE0LTMuNjEzLDUuNDI4LTcuODk3LDUuNDI4LTEyLjg0N0MyMjguNDA3LDE0MS4yMjksMjI2LjU5NCwxMzYuOTQ4LDIyMi45NzksMTMzLjMzMXoiLz48L2c+PC9zdmc+");
+  background-position: right 1px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 22px;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c7 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: transparent;
+  color: #BFBFBF;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c7:hover {
+  background-color: transparent;
+  color: #BFBFBF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7:focus {
+  outline: none;
+}
+
+.c8 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: #1476FB;
+  color: #FFF;
+}
+
+.c8:hover {
+  background-color: #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c8:focus {
+  outline: none;
+}
+
+.c9 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: transparent;
+  color: #242424;
+}
+
+.c9:hover {
+  background-color: #BFBFBF;
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0px;
+  min-height: 195px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+      >
+        2010 - 2019
+      </label>
+      <button
+        className="c4"
+        id="btn-previous-years-range"
+        onClick={[Function]}
+        type="button"
+      />
+      <button
+        className="c5"
+        id="btn-next-years-range"
+        onClick={[Function]}
+        type="button"
+      />
+    </div>
+    <div
+      className="c6"
+    >
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2010
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2011
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2012
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2013
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2014
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2015
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2016
+      </button>
+      <button
+        className="c7"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2017
+      </button>
+      <button
+        className="c8"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        2018
+      </button>
+      <button
+        className="c9"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        2019
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 15/08/2018)(Modo: month). 1`] = `
+.c1 {
+  box-sizing: border-box;
+  min-height: 195px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  height: 60px;
+  margin: 0px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c3 {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px 0px 5px 0px;
+  padding: 2px 15px;
+  width: auto;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  box-sizing: border-box;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: bold;
+  height: 20px;
+  margin: 0px;
+  padidng: 2px;
+  width: 20px;
+}
+
+.c8 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c4 {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjkycHgiIGhlaWdodD0iMjkycHgiIHZpZXdCb3g9IjAgMCAyOTIuMzU5IDI5Mi4zNTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5Mi4zNTkgMjkyLjM1OTsgZmlsbDogd2hpdGU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48ZyB0cmFuc2Zvcm09InJvdGF0ZSgxODAsIDE0NiwgMTQ2KSI+PHBhdGggZD0iTTIyMi45NzksMTMzLjMzMUw5NS4wNzMsNS40MjRDOTEuNDU2LDEuODA3LDg3LjE3OCwwLDgyLjIyNiwwYy00Ljk1MiwwLTkuMjMzLDEuODA3LTEyLjg1LDUuNDI0Yy0zLjYxNywzLjYxNy01LjQyNCw3Ljg5OC01LjQyNCwxMi44NDd2MjU1LjgxM2MwLDQuOTQ4LDEuODA3LDkuMjMyLDUuNDI0LDEyLjg0N2MzLjYyMSwzLjYxNyw3LjkwMiw1LjQyOCwxMi44NSw1LjQyOGM0Ljk0OSwwLDkuMjMtMS44MTEsMTIuODQ3LTUuNDI4bDEyNy45MDYtMTI3LjkwN2MzLjYxNC0zLjYxMyw1LjQyOC03Ljg5Nyw1LjQyOC0xMi44NDdDMjI4LjQwNywxNDEuMjI5LDIyNi41OTQsMTM2Ljk0OCwyMjIuOTc5LDEzMy4zMzF6Ii8+PC9nPjwvc3ZnPg==");
+  background-position: 1px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 22px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  width: 22px;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c5 {
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjkycHgiIGhlaWdodD0iMjkycHgiIHZpZXdCb3g9IjAgMCAyOTIuMzU5IDI5Mi4zNTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDI5Mi4zNTkgMjkyLjM1OTsgZmlsbDogd2hpdGU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj48Zz48cGF0aCBkPSJNMjIyLjk3OSwxMzMuMzMxTDk1LjA3Myw1LjQyNEM5MS40NTYsMS44MDcsODcuMTc4LDAsODIuMjI2LDBjLTQuOTUyLDAtOS4yMzMsMS44MDctMTIuODUsNS40MjRjLTMuNjE3LDMuNjE3LTUuNDI0LDcuODk4LTUuNDI0LDEyLjg0N3YyNTUuODEzYzAsNC45NDgsMS44MDcsOS4yMzIsNS40MjQsMTIuODQ3YzMuNjIxLDMuNjE3LDcuOTAyLDUuNDI4LDEyLjg1LDUuNDI4YzQuOTQ5LDAsOS4yMy0xLjgxMSwxMi44NDctNS40MjhsMTI3LjkwNi0xMjcuOTA3YzMuNjE0LTMuNjEzLDUuNDI4LTcuODk3LDUuNDI4LTEyLjg0N0MyMjguNDA3LDE0MS4yMjksMjI2LjU5NCwxMzYuOTQ4LDIyMi45NzksMTMzLjMzMXoiLz48L2c+PC9zdmc+");
+  background-position: right 1px center;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 22px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 22px;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c9 {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  background-color: transparent;
+  color: #BFBFBF;
+}
+
+.c9:hover {
+  background-color: #BFBFBF;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c9:focus {
+  outline: none;
+}
+
+.c10 {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  background-color: transparent;
+  color: #BFBFBF;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c10:hover {
+  background-color: transparent;
+  color: #BFBFBF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c10:focus {
+  outline: none;
+}
+
+.c11 {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  background-color: transparent;
+  color: #242424;
+}
+
+.c11:hover {
+  background-color: #BFBFBF;
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c11:focus {
+  outline: none;
+}
+
+.c12 {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 25px;
+  background-color: #1476FB;
+  color: #FFF;
+}
+
+.c12:hover {
+  background-color: #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c12:focus {
+  outline: none;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0px;
+  min-height: 195px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <button
+        className="c3"
+        id="btn-month-year"
+        onClick={[Function]}
+        type="button"
+      >
+        M08 2018
+      </button>
+      <button
+        className="c4"
+        id="btn-previous-month"
+        onClick={[Function]}
+        type="button"
+      />
+      <button
+        className="c5"
+        id="btn-next-month"
+        onClick={[Function]}
+        type="button"
+      />
+      <div
+        className="c6"
+      >
+        <label
+          className="c7"
+        >
+          Do
+        </label>
+        <label
+          className="c7"
+        >
+          Lu
+        </label>
+        <label
+          className="c7"
+        >
+          Ma
+        </label>
+        <label
+          className="c7"
+        >
+          Mi
+        </label>
+        <label
+          className="c7"
+        >
+          Ju
+        </label>
+        <label
+          className="c7"
+        >
+          Vi
+        </label>
+        <label
+          className="c7"
+        >
+          Sa
+        </label>
+      </div>
+    </div>
+    <div
+      className="c8"
+    >
+      <button
+        className="c9"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        29
+      </button>
+      <button
+        className="c9"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        30
+      </button>
+      <button
+        className="c9"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        31
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="c10"
+        disabled={true}
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        10
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        11
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        12
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        13
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        14
+      </button>
+      <button
+        className="c12"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        15
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        16
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        17
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        18
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        19
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        20
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        21
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        22
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        23
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        24
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        25
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        26
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        27
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        28
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        29
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        30
+      </button>
+      <button
+        className="c11"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        31
+      </button>
+      <button
+        className="c9"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Calendar] - Meses. Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 45/13/2018)(Modo: months). 1`] = `
+.c1 {
+  box-sizing: border-box;
+  min-height: 195px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c3 {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px 0px 5px 0px;
+  padding: 2px 15px;
+  width: auto;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c4 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c5 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: transparent;
+  color: #242424;
+}
+
+.c5:hover {
+  background-color: #BFBFBF;
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c6 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: #1476FB;
+  color: #FFF;
+}
+
+.c6:hover {
+  background-color: #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c0 {
+  box-sizing: border-box;
+  margin: 0px;
+  min-height: 195px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <button
+        className="c3"
+        id="btn-years"
+        onClick={[Function]}
+        type="button"
+      >
+        2018
+      </button>
+    </div>
+    <div
+      className="c4"
+    >
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M01
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M02
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M03
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M04
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M05
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M06
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M07
+      </button>
+      <button
+        className="c6"
+        onClick={[Function]}
+        type="button"
+      >
+        M08
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M09
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M10
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M11
+      </button>
+      <button
+        className="c5"
+        onClick={[Function]}
+        type="button"
+      >
+        M12
+      </button>
+    </div>
+  </div>
+</div>
+`;
