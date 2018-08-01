@@ -276,21 +276,21 @@ class StorybookVol2 extends Component {
                     </Control>
                     <Control>
                         <AnimationWrapper>
-                            <Animate type='fade' from={this.state.fadeFrom} executeWhen='isVisible' ref={animate => { this.AnimateFadeRef = animate; }}>
+                            <Animate type='fade' from={this.state.fadeFrom} executeWhen='isVisible' enterWithBounce={true} ref={animate => { this.AnimateFadeRef = animate; }}>
                                 <ColoredDiv color='#800080'/>
                             </Animate>
                         </AnimationWrapper>
                     </Control>
                     <Control>
                         <AnimationWrapper>
-                            <Animate type='flip' from={this.state.flipFrom} executeWhen='isVisible' ref={animate => { this.AnimateFlipRef = animate; }}>
+                            <Animate type='flip' from={this.state.flipFrom} executeWhen='isVisible' enterWithBounce={true} ref={animate => { this.AnimateFlipRef = animate; }}>
                                 <ColoredDiv color='#FF0033'/>
                             </Animate>
                         </AnimationWrapper>
                     </Control>
                     <Control>
                         <AnimationWrapper>
-                            <Animate type='zoom' executeWhen='isVisible' ref={animate => { this.AnimateZoomRef = animate; }}>
+                            <Animate type='zoom' executeWhen='isVisible' enterWithBounce={true} ref={animate => { this.AnimateZoomRef = animate; }}>
                                 <ColoredDiv color='#00FF7F'/>
                             </Animate>
                         </AnimationWrapper>

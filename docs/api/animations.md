@@ -18,11 +18,12 @@ As for now, there are only 2 components inside the **animations** part of the li
 
 ### Properties
 
-| Name        | Type   | Required | Comments |
-| ------------|--------|----------|----------|
-| executeWhen | string | false    | Sets when the animation should be triggered. <ul><li>``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively.</li><li>``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively.</li></ul>_Note: By default the ``onDemand`` option can be use, just add a **reference** to the declaration of the animation and call the **trigger** methods._|
-| from        | string | true     | Sets the animation direction. <br/>For **fade**:<ul><li>``left``</li><li>``right``</li><li>``top``</li><li>``bottom``</li></ul>For **flip**:<ul><li>``vertical``</li><li>``horizontal``</li></ul> |
-| type        | string | true     | It describes the animation style: a)``fade``, b)``flip`` and c)``zoom``. |
+| Name            | Type    | Required | Comments |
+| ----------------|---------|----------|----------|
+| enterWithBounce | boolean | false    | Indicates if the component initial animation implements a "bouncing" effect. |
+| executeWhen     | string  | false    | Sets when the animation should be triggered. <ul><li>``isMounted``: executes the _in and out_ animations when the component is **mounted** or **dismounted** respectively.</li><li>``isVisible``: executes the _in and out_ animations when the component **enters** or **exits** the _viewport_ respectively.</li></ul>_Note: By default the ``onDemand`` option can be use, just add a **reference** to the declaration of the animation and call the **trigger** methods._|
+| from            | string  | true     | Sets the animation direction. <br/>For **fade**:<ul><li>``left``</li><li>``right``</li><li>``top``</li><li>``bottom``</li></ul>For **flip**:<ul><li>``vertical``</li><li>``horizontal``</li></ul> |
+| type            | string  | true     | It describes the animation style: a)``fade``, b)``flip`` and c)``zoom``. |
 
 ### Methods
 

@@ -38,6 +38,11 @@ This will install the following files into your project:
     |     |       └── animations.js
     |     ├── buttons
     |     |       └── buttons.js
+    |     ├── calendar
+    |     |       ├── calendar.js
+    |     |       ├── month.js
+    |     |       ├── months.js
+    |     |       └── years.js
     |     ├── cards
     |     |       └── cards.js
     |     ├── checkboxes
@@ -47,7 +52,7 @@ This will install the following files into your project:
     |     ├── textboxes
     |     |       └── textboxes.js
     |     └── toastnotifications
-|             └── toastnotifications.js
+    |             └── toastnotifications.js
     ├── index.js
     ├── package.json
     └── README.md
@@ -61,10 +66,12 @@ For a complete list of the files, including a running examples and tests, you ca
 
 * [Animations](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/animations.md)
 * [Buttons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/buttons.md)
+* [Calendar](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/calendar.md)
 * [Cards](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/cards.md)
 * [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
+* [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)
 
 You can clone the [repository](https://github.com/pecadorcelestial/panda-common-controls), start it and check the **_meta-storybook_** page to see some of the components in action.
 

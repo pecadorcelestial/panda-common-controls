@@ -15,16 +15,23 @@ const express = require("express");
 
 require('babel-register');
 
+const { Loading, Animate } = require('./lib/animations/animations');
 const { Button } = require('./lib/buttons/buttons');
+const { Calendar } = require('./lib/calendar/calendar');
+const { BasicCard: Card } = require('./lib/cards/cards');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
 const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
 const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
-const { BasicCard: Card } = require('./lib/cards/cards')
+const { ToastNotification } = require('./lib/toastnotifications/toastnotifications');
 
 module.exports = {
+    Animate,
     Button,
+    Calendar,
     Card,
     CheckBox,
+    Loading,
     Select,
-    TextBox
+    TextBox,
+    ToastNotification
 };
