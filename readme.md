@@ -111,3 +111,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * These components are highly inspired by the [React-MDL library](https://tleunen.github.io/react-mdl/).
+* The [font awesome](https://fontawesome.com/?from=io) by **Dave Gandy** is used... it really is awesome.
