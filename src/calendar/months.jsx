@@ -97,7 +97,7 @@ export default class Months extends Component {
             <ThemeProvider theme={{ theme: this.props.theme }}>
                 <Layout>
                     <Header>
-                        <YearButton type='button' onClick={() => this.props.yearOnClick()}>{`${this.props.innerDate.getFullYear()}`}</YearButton>
+                        <YearButton type='button' id='btn-years' onClick={() => this.props.yearOnClick()}>{`${this.props.innerDate.getFullYear()}`}</YearButton>
                     </Header>
                     <Body>
                         {
@@ -127,6 +127,7 @@ export default class Months extends Component {
 Months.propTypes = {
     //Obligatorios.
     selectedDate: PropTypes.instanceOf(Date).isRequired,
+    innerDate: PropTypes.instanceOf(Date).isRequired,
     //Opcionales.
     language: PropTypes.string,
     minDate: PropTypes.instanceOf(Date),
@@ -144,17 +145,6 @@ const getYearButtonTheme = (state) => {
 
                 &:hover {
                     background-color: #0960D3;
-                    color: #FFF;
-                    text-decoration: none;
-                }
-            `;
-        case 'different':
-            return `
-                background-color: transparent;
-                color: #BFBFBF;
-
-                &:hover {
-                    background-color: #BFBFBF;
                     color: #FFF;
                     text-decoration: none;
                 }

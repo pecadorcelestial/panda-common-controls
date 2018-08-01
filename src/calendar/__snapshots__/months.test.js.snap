@@ -1,0 +1,255 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Months] - Meses. Debe pintar el componente con los siguientes modificadores: (Tema: default)(Fecha: 15/08/1981). 1`] = `
+.c0 {
+  box-sizing: border-box;
+  min-height: 195px;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 185px;
+}
+
+.c1 {
+  box-sizing: border-box;
+  height: 35px;
+  margin: 0px;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.c2 {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px 0px 5px 0px;
+  padding: 2px 15px;
+  width: auto;
+}
+
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:focus {
+  outline: none;
+}
+
+.c3 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 5px;
+  width: 100%;
+}
+
+.c4 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: transparent;
+  color: #BFBFBF;
+  cursor: default;
+  pointer-events: none;
+}
+
+.c4:hover {
+  background-color: transparent;
+  color: #BFBFBF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c5 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: #1476FB;
+  color: #FFF;
+}
+
+.c5:hover {
+  background-color: #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5:focus {
+  outline: none;
+}
+
+.c6 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  margin: 0px;
+  padding: 0px;
+  width: 50%;
+  background-color: transparent;
+  color: #242424;
+}
+
+.c6:hover {
+  background-color: #BFBFBF;
+  color: #000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2"
+      id="btn-years"
+      onClick={[Function]}
+      type="button"
+    >
+      1981
+    </button>
+  </div>
+  <div
+    className="c3"
+  >
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M01
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M02
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M03
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M04
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M05
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M06
+    </button>
+    <button
+      className="c4"
+      disabled={true}
+      onClick={[Function]}
+      type="button"
+    >
+      M07
+    </button>
+    <button
+      className="c5"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      M08
+    </button>
+    <button
+      className="c6"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      M09
+    </button>
+    <button
+      className="c6"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      M10
+    </button>
+    <button
+      className="c6"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      M11
+    </button>
+    <button
+      className="c6"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      M12
+    </button>
+  </div>
+</div>
+`;
