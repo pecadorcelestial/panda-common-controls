@@ -9,6 +9,7 @@ This library came out as a personal project to create a list of reusable compone
 It contains some "fancy looking" components like:
 - Animations
 - Button
+- Calendar
 - Card
 - Checkbox
 - Dropdown List
