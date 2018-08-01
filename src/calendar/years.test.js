@@ -98,6 +98,19 @@ describe('[FLUJO][Componentes][Common][Months] - Meses.', () => {
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
     const component = enzyme.mount(<Years {...yearsProps}/>);
 
+	// CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT DDDD  IIIII DDDD  M   M  OOO  U   U N   N TTTTT
+	//C     O   O MM MM P   P O   O NN  N E     NN  N   T   D   D   I   D   D MM MM O   O U   U NN  N   T
+	//C     O   O M M M PPPP  O   O N N N EEE   N N N   T   D   D   I   D   D M M M O   O U   U N N N   T
+	//C     O   O M   M P     O   O N  NN E     N  NN   T   D   D   I   D   D M   M O   O U   U N  NN   T
+	// CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   DDDD  IIIII DDDD  M   M  OOO   UUU  N   N   T
+
+	//La única propiedad que se revisa en la función 'componentWillReceiveProps' es el valor por defecto.
+	it('Se verifica que la información inicial esté vacía.', () => {
+        //Expectativas.
+        let years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019];
+		expect(component.state().years).toEqual(years);
+	});
+
 	// OOO  N   N  CCCC H   H  AAA  N   N  GGGG EEEEE
 	//O   O NN  N C     H   H A   A NN  N G     E
 	//O   O N N N C     HHHHH AAAAA N N N G  GG EEE
@@ -137,9 +150,15 @@ describe('[FLUJO][Componentes][Common][Months] - Meses.', () => {
 	it('Debe mandar llamar la función interna "handlePreviousYearsRangeOnClick".', () => {
 		//Simulación.
         previousButton.prop('onClick')();
+        //Expectativas.
+        let years = [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009];
+		expect(component.state().years).toEqual(years);
 	});
 	it('Debe mandar llamar la función interna "handleNextYearsRangeOnClick".', () => {
 		//Simulación.
         nextButton.prop('onClick')();
+        //Expectativas.
+        let years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019];
+		expect(component.state().years).toEqual(years);
 	});
 });

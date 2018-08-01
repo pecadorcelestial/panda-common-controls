@@ -23,8 +23,23 @@ const show = (from) => keyframes`
 		${from}: -100%;
 		opacity: 0;
 	}
-	90% {
+  	100% {
+		${from}: 30px;
+		opacity: 1;
+	}
+`;
+
+const showWithBounce = (from) => keyframes`
+	0% {
+		${from}: -100%;
+		opacity: 0;
+	}
+	80% {
 		${from}: 50px;
+		opacity: 1;
+	}
+	90% {
+		${from}: 20px;
 		opacity: 1;
 	}
   	100% {
@@ -59,7 +74,7 @@ const Layout = styled.div`
     ${props => props.side}: 30px;
     ${props => props.from}: -100%;
 	
-    ${props => props.show ? `animation: ${show(props.from)} 0.6s ease forwards;` : ``}
+    ${props => props.show ? (props.showWithBounce ? `animation: ${showWithBounce(props.from)} 0.6s ease forwards;` : `animation: ${show(props.from)} 0.6s ease forwards;`) : ``}
     ${props => props.hide ? `animation: ${hide(props.from)} 0.6s ease forwards;` : ``}
 	
 	@media screen and (max-width: 767px) {
@@ -188,7 +203,7 @@ export class ToastNotifiaction extends React.Component {
 		
 		return (
             <ThemeProvider theme={{ type: this.props.notificationType }}>
-                <Layout show={this.state.show} hide={this.state.hide} from={this.props.from} side={this.props.side}>
+                <Layout show={this.state.show} hide={this.state.hide} from={this.props.from} side={this.props.side} showWithBounce={this.props.showWithBounce}>
                     <CloseButton type='button' onClick={(event) => {this.setState({ show: false, hide: true });}}/>
                     <LeftColumn>
                         <Icon/>
@@ -215,13 +230,15 @@ ToastNotifiaction.propTypes = {
     title: PropTypes.string.isRequired,
     //Opcionales.
     from: PropTypes.oneOf(['top', 'bottom']),
-    message: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+	message: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
+	showWithBounce: PropTypes.bool,
     side: PropTypes.oneOf(['left', 'right']),
     timeout: PropTypes.number
 };
 
 ToastNotifiaction.defaultProps = {
-    from: 'bottom',
+	from: 'bottom',
+	showWithBounce: false,
     side: 'left',
     timeout: -1
 };

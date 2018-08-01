@@ -208,12 +208,20 @@ Loading.propTypes = {
 //P     R   R E         S E     N  NN   T   A   A C       I   O   O N  NN
 //P     R   R EEEEE SSSS  EEEEE N   N   T   A   A  CCCC IIIII  OOO  N   N
 
-const getEntranceAnimation = (type, from) => {
-    switch(type) {
-        case 'fade': return FadeIn(from);
-        case 'flip': return FlipIn(from);
-        case 'zoom': return ZoomIn();
-    }
+const getEntranceAnimation = (type, from, enterWithBounce) => {
+	if(enterWithBounce) {
+		switch(type) {
+			case 'fade': return FadeInWithBounce(from);
+			case 'flip': return FlipInWithBounce(from);
+			case 'zoom': return ZoomInWithBounce();
+		}
+	} else {
+		switch(type) {
+			case 'fade': return FadeIn(from);
+			case 'flip': return FlipIn(from);
+			case 'zoom': return ZoomIn();
+		}
+	}
 };
 
 const getExitAnimation = (type, from) => {
@@ -235,8 +243,23 @@ const FadeIn = (from) => keyframes`
         ${from}: -100%;
         opacity: 0;
     }
+	100% { 
+        ${from}: 0px;
+        opacity: 1;
+    }
+`;
+
+const FadeInWithBounce = (from) => keyframes`
+    0% {
+        ${from}: -100%;
+        opacity: 0;
+	}
+	80% {
+		${from}: 20px;
+        opacity: 1;
+	}
 	90% { 
-        ${from}: 10px;
+        ${from}: -10px;
         opacity: 1;
     }
 	100% { 
@@ -267,9 +290,24 @@ const FlipIn = (from) => keyframes`
         opacity: 0;
         transform: rotate${from == 'vertical' ? `X` : `Y`}(90deg);
 	}
-	90% {
+    100% {
+        opacity: 1;
+        transform: rotate${from == 'vertical' ? `X` : `Y`}(0deg);
+    }
+`;
+
+const FlipInWithBounce = (from) => keyframes`
+    0% {
+        opacity: 0;
+        transform: rotate${from == 'vertical' ? `X` : `Y`}(90deg);
+	}
+	80% {
 		opacity: 1;
 		transform: rotate${from == 'vertical' ? `X` : `Y`}(-20deg);
+	}
+	90% {
+		opacity: 1;
+		transform: rotate${from == 'vertical' ? `X` : `Y`}(10deg);
 	}
     100% {
         opacity: 1;
@@ -299,9 +337,24 @@ const ZoomIn = () => keyframes`
         opacity: 0;
         transform: scale(0);
 	}
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+`;
+
+const ZoomInWithBounce = () => keyframes`
+    0% {
+        opacity: 0;
+        transform: scale(0);
+	}
+	80% {
+		opacity: 1;
+        transform: scale(1.2);
+	}
 	90% {
 		opacity: 1;
-        transform: scale(1.1);
+        transform: scale(0.9);
 	}
     100% {
         opacity: 1;
@@ -330,7 +383,7 @@ const Animation = styled.div`
     position: absolute;
     width: auto;
 
-    ${props => props.entrance ? `animation: ${getEntranceAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
+    ${props => props.entrance ? `animation: ${getEntranceAnimation(props.type, props.from, props.enterWithBounce)} 0.6s ease-out forwards;` : ``}
     ${props => props.exit ? `animation: ${getExitAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
 `;
 
@@ -429,6 +482,7 @@ export class Animate extends React.Component {
 		
 		const animationProps = {
 			entrance: this.state.entrance,
+			enterWithBounce: this.props.enterWithBounce,
 			exit: this.state.exit,
 			type: this.props.type,
 			from: this.props.from,
@@ -443,8 +497,15 @@ export class Animate extends React.Component {
     }
 }
 
-FadeIn.propTypes = {
+Animate.propTypes = {
+	//Requeridos.
     type: PropTypes.oneOf(['fade', 'flip', 'zoom']).isRequired,
-    from: PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'vertical', 'horizontal']).isRequired,
-    executeWhen: PropTypes.oneOf(['isMounted', 'isVisible', 'onDemand'])
-}
+	//Opcionales.
+	enterWithBounce: PropTypes.bool,
+    executeWhen: PropTypes.oneOf(['isMounted', 'isVisible', 'onDemand']),
+	from: PropTypes.oneOf(['left', 'right', 'top', 'bottom', 'vertical', 'horizontal'])
+};
+
+Animate.defaultProps = {
+	enterWithBounce: false
+};

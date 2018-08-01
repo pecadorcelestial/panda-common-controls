@@ -59,7 +59,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (�
 	});
 });
 
-//Snapshot #2 (Error).
+//Snapshot #2 (Error)(Con efecto "bouncing").
 describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (error).', () => {
 	//Tipo: Texto.
 	it('Debe pintar el componente con los siguientes modificadores: (Tipo: Error)(Origen: abajo-derecha).', () => {
@@ -71,6 +71,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (e
             //Opcionales.
             from: 'bottom',
             message: 'Si, es una notificación tipo "tostada".',
+            showWithBounce: true,
             side: 'right',
             timeout: 5
         };
@@ -122,7 +123,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (i
 	});
 });
 
-//Flujo + Métodos #1.
+//Flujo + Métodos #1 (Con efecto "bouncing").
 describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notificación y se debe ocultar automáticamente.', () => {
     //Propiedades.
     const notificactionProps = {
@@ -132,6 +133,7 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
         //Opcionales.
         from: 'bottom',
         message: 'Si, es una notificación tipo "tostada".',
+        showWithBounce: true,
         side: 'left',
         timeout: 3
     };
