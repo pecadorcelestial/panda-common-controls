@@ -26,7 +26,7 @@ exports[`[SNAPSHOT][Componentes][Common][Months] - Meses. Debe pintar el compone
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -58,7 +58,7 @@ exports[`[SNAPSHOT][Componentes][Common][Months] - Meses. Debe pintar el compone
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -87,7 +87,7 @@ exports[`[SNAPSHOT][Componentes][Common][Months] - Meses. Debe pintar el compone
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -114,7 +114,7 @@ exports[`[SNAPSHOT][Componentes][Common][Months] - Meses. Debe pintar el compone
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;

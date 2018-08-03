@@ -65,7 +65,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
 .c5 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -184,7 +184,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
 .c5 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -197,7 +197,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
 .c6 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 12px;
   font-weight: normal;
   text-align: left;
@@ -318,7 +318,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
 .c5 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -440,7 +440,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (é
 .c5 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -453,7 +453,7 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (é
 .c6 {
   color: #FFF;
   display: block;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans",sans-serif;
   font-size: 12px;
   font-weight: normal;
   text-align: left;
