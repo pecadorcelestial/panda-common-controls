@@ -42,7 +42,7 @@ const Title = styled.label`
 	box-sizing: border-box;
 	color: ${titleColor};
 	height: 45px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: ${props => !props.notEmpty ? `16px` : `11px`};
 	font-weight: normal;
 	font-style: normal;
@@ -103,7 +103,7 @@ const Error = styled.label`
 	bottom: 0px;
 	color: #EF2525;
 	height: 15px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;

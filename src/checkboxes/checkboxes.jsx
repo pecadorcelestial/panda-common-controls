@@ -49,7 +49,7 @@ const Title = styled.label`
     color: #242424;
     cursor: pointer;
 	height: 30px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;

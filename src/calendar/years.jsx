@@ -42,7 +42,7 @@ const Title = styled.label`
     box-sizing: border-box;
     color: ${headerFontColor};
     display: inline-block;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;
@@ -233,7 +233,7 @@ const Year = styled.button`
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;

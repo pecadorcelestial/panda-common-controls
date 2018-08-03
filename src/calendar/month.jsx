@@ -46,7 +46,7 @@ const MonthYearButton = styled.button`
     box-sizing: border-box;
     color: ${headerFontColor};
     cursor: pointer;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;
@@ -76,7 +76,7 @@ const Row = styled.div`
 const WeekDayName = styled.label`
     box-sizing: border-box;
     color: ${headerFontColor};
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: bold;
     height: 20px;
@@ -300,7 +300,7 @@ const Day = styled.button`
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;

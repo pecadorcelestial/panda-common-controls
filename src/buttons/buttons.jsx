@@ -134,7 +134,7 @@ export const Button = styled.button`
 	border-radius: 5px;
 	cursor: pointer;
 	float: ${props => (props.style != undefined && props.style.float != undefined) ? props.style.float : `unset`};
-	font-family: Open Sans;	
+	font-family: "Open Sans", sans-serif;	
 	font-stretch: normal;
 	font-style: normal;	
 	font-weight: bold;

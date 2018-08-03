@@ -45,7 +45,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 
 .c3 {
   color: #BFBFBF;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-stretch: normal;
   font-style: normal;
@@ -67,7 +67,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 .c4 {
   color: #BFBFBF;
   height: 15px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: normal;
   font-style: normal;
@@ -193,7 +193,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 
 .c3 {
   color: #242424;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-stretch: normal;
   font-style: normal;
@@ -211,7 +211,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 .c4 {
   color: #242424;
   height: 15px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: normal;
   font-style: normal;

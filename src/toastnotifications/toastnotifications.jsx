@@ -139,7 +139,7 @@ const RightColumn = styled.div`
 const Title = styled.label`
 	color: #FFF;
 	display: block;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -152,7 +152,7 @@ const Title = styled.label`
 const Message = styled.label`
 	color: #FFF;
 	display: block;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
     font-size: 12px;
     font-weight: normal;
 	text-align: left;

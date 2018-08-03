@@ -46,7 +46,7 @@ const YearButton = styled.button`
     box-sizing: border-box;
     color: ${headerFontColor};
     cursor: pointer;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;
@@ -182,7 +182,7 @@ const Month = styled.button`
     border-radius: 5px;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: bold;
     height: 25px;

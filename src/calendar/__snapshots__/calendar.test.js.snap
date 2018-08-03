@@ -25,7 +25,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Años. Debe pintar el compo
   border: none;
   box-sizing: border-box;
   display: inline-block;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -88,7 +88,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Años. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -117,7 +117,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Años. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -144,7 +144,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Años. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -316,7 +316,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -351,7 +351,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
 
 .c7 {
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: bold;
   height: 20px;
@@ -414,7 +414,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -441,7 +441,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -470,7 +470,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -497,7 +497,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Mes. Debe pintar el compone
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -911,7 +911,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Meses. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -943,7 +943,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Meses. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -970,7 +970,7 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Meses. Debe pintar el compo
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;

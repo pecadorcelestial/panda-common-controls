@@ -26,7 +26,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -61,7 +61,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
 
 .c6 {
   box-sizing: border-box;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: bold;
   height: 20px;
@@ -124,7 +124,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -151,7 +151,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -180,7 +180,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -207,7 +207,7 @@ exports[`[SNAPSHOT][Componentes][Common][Month] - Mes. Debe pintar el componente
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;

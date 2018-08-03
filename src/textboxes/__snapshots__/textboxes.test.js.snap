@@ -15,7 +15,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   box-sizing: border-box;
   color: #BFBFBF;
   height: 45px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -124,7 +124,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   box-sizing: border-box;
   color: #A7A7A7;
   height: 45px;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;

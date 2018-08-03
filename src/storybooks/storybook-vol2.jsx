@@ -76,7 +76,7 @@ const Title = styled.label`
 	color: #000;
     display: inline-block;
 	height: 35px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	font-weight: bold;
 	font-style: normal;
@@ -94,7 +94,7 @@ const OptionTitle = styled.label`
     display: inline-block;
     height: auto;
     float: left;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 12px;
 	font-weight: normal;
 	font-style: normal;

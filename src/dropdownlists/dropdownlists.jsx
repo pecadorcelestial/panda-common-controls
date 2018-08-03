@@ -78,7 +78,7 @@ const Select = styled.select`
 
 const Option = styled.option`
 	color: ${optionColor};
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-stretch: normal;
 	font-style: normal;
@@ -93,7 +93,7 @@ const Option = styled.option`
 const Title = styled.label`
 	color: ${titleColor};
 	height: 15px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;
@@ -118,7 +118,7 @@ const Error = styled.label`
 	bottom: 0px;
 	color: #EF2525;
 	height: 15px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 11px;
 	font-weight: normal;
 	font-style: normal;

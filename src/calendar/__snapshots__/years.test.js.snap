@@ -25,7 +25,7 @@ exports[`[SNAPSHOT][Componentes][Common][Years] - Años. Debe pintar el componen
   border: none;
   box-sizing: border-box;
   display: inline-block;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -88,7 +88,7 @@ exports[`[SNAPSHOT][Componentes][Common][Years] - Años. Debe pintar el componen
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -117,7 +117,7 @@ exports[`[SNAPSHOT][Componentes][Common][Years] - Años. Debe pintar el componen
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
@@ -144,7 +144,7 @@ exports[`[SNAPSHOT][Componentes][Common][Years] - Años. Debe pintar el componen
   border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   height: 25px;
