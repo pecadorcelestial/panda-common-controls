@@ -36,7 +36,7 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import { Button } from './buttons';
+import { Button, IconButton } from './buttons';
 
 //Snapshots (Temas: main, secondary, flat, blue, flatBlue).
 describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main, secondary, flat, blue, flatBlue.', () => {
@@ -146,6 +146,23 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
 
         //Snapshot [main][small].
         let component = renderer.create(<Button theme='main' size='small' style={{ float: 'left', width: '100%' }}/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+});
+
+//Snapshots (Con icono).
+describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: main (usando un icono).', () => {
+	//Tema: main.
+	it('Debe pintar el componente con el tema "main", tamaño "small" y con el icono "plus".', () => {
+        
+        //M   M  AAA  IIIII N   N
+        //MM MM A   A   I   NN  N
+        //M M M AAAAA   I   N N N
+        //M   M A   A   I   N  NN
+        //M   M A   A IIIII N   N
+
+        //Snapshot [main][small].
+        let component = renderer.create(<IconButton theme='main' size='small' icon='plus'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

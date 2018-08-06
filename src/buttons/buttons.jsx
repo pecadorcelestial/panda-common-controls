@@ -2,8 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import theme from 'styled-theming';
-import { Link } from 'react-router-dom';
+
+import { Icon } from '../icons/icons';
 
 // CCCC  OOO  N   N      TTTTT EEEEE M   M  AAA
 //C     O   O NN  N        T   E     MM MM A   A
@@ -11,148 +11,173 @@ import { Link } from 'react-router-dom';
 //C     O   O N  NN        T   E     M   M A   A
 // CCCC  OOO  N   N        T   EEEEE M   M A   A
 
-const getButtonTheme = (theme) => {
+const backgroundColor = (theme) => {
 	switch(theme) {
-		case 'main':
-			return `
-				background-color: #FF456A;
-				border: 1px solid #FF456A;
-				color: #FFF;
-				
-				&:hover{
-					background-color: #CC1F62;
-					border: 1px solid #CC1F62;
-					color: #FFF;
-					text-decoration: none;
-				}
-				
-				&:disabled {
-					background-color: #BFBFBF;
-					border: 1px solid #BFBFBF;
-					pointer-events: none;
-				}
-			`;
-		case 'secondary':
-			return `
-				background-color: #FFF;
-				border: 1px solid #FF456A;
-				color: #FF456A;
-				
-				&:hover {
-					background-color: #CC1F62;
-					border: 1px solid #CC1F62;
-					color: #FFF;
-					text-decoration: none;
-				}
-				
-				&:disabled {
-					background-color: #BFBFBF;
-					border: 1px solid #BFBFBF;
-					color: #FFF;
-					pointer-events: none;
-				}
-			`;
-		case 'flat':
-			return `
-				background-color: transparent;
-				border: 1px solid transparent;
-				color: #FF456A;
-				
-				&:hover {
-					background-color: #EBEBEB;
-					border: 1px solid #EBEBEB;
-					color: #FF456A;
-					text-decoration: none;
-				}
-				
-				&:disabled {
-					color: #BFBFBF;
-					pointer-events: none;
-				}
-			`;
-		case 'blue':
-			return `
-				background-color: #1476FB;
-				border: 1px solid #1476FB;
-				color: #FFF;
-				
-				&:hover{
-					background-color: #0960D3;
-					border: 1px solid #0960D3;
-					color: #FFF;
-					text-decoration: none;
-				}
-				
-				&:disabled {
-					background-color: #BFBFBF;
-					border: 1px solid #BFBFBF;
-					pointer-events: none;
-				}
-			`;
-		case 'flatBlue':
-			return `
-				background-color: #FFF;
-				border: 1px solid #FFF;
-				color: #1476FB;
-				
-				&:hover {
-					background-color: #EBEBEB;
-					border: 1px solid #EBEBEB;
-					text-decoration: none;
-				}
-				
-				&:disabled {
-					color: #BFBFBF;
-					pointer-events: none;
-				}
-			`;
+		case 'main': return '#FF456A';
+		case 'secondary': return '#FFF';
+		case 'flat': return 'transparent';
+		case 'blue': return '#1476FB';
+		case 'flatBlue': return 'transparent';
 	}
-}
+};
 
-const getButtonSize = (size) => {
-	switch(size) {
-		case 'medium':
-			return `
-				font-size: 16px;
-				height: 40px;
-			`;
-		case 'big':
-			return `
-				font-size: 18px;
-				height: 46px;
-			`;
-		case 'small':
-		default:
-			return `
-				font-size: 14px;
-				height: 30px;
-			`;
+const border = (theme) => {
+	switch(theme) {
+		case 'main': return '1px solid #FF456A';
+		case 'secondary': return '1px solid #FF456A';
+		case 'flat': return '1px solid transparent';
+		case 'blue': return '1px solid #1476FB';
+		case 'flatBlue': return '1px solid transparent';
 	}
-}
+};
+
+const color = (theme) => {
+	switch(theme) {
+		case 'main': return '#FFF';
+		case 'secondary': return '#FF456A';
+		case 'flat': return '#FF456A';
+		case 'blue': return '#FFF';
+		case 'flatBlue': return '#1476FB';
+	}
+};
+
+const hoverBackgroundColor = (theme) => {
+	switch(theme) {
+		case 'main': return '#CC1F62';
+		case 'secondary': return '#CC1F62';
+		case 'flat': return '#EBEBEB';
+		case 'blue': return '#0960D3';
+		case 'flatBlue': return '#EBEBEB';
+	}
+};
+
+const hoverBorder = (theme) => {
+	switch(theme) {
+		case 'main': return '1px solid #CC1F62';
+		case 'secondary': return '1px solid #CC1F62';
+		case 'flat': return '1px solid #EBEBEB';
+		case 'blue': return '1px solid #0960D3';
+		case 'flatBlue': return '1px solid #EBEBEB';
+	}
+};
+
+const hoverColor = (theme) => {
+	switch(theme) {
+		case 'main': return '#FFF';
+		case 'secondary': return '#FFF';
+		case 'flat': return '#FF456A';
+		case 'blue': return '#FFF';
+		case 'flatBlue': return '#1476FB';
+	}
+};
+
+const disabledBackgroundColor = (theme) => {
+	switch(theme) {
+		case 'main': return '#BFBFBF';
+		case 'secondary': return '#BFBFBF';
+		case 'flat': return 'transparent';
+		case 'blue': return '#BFBFBF';
+		case 'flatBlue': return 'transparent';
+	}
+};
+
+const disabledBorder = (theme) => {
+	switch(theme) {
+		case 'main': return '1px solid #BFBFBF';
+		case 'secondary': return '1px solid #BFBFBF';
+		case 'flat': return '1px solid transparent';
+		case 'blue': return '1px solid #BFBFBF';
+		case 'flatBlue': return '1px solid transparent';
+	}
+};
+
+const disabledColor = (theme) => {
+	switch(theme) {
+		case 'main': return '#FFF';
+		case 'secondary': return '#FFF';
+		case 'flat': return '#BFBFBF';
+		case 'blue': return '#FFF';
+		case 'flatBlue': return '#BFBFBF';
+	}
+};
+
+const fontSize = (size) => {
+	switch(size) {
+		case 'small': return '14px';
+		case 'medium': return '16px';
+		case 'big': return '18px';
+	}
+};
+
+const height = (size) => {
+	switch(size) {
+		case 'small': return '30px';
+		case 'medium': return '40px';
+		case 'big': return '46px';
+	}
+};
+
+const iconSize = (size) => {
+	switch(size) {
+		case 'small': return '20px';
+		case 'medium': return '30px';
+		case 'big': return '36px';
+	}
+};
 
 export const Button = styled.button`
+	background-color: ${props => backgroundColor(props.theme)};
+	border: ${props => border(props.theme)};
 	border-radius: 5px;
+	box-sizing: border-box;
+	color: ${props => color(props.theme)};
 	cursor: pointer;
+	display: flex;
+	font-size: ${props => fontSize(props.size)};
 	float: ${props => (props.style != undefined && props.style.float != undefined) ? props.style.float : `unset`};
 	font-family: "Open Sans", sans-serif;	
 	font-stretch: normal;
 	font-style: normal;	
 	font-weight: bold;
+	height: ${props => height(props.size)};
 	letter-spacing: normal;
-	padding: 0px 30px;
+	padding: 5px 30px;
 	text-align: center;
 	width: ${props => (props.style != undefined && props.style.width != undefined) ? props.style.width : `auto`};
 	
 	transition: all .3s;
 	
+	&:hover {
+		background-color: ${props => hoverBackgroundColor(props.theme)};
+		border: ${props => hoverBorder(props.theme)};
+		color: ${props => hoverColor(props.theme)};
+		text-decoration: none;
+	}
+
+	&:hover ${Icon} {
+		fill: ${props => hoverColor(props.theme)};
+	}
+
+	&:disabled {
+		background-color: ${props => disabledBackgroundColor(props.theme)};
+		border: ${props => disabledBorder(props.theme)};
+		color: ${props => disabledColor(props.theme)};
+		pointer-events: none;
+	}
+
+	&:disabled ${Icon} {
+		fill: ${props => disabledColor(props.theme)};
+	}
+
 	&:focus {
 		outline: none;
 	}
 	
-	${props => getButtonTheme(props.theme)}	
-	
-	${props => getButtonSize(props.size)}	
-	
+	${Icon} {
+		fill: ${props => color(props.theme)};
+		height: ${props => iconSize(props.size)};
+		width: ${props => iconSize(props.size)};
+	}
 `;
 
 Button.propTypes = {
@@ -164,3 +189,15 @@ Button.defaultProps = {
 	theme: 'main',
 	size: 'small'
 }
+
+// CCCC  OOO  N   N      IIIII  CCCC  OOO  N   N  OOO
+//C     O   O NN  N        I   C     O   O NN  N O   O
+//C     O   O N N N        I   C     O   O N N N O   O
+//C     O   O N  NN        I   C     O   O N  NN O   O
+// CCCC  OOO  N   N      IIIII  CCCC  OOO  N   N  OOO
+
+//https://github.com/styled-components/styled-components/issues/305
+
+export const IconButton = ({ className, theme, size, children, ...props}) => (
+	<Button theme={theme} size={size} {...props}><Icon icon={props.icon} margin='0px 5px 0px 0px'/>{children}</Button>
+);

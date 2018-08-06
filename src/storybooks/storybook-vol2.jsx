@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //Componentes locales.
-import { Button } from '../buttons/buttons';
+import { Button, IconButton } from '../buttons/buttons';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
 import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
+import { Icon } from '../icons/icons';
 
 import { Calendar } from '../calendar/calendar';
 
@@ -269,8 +270,29 @@ class StorybookVol2 extends Component {
                             <Button theme='secondary' size='small' onClick={(event) => { this.InformationToastNotificationRef.show(); }}>Show information toast</Button>
                         </OptionButtonWrapper>
                     </Option>
+                    <Title>Botones:</Title>
+                    <Option>
+                        <OptionButtonWrapper>
+                            <IconButton theme='main' size='small' icon='plus'>Add new</IconButton>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <IconButton theme='secondary' size='small' icon='save'>Save</IconButton>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <IconButton theme='flat' size='small' icon='pencil'>Edit</IconButton>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <IconButton theme='blue' size='small' icon='cogWheel'>Configuration</IconButton>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <IconButton theme='flatBlue' size='small' icon='heartFull'>Like</IconButton>
+                        </OptionButtonWrapper>
+                    </Option>
                 </LeftColumn>
                 <RightColumn>
+                    <Control>
+                        <Icon icon='android' fill='#242424' height='60px' width='60px'/>
+                    </Control>
                     <Control>
                         <Calendar selectedDate='08/15/2018' language='es-ES' theme='default' onChange={(date) => { console.log('[STORYBOOK vol.2][render][CALENDARIO][onChange] Fecha: ', date); }}/>
                     </Control>
