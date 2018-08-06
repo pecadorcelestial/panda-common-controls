@@ -1,6 +1,6 @@
 {
   "name": "panda-common-controls",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Common controls library for websites.",
   "main": "index.js",
   "scripts": {
