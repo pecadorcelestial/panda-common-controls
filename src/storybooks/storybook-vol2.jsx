@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //Componentes locales.
-import { Button, IconButton } from '../buttons/buttons';
+import { Button, IconButton, RoundButton } from '../buttons/buttons';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
 import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
@@ -286,6 +286,9 @@ class StorybookVol2 extends Component {
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
                             <IconButton theme='flatBlue' size='small' icon='heartFull'>Like</IconButton>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <RoundButton theme='secondary' size='small' icon='magnifyingGlass'/>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>

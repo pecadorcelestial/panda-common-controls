@@ -125,7 +125,9 @@ const iconSize = (size) => {
 	}
 };
 
-export const Button = styled.button`
+export const Button = styled(({ className, children, ...props }) => (
+	<button className={className} {...props}>{children}</button>
+))`
 	background-color: ${props => backgroundColor(props.theme)};
 	border: ${props => border(props.theme)};
 	border-radius: 5px;
@@ -198,6 +200,22 @@ Button.defaultProps = {
 
 //https://github.com/styled-components/styled-components/issues/305
 
-export const IconButton = ({ className, theme, size, children, ...props}) => (
-	<Button theme={theme} size={size} {...props}><Icon icon={props.icon} margin='0px 5px 0px 0px'/>{children}</Button>
-);
+
+//NOTA: Este componente está preparado para modificar los estilos que sean necesarios.
+export const IconButton = styled(({ className, theme, size, children, ...props}) => (
+	<Button className={className} theme={theme} size={size} {...props}><Icon icon={props.icon} margin='0px 5px 0px 0px'/>{children}</Button>
+))``;
+
+//RRRR  EEEEE DDDD   OOO  N   N DDDD   OOO
+//R   R E     D   D O   O NN  N D   D O   O
+//RRRR  EEE   D   D O   O N N N D   D O   O
+//R   R E     D   D O   O N  NN D   D O   O
+//R   R EEEEE DDDD   OOO  N   N DDDD   OOO
+
+export const RoundButton = styled(({ className, theme, size, children, ...props}) => (
+	<Button className={className} theme={theme} size={size} {...props}><Icon icon={props.icon}/></Button>
+))`
+	border-radius: 50%;
+	padding: 0px 5px;
+	width: ${props => height(props.size)};
+`;
