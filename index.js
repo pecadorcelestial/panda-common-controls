@@ -16,7 +16,7 @@ const express = require("express");
 require('babel-register');
 
 const { Loading, Animate } = require('./lib/animations/animations');
-const { Button, IconButton } = require('./lib/buttons/buttons');
+const { Button, IconButton, RoundButton } = require('./lib/buttons/buttons');
 const { Calendar } = require('./lib/calendar/calendar');
 const { BasicCard: Card } = require('./lib/cards/cards');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
@@ -35,6 +35,7 @@ module.exports = {
     IconButton,
     Loading,
     Select,
+    RoundButton,
     TextBox,
     ToastNotification
 };
