@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styled-theming';
 
+import { Icon } from '../icons/icons';
+
 const titleColor = theme('status', {
 	normal: '#A7A7A7',
 	complete: '#A7A7A7',
@@ -119,28 +121,6 @@ const Error = styled.label`
 	z-index: 1;
 `;
 
-const ShowPassword = styled.button`
-	background-color: transparent;
-	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTExLjYyNnB4IiBoZWlnaHQ9IjUxMS42MjZweCIgdmlld0JveD0iMCAwIDUxMS42MjYgNTExLjYyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTExLjYyNiA1MTEuNjI2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTUwNS45MTgsMjM2LjExN2MtMjYuNjUxLTQzLjU4Ny02Mi40ODUtNzguNjA5LTEwNy40OTctMTA1LjA2NWMtNDUuMDE1LTI2LjQ1Ny05Mi41NDktMzkuNjg3LTE0Mi42MDgtMzkuNjg3Yy01MC4wNTksMC05Ny41OTUsMTMuMjI1LTE0Mi42MSwzOS42ODdDNjguMTg3LDE1Ny41MDgsMzIuMzU1LDE5Mi41Myw1LjcwOCwyMzYuMTE3QzEuOTAzLDI0Mi43NzgsMCwyNDkuMzQ1LDAsMjU1LjgxOGMwLDYuNDczLDEuOTAzLDEzLjA0LDUuNzA4LDE5LjY5OWMyNi42NDcsNDMuNTg5LDYyLjQ3OSw3OC42MTQsMTA3LjQ5NSwxMDUuMDY0YzQ1LjAxNSwyNi40Niw5Mi41NTEsMzkuNjgsMTQyLjYxLDM5LjY4YzUwLjA2LDAsOTcuNTk0LTEzLjE3NiwxNDIuNjA4LTM5LjUzNmM0NS4wMTItMjYuMzYxLDgwLjg1Mi02MS40MzIsMTA3LjQ5Ny0xMDUuMjA4YzMuODA2LTYuNjU5LDUuNzA4LTEzLjIyMyw1LjcwOC0xOS42OTlDNTExLjYyNiwyNDkuMzQ1LDUwOS43MjQsMjQyLjc3OCw1MDUuOTE4LDIzNi4xMTd6IE0xOTQuNTY4LDE1OC4wM2MxNy4wMzQtMTcuMDM0LDM3LjQ0Ny0yNS41NTQsNjEuMjQyLTI1LjU1NGMzLjgwNSwwLDcuMDQzLDEuMzM2LDkuNzA5LDMuOTk5YzIuNjYyLDIuNjY0LDQsNS45MDEsNCw5LjcwN2MwLDMuODA5LTEuMzM4LDcuMDQ0LTMuOTk0LDkuNzA0Yy0yLjY2MiwyLjY2Ny01LjkwMiwzLjk5OS05LjcwOCwzLjk5OWMtMTYuMzY4LDAtMzAuMzYyLDUuODA4LTQxLjk3MSwxNy40MTZjLTExLjYxMywxMS42MTUtMTcuNDE2LDI1LjYwMy0xNy40MTYsNDEuOTcxYzAsMy44MTEtMS4zMzYsNy4wNDQtMy45OTksOS43MWMtMi42NjcsMi42NjgtNS45MDEsMy45OTktOS43MDcsMy45OTljLTMuODA5LDAtNy4wNDQtMS4zMzQtOS43MS0zLjk5OWMtMi42NjctMi42NjYtMy45OTktNS45MDMtMy45OTktOS43MUMxNjkuMDE1LDE5NS40ODIsMTc3LjUzNSwxNzUuMDY1LDE5NC41NjgsMTU4LjAzeiBNMzc5Ljg2NywzNDkuMDRjLTM4LjE2NCwyMy4xMi03OS41MTQsMzQuNjg3LTEyNC4wNTQsMzQuNjg3Yy00NC41MzksMC04NS44ODktMTEuNTYtMTI0LjA1MS0zNC42ODdzLTY5LjkwMS01NC4yLTk1LjIxNS05My4yMjJjMjguOTMxLTQ0LjkyMSw2NS4xOS03OC41MTgsMTA4Ljc3Ny0xMDAuNzgzYy0xMS42MSwxOS43OTItMTcuNDE3LDQxLjIwNy0xNy40MTcsNjQuMjM2YzAsMzUuMjE2LDEyLjUxNyw2NS4zMjksMzcuNTQ0LDkwLjM2MnM1NS4xNTEsMzcuNTQ0LDkwLjM2MiwzNy41NDRjMzUuMjE0LDAsNjUuMzI5LTEyLjUxOCw5MC4zNjItMzcuNTQ0czM3LjU0NS01NS4xNDYsMzcuNTQ1LTkwLjM2MmMwLTIzLjAyOS01LjgwOC00NC40NDctMTcuNDE5LTY0LjIzNmM0My41ODUsMjIuMjY1LDc5Ljg0Niw1NS44NjUsMTA4Ljc3NiwxMDAuNzgzQzQ0OS43NjcsMjk0Ljg0LDQxOC4wMzEsMzI1LjkxMywzNzkuODY3LDM0OS4wNHoiLz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PGc+PC9nPjxnPjwvZz48Zz48L2c+PC9zdmc+");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 20px 20px;
-	border: none;
-	cursor: pointer;
-	height: 20px;
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	right: 10px;
-	top: 20px;
-	width: 20px;
-	z-index: 3;
-	
-	&:focus {
-		outline: none;
-	}
-`;
-
 const ShowPasswordSVG = styled.svg`
 	background-color: transparent;
 	cursor: pointer;
@@ -151,6 +131,18 @@ const ShowPasswordSVG = styled.svg`
 	right: 10px;
 	top: 20px;
 	width: ${props => props.width};
+	z-index: 3;
+`;
+
+const Calendar = Icon.extend.attrs({
+	icon: 'plus'
+})`
+	cursor: pointer;
+	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
+	pointer-events: ${props => props.disabled ? `none` : `all`};
+	position: absolute;
+	right: 10px;
+	top: 20px;
 	z-index: 3;
 `;
 
@@ -168,14 +160,17 @@ export class BasicTextBox extends React.Component {
 				errorMessage: ''
 			},
 			text: '',
-			inputType: this.props.inputType,
+			inputType: this.props.inputType !== 'date' ? this.props.inputType : 'text',
 			showPassword: false
 		};
 	}
 	//*** FUNCIONES DEL COMPONENTE ***
 	componentWillReceiveProps(nextProps) {
 		//Aquí sólo se revisa la propiedad "inputType", ya que es la única que se cambia en el estado.
-		if(nextProps.inputType != this.props.inputType) this.setState({ inputType: nextProps.inputType });
+		if(nextProps.inputType != this.props.inputType) {
+			let inputType = nextProps.inputType !== 'date' ? nextProps.inputType : 'text';
+			this.setState({ inputType });
+		}
 	}
 	//*** FUNCIONES ***
 	textIsValid(originalText, regex) {
@@ -439,6 +434,11 @@ export class BasicTextBox extends React.Component {
 						</ShowPasswordSVG> :
 						null
 					}
+					{
+						this.props.inputType === 'date' ?
+						<Calendar icon='calendar' height='20px' width='20px' onClick={() => { console.log('[COMÚN][TEXTBOX][render][CALENDARIO] OnClick!'); }}/>:
+						null
+					}
 					{error}
 				</Layout>
 			</ThemeProvider>
@@ -461,7 +461,7 @@ BasicTextBox.propTypes = {
 	backgroundImage: PropTypes.string,	//*
 	disabled: PropTypes.bool,
 	id: PropTypes.string,
-	inputType: PropTypes.oneOf(['text', 'password', 'email', 'number']),
+	inputType: PropTypes.oneOf(['text', 'password', 'email', 'number', 'date']),
 	valueType: PropTypes.oneOf(['number', 'decimal', 'text']),
 	//Validación.
 	isRequired: PropTypes.bool,

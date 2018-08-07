@@ -45,54 +45,13 @@ const Layout = styled.div`
 	width: 100%;
 `;
 
-const Select = styled.select`
-	appearance: none;
-	background-color: transparent;
-	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eabajo%3C/title%3E%3Cpath d='M7.916 8.636a.718.718 0 0 1-.509-.21L.211 1.228A.719.719 0 1 1 1.229.21l6.687 6.688L14.604.21a.719.719 0 1 1 1.017 1.018L8.425 8.425a.718.718 0 0 1-.509.211' fill='%238B8B8B' fill-rule='evenodd'/%3E%3C/svg%3E");
-	background-position: right 10px center;
-	background-repeat: no-repeat;
-	background-size: 15px 15px;
+const Title = styled.label`
 	border-top: 0px solid transparent;
 	border-left: 0px solid transparent;
 	border-right: 0px solid transparent;
 	border-bottom: 1px solid ${selectBorderColor};
-	border-radius: 0px;
-	color: ${selectColor};
-	cursor: pointer;
-	height: 30px;
-	left: 0px;
-	padding: 0px 25px 0px 0px;
-	position: absolute;
-	top: 15px;
-	text-indent: 1px;
-	text-overflow: hidden;
-	width: 100%;
-	z-index: 2;
-	
-	&:focus {
-		border-bottom: 1px solid #1476FB;
-        color: #000;
-        outline: none;
-	}
-`;
-
-const Option = styled.option`
-	color: ${optionColor};
-	font-family: "Open Sans", sans-serif;
-	font-size: 16px;
-	font-stretch: normal;
-	font-style: normal;
-	font-weight: normal;
-	height: 30px;
-	letter-spacing: normal;
-	margin: 0px;
-	padding: 0px;
-	text-align: left;
-`;
-
-const Title = styled.label`
 	color: ${titleColor};
-	height: 15px;
+	height: 45px;
 	font-family: "Open Sans", sans-serif;
 	font-size: 11px;
 	font-weight: normal;
@@ -109,9 +68,74 @@ const Title = styled.label`
 	white-space: nowrap;
 	z-index: 1;
 	
-	${Select}:focus & {
-		color: #1476FB;
+	transition: color 0.3s ease-in-out, font 0.1s linear, padding 0.1s linear;
+	
+	&:after {
+		background: #1476FB;
+		bottom: -1px;
+		content: '';
+		height: 1px;
+		left: 50%;
+		position: absolute;
+		transition: all 0.3s linear;
+		width: 0px;
 	}
+`;
+
+const Select = styled.select`
+	appearance: none;
+	background-color: transparent;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3Eabajo%3C/title%3E%3Cpath d='M7.916 8.636a.718.718 0 0 1-.509-.21L.211 1.228A.719.719 0 1 1 1.229.21l6.687 6.688L14.604.21a.719.719 0 1 1 1.017 1.018L8.425 8.425a.718.718 0 0 1-.509.211' fill='%238B8B8B' fill-rule='evenodd'/%3E%3C/svg%3E");
+	background-position: right 5px center;
+	background-repeat: no-repeat;
+	background-size: 15px 15px;
+	border: none;
+	border-radius: 0px;
+	color: ${selectColor};
+	cursor: pointer;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	height: 30px;
+	left: 0px;
+	overflow: hidden;
+	padding: 0px 25px 0px 0px;
+	position: absolute;
+	top: 15px;
+	text-indent: 1px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+	z-index: 2;
+	
+	&:focus {
+        color: #000;
+        outline: none;
+	}
+
+	&:focus ~ ${Title} {
+		color: #1476FB;
+
+		&:after {
+			left: 0px;
+			width: 100%;
+		}
+	}
+`;
+
+const Option = styled.option`
+	color: ${optionColor};
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	height: 30px;
+	letter-spacing: normal;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 `;
 
 const Error = styled.label`
@@ -308,18 +332,18 @@ export class BasicSelect extends React.Component {
 		return(
 			<ThemeProvider theme={{ status }}>
 				<Layout>
-					<Select 
-						id={this.props.id}
-						disabled={this.props.disabled}
-						placeholder={this.props.placeHolder}
-						value={this.state.selectedOption}
-						onChange={this.handleOnChange}
-						onBlur={this.handleOnBlur} >
-						<Option value={this.props.idIsNumeric ? '-1' : ''}>{(this.props.placeHolder != undefined && this.props.placeHolder != '') ? this.props.placeHolder : 'Selecciona una opción'}</Option>
-						{
-							this.props.options.map(option=><Option value={option.id} key={option.id}>{option.description}</Option>)
-						}
-					</Select>
+						<Select 
+							id={this.props.id}
+							disabled={this.props.disabled}
+							placeholder={this.props.placeHolder}
+							value={this.state.selectedOption}
+							onChange={this.handleOnChange}
+							onBlur={this.handleOnBlur} >
+							<Option value={this.props.idIsNumeric ? '-1' : ''}>{(this.props.placeHolder != undefined && this.props.placeHolder != '') ? this.props.placeHolder : 'Selecciona una opción'}</Option>
+							{
+								this.props.options.map(option=><Option value={option.id} key={option.id}>{option.description}</Option>)
+							}
+						</Select>
 					<Title>{this.props.title}</Title>
 					{error}
 				</Layout>

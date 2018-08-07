@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android. Debe devolver un valor nulo al no exitir el icono en el repertorio. 1`] = `null`;
+
 exports[`[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android. Debe pintar el icono correspondiente a la mascota de android. 1`] = `
 .c0 {
   fill: #242424;
@@ -47,7 +49,9 @@ exports[`[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android.
   fill="#242424"
   height="60px"
   icon="android"
-  viewBox="0 0 475.071 475.071"
+  preserveAspectRatio="none"
+  vectorEffect="non-scaling-stroke"
+  viewBox="0 0 512.000 512.000"
   width="60px"
   x="0px"
   y="0px"

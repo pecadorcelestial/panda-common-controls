@@ -138,7 +138,7 @@ class StorybookVol1 extends Component {
             //backgroundImage: PropTypes.string,
             disabled: false,
             id: 'identifier',
-            inputType: 'password',
+            inputType: 'date',
             valueType: 'text',
             //Validación.
             isRequired: true,

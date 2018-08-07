@@ -15,10 +15,14 @@ const SVG = styled.svg`
 
 export const Icon = styled(({ ...props}) => {
     let iconFile = require(`./icons-lib`)[props.icon];
-    return(
-        <SVG {...props} x='0px' y='0px' viewBox='0 0 475.071 475.071' dangerouslySetInnerHTML={{__html: iconFile}}>
-        </SVG>
-    );
+    if(iconFile) {
+        return(
+            <SVG {...props} x='0px' y='0px' viewBox='0 0 512.000 512.000' preserveAspectRatio='none' vectorEffect='non-scaling-stroke' dangerouslySetInnerHTML={{__html: iconFile}}>
+            </SVG>
+        );
+    } else {
+        return null;
+    }
 })``;
 
 Icon.defaultProps = {

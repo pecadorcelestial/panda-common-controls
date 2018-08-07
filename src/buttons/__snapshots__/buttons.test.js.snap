@@ -1434,7 +1434,9 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
       }
     }
     icon="plus"
-    viewBox="0 0 475.071 475.071"
+    preserveAspectRatio="none"
+    vectorEffect="non-scaling-stroke"
+    viewBox="0 0 512.000 512.000"
     x="0px"
     y="0px"
   />
@@ -1755,7 +1757,9 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
       }
     }
     icon="plus"
-    viewBox="0 0 475.071 475.071"
+    preserveAspectRatio="none"
+    vectorEffect="non-scaling-stroke"
+    viewBox="0 0 512.000 512.000"
     x="0px"
     y="0px"
   />

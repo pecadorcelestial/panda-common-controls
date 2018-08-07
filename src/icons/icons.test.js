@@ -46,4 +46,10 @@ describe('[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android
         let component = renderer.create(<Icon icon='android' fill='#242424' height='60px' width='60px'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Icono: no existente.
+	it('Debe devolver un valor nulo al no exitir el icono en el repertorio.', () => {
+        //Snapshot.
+        let component = renderer.create(<Icon icon='unreal' fill='#242424' height='60px' width='60px'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
 });
