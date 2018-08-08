@@ -10,6 +10,7 @@ import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
 import { Icon } from '../icons/icons';
 
 import { Calendar } from '../calendar/calendar';
+import { ToolTip } from '../tooltip/tooltip';
 
 const Layout = styled.div`
     display: inline-block;

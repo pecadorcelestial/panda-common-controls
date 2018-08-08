@@ -5,6 +5,8 @@ import styled, { ThemeProvider } from 'styled-components';
 import theme from 'styled-theming';
 
 import { Icon } from '../icons/icons';
+import { Calendar } from '../calendar/calendar';
+import { ToolTip } from '../tooltip/tooltip';
 
 const titleColor = theme('status', {
 	normal: '#A7A7A7',
@@ -134,8 +136,8 @@ const ShowPasswordSVG = styled.svg`
 	z-index: 3;
 `;
 
-const Calendar = Icon.extend.attrs({
-	icon: 'plus'
+const CalendarIcon = Icon.extend.attrs({
+	icon: 'calendar'
 })`
 	cursor: pointer;
 	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
@@ -405,6 +407,20 @@ export class BasicTextBox extends React.Component {
 				this.setState({ inputType: 'password' });
 			}
 		};
+
+		//BBBB   OOO  TTTTT  OOO  N   N EEEEE  SSSS
+		//B   B O   O   T   O   O NN  N E     S
+		//BBBB  O   O   T   O   O N N N EEE    SSS
+		//B   B O   O   T   O   O N  NN E         S
+		//BBBB   OOO    T    OOO  N   N EEEEE SSSS
+
+		/* {div => this.CalendarIconRef = div} */
+		let calendarButton;
+		if(this.props.inputType === 'date') {
+			calendarButton = <CalendarIcon id='svg-calendar-icon' icon='calendar' height='20px' width='20px' onClick={() => { console.log('[COMÚN][TEXTBOX][render][CALENDARIO(ICONO)] OnClick!'); this.ToolTipRef.show(); }}/>;
+		} else {
+			calendarButton = null;
+		}
 		
 		//RRRR  EEEEE  SSSS U   U L     TTTTT  AAA  DDDD   OOO
 		//R   R E     S     U   U L       T   A   A D   D O   O
@@ -434,12 +450,15 @@ export class BasicTextBox extends React.Component {
 						</ShowPasswordSVG> :
 						null
 					}
+					{calendarButton}
+					{error}
 					{
 						this.props.inputType === 'date' ?
-						<Calendar icon='calendar' height='20px' width='20px' onClick={() => { console.log('[COMÚN][TEXTBOX][render][CALENDARIO] OnClick!'); }}/>:
+						<ToolTip elevation={14} anchorID='svg-calendar-icon' ref={tooltip => this.ToolTipRef = tooltip}>
+							<Calendar selectedDate='08/15/2018' language='es-MX' theme='default' onChange={(date) => { console.log('[COMÚN][TEXTBOX][render][CALENDARIO][onChange] Fecha: ', date); }}/>
+						</ToolTip> :
 						null
 					}
-					{error}
 				</Layout>
 			</ThemeProvider>
 		);

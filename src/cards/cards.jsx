@@ -25,6 +25,7 @@ const getCardBoxShadow = (elevation) => {
 export const BasicCard = styled.div`
     background-color: #FFF;
     border-radius: 5px;
+    box-sizing: border-box;
     height: auto;
     margin: 0px;
     overflow: hidden;
