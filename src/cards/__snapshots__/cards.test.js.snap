@@ -4,6 +4,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -39,6 +40,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -73,6 +75,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -107,6 +110,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -141,6 +145,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -175,6 +180,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;
@@ -209,6 +215,7 @@ exports[`[SNAPSHOT][Componentes][Common][Card] - Tarjeta con 7 tipos diferentes 
 .c0 {
   background-color: #FFF;
   border-radius: 5px;
+  box-sizing: border-box;
   height: auto;
   margin: 0px;
   overflow: hidden;

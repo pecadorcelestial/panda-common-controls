@@ -129,6 +129,8 @@ const OptionButtonWrapper = styled.div`
 class StorybookVol1 extends Component {
     constructor() {
         super();
+        let today = new Date();
+        let minDate = today.toLocaleDateString('en-EU');
         this.state = {
             //Obligatorios.
             title: 'Title',
@@ -142,7 +144,10 @@ class StorybookVol1 extends Component {
             valueType: 'text',
             //Validación.
             isRequired: true,
-            validRegEx: '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$',
+            validRegEx: '^\\d{2}\/\\d{2}\/\\d{4}$', //'^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$',
+            //Tipo: Fecha.
+            language: 'es-MX',
+            minDate,
             //Métodos.
             customError: '',
             customValue: ''
@@ -176,6 +181,10 @@ class StorybookVol1 extends Component {
                 id: 'number',
                 description: 'Number'
             },
+            {
+                id: 'date',
+                description: 'Date'
+            }
         ];
 
         const valueTypes = [

@@ -49,13 +49,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   width: 0px;
 }
 
-.jSENYy:focus ~ .c2 {
+.hvgeRl:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.jSENYy:focus ~ .c2:after {
+.hvgeRl:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }
@@ -185,13 +185,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   width: 100%;
 }
 
-.QzQcv:focus ~ .c2 {
+.cxmCxD:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.QzQcv:focus ~ .c2:after {
+.cxmCxD:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }

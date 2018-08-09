@@ -103,3 +103,24 @@ export const getNDaysInMonth = (dateRef, count) => {
     //3. Se devuelve el arreglo.
     return days;
 };
+
+//Descripción: Devuelve una fecha con el formato deseado.
+//Parámetros:
+//      date: Objeto tipo Date al que se desea dar formato.
+//      format: Objeto tipo string con el formato deseado.
+//      language: Lenguaje en el que se desea obtener la información (p. ej.: 'es-MX').
+//Resultado: Una cadena con la fecha en el formato deseado.
+export const getFormattedDate = (date, format, language) => {
+    const locale = language || 'es-MX';
+    let day = date.toLocaleDateString(locale, { day: '2-digit' });
+    let month = date.toLocaleDateString(locale, { month: '2-digit' });
+    let monthName = date.toLocaleString(locale, { month: 'long' });
+    let year = date.getFullYear();
+    //console.log(`[SCRIPTS][FECHAS][getFormattedDate] Día: ${day}; Mes: ${month}; Mes (nombre): ${monthName} Años: ${year}`);
+    let result = format;
+    result = result.replace(/[d]{2}/gi, day);
+    result = result.replace(/[m]{3}/gi, monthName);
+    result = result.replace(/[m]{2}/gi, month);
+    result = result.replace(/[y]{2,4}/gi, year);
+    return result;
+};
