@@ -97,13 +97,76 @@ export class ToolTip extends React.Component {
     }
     //*** FUNCIONES DEL CICLO DE VIDA DEL COMPONENTE ***
     componentDidMount() {
+        //1. Se obtiene la posición del componente ancla.
         let anchorRef = document.getElementById(this.props.anchorID);
         if(anchorRef) {
             let position = this.offSet(anchorRef);
             //console.log('[COMÚN][TOOLTIP][componentDidMount]', position);
             this.setState({ position });
         }
+        //2. Se agrega el "event listener".
+        window.addEventListener('resize', this.handleResize);
+        window.addEventListener('scroll', this.handleScroll);
     }
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.handleResize);
+		window.removeEventListener('scroll', this.handleScroll);
+	}
+    //*** HANDLERS ***
+    handleResize = (event) => {
+        //Se obtiene la posición del componente ancla.
+        let anchorRef = document.getElementById(this.props.anchorID);
+        //console.log('[COMÚN][TOOLTIP][handleResize] Componente ancla: ', anchorRef);
+        if(anchorRef) {
+            let position = this.offSet(anchorRef);
+            //console.log('[COMÚN][TOOLTIP][handleResize] Posición: ', position);
+            if(this.state.show) {
+                let size = this.ToolTipInneWrapper.getBoundingClientRect();
+                position.left -= size.width;
+                //console.log('[COMÚN][TOOLTIP][handleResize] Tamaño:', size);
+            }
+            this.setState({ position });
+        }
+    }
+	handleScroll = (event) => {
+		/*
+		event: {
+			path: [
+				document,
+				window: {
+					innerHeight: ###,
+					innerWidth: ###
+				}
+			]
+		}
+		*/
+		//this.anchorRef.getBoundingClientRect());
+		/*
+			DOMRect: {
+				bottom: 2173,
+				height: 100,
+				left: 618,
+				right: 718,
+				top: 2073,
+				width: 100,
+				x: 618,
+				y: 2073
+			}
+		*/
+        //Se obtiene la posición del componente ancla.
+        let anchorRef = document.getElementById(this.props.anchorID);
+        //console.log('[COMÚN][TOOLTIP][handleScroll] Componente ancla: ', anchorRef);
+        if(anchorRef) {
+            let position = this.offSet(anchorRef);
+            //console.log('[COMÚN][TOOLTIP][handleScroll] Posición: ', position);
+            if(this.state.show) {
+                let size = this.ToolTipInneWrapper.getBoundingClientRect();
+                position.left -= size.width;
+                //console.log('[COMÚN][TOOLTIP][handleScroll] Tamaño:', size);
+            }
+            this.setState({ position });
+        }
+	}
     //*** FUNCIONES ***
     offSet = (element) => {
         var rect = element.getBoundingClientRect(),
