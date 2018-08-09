@@ -208,7 +208,6 @@ class ToolTip extends React.Component {
         */
 
         //Se le suman / restan las cooredenadas del tooltip dependiendo de la posición deseada.
-        console.log(anchor);
         let top = position.top;
         let left = position.left;
         switch(at) {
@@ -246,19 +245,19 @@ class ToolTip extends React.Component {
                 break;
             case 'top-left':
                 top -= (tooltip.height + 10 + offSet);
-                left -= (tooltip.width - offSet);
+                left -= (tooltip.width - (anchor.width / 2) - 20);
                 break;
             case 'top-right':
                 top -= (tooltip.height + 10 + offSet);
-                left += (anchor.width - offSet);
+                left += (anchor.width - (anchor.width / 2) - 20);
                 break;
             case 'bottom-left':
                 top += (anchor.height + 10 + offSet);
-                left -= (tooltip.width - offSet);
+                left -= (tooltip.width - (anchor.width / 2) - 20);
                 break;
             case 'bottom-right':
                 top += (anchor.height + 10 + offSet);
-                left += (anchor.width - offSet);
+                left += (anchor.width - (anchor.width / 2) - 20);
                 break;
         }
         //Se devuelve la posición del ancla.

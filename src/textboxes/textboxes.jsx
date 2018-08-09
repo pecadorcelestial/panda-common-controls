@@ -493,7 +493,7 @@ export class BasicTextBox extends React.Component {
 					{error}
 					{
 						this.props.inputType === 'date' ?
-						<ToolTip elevation={14} anchorID='svg-calendar-icon' theme={tooltipTheme} at='bottom-left' innerRef={tooltip => this.ToolTipInnerRef = tooltip}>
+						<ToolTip elevation={14} anchorID='svg-calendar-icon' theme={tooltipTheme} at='top-left' innerRef={tooltip => this.ToolTipInnerRef = tooltip}>
 							<Calendar {...calendarProps}/>
 						</ToolTip> :
 						null
