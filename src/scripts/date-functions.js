@@ -111,6 +111,7 @@ export const getNDaysInMonth = (dateRef, count) => {
 //      language: Lenguaje en el que se desea obtener la información (p. ej.: 'es-MX').
 //Resultado: Una cadena con la fecha en el formato deseado.
 export const getFormattedDate = (date, format, language) => {
+    //console.log(`[SCRIPTS][FECHAS][getFormattedDate] Fecha: ${date}.`);
     const locale = language || 'es-MX';
     let day = date.toLocaleDateString(locale, { day: '2-digit' });
     let month = date.toLocaleDateString(locale, { month: '2-digit' });

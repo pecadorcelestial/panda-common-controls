@@ -127,19 +127,6 @@ const Error = styled.label`
 	z-index: 1;
 `;
 
-const ShowPasswordSVG = styled.svg`
-	background-color: transparent;
-	cursor: pointer;
-	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
-	height: ${props => props.height};
-	pointer-events: ${props => props.disabled ? `none` : `all`};
-	position: absolute;
-	right: 10px;
-	top: 20px;
-	width: ${props => props.width};
-	z-index: 3;
-`;
-
 const ShowPasswordIcon = Icon.extend`
 	cursor: pointer;
 	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
@@ -449,8 +436,9 @@ export class BasicTextBox extends React.Component {
 			language: this.props.language,
 			minDate: this.props.minDate,
 			theme: 'default',
-			onChange: (date) => { 
-				let value = getFormattedDate(date, this.props.dateFormat, this.props.language); 
+			onChange: (date) => {
+				let value = getFormattedDate(date, this.props.dateFormat, this.props.language);
+				//console.log('[COMÚN][TEXTBOX][render][CALENDARIO][OnChange] Fecha: ', value); 
 				this.setState({ text: value }, () => { this.TextBoxInnerRef.value = value; this.validate(); }); 
 				this.ToolTipInnerRef.hide(); 
 			}
