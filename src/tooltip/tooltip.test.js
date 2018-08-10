@@ -36,7 +36,7 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import ToolTip from './tooltip';
+import ToolTip, { addToolTipSize } from './tooltip';
 
 //Snapshot #1 (Origen: arriba)(Elevación: 4).
 describe('[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: arriba)(Elevación: 4).', () => {
@@ -278,8 +278,8 @@ describe('[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: abajo-dere
 	});
 });
 
-//Flujo + Métodos #1 (Origen: arriba).
-describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notificación y se debe ocultar automáticamente.', () => {
+//Flujo + Métodos #1 (Origen: arriba)(ancla < tooltip).
+describe('[FLUJO][Componentes][Common][ToolTip] - Se muestra el tooltip y se debe ocultar dando click afuera.', () => {
      //Tema.        
     let tooltipTheme = {
         content: {
@@ -302,7 +302,7 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
     };
 	//Se crea el componente.
     //NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
-    const dummyPage = <div><button type='button' id='btn-anchor'/><ToolTip theme={tooltipTheme} {...tooltipProps}/></div>;
+    const dummyPage = <div><button type='button' id='btn-anchor'/><ToolTip theme={tooltipTheme} {...tooltipProps}><button type='button' id='btn-insider'/></ToolTip></div>;
     //NOTA: Si el componente hace uso de "cocument.getElementById" (o simplemente de "document"), el componente debe "adjuntarse" a este:
     //https://airbnb.io/enzyme/docs/api/mount.html#arguments
     //NOTA: El problema con esto es el siguiente warning:
@@ -311,54 +311,290 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
     by third-party scripts and browser extensions. This may lead to subtle reconciliation issues. Try rendering into a container 
     element created for your app.
     */
-    const component = enzyme.mount(dummyPage, { attachTo: document.body });
-    let button = component.find('button');
-    it('Se revisa que exista 1 objeto tipo "button".', () => {
-        expect(button).toHaveLength(1);
-    });
-    let tooltip = component.find('ToolTip');
-    it('Se revisa que exista 1 objeto tipo "ToolTip".', () => {
-        expect(tooltip).toHaveLength(1);
-    });
+    
+    // AAA  N   N TTTTT EEEEE  SSSS      /  DDDD  EEEEE  SSSS PPPP  U   U EEEEE  SSSS
+    //A   A NN  N   T   E     S         /   D   D E     S     P   P U   U E     S
+    //AAAAA N N N   T   EEE    SSS     /    D   D EEE    SSS  PPPP  U   U EEE    SSS
+    //A   A N  NN   T   E         S   /     D   D E         S P     U   U E         S
+    //A   A N   N   T   EEEEE SSSS   /      DDDD  EEEEE SSSS  P      UUU  EEEEE SSSS
 
-    // SSSS H   H  OOO  W   W
-    //S     H   H O   O W   W
-    // SSS  HHHHH O   O W W W
-    //    S H   H O   O WW WW
-    //SSSS  H   H  OOO  W   W
-    
-	it('Debe mostrar el componente.', () => {
-		//Simulación.
-        tooltip.instance().show();
-        //console.log(tooltip.instance().state);
-		//Expectativa.
-        expect(tooltip.instance().state.show).toBe(true);
-        expect(tooltip.instance().state.hide).toBe(false);
-	});
-    
-    //H   H IIIII DDDD  EEEEE
-    //H   H   I   D   D E
-    //HHHHH   I   D   D EEE
-    //H   H   I   D   D E
-    //H   H IIIII DDDD  EEEEE
-    
-	//Se cambia el texto.
-	it('Debe ocultar el componente.', () => {
-        //Simulación.
-		tooltip.instance().hide();
-		//Expectativa.
-        expect(tooltip.instance().state.show).toBe(false);
-        expect(tooltip.instance().state.hide).toBe(true);
+    let component;
+    beforeEach(() => {
+        component = enzyme.mount(dummyPage, { attachTo: document.body });
     });
-    
-	//U   U N   N M   M  OOO  U   U N   N TTTTT
-	//U   U NN  N MM MM O   O U   U NN  N   T
-	//U   U N N N M M M O   O U   U N N N   T
-	//U   U N  NN M   M O   O U   U N  NN   T
-	// UUU  N   N M   M  OOO   UUU  N   N   T
-
-    it('Se desmonta el componente.', () => {
+    afterEach(() => {
         component.unmount();
     });
 
+    // SSSS IIIII M   M U   U L      AAA   CCCC IIIII  OOO  N   N EEEEE  SSSS
+    //S       I   MM MM U   U L     A   A C       I   O   O NN  N E     S
+    // SSS    I   M M M U   U L     AAAAA C       I   O   O N N N EEE    SSS
+    //    S   I   M   M U   U L     A   A C       I   O   O N  NN E         S
+    //SSSS  IIIII M   M  UUU  LLLLL A   A  CCCC IIIII  OOO  N   N EEEEE SSSS
+
+    it('Se revisa que exista 1 objeto tipo "button" y un objeto tipo "Tooltip".', () => {
+        let outsideButton = component.find('#btn-anchor');
+        let tooltip = component.find('ToolTip');
+        let insideButton = component.find('#btn-insider');
+        expect(outsideButton).toHaveLength(1);
+        expect(tooltip).toHaveLength(1);
+        expect(insideButton).toHaveLength(1);
+    });
+	it('Debe mostrar el componente, intentarlo nuevamente y ajustar el tamaño y la posición del documento.', () => {
+        //Variables.
+        let outsideButton = component.find('#btn-anchor');
+        let tooltip = component.find('ToolTip');
+        let insideButton = component.find('#btn-insider');
+        
+        // SSSS H   H  OOO  W   W
+        //S     H   H O   O W   W
+        // SSS  HHHHH O   O W W W
+        //    S H   H O   O WW WW
+        //SSSS  H   H  OOO  W   W
+        
+		//Simulación.
+        tooltip.instance().show();
+		//Expectativa.
+        expect(tooltip.instance().state.show).toBe(true);
+        expect(tooltip.instance().state.hide).toBe(false); 
+		//Simulación.
+        tooltip.instance().show();
+        
+        //RRRR  EEEEE  SSSS IIIII ZZZZZ EEEEE
+        //R   R E     S       I      Z  E
+        //RRRR  EEE    SSS    I     Z   EEE
+        //R   R E         S   I    Z    E
+        //R   R EEEEE SSSS  IIIII ZZZZZ EEEEE
+        
+        global.innerWidth = 500;
+        global.dispatchEvent(new Event('resize'));
+
+        // SSSS  CCCC RRRR   OOO  L     L
+        //S     C     R   R O   O L     L
+        // SSS  C     RRRR  O   O L     L
+        //    S C     R   R O   O L     L
+        //SSSS   CCCC R   R  OOO  LLLLL LLLLL
+
+        global.dispatchEvent(new Event('scroll'));
+
+        //M   M  OOO  U   U  SSSS EEEEE DDDD   OOO  W   W N   N
+        //MM MM O   O U   U S     E     D   D O   O W   W NN  N
+        //M M M O   O U   U  SSS  EEE   D   D O   O W W W N N N
+        //M   M O   O U   U     S E     D   D O   O WW WW N  NN
+        //M   M  OOO   UUU  SSSS  EEEEE DDDD   OOO  W   W N   N
+        
+        //1ro. Se hace click en el mismo componente.
+        let event = {
+            target: insideButton.instance()
+        }
+        tooltip.instance().handleMouseDown(event);
+        //2do. Se hace click fuera del componente para cerrarlo.
+        event = {
+            target: outsideButton.instance()
+        }
+        tooltip.instance().handleMouseDown(event);
+
+        //H   H IIIII DDDD  EEEEE
+        //H   H   I   D   D E
+        //HHHHH   I   D   D EEE
+        //H   H   I   D   D E
+        //H   H IIIII DDDD  EEEEE
+        
+        //Al emular un click fuera del componente, la función para ocultarlo se manda llamar.
+        
+	});
+});
+
+//Flujo + Métodos #1 (Origen: arriba)(sin componente ancla).
+describe('[FLUJO][Componentes][Common][ToolTip] - No debe mostrarse el tooltip al no encontrar el ancla.', () => {
+    //Tema.        
+   let tooltipTheme = {
+       content: {
+           backgroundColor: '#FFF',
+           borderColor: '#1476FB'
+       },
+       arrow: {
+           backgroundColor: '#FFF',
+           borderColor: '#1476FB'
+       }
+   };
+   //Propiedades.
+   const tooltipProps = {
+       //Obligatorios.
+       anchorID: 'btn-anchor',
+       theme: tooltipTheme,
+       //Opcionales.
+       at: 'top',
+       elevation: 14
+   };
+   //Se crea el componente.
+   //NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
+   const dummyPage = <div><ToolTip theme={tooltipTheme} {...tooltipProps}/></div>;
+   //NOTA: Si el componente hace uso de "cocument.getElementById" (o simplemente de "document"), el componente debe "adjuntarse" a este:
+   //https://airbnb.io/enzyme/docs/api/mount.html#arguments
+   //NOTA: El problema con esto es el siguiente warning:
+   /*
+   Warning: render(): Rendering components directly into document.body is discouraged, since its children are often manipulated 
+   by third-party scripts and browser extensions. This may lead to subtle reconciliation issues. Try rendering into a container 
+   element created for your app.
+   */
+   
+    // AAA  N   N TTTTT EEEEE  SSSS      /  DDDD  EEEEE  SSSS PPPP  U   U EEEEE  SSSS
+    //A   A NN  N   T   E     S         /   D   D E     S     P   P U   U E     S
+    //AAAAA N N N   T   EEE    SSS     /    D   D EEE    SSS  PPPP  U   U EEE    SSS
+    //A   A N  NN   T   E         S   /     D   D E         S P     U   U E         S
+    //A   A N   N   T   EEEEE SSSS   /      DDDD  EEEEE SSSS  P      UUU  EEEEE SSSS
+
+    let component;
+    beforeEach(() => {
+        component = enzyme.mount(dummyPage, { attachTo: document.body });
+    });
+    afterEach(() => {
+        component.unmount();
+    });
+
+    // SSSS IIIII M   M U   U L      AAA   CCCC IIIII  OOO  N   N EEEEE  SSSS
+    //S       I   MM MM U   U L     A   A C       I   O   O NN  N E     S
+    // SSS    I   M M M U   U L     AAAAA C       I   O   O N N N EEE    SSS
+    //    S   I   M   M U   U L     A   A C       I   O   O N  NN E         S
+    //SSSS  IIIII M   M  UUU  LLLLL A   A  CCCC IIIII  OOO  N   N EEEEE SSSS
+
+    it('Se revisa que exista 1 objeto tipo "ToolTip".', () => {
+        let tooltip = component.find('ToolTip');
+        expect(tooltip).toHaveLength(1);
+    });
+    it('Debe mostrar el componente, intentarlo nuevamente y ajustar el tamaño y la posición del documento.', () => {
+        let tooltip = component.find('ToolTip');
+
+        // SSSS H   H  OOO  W   W
+        //S     H   H O   O W   W
+        // SSS  HHHHH O   O W W W
+        //    S H   H O   O WW WW
+        //SSSS  H   H  OOO  W   W
+
+        //Simulación.
+        tooltip.instance().show();
+        //Expectativa.
+        expect(tooltip.instance().state.show).toBe(false);
+        expect(tooltip.instance().state.hide).toBe(false); 
+
+        //RRRR  EEEEE  SSSS IIIII ZZZZZ EEEEE
+        //R   R E     S       I      Z  E
+        //RRRR  EEE    SSS    I     Z   EEE
+        //R   R E         S   I    Z    E
+        //R   R EEEEE SSSS  IIIII ZZZZZ EEEEE
+    
+        global.innerWidth = 500;
+        global.dispatchEvent(new Event('resize'));
+    
+        // SSSS  CCCC RRRR   OOO  L     L
+        //S     C     R   R O   O L     L
+        // SSS  C     RRRR  O   O L     L
+        //    S C     R   R O   O L     L
+        //SSSS   CCCC R   R  OOO  LLLLL LLLLL
+    
+        global.dispatchEvent(new Event('scroll'));    
+    });
+});
+
+//FFFFF U   U N   N  CCCC IIIII  OOO  N   N EEEEE  SSSS
+//F     U   U NN  N C       I   O   O NN  N E     S
+//FFF   U   U N N N C       I   O   O N N N EEE    SSS
+//F     U   U N  NN C       I   O   O N  NN E         S
+//F      UUU  N   N  CCCC IIIII  OOO  N   N EEEEE SSSS
+
+describe('[Funciones][Componentes][Common][ToolTip][addToolTipSize]: Debe devolver la posición del tooltip (ancla < tooltip).', () => {
+    //tooltip, position, anchor, at, offSet
+    let tooltip = { 
+        bottom: 0,
+        height: 100,
+        left: 0,
+        right: 0,
+        top: 0,
+        width: 100 
+    };
+    let position = {
+        left: 200,
+        top: 200
+    };
+    let anchor = {
+        bottom: 0,
+        height: 50,
+        left: 0,
+        right: 0,
+        top: 0,
+        width: 50 
+    };
+    it('Debe devolver { top: 90, left: 175 } al enviar "top" como el origen.', () => {
+        let result = { top: 90, left: 175 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'top', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 260, left: 175 } al enviar "bottom" como el origen.', () => {
+        let result = { top: 260, left: 175 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'bottom', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 175, left: 90 } al enviar "left" como el origen.', () => {
+        let result = { top: 175, left: 90 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'left', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 175, left: 260 } al enviar "right" como el origen.', () => {
+        let result = { top: 175, left: 260 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'right', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 90, left: 145 } al enviar "top-left" como el origen.', () => {
+        let result = { top: 90, left: 145 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'top-left', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 90, left: 205 } al enviar "top-right" como el origen.', () => {
+        let result = { top: 90, left: 205 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'top-right', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 260, left: 175 } al enviar "bottom-left" como el origen.', () => {
+        let result = { top: 260, left: 145 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'bottom-left', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 260, left: 175 } al enviar "bottom-right" como el origen.', () => {
+        let result = { top: 260, left: 205 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'bottom-right', 0))).toEqual(JSON.stringify(result));
+    });
+});
+
+describe('[Funciones][Componentes][Common][ToolTip][addToolTipSize]: Debe devolver la posición del tooltip (ancla > tooltip).', () => {
+    //tooltip, position, anchor, at, offSet
+    let tooltip = { 
+        bottom: 0,
+        height: 100,
+        left: 0,
+        right: 0,
+        top: 0,
+        width: 100 
+    };
+    let position = {
+        left: 200,
+        top: 200
+    };
+    let anchor = {
+        bottom: 0,
+        height: 150,
+        left: 0,
+        right: 0,
+        top: 0,
+        width: 150 
+    };
+    it('Debe devolver { top: 90, left: 225 } al enviar "top" como el origen.', () => {
+        let result = { top: 90, left: 225 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'top', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 360, left: 225 } al enviar "bottom" como el origen.', () => {
+        let result = { top: 360, left: 225 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'bottom', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 225, left: 90 } al enviar "left" como el origen.', () => {
+        let result = { top: 225, left: 90 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'left', 0))).toEqual(JSON.stringify(result));
+    });
+    it('Debe devolver { top: 225, left: 360 } al enviar "right" como el origen.', () => {
+        let result = { top: 225, left: 360 };
+        expect(JSON.stringify(addToolTipSize(tooltip, position, anchor, 'right', 0))).toEqual(JSON.stringify(result));
+    });
 });

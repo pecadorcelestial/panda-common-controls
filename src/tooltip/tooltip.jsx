@@ -320,6 +320,75 @@ const Content = styled.div`
 
 `;
 
+export const addToolTipSize = (tooltip, position, anchor, at, offSet) => {
+
+    /*
+       TOP-LEFT         TOP          TOP-RIGHT
+                ┌──────────────────┐
+                │                  │
+           LEFT │                  │ RIGHT
+                │                  │
+                └──────────────────┘
+    BOTTOM-LEFT        BOTTOM        BOTTOM-RIGHT
+    */
+
+    //Se le suman / restan las cooredenadas del tooltip dependiendo de la posición deseada.
+    let top = position.top;
+    let left = position.left;
+    switch(at) {
+        case 'top':
+            top -= (tooltip.height + 10 + offSet);
+            if(anchor.width >= tooltip.width) {
+                left += ((anchor.width / 2) - (tooltip.width / 2));
+            } else {
+                left -= ((tooltip.width / 2) - (anchor.width / 2));
+            }
+            break;
+        case 'bottom':
+            top += (anchor.height + 10 + offSet);
+            if(anchor.width >= tooltip.width) {
+                left += ((anchor.width / 2) - (tooltip.width / 2));
+            } else {
+                left -= ((tooltip.width / 2) - (anchor.width / 2));
+            }
+            break;
+        case 'left':
+            left -= (tooltip.width + 10 + offSet);
+            if(anchor.height >= tooltip.height) {
+                top += ((anchor.height / 2) - (tooltip.height / 2));
+            } else {
+                top -= ((tooltip.height / 2) - (anchor.height / 2));
+            }
+            break;
+        case 'right':
+            left += (anchor.width + 10 + offSet);
+            if(anchor.height >= tooltip.height) {
+                top += ((anchor.height / 2) - (tooltip.height / 2));
+            } else {
+                top -= ((tooltip.height / 2) - (anchor.height / 2));
+            }
+            break;
+        case 'top-left':
+            top -= (tooltip.height + 10 + offSet);
+            left -= (tooltip.width - (anchor.width / 2) - 20);
+            break;
+        case 'top-right':
+            top -= (tooltip.height + 10 + offSet);
+            left += (anchor.width - (anchor.width / 2) - 20);
+            break;
+        case 'bottom-left':
+            top += (anchor.height + 10 + offSet);
+            left -= (tooltip.width - (anchor.width / 2) - 20);
+            break;
+        case 'bottom-right':
+            top += (anchor.height + 10 + offSet);
+            left += (anchor.width - (anchor.width / 2) - 20);
+            break;
+    }
+    //Se devuelve la posición del ancla.
+    return { top, left };
+}
+
 class ToolTip extends React.Component {
 	//*** CONSTRUCTOR ***
 	constructor() {
@@ -350,12 +419,12 @@ class ToolTip extends React.Component {
         //Se obtiene la posición del componente ancla.
         let anchorRef = document.getElementById(this.props.anchorID);
         if(anchorRef) {
-            let position = this.anchorPosition(anchorRef);            
-            if(this.state.show) {
+            let position = this.anchorPosition(anchorRef);
+            //if(this.state.show) {
                 let tooltip = this.ToolTipWrapperInnerRef.getBoundingClientRect();
                 let anchor = anchorRef.getBoundingClientRect();
-                position = this.addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
-            }
+                position = addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
+            //}
             this.setState({ position });
         }
     }
@@ -388,11 +457,11 @@ class ToolTip extends React.Component {
         let anchorRef = document.getElementById(this.props.anchorID);
         if(anchorRef) {
             let position = this.anchorPosition(anchorRef);
-            if(this.state.show) {
+            //if(this.state.show) {
                 let tooltip = this.ToolTipWrapperInnerRef.getBoundingClientRect();
                 let anchor = anchorRef.getBoundingClientRect();
-                position = this.addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
-            }
+                position = addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
+            //}
             this.setState({ position });
         }
     }
@@ -415,74 +484,6 @@ class ToolTip extends React.Component {
         //3. Se devuelve la posición del ancla.
         return { top, left };
     }
-    addToolTipSize = (tooltip, position, anchor, at, offSet) => {
-    
-        /*
-           TOP-LEFT         TOP          TOP-RIGHT
-                    ┌──────────────────┐
-                    │                  │
-               LEFT │                  │ RIGHT
-                    │                  │
-                    └──────────────────┘
-        BOTTOM-LEFT        BOTTOM        BOTTOM-RIGHT
-        */
-
-        //Se le suman / restan las cooredenadas del tooltip dependiendo de la posición deseada.
-        let top = position.top;
-        let left = position.left;
-        switch(at) {
-            case 'top':
-                top -= (tooltip.height + 10 + offSet);
-                if(anchor.width >= tooltip.width) {
-                    left += ((anchor.width / 2) - (tooltip.width / 2));
-                } else {
-                    left -= ((tooltip.width / 2) - (anchor.width / 2));
-                }
-                break;
-            case 'bottom':
-                top += (anchor.height + 10 + offSet);
-                if(anchor.width >= tooltip.width) {
-                    left += ((anchor.width / 2) - (tooltip.width / 2));
-                } else {
-                    left -= ((tooltip.width / 2) - (anchor.width / 2));
-                }
-                break;
-            case 'left':
-                left -= (tooltip.width + 10 + offSet);
-                if(anchor.height >= tooltip.height) {
-                    top += ((anchor.height / 2) - (tooltip.height / 2));
-                } else {
-                    top -= ((tooltip.height / 2) - (anchor.height / 2));
-                }
-                break;
-            case 'right':
-                left += (anchor.width + 10 + offSet);
-                if(anchor.height >= tooltip.height) {
-                    top += ((anchor.height / 2) - (tooltip.height / 2));
-                } else {
-                    top -= ((tooltip.height / 2) - (anchor.height / 2));
-                }
-                break;
-            case 'top-left':
-                top -= (tooltip.height + 10 + offSet);
-                left -= (tooltip.width - (anchor.width / 2) - 20);
-                break;
-            case 'top-right':
-                top -= (tooltip.height + 10 + offSet);
-                left += (anchor.width - (anchor.width / 2) - 20);
-                break;
-            case 'bottom-left':
-                top += (anchor.height + 10 + offSet);
-                left -= (tooltip.width - (anchor.width / 2) - 20);
-                break;
-            case 'bottom-right':
-                top += (anchor.height + 10 + offSet);
-                left += (anchor.width - (anchor.width / 2) - 20);
-                break;
-        }
-        //Se devuelve la posición del ancla.
-        return { top, left };
-    }
 	//*** MÉTODOS ***
 	show = () => {
         if(!this.state.show) {
@@ -492,7 +493,7 @@ class ToolTip extends React.Component {
                     let position = this.anchorPosition(anchorRef);
                     let tooltip = this.ToolTipWrapperInnerRef.getBoundingClientRect();
                     let anchor = anchorRef.getBoundingClientRect();
-                    position = this.addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
+                    position = addToolTipSize(tooltip, position, anchor, this.props.at, this.props.offSet);
                     this.setState({ position });
                     this.ToolTipWrapperInnerRef.focus();
                 });                
