@@ -7,9 +7,12 @@
 | disabled       | bool   | false    | Sets the state of the component to disabled. |
 | error          | string | true     | Sets the error message to display when the component state is not valid. |
 | id             | string | false    | Sets the identifier for the **select** component. |
-| inputType      | string | false    | Sets the _type_ of the **input** component: a) ``text``*, ``password``, ``email`` and ``number``. |
+| inputType      | string | false    | Sets the _type_ of the **input** component: a) ``text``*, ``password``, ``email``, ``date`` and ``number``. |
 | isRequired     | bool   | false    | Flag used to validate the component state. |
+| language       | string | false    | Locale value for the date to be displayed.<br/>_Note: Requires for the input type to be ``date``._<br/>A list of the available values can be found [here](https://en.wikipedia.org/wiki/Language_localisation). |
 | maxLength      | number | true     | Limits the amount of characters that the input can accept. |
+| minDate        | string | false    | Minimun date value to be accepted by the [Calendar](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/calendar.md) component. Should be in a valid [format](https://www.w3schools.com/js/js_date_formats.asp). |
+| dateFormat     | string | false    | Format to be used to display the date as string. ``dd|DD`` for the 2 digit day, ``yyyy|YYYY`` for the 4 digits year and ``mm|MM`` for the 2 digit month or ``mmm|MMM`` for the months name instead. |
 | title          | string | true     | Sets the title text to be displayed. |
 | validRegEx     | string | false    | _Regular Expression_ that helps on the component validation. |
 | valueType      | string | false    | Sets the kind of values the **input** accepts, for example: is set to ``decimal`` it will only accept numbers and a point separator.<br/>Options: ``number``, ``decimal`` and ``text``*. |
@@ -61,6 +64,10 @@ class BasicForm extends Component {
             //Validation.
             isRequired: true,
             validRegEx: '^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-]+)\.([a-zA-Z]{2,4})+$',
+            //Type: Date.
+            language: 'en-US',
+            minDate: '08/15/1981',
+            dateFormat: 'DDth of MMM YYYY',
             //Functions.
             onChange: (event) => {console.log('[panda-common-controls][test][onChange] Value: ', event.target.value);},
             onFocus: () => {console.log('[panda-common-controls][test][onFocus]');},

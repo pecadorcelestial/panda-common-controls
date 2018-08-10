@@ -13,8 +13,10 @@ It contains some "fancy looking" components like:
 - Card
 - Checkbox
 - Dropdown List
+- Icons
 - TextBox (an input tag with a little more functionality)
 - Toast Notifications
+- ToolTip
 
 These components where created using the [styled-componets](https://www.styled-components.com/) library.
 
@@ -24,7 +26,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-To install this module using *npm* just run this command:
+**NOTE:** In order to use these components you will need to install the ``styled-components`` and ``styled-theming`` packages.
+
+To install this module using **_npm_** just run this command:
 
 ```
 npm install --save panda-common-controls
@@ -50,10 +54,14 @@ This will install the following files into your project:
     |     |       └── checkboxes.js
     |     ├── dropdownlists
     |     |       └── dropdownlists.js
+    |     ├── icons
+    |     |       └── icons.js
     |     ├── textboxes
     |     |       └── textboxes.js
-    |     └── toastnotifications
-    |             └── toastnotifications.js
+    |     ├── toastnotifications
+    |     |       └── toastnotifications.js
+    |     └── tooltip
+    |             └── tooltip.js
     ├── index.js
     ├── package.json
     └── README.md
@@ -71,8 +79,10 @@ For a complete list of the files, including a running examples and tests, you ca
 * [Cards](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/cards.md)
 * [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
+* [Icons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/icons.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 * [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)
+* [ToolTip](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/tooltip.md)
 
 You can clone the [repository](https://github.com/pecadorcelestial/panda-common-controls), start it and check the **_meta-storybook_** page to see some of the components in action.
 

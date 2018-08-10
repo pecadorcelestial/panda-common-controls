@@ -25,9 +25,14 @@ export const Icon = styled(({ ...props}) => {
     }
 })``;
 
-Icon.defaultProps = {
+Icon.propTypes = {
     //Obligatorios.
-    icon: PropTypes.string.isRequired
+    icon: PropTypes.string.isRequired,
+    //Opcionales.
+    fill: PropTypes.string,
+    height: PropTypes.string,
+    margin: PropTypes.string,
+    width: PropTypes.string
 };
 
 /*
