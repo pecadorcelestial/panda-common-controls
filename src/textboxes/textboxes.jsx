@@ -354,7 +354,7 @@ export class BasicTextBox extends React.Component {
 
 		let tooltipTheme = {
 			content: {
-				backgroundColor: '#FFF',
+				backgroundColor: '#1476FB',
 				borderColor: '#1476FB'
 			},
 			arrow: {
@@ -493,7 +493,7 @@ export class BasicTextBox extends React.Component {
 					{error}
 					{
 						this.props.inputType === 'date' ?
-						<ToolTip elevation={14} anchorID='svg-calendar-icon' theme={tooltipTheme} at='top-left' innerRef={tooltip => this.ToolTipInnerRef = tooltip}>
+						<ToolTip elevation={14} anchorID='svg-calendar-icon' theme={tooltipTheme} at='bottom-left' innerRef={tooltip => this.ToolTipInnerRef = tooltip}>
 							<Calendar {...calendarProps}/>
 						</ToolTip> :
 						null

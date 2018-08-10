@@ -22,6 +22,252 @@ const getTooltipBoxShadow = (elevation) => {
 	}
 };
 
+//NOTA: No se está tomando en cuenta cualquier posible offSet que se mande por propiedades :(.
+const getArrowPosition = (at, theme) => {
+    switch(at) {
+        case 'top':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid transparent;
+                    border-top: 10px solid ${theme.arrow.borderColor};
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    bottom: -15px;
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(50% - 10px);
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid transparent;
+                    border-top: 9px solid ${theme.arrow.backgroundColor};
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    bottom: -13px;
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(50% - 9px);
+                    width: 0px;
+                }
+            `;
+        case 'bottom':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid ${theme.arrow.borderColor};
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    bottom: 100%;
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(50% - 10px);
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid ${theme.arrow.backgroundColor};
+                    border-top: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    bottom: 100%;
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(50% - 9px);
+                    width: 0px;
+                }
+            `;
+        case 'left':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid transparent;
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid ${theme.arrow.borderColor};
+                    border-right: 10px solid transparent;
+                    bottom: calc(50% - 10px);
+                    content: '';
+                    height: 0px;
+                    left: calc(100% - 1px);
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid transparent;
+                    border-top: 9px solid transparent;
+                    border-left: 9px solid ${theme.arrow.backgroundColor};
+                    border-right: 9px solid transparent;
+                    bottom: calc(50% - 9px);
+                    content: '';
+                    height: 0px;
+                    left: calc(100% - 1px);
+                    pointer-events: none;
+                    position: absolute;
+                    width: 0px;
+                }
+            `;
+        case 'right':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid transparent;
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid ${theme.arrow.borderColor};
+                    bottom: calc(50% - 10px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(100% - 1px);
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid transparent;
+                    border-top: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid ${theme.arrow.backgroundColor};
+                    bottom: calc(50% - 9px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: calc(100% - 1px);
+                    width: 0px;
+                }
+            `;
+        case 'top-left':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid transparent;
+                    border-top: 10px solid ${theme.arrow.borderColor};
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    top: calc(100% - 5px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 10px;
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid transparent;
+                    border-top: 9px solid ${theme.arrow.backgroundColor};
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    top: calc(100% - 5px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 11px;
+                    width: 0px;
+                }
+            `;
+        case 'top-right':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid transparent;
+                    border-top: 10px solid ${theme.arrow.borderColor};
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    top: calc(100% - 5px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    left: 10px;
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid transparent;
+                    border-top: 9px solid ${theme.arrow.backgroundColor};
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    top: calc(100% - 5px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    left: 11px;
+                    width: 0px;
+                }
+            `;
+        case 'bottom-left':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid ${theme.arrow.borderColor};
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    bottom: calc(100% - 1px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 10px;
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid ${theme.arrow.backgroundColor};
+                    border-top: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    bottom: calc(100% - 1px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: 11px;
+                    width: 0px;
+                }
+            `;
+        case 'bottom-right':
+            return `                        
+                &:before {
+                    border-bottom: 10px solid ${theme.arrow.borderColor};
+                    border-top: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    bottom: calc(100% - 1px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    left: 10px;
+                    width: 0px;
+                }
+
+                &:after {
+                    border-bottom: 9px solid ${theme.arrow.backgroundColor};
+                    border-top: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    bottom: calc(100% - 1px);
+                    content: '';
+                    height: 0px;
+                    pointer-events: none;
+                    position: absolute;
+                    left: 11px;
+                    width: 0px;
+                }
+            `;
+    }
+};
+
 const PositionWrapper = styled.div`
     left: ${props => props.position.left}px;
     position: fixed;
@@ -47,33 +293,7 @@ const Layout = styled.div`
 
     transition: all .3s;
     
-    &:before {
-        border-bottom: 10px solid ${props => props.theme.arrow.borderColor};
-        border-top: 10px solid transparent;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        bottom: 100%;
-        content: '';
-        height: 0px;
-        pointer-events: none;
-        position: absolute;
-        right: 10px
-        width: 0px;
-    }
-
-    &:after {
-        border-bottom: 9px solid ${props => props.theme.arrow.backgroundColor};
-        border-top: 9px solid transparent;
-        border-left: 9px solid transparent;
-        border-right: 9px solid transparent;
-        bottom: 100%;
-        content: '';
-        height: 0px;
-        pointer-events: none;
-        position: absolute;
-        right: 11px
-        width: 0px;
-    }
+    ${props => getArrowPosition(props.at, props.theme)}
 
     @media screen and (max-width: 767px) {
         
@@ -299,7 +519,7 @@ class ToolTip extends React.Component {
 		//onBlur={() => { this.setState({ show: false, hide: true }); }}
 		return (
             <PositionWrapper position={this.state.position} innerRef={wrapper => this.ToolTipWrapperInnerRef = wrapper}>
-                <Layout props={this.props} show={this.state.show} theme={this.props.theme}>
+                <Layout {...this.props} show={this.state.show} theme={this.props.theme}>
                     <Content elevation={this.props.elevation} theme={this.props.theme}>
                         {this.props.children}
                     </Content>

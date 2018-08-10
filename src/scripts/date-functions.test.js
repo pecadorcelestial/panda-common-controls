@@ -95,16 +95,16 @@ describe('[Funciones][Fechas][getFormattedDate]: Deve devolver la fecha con el f
         expect(getFormattedDate(date, 'dd/mm/yyyy')).toEqual('15/08/2018');
     });
     it('Deve devolver "15-08-2018" enviando el formato "DD-MM-YYYY"', () => {
-        expect(getFormattedDate(date, 'DD-MM-YYYY')).toEqual('15/08/2018');
+        expect(getFormattedDate(date, 'DD-MM-YYYY')).toEqual('15-08-2018');
     });
     //NOTA: Las pruebas se tienen que hacer en inglés por que NODE JS se instala sólo con la localización de 
     //      Estados Unidos (¬_¬') = 'en-EU'.
     //      Hasta que llega al servidor lo convierte, ya que los navegadores si tienen localización más amplia.
     //      https://github.com/nodejs/node/issues/8500
     it('Deve devolver "15-August-2018" enviando el formato "dd-mmm-yyyy"', () => {
-        expect(getFormattedDate(date, 'dd-mm-yyyy', 'en-EU')).toEqual('15/08/2018');
+        expect(getFormattedDate(date, 'dd-mmm-yyyy', 'en-EU')).toEqual('15-August-2018');
     });
     it('Deve devolver "15th of August 2018" enviando el formato "ddth of mmm yyyy"', () => {
-        expect(getFormattedDate(date, 'ddth of mmm yyyy', 'en-EU')).toEqual('15/08/2018');
+        expect(getFormattedDate(date, 'ddth of mmm yyyy', 'en-EU')).toEqual('15th of August 2018');
     });
 });

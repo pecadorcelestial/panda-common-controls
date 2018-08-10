@@ -1,0 +1,665 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: abajo)(Elevación: 8). Debe pintar el componente con los siguientes modificadores: (Origen: abajo)(Elevación: 8). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid #1476FB;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 100%;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(50% - 10px);
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid #FFF;
+  border-top: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  bottom: 100%;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(50% - 9px);
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.05);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={8}
+  >
+    <div
+      className="c2"
+      elevation={8}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: abajo-derecha)(Elevación: -10). Debe pintar el componente con los siguientes modificadores: (Origen: abajo-derecha)(Elevación: -10). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid #1476FB;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: calc(100% - 1px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  left: 10px;
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid #FFF;
+  border-top: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  bottom: calc(100% - 1px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  left: 11px;
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: unset;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={-10}
+  >
+    <div
+      className="c2"
+      elevation={-10}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: abajo-izquierda)(Elevación: 0). Debe pintar el componente con los siguientes modificadores: (Origen: abajo-izquierda)(Elevación: 0). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid #1476FB;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: calc(100% - 1px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid #FFF;
+  border-top: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  bottom: calc(100% - 1px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 11px;
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: unset;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={0}
+  >
+    <div
+      className="c2"
+      elevation={0}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: arriba)(Elevación: 4). Debe pintar el componente con los siguientes modificadores: (Origen: arriba)(Elevación: 4). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #1476FB;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -15px;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(50% - 10px);
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid #FFF;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  bottom: -13px;
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(50% - 9px);
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.05);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={4}
+  >
+    <div
+      className="c2"
+      elevation={4}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: arriba-derecha)(Elevación: 32). Debe pintar el componente con los siguientes modificadores: (Origen: arriba-derecha)(Elevación: 32). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #1476FB;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: calc(100% - 5px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  left: 10px;
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid #FFF;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  top: calc(100% - 5px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  left: 11px;
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 32px 1px rgba(0,0,0,0.1);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={32}
+  >
+    <div
+      className="c2"
+      elevation={32}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: arriba-izquierda)(Elevación: 18). Debe pintar el componente con los siguientes modificadores: (Origen: arriba-izquierda)(Elevación: 18). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid #1476FB;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: calc(100% - 5px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 10px;
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid #FFF;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  top: calc(100% - 5px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: 11px;
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 18px 1px rgba(0,0,0,0.1);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={18}
+  >
+    <div
+      className="c2"
+      elevation={18}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: derecha)(Elevación: 14). Debe pintar el componente con los siguientes modificadores: (Origen: derecha)(Elevación: 14). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #1476FB;
+  bottom: calc(50% - 10px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(100% - 1px);
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-right: 9px solid #FFF;
+  bottom: calc(50% - 9px);
+  content: '';
+  height: 0px;
+  pointer-events: none;
+  position: absolute;
+  right: calc(100% - 1px);
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 14px 1px rgba(0,0,0,0.1);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={14}
+  >
+    <div
+      className="c2"
+      elevation={14}
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][ToolTip] - ToolTip (Origen: izquierda)(Elevación: 10). Debe pintar el componente con los siguientes modificadores: (Origen: izquierda)(Elevación: 10). 1`] = `
+.c0 {
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 97;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c1 {
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: none;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:before {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-left: 10px solid #1476FB;
+  border-right: 10px solid transparent;
+  bottom: calc(50% - 10px);
+  content: '';
+  height: 0px;
+  left: calc(100% - 1px);
+  pointer-events: none;
+  position: absolute;
+  width: 0px;
+}
+
+.c1:after {
+  border-bottom: 9px solid transparent;
+  border-top: 9px solid transparent;
+  border-left: 9px solid #FFF;
+  border-right: 9px solid transparent;
+  bottom: calc(50% - 9px);
+  content: '';
+  height: 0px;
+  left: calc(100% - 1px);
+  pointer-events: none;
+  position: absolute;
+  width: 0px;
+}
+
+.c2 {
+  background-color: #FFF;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: auto;
+  z-index: 98;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+    elevation={10}
+  >
+    <div
+      className="c2"
+      elevation={10}
+    />
+  </div>
+</div>
+`;
