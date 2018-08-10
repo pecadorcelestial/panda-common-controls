@@ -8,13 +8,12 @@
 //https://github.com/airbnb/enzyme/blob/master/docs/guides/jsdom.md
 
 //NOTA [2]: Al parecer se debe utilizar la nomenclatura de Node.JS, es decir "require" en lugar de "import" (°~°).
-const { JSDOM } = require('jsdom');
-
-const jsdom = new JSDOM('<!doctype html><html><body><div id="app" style="margin-top: 150px;"></div></body></html>');
-const { window } = jsdom;
-
+const jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+dom = new JSDOM('<!doctype html><html><body></body></html>');
+const { window } = dom;
 global.window = window;
-global.document = window.document;
+global.document = window.document
 global.navigator = {
     userAgent: 'node.js',
 };

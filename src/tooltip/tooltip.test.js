@@ -320,7 +320,7 @@ describe('[FLUJO][Componentes][Common][ToolTip] - Se muestra el tooltip y se deb
 
     let component;
     beforeEach(() => {
-        component = enzyme.mount(dummyPage, { attachTo: document.body });
+        component = enzyme.mount(dummyPage, { attachTo: document.getElementById('root') });
     });
     afterEach(() => {
         component.unmount();
@@ -446,8 +446,9 @@ describe('[FLUJO][Componentes][Common][ToolTip] - No debe mostrarse el tooltip a
     //A   A N   N   T   EEEEE SSSS   /      DDDD  EEEEE SSSS  P      UUU  EEEEE SSSS
 
     let component;
+    document.body.innerHTML = '<div id="root"></div>';
     beforeEach(() => {
-        component = enzyme.mount(dummyPage, { attachTo: document.body });
+        component = enzyme.mount(dummyPage, { attachTo: document.querySelector('#root'), pretendToBeVisual: true });
     });
     afterEach(() => {
         component.unmount();
