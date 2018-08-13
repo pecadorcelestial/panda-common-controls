@@ -5,6 +5,7 @@ coverage/
 lib/**/*.test.js
 lib/app.js
 lib/client.js
+lib/storybook*.js
 node_modules/
 src/
 stories/

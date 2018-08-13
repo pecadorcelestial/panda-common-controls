@@ -7,7 +7,7 @@
 | anchorID  | bool   | true     | Sets the name of the component id to which the tooltip will be attached. |
 | at        | string | false    | Sets the _origin_ from where the component should be displayed: ``top``, ``bottom``, ``left``, ``right``, ``top-left``, ``top-right``, ``bottom-left``* and ``bottom-right``. |
 | elevation | string | false    | Sets the size of the shadow in the tooltip. If no value is passed the box-shadow will be unset. |
-| theme     | string | true     | Object that will contain the colors for the ``border`` and ``background`` of the tooltip. [1] |
+| theme     | object | true     | Object that will contain the colors for the ``border`` and ``background`` of the tooltip. [1] |
 
 **\*** _default_ value.
 

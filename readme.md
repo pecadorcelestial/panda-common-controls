@@ -14,6 +14,7 @@ It contains some "fancy looking" components like:
 - Checkbox
 - Dropdown List
 - Icons
+- RadioButton
 - TextBox (an input tag with a little more functionality)
 - Toast Notifications
 - ToolTip
@@ -56,6 +57,8 @@ This will install the following files into your project:
     |     |       └── dropdownlists.js
     |     ├── icons
     |     |       └── icons.js
+    |     ├── radiobuttons
+    |     |       └── radiobuttons.js
     |     ├── textboxes
     |     |       └── textboxes.js
     |     ├── toastnotifications
@@ -80,6 +83,7 @@ For a complete list of the files, including a running examples and tests, you ca
 * [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
 * [Icons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/icons.md)
+* [RadioButtons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/radiobuttons.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 * [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)
 * [ToolTip](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/tooltip.md)
