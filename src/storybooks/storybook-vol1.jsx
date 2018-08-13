@@ -8,8 +8,7 @@ import { Button } from '../buttons/buttons';
 import { BasicCard } from '../cards/cards';
 import { CheckBox } from '../checkboxes/checkboxes';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
-
-import { Calendar } from '../calendar/calendar';
+import { RadioButtonsGroup } from '../radiobuttons/radiobuttons';
 
 const Layout = styled.div`
     display: inline-block;
@@ -202,6 +201,21 @@ class StorybookVol1 extends Component {
             }
         ];
 
+        const radioButtons = [
+            {
+                name: 'Option #1',
+                value: 1
+            },
+            {
+                name: 'Option #2',
+                value: 2
+            },
+            {
+                name: 'Option #3',
+                value: 3
+            }
+        ];
+
 		//PPPP  RRRR   OOO  PPPP  IIIII EEEEE DDDD   AAA  DDDD  EEEEE  SSSS
 		//P   P R   R O   O P   P   I   E     D   D A   A D   D E     S
 		//PPPP  RRRR  O   O PPPP    I   EEE   D   D AAAAA D   D EEE    SSS
@@ -328,6 +342,10 @@ class StorybookVol1 extends Component {
                                 <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
                             </CardContent>
                         </BasicCard>
+                    </Control>
+                    <Title>RadioButtons:</Title>
+                    <Control>
+                        <RadioButtonsGroup options={radioButtons} selectedValue={2} onChange={(value) => { console.log('[STORYBOOK][RADIOBUTTONS][onChange] Value: ', value); }}/>
                     </Control>
                 </RightColumn>
             </Layout>

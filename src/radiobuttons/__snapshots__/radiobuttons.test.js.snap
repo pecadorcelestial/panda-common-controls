@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][RadioButton] - RadioButton normal. Debe pintar el componente con los siguientes modificadores: (Checked: false). 1`] = `
+.c1 {
+  box-sizing: border-box;
+  color: #242424;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 5px 0px 0px 25px;
+  position: relative;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+.c2 {
+  background-color: #BFBFBF;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover .c2 {
+  background-color: #A7A7A7;
+}
+
+.c0:hover .bzriCp {
+  background-color: #11AAFF;
+}
+
+<label
+  checked={false}
+  className="c0 c1"
+  onChange={[Function]}
+  onClick={[Function]}
+  value={1}
+>
+  <div
+    checked={false}
+    className="c2"
+  />
+  Opción #1
+</label>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][RadioButton] - RadioButton normal. Debe pintar el componente con los siguientes modificadores: (Checked: false). 2`] = `
+.c1 {
+  box-sizing: border-box;
+  color: #242424;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 5px 0px 0px 25px;
+  position: relative;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+.c0:hover .gnaWqM {
+  background-color: #A7A7A7;
+}
+
+.c2 {
+  background-color: #1476FB;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover .c2 {
+  background-color: #11AAFF;
+}
+
+.c2:after {
+  border: solid white;
+  border-width: 0px 3px 3px 0px;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+  width: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+<label
+  checked={true}
+  className="c0 c1"
+  onChange={[Function]}
+  onClick={[Function]}
+  value={1}
+>
+  <div
+    checked={true}
+    className="c2"
+  />
+  Opción #1
+</label>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][RadioButtonsGroup] - RadioButtonsGroup normal. Debe pintar el componente con un grupo de componentes tipo "RadioButton". 1`] = `
+.c2 {
+  box-sizing: border-box;
+  color: #242424;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  font-family: "Open Sans",sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 5px 0px 0px 25px;
+  position: relative;
+  text-align: left;
+  width: auto;
+  white-space: nowrap;
+}
+
+.c3 {
+  background-color: #BFBFBF;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:hover .c3 {
+  background-color: #A7A7A7;
+}
+
+.c4 {
+  background-color: #1476FB;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  left: 0;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+  width: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c1:hover .c4 {
+  background-color: #11AAFF;
+}
+
+.c4:after {
+  border: solid white;
+  border-width: 0px 3px 3px 0px;
+  content: "";
+  display: block;
+  height: 10px;
+  left: 6px;
+  position: absolute;
+  top: 2px;
+  width: 5px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c0 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <label
+    checked={false}
+    className="c1 c2"
+    onChange={[Function]}
+    onClick={[Function]}
+    value={1}
+  >
+    <div
+      checked={false}
+      className="c3"
+    />
+    Option #1
+  </label>
+  <label
+    checked={true}
+    className="c1 c2"
+    onChange={[Function]}
+    onClick={[Function]}
+    value={2}
+  >
+    <div
+      checked={true}
+      className="c4"
+    />
+    Option #2
+  </label>
+  <label
+    checked={false}
+    className="c1 c2"
+    onChange={[Function]}
+    onClick={[Function]}
+    value={3}
+  >
+    <div
+      checked={false}
+      className="c3"
+    />
+    Option #3
+  </label>
+</div>
+`;

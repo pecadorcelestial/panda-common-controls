@@ -136,7 +136,6 @@ export const Button = styled(({ className, children, ...props }) => (
 	cursor: pointer;
 	display: flex;
 	font-size: ${props => fontSize(props.size)};
-	float: ${props => (props.style != undefined && props.style.float != undefined) ? props.style.float : `unset`};
 	font-family: "Open Sans", sans-serif;	
 	font-stretch: normal;
 	font-style: normal;	
@@ -145,7 +144,7 @@ export const Button = styled(({ className, children, ...props }) => (
 	letter-spacing: normal;
 	padding: 5px 30px;
 	text-align: center;
-	width: ${props => (props.style != undefined && props.style.width != undefined) ? props.style.width : `auto`};
+	width: auto;
 	
 	transition: all .3s;
 	
