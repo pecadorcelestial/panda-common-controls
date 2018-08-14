@@ -347,6 +347,10 @@ class StorybookVol1 extends Component {
                     <Control>
                         <RadioButtonsGroup options={radioButtons} selectedValue={2} onChange={(value) => { console.log('[STORYBOOK][RADIOBUTTONS][onChange] Value: ', value); }}/>
                     </Control>
+                    <Title>JSON:</Title>
+                    <Control>
+                        <Button theme='main' size='small' onClick={() => { let json = JSON.parse(this.TextBoxRef.getValue()); console.log('[STORYBOOK][BUTTON][JSON][onClick]', json); }}>Stringify</Button>
+                    </Control>
                 </RightColumn>
             </Layout>
         );

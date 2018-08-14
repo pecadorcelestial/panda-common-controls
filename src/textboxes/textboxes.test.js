@@ -1023,8 +1023,8 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - No se valida el campo, s�
 	});
 });
 
-//Flujo #8 ()(Habilitado).
-describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar / ocultar contraseña (habilitado).", () => {
+//Flujo #8 + Métodos (Calendario)(Habilitado / Deshabilitado).
+describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar calendario / seleccionar fecha (habilitado / deshabilitado).", () => {
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
 		//Nada que hacer aquí.
@@ -1135,6 +1135,177 @@ describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostr
 		//Expectativa.
 		expect(component.state().text).toEqual('15/08/2018');
 		expect(input.instance().value).toEqual('15/08/2018');
+        expect(handleOnChange).toHaveBeenCalled();
+	});
+	
+    //V   V  AAA  L     IIIII DDDD   AAA   CCCC IIIII  OOO  N   N
+    //V   V A   A L       I   D   D A   A C       I   O   O NN  N
+    //V   V AAAAA L       I   D   D AAAAA C       I   O   O N N N
+    // V V  A   A L       I   D   D A   A C       I   O   O N  NN
+    //  V   A   A LLLLL IIIII DDDD  A   A  CCCC IIIII  OOO  N   N
+
+    it('Debe validar la información dentro del componente, en éste caso estará sólo "completo".', () => {
+        //Simulación.
+        component.instance().validate();
+        //Expectativas.
+        expect(component.state().correct).toBe(true);
+		expect(component.state().complete).toBe(false);
+		expect(component.state().errors.isEmpty).toBe(false);
+        expect(component.state().errors.invalidRegEx).toBe(false);
+        expect(component.state().errors.error).toBe(false);
+        expect(component.state().errors.errorMessage).toEqual('');
+		//Se buscan todas las etiquetas dentro del control.
+		expect(component.instance().ErrorRef).toBeFalsy();
+    });
+    
+    //RRRR  EEEEE IIIII N   N IIIII  CCCC IIIII  AAA  RRRR
+    //R   R E       I   NN  N   I   C       I   A   A R   R
+    //RRRR  EEE     I   N N N   I   C       I   AAAAA RRRR
+    //R   R E       I   N  NN   I   C       I   A   A R   R
+    //R   R EEEEE IIIII N   N IIIII  CCCC IIIII A   A R   R
+
+    it('Debe regresar el componente a su estado inicial.', () => {
+        //Simulación.
+        component.instance().reset();
+        //Expectativas.
+        /*
+        correct: false,
+        complete: false,
+        errors: {
+            isEmpty: false,
+            invalidRegEx: false,
+            error: false,
+            errorMessage: ''
+        },
+        text: ''
+        */
+		expect(component.state().correct).toBe(false);
+		expect(component.state().complete).toBe(false);
+		expect(component.state().errors.isEmpty).toBe(false);
+        expect(component.state().errors.invalidRegEx).toBe(false);
+        expect(component.state().errors.error).toBe(false);
+		expect(component.state().errors.errorMessage).toEqual('');
+		expect(component.state().inputType).toEqual('text');
+        expect(component.state().text).toEqual('');
+        expect(input.instance().value).toEqual('');
+		//Se buscan todas las etiquetas dentro del control.
+		expect(component.instance().ErrorRef).toBeFalsy();
+    });
+});
+
+//Flujo #9 (Calendario)(Con referencias nulas a las funciones).
+describe("[FLUJO][Componentes][Common][BasicTextBox] - Validar el flujo de mostrar calendario / seleccionar fecha (habilitado / deshabilitado).", () => {
+	//Funciones 'dummy'.
+	const handleOnChange = jest.fn(event => {
+		//Nada que hacer aquí.
+	});
+	const handleOnFocus = jest.fn(() => {
+		//Nada que hacer aquí.
+	});
+	const handleOnKeyPress = jest.fn(event => {
+		//Nada que hacer aquí.
+	});
+    //Propiedades.		
+    const textboxProps = {
+        //Obligatorios.
+        title: 'Fecha',
+        error: 'El campo es requerido.',
+        maxLength: 50,
+        //Opcionales.
+        disabled: false,
+        id: 'date',
+        inputType: 'date',
+        valueType: 'text',
+        //Validación.
+        isRequired: true,
+		validRegEx: '',
+		//Tipo: Fecha.
+		language: 'es-MX',
+		minDate: '08/10/2018',
+		dateFormat: 'dd/mm/yyyy',
+        //Funciones.
+        //onChange: handleOnChange,
+        //onFocus: handleOnFocus,
+        //onKeyPress: handleOnKeyPress
+    };
+	//Se crea el componente.
+	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".
+	//NOTA [2]: Además, con "mount" se puede utilizar el método "attachTo" para utilizar "document".
+	const component = enzyme.mount(<BasicTextBox {...textboxProps}/>);
+    let input = component.find('input[type="text"]');
+	let svgButton = component.find('svg');
+	let calendar;
+    //Expectativas.
+    it('Se revisa que el tipo el "input" sea texto.', () => {
+        expect(input.instance().type).toEqual('text');
+    });
+    it('Se revisa que exista 1 objeto tipo "input".', () => {
+		expect(svgButton).toHaveLength(1);
+		expect(svgButton.props().disabled).toBe(false);
+	});
+	
+	// CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT W   W IIIII L     L     RRRR  EEEEE  CCCC EEEEE IIIII V   V EEEEE PPPP  RRRR   OOO  PPPP   SSSS
+	//C     O   O MM MM P   P O   O NN  N E     NN  N   T   W   W   I   L     L     R   R E     C     E       I   V   V E     P   P R   R O   O P   P S
+	//C     O   O M M M PPPP  O   O N N N EEE   N N N   T   W W W   I   L     L     RRRR  EEE   C     EEE     I   V   V EEE   PPPP  RRRR  O   O PPPP   SSS
+	//C     O   O M   M P     O   O N  NN E     N  NN   T   WW WW   I   L     L     R   R E     C     E       I    V V  E     P     R   R O   O P         S
+	// CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   W   W IIIII LLLLL LLLLL R   R EEEEE  CCCC EEEEE IIIII   V   EEEEE P     R   R  OOO  P     SSSS
+
+	it('Se modifica el estado del componente a "deshabilitado".', () => {
+		//Se cambian las propiedades configuradas.
+		component.setProps({ disabled: true });
+	});
+	it('Se modifica el tipo de input y el estado debe cambiar.', () => {
+		//Se cambian las propiedades configuradas.
+		component.setProps({ inputType: 'text' });
+		//Expectativas.
+		expect(component.state().inputType).toEqual('text');
+		input = component.find('input[type="text"]');
+		expect(input).toHaveLength(1);
+	});
+	it('Se regresan las propiedades a sus valores originales.', () => {
+		//Se cambian las propiedades configuradas.
+		component.setProps({ disabled: false, inputType: 'date' });
+		//Expectativas.
+		expect(component.state().inputType).toEqual('text');
+		input = component.find('input[type="text"]');
+		expect(input).toHaveLength(1);
+	});
+
+	//EEEEE N   N  AAA  BBBB  L     EEEEE DDDD
+	//E     NN  N A   A B   B L     E     D   D
+	//EEE   N N N AAAAA BBBB  L     EEE   D   D
+	//E     N  NN A   A B   B L     E     D   D
+	//EEEEE N   N A   A BBBB  LLLLL EEEEE DDDD
+	
+	// OOO  N   N  CCCC L     IIIII  CCCC K   K
+	//O   O NN  N C     L       I   C     K  K
+	//O   O N N N C     L       I   C     KKK
+	//O   O N  NN C     L       I   C     K  K
+	// OOO  N   N  CCCC LLLLL IIIII  CCCC K   K
+
+	it('Debe mostrar el calendario.', () => {
+		//Simulación.
+		svgButton.simulate('click', {});
+		//Expectativa #2.
+		calendar = component.find('Calendar');
+		expect(calendar).toHaveLength(1);
+	});
+
+	// OOO  N   N  CCCC H   H  AAA  N   N  GGGG EEEEE
+	//O   O NN  N C     H   H A   A NN  N G     E
+	//O   O N N N C     HHHHH AAAAA N N N G  GG EEE
+	//O   O N  NN C     H   H A   A N  NN G   G E
+	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
+
+	it('Debe cambiar el texto y el valor del estado al seleccionar una fecha.', () => {
+		//Simulación.
+		let date = new Date('08/15/2018');
+		//calendar.simulate('change', date);
+		calendar.props().onChange(date);
+		//Expectativa.
+		expect(component.state().text).toEqual('15/08/2018');
+		expect(input.instance().value).toEqual('15/08/2018');
+        expect(handleOnChange).not.toHaveBeenCalled();
 	});
 });
 

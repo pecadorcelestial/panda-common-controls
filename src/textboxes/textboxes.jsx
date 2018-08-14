@@ -188,7 +188,6 @@ export class BasicTextBox extends React.Component {
 		if(this.props.onFocus) this.props.onFocus();
 	}
 	validate = () => {
-		//console.log('[COMÚN][TEXTBOX][validate]Texto: ', this.state.text);
 		//Error.
 		let errors = {
 			isEmpty: false,
@@ -196,10 +195,55 @@ export class BasicTextBox extends React.Component {
 			error: false,
 			errorMessage: ''
 		};
-		//Validar con expresión regular.
-		if(this.props.validRegEx != '' && this.state.text != '') {
+		
+		//RRRR  EEEEE  GGGG EEEEE X   X
+		//R   R E     G     E      X X
+		//RRRR  EEE   G  GG EEE     X
+		//R   R E     G   G E      X X
+		//R   R EEEEE  GGGG EEEER X   X
+
+		//NOTA: Si se eligió como tipo de dato "email" o "fecha" se puede agregar una expresión regular ya definida.
+		let emailRegEx = '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$';
+		//NOTA: La expresión para la fecha es algo "triki", ya que el usuario es quien define el formato que desea para la fecha:
+		//      Ejemplos:
+		//      dd/mm/yyyy
+		//      mm-dd-yyyy
+		//      ddth of mmm yyyy
+		//Pero siempre es dd/DD = día (2 dígitos); mm/MM = mes (2 dígitos); mmm/MMM = mes (nombre); yyyy/YYYY = año (4 dígitos).
+		let dateRegEx;
+		if(this.props.inputType === 'date' && this.props.dateFormat != '') {
+			dateRegEx = this.props.dateFormat;
+			//Diagonales, guiones y demás.
+			dateRegEx = dateRegEx.replace('/', '\/');
+			dateRegEx = dateRegEx.replace('.', '\\.');
+			//Día (2 dígitos).
+			dateRegEx = dateRegEx.replace(/(dd|DD)/g, '(\\d){2}');
+			//Mes (nombre).
+			dateRegEx = dateRegEx.replace(/(mmm|MMM)/g, '([a-zA-Z])+');
+			//Mes (2 dígitos).
+			dateRegEx = dateRegEx.replace(/(mm|MM)/g, '(\\d){2}');
+			//Año (4 dígitos).
+			dateRegEx = dateRegEx.replace(/(yyyy|YYYY)/g, '(\\d){4}');
+		}
+		//Se selecciona la expresión regular a utilizar.
+		let regEx;
+		switch(this.props.inputType) {
+			case 'date':
+				regEx = dateRegEx;
+				break;
+			case 'email':
+				regEx = emailRegEx;
+				break;
+			default:
+				regEx = this.props.validRegEx;
+				break;
+		}
+		//console.log('[COMÚN][TEXTBOX][validate] RegEx (Propiedades): ', this.props.validRegEx); 
+		//console.log('[COMÚN][TEXTBOX][validate] RegEx (Local): ', regEx); 
+		//Se valida por Expresión Regular.
+		if((this.props.inputType === 'date' || this.props.inputType === 'email' || this.props.validRegEx != '') && this.state.text != '') {
 			//¿Es válido?
-			if(this.textIsValid(this.state.text, this.props.validRegEx)) {
+			if(this.textIsValid(this.state.text, regEx)) {
 				errors = {
 					isEmpty: false,
 					invalidRegEx: false,
@@ -271,7 +315,7 @@ export class BasicTextBox extends React.Component {
 				errorMessage: ''
 			},
 			text: '',
-			inputType: this.props.inputType,
+			inputType: this.props.inputType !== 'date' ? this.props.inputType : 'text',
 			defaultValueWasSet: false,
 			showPassword: false
 		});
@@ -439,7 +483,20 @@ export class BasicTextBox extends React.Component {
 			onChange: (date) => {
 				let value = getFormattedDate(date, this.props.dateFormat, this.props.language);
 				//console.log('[COMÚN][TEXTBOX][render][CALENDARIO][OnChange] Fecha: ', value); 
-				this.setState({ text: value }, () => { this.TextBoxInnerRef.value = value; this.validate(); }); 
+				this.setState({ text: value }, () => { 
+					this.TextBoxInnerRef.value = value; 
+					this.validate();
+					let event = {
+						target: {
+							value
+						}
+					};
+					//event.target = this.TextBoxInnerRef;
+					//event.target.value = value;
+					//this.TextBoxInnerRef.dispatchEvent(event);
+					//console.log('[COMÚN][TEXTBOX][render][CALENDARIO][OnChange] Evento: ', event); 
+					if(this.props.onChange) this.props.onChange(event);
+				}); 
 				this.ToolTipInnerRef.hide(); 
 			}
 		};
