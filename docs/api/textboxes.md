@@ -19,6 +19,19 @@
 
 **\*** _default_ value.
 
+<br/>_Note: If ``date`` or ``email`` values are choosen for **inputType** then the **Regular Expression** is initialized by default._
+
+#### Email
+```
+^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-]+)\\.([a-zA-Z]{2,4})+$
+```
+
+#### Date
+```
+For date, the dateFormat value is used, for example:
+MM-DD-YYYY is replaced by ^(\d){2}-(\d){2}-(\d){4}$
+```
+
 ### Functions
 
 | Name       | Parameters | Type   | Description |
