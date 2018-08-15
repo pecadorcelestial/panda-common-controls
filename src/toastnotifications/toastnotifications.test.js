@@ -36,7 +36,7 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import { ToastNotifiaction } from './toastnotifications';
+import { ToastNotification } from './toastnotifications';
 
 //Snapshot #1 (Éxito).
 describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (éxito).', () => {
@@ -54,7 +54,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (�
             timeout: 5
         };
         //Se crea el componente.
-        const component = renderer.create(<ToastNotifiaction {...notificactionProps}/>).toJSON();
+        const component = renderer.create(<ToastNotification {...notificactionProps}/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
@@ -76,7 +76,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (e
             timeout: 5
         };
         //Se crea el componente.
-        const component = renderer.create(<ToastNotifiaction {...notificactionProps}/>).toJSON();
+        const component = renderer.create(<ToastNotification {...notificactionProps}/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
@@ -97,7 +97,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (a
             timeout: 5
         };
         //Se crea el componente.
-        const component = renderer.create(<ToastNotifiaction {...notificactionProps}/>).toJSON();
+        const component = renderer.create(<ToastNotification {...notificactionProps}/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
@@ -118,7 +118,7 @@ describe('[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (i
             timeout: 5
         };
         //Se crea el componente.
-        const component = renderer.create(<ToastNotifiaction {...notificactionProps}/>).toJSON();
+        const component = renderer.create(<ToastNotification {...notificactionProps}/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
@@ -139,7 +139,7 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
-    const component = enzyme.mount(<ToastNotifiaction {...notificactionProps}/>);
+    const component = enzyme.mount(<ToastNotification {...notificactionProps}/>);
     let button = component.find('button');
     it('Se revisa que exista 1 objeto tipo "button".', () => {
         expect(button).toHaveLength(1);
@@ -192,7 +192,7 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
-    const component = enzyme.mount(<ToastNotifiaction {...notificactionProps}/>);
+    const component = enzyme.mount(<ToastNotification {...notificactionProps}/>);
     let button = component.find('button');
     it('Se revisa que exista 1 objeto tipo "button".', () => {
         expect(button).toHaveLength(1);
@@ -243,7 +243,7 @@ describe('[FLUJO][Componentes][Common][ToastNotifications] - Se muestra la notif
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
-    const component = enzyme.mount(<ToastNotifiaction {...notificactionProps}/>);
+    const component = enzyme.mount(<ToastNotification {...notificactionProps}/>);
     let button = component.find('button');
     it('Se revisa que exista 1 objeto tipo "button".', () => {
         expect(button).toHaveLength(1);

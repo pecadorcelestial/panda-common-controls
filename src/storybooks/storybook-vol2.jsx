@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { Button, IconButton, RoundButton } from '../buttons/buttons';
 import { BasicSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
-import { ToastNotifiaction } from '../toastnotifications/toastnotifications';
+import { ToastNotification } from '../toastnotifications/toastnotifications';
 import { Icon } from '../icons/icons';
 
 import { Calendar } from '../calendar/calendar';
@@ -324,10 +324,10 @@ class StorybookVol2 extends Component {
                     <div style={{ height: '2000px', width: '100%' }}/>
                 </RightColumn>
                 {/* NOTIFICACIONES */}
-                <ToastNotifiaction notificationType='success' from='bottom' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.SuccessToastNotificationRef = notification; }} showWithBounce={true}/>
-                <ToastNotifiaction notificationType='error' from='bottom' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.ErrorToastNotificationRef = notification; }}/>
-                <ToastNotifiaction notificationType='warning' from='top' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.WarningToastNotificationRef = notification; }} showWithBounce={true}/>
-                <ToastNotifiaction notificationType='information' from='top' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.InformationToastNotificationRef = notification; }}/>
+                <ToastNotification notificationType='success' from='bottom' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.SuccessToastNotificationRef = notification; }} showWithBounce={true}/>
+                <ToastNotification notificationType='error' from='bottom' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.ErrorToastNotificationRef = notification; }}/>
+                <ToastNotification notificationType='warning' from='top' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.WarningToastNotificationRef = notification; }} showWithBounce={true}/>
+                <ToastNotification notificationType='information' from='top' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.InformationToastNotificationRef = notification; }}/>
             </Layout>
         );
     }

@@ -153,7 +153,7 @@ const Message = styled.label`
 	width: 100%;
 `;
 
-export class ToastNotifiaction extends React.Component {
+export class ToastNotification extends React.Component {
 	//*** CONSTRUCTOR ***
 	constructor() {
 		super();
@@ -218,7 +218,7 @@ export class ToastNotifiaction extends React.Component {
 //P     R   R O   O P       I   E     D   D A   A D   D E         S
 //P     R   R  OOO  P     IIIII EEEEE DDDD  A   A DDDD  EEEEE SSSS
 
-ToastNotifiaction.propTypes = {
+ToastNotification.propTypes = {
     //Obligatorios.
     notificationType: PropTypes.oneOf(['success', 'error', 'warning', 'information']).isRequired,
     title: PropTypes.string.isRequired,
@@ -230,7 +230,7 @@ ToastNotifiaction.propTypes = {
     timeout: PropTypes.number
 };
 
-ToastNotifiaction.defaultProps = {
+ToastNotification.defaultProps = {
 	from: 'bottom',
 	showWithBounce: false,
     side: 'left',
