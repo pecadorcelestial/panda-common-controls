@@ -28,7 +28,7 @@
 
 #### Date
 ```
-For date, the <b>dateFormat</b> value is used, for example:
+For date, the dateFormat value is used, for example:
 MM-DD-YYYY is replaced by ^(\d){2}-(\d){2}-(\d){4}$
 ```
 

@@ -155,6 +155,16 @@ class StorybookVol1 extends Component {
     componentDidMount() {
        
     }
+    handleJSON = () => {
+        //"domain\\this"
+        let value = this.TextBoxRef.getValue(), secret = 'alsQWERBAISDR', key = 'lssuyANWOEVNANLSDGHqooe';
+        console.log(value);
+        let json = { item: value, secret: secret, key: key};
+        //Al ser sólo JSON (o después de usar JSON.parse), el caracter es "decodificado", osea, cambiado de \\ a uno sólo \
+        console.log(json);
+        //Después de usar "stringify", el valor es sólo texto.
+        console.log(JSON.stringify(json));
+    }
     render() {
 
         //V   V  AAA  L      OOO  RRRR  EEEEE  SSSS
@@ -349,7 +359,7 @@ class StorybookVol1 extends Component {
                     </Control>
                     <Title>JSON:</Title>
                     <Control>
-                        <Button theme='main' size='small' onClick={() => { let json = JSON.parse(this.TextBoxRef.getValue()); console.log('[STORYBOOK][BUTTON][JSON][onClick]', json); }}>Stringify</Button>
+                        <Button theme='main' size='small' onClick={this.handleJSON}>Stringify</Button>
                     </Control>
                 </RightColumn>
             </Layout>

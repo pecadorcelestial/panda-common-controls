@@ -5,9 +5,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   display: inline-block;
   height: 60px;
   margin: 0px;
+  min-width: 150px;
   padding: 0px;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 .c3 {
@@ -89,6 +90,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
 
 <div
   className="c0"
+  disabled={true}
+  id="email"
+  maxLength={500}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyPress={[Function]}
+  title="Estado: normal"
 >
   <input
     className="c1"
@@ -114,9 +122,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   display: inline-block;
   height: 60px;
   margin: 0px;
+  min-width: 150px;
   padding: 0px;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 .c3 {
@@ -198,6 +207,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
 
 <div
   className="c0"
+  disabled={false}
+  id="email"
+  maxLength={500}
+  onChange={[Function]}
+  onFocus={[Function]}
+  onKeyPress={[Function]}
+  title="Estado: normal"
 >
   <input
     className="c1"

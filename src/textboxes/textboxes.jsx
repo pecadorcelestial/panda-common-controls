@@ -40,9 +40,10 @@ const Layout = styled.div`
 	display: inline-block;
 	height: 60px;
 	margin: 0px;
+	min-width: 150px;
 	padding: 0px;
 	position: relative;
-	width: 100%;
+	width: auto;
 `;
 
 const Title = styled.label`
@@ -530,7 +531,7 @@ export class BasicTextBox extends React.Component {
 		
 		return (
 			<ThemeProvider theme={{ status }}>
-				<Layout>
+				<Layout {...this.props}>
 					<Textbox {...textboxProps} innerRef={input => this.TextBoxInnerRef = input}/>
 					<Title notEmpty={this.state.text != ''}>{this.props.title}</Title>
 					{showPasswordButton}
