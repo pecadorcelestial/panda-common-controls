@@ -349,7 +349,7 @@ class StorybookVol1 extends Component {
                     <Control>
                         <BasicCard elevation={32} width='100%'>
                             <CardContent>
-                                <BasicTextBox {...textboxProps} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
+                                <BasicTextBox {...textboxProps} style={{ margin: '10px', width: '100%' }} ref={(textbox) => { this.TextBoxRef = textbox;}}/>
                             </CardContent>
                         </BasicCard>
                     </Control>

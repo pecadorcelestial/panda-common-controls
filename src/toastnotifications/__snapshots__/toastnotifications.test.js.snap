@@ -1,6 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (advertencia). Debe pintar el componente con los siguientes modificadores: (Tipo: Advertencia)(Origen: arriba-izquierda). 1`] = `
+.c3 {
+  fill: #FFF;
+  height: 40px;
+  margin: 0px;
+  width: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .c0 {
   background-color: #FF9700;
   border-radius: 5px;
@@ -32,17 +41,6 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
   width: 10px;
 }
 
-.c3 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDM4LjUzM3B4IiBoZWlnaHQ9IjQzOC41MzNweCIgdmlld0JveD0iMCAwIDQzOC41MzMgNDM4LjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzMyA0MzguNTMzOyBmaWxsOiB3aGl0ZTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik00MDkuMTMzLDEwOS4yMDNjLTE5LjYwOC0zMy41OTItNDYuMjA1LTYwLjE4OS03OS43OTgtNzkuNzk2QzI5NS43MzYsOS44MDEsMjU5LjA1OCwwLDIxOS4yNzMsMGMtMzkuNzgxLDAtNzYuNDY2LDkuODAxLTExMC4wNjMsMjkuNDA3Yy0zMy41OTUsMTkuNjA0LTYwLjE5Miw0Ni4yMDEtNzkuOCw3OS43OTZDOS44MDEsMTQyLjgsMCwxNzkuNDg5LDAsMjE5LjI2N3M5LjgwNCw3Ni40NjMsMjkuNDA3LDExMC4wNjJjMTkuNjA3LDMzLjU4NSw0Ni4yMDQsNjAuMTg5LDc5Ljc5OSw3OS43OThjMzMuNTk3LDE5LjYwNSw3MC4yODMsMjkuNDA3LDExMC4wNjMsMjkuNDA3czc2LjQ3LTkuODAyLDExMC4wNjUtMjkuNDA3YzMzLjU5My0xOS42MDIsNjAuMTg5LTQ2LjIwNiw3OS43OTUtNzkuNzk4YzE5LjYwMy0zMy41OTksMjkuNDAzLTcwLjI4NywyOS40MDMtMTEwLjA2MkM0MzguNTMzLDE3OS40ODksNDI4LjczMiwxNDIuNzk1LDQwOS4xMzMsMTA5LjIwM3ogTTI1NS44MiwzNTYuMDIxYzAsMi42NjktMC44NjIsNC45LTIuNTczLDYuNzA3cy0zLjgwNiwyLjcxMS02LjI4MywyLjcxMWgtNTQuODE4Yy0yLjQ3MiwwLTQuNjYzLTAuOTUyLTYuNTY1LTIuODU0Yy0xLjkwNC0xLjkwMy0yLjg1NC00LjA5My0yLjg1NC02LjU2M1YzMDEuNzhjMC0yLjQ3OCwwLjk1LTQuNjY4LDIuODU0LTYuNTcxYzEuOTAzLTEuOTAyLDQuMDkzLTIuODUxLDYuNTY1LTIuODUxaDU0LjgxOGMyLjQ3OCwwLDQuNTc5LDAuOTA3LDYuMjgzLDIuNzA3YzEuNzExLDEuODE3LDIuNTczLDQuMDQ1LDIuNTczLDYuNzE1VjM1Ni4wMjF6IE0yNTUuMjQ2LDI1Ny44MTJjLTAuMTkyLDEuOTAyLTEuMTg4LDMuNTY4LTIuOTkxLDQuOTk2Yy0xLjgxMywxLjQyNC00LjA0NSwyLjEzNS02LjcwOCwyLjEzNWgtNTIuODIyYy0yLjY2NiwwLTQuOTUtMC43MTEtNi44NTMtMi4xMzVjLTEuOTA0LTEuNDI4LTIuODU3LTMuMDk0LTIuODU3LTQuOTk2TDE3OC4xNjIsODAuNTFjMC0yLjI4OCwwLjk1LTMuOTk3LDIuODUyLTUuMTRjMS45MDYtMS41MjEsNC4xOS0yLjI4NCw2Ljg1NC0yLjI4NGg2Mi44MTljMi42NjYsMCw0Ljk0OCwwLjc2LDYuODUxLDIuMjg0YzEuOTAzLDEuMTQzLDIuODQ4LDIuODU2LDIuODQ4LDUuMTRMMjU1LjI0NiwyNTcuODEyeiIvPjwvZz48L3N2Zz4=");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px;
-  height: 40px;
-  margin: 0px;
-  padding: 0px;
-  width: 40px;
-}
-
 .c2 {
   display: inline-block;
   float: left;
@@ -103,8 +101,32 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
   <div
     className="c2"
   >
-    <div
+    <svg
       className="c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<g>
+            <path d=\\"M507.345,439.683L288.084,37.688c-3.237-5.899-7.71-10.564-13.429-13.988c-5.705-3.427-11.893-5.142-18.554-5.142
+                s-12.85,1.718-18.558,5.142c-5.708,3.424-10.184,8.089-13.418,13.988L4.859,439.683c-6.663,11.998-6.473,23.989,0.57,35.98
+                c3.239,5.517,7.664,9.897,13.278,13.128c5.618,3.237,11.66,4.859,18.132,4.859h438.529c6.479,0,12.519-1.622,18.134-4.859
+                c5.62-3.23,10.038-7.611,13.278-13.128C513.823,463.665,514.015,451.681,507.345,439.683z M292.655,411.132
+                c0,2.662-0.91,4.897-2.71,6.704c-1.807,1.811-3.949,2.71-6.427,2.71h-54.816c-2.474,0-4.616-0.899-6.423-2.71
+                c-1.809-1.807-2.713-4.042-2.713-6.704v-54.248c0-2.662,0.905-4.897,2.713-6.704c1.807-1.811,3.946-2.71,6.423-2.71h54.812
+                c2.479,0,4.62,0.899,6.428,2.71c1.803,1.807,2.71,4.042,2.71,6.704v54.248H292.655z M292.088,304.357
+                c-0.198,1.902-1.198,3.47-3.001,4.709c-1.811,1.238-4.046,1.854-6.711,1.854h-52.82c-2.663,0-4.947-0.62-6.849-1.854
+                c-1.908-1.243-2.858-2.807-2.858-4.716l-4.853-130.47c0-2.667,0.953-4.665,2.856-5.996c2.474-2.093,4.758-3.14,6.854-3.14h62.809
+                c2.098,0,4.38,1.043,6.854,3.14c1.902,1.331,2.851,3.14,2.851,5.424L292.088,304.357z\\"/>
+        </g>",
+        }
+      }
+      height="40px"
+      icon="warning"
+      preserveAspectRatio="none"
+      vectorEffect="non-scaling-stroke"
+      viewBox="0 0 512.000 512.000"
+      width="40px"
+      x="0px"
+      y="0px"
     />
   </div>
   <div
@@ -120,6 +142,15 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
 `;
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (error). Debe pintar el componente con los siguientes modificadores: (Tipo: Error)(Origen: abajo-derecha). 1`] = `
+.c3 {
+  fill: #FFF;
+  height: 40px;
+  margin: 0px;
+  width: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .c0 {
   background-color: #E51D24;
   border-radius: 5px;
@@ -151,17 +182,6 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
   width: 10px;
 }
 
-.c3 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDM4LjUzM3B4IiBoZWlnaHQ9IjQzOC41MzNweCIgdmlld0JveD0iMCAwIDQzOC41MzMgNDM4LjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzMyA0MzguNTMzOyBmaWxsOiB3aGl0ZTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik00MDkuMTMzLDEwOS4yMDNjLTE5LjYwOC0zMy41OTItNDYuMjA1LTYwLjE4OS03OS43OTgtNzkuNzk2QzI5NS43MzYsOS44MDEsMjU5LjA1OCwwLDIxOS4yNzMsMGMtMzkuNzgxLDAtNzYuNDcsOS44MDEtMTEwLjA2MywyOS40MDdjLTMzLjU5NSwxOS42MDQtNjAuMTkyLDQ2LjIwMS03OS44LDc5Ljc5NkM5LjgwMSwxNDIuOCwwLDE3OS40ODksMCwyMTkuMjY3YzAsMzkuNzgsOS44MDQsNzYuNDYzLDI5LjQwNywxMTAuMDYyYzE5LjYwNywzMy41OTIsNDYuMjA0LDYwLjE4OSw3OS43OTksNzkuNzk4YzMzLjU5NywxOS42MDUsNzAuMjgzLDI5LjQwNywxMTAuMDYzLDI5LjQwN3M3Ni40Ny05LjgwMiwxMTAuMDY1LTI5LjQwN2MzMy41OTMtMTkuNjAyLDYwLjE4OS00Ni4yMDYsNzkuNzk1LTc5Ljc5OGMxOS42MDMtMzMuNTk2LDI5LjQwMy03MC4yODQsMjkuNDAzLTExMC4wNjJDNDM4LjUzMywxNzkuNDg1LDQyOC43MzIsMTQyLjc5NSw0MDkuMTMzLDEwOS4yMDN6IE0zMjIuNjIxLDI3MC45MzljMy42MTcsMy42MTMsNS40MjgsNy45MDUsNS40MjgsMTIuODU0YzAsNS4xMzMtMS44MTEsOS41MTQtNS40MjgsMTMuMTI3bC0yNS42OTMsMjUuNzAxYy0zLjYxNCwzLjYxMy03Ljk5NCw1LjQyLTEzLjEzNSw1LjQyYy00Ljk0OCwwLTkuMjM2LTEuODA3LTEyLjg0Ny01LjQybC01MS42NzYtNTEuNjgybC01MS42NzgsNTEuNjgyYy0zLjYxNiwzLjYxMy03Ljg5OCw1LjQyLTEyLjg0Nyw1LjQyYy01LjE0LDAtOS41MTctMS44MDctMTMuMTM0LTUuNDJsLTI1LjY5Ny0yNS43MDFjLTMuNjE2LTMuNjEzLTUuNDI0LTcuOTk0LTUuNDI0LTEzLjEyN2MwLTQuOTQ4LDEuODA5LTkuMjQsNS40MjQtMTIuODU0bDUxLjY3OC01MS42NzNsLTUxLjY3OC01MS42NzhjLTMuNjE2LTMuNjEyLTUuNDI0LTcuODk4LTUuNDI0LTEyLjg0N2MwLTUuMTQsMS44MDktOS41MTcsNS40MjQtMTMuMTM0bDI1LjY5Ny0yNS42OTNjMy42MTctMy42MTYsNy45OTQtNS40MjQsMTMuMTM0LTUuNDI0YzQuOTQ5LDAsOS4yMzEsMS44MDksMTIuODQ3LDUuNDI0bDUxLjY3OCw1MS42NzRsNTEuNjc2LTUxLjY3NGMzLjYxLTMuNjE2LDcuODk4LTUuNDI0LDEyLjg0Ny01LjQyNGM1LjE0MSwwLDkuNTIxLDEuODA5LDEzLjEzNSw1LjQyNGwyNS42OTMsMjUuNjkzYzMuNjE3LDMuNjE3LDUuNDI4LDcuOTk0LDUuNDI4LDEzLjEzNGMwLDQuOTQ4LTEuODExLDkuMjM1LTUuNDI4LDEyLjg0N2wtNTEuNjc1LDUxLjY3OEwzMjIuNjIxLDI3MC45Mzl6Ii8+PC9nPjwvc3ZnPg==");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px;
-  height: 40px;
-  margin: 0px;
-  padding: 0px;
-  width: 40px;
-}
-
 .c2 {
   display: inline-block;
   float: left;
@@ -232,8 +252,34 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
   <div
     className="c2"
   >
-    <div
+    <svg
       className="c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<g>
+            <path d=\\"M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+                C438.533,179.485,428.732,142.795,409.133,109.203z M322.621,270.939c3.617,3.613,5.428,7.905,5.428,12.854
+                c0,5.133-1.811,9.514-5.428,13.127l-25.693,25.701c-3.614,3.613-7.994,5.42-13.135,5.42c-4.948,0-9.236-1.807-12.847-5.42
+                l-51.676-51.682l-51.678,51.682c-3.616,3.613-7.898,5.42-12.847,5.42c-5.14,0-9.517-1.807-13.134-5.42l-25.697-25.701
+                c-3.616-3.613-5.424-7.994-5.424-13.127c0-4.948,1.809-9.24,5.424-12.854l51.678-51.673l-51.678-51.678
+                c-3.616-3.612-5.424-7.898-5.424-12.847c0-5.14,1.809-9.517,5.424-13.134l25.697-25.693c3.617-3.616,7.994-5.424,13.134-5.424
+                c4.949,0,9.231,1.809,12.847,5.424l51.678,51.674l51.676-51.674c3.61-3.616,7.898-5.424,12.847-5.424
+                c5.141,0,9.521,1.809,13.135,5.424l25.693,25.693c3.617,3.617,5.428,7.994,5.428,13.134c0,4.948-1.811,9.235-5.428,12.847
+                l-51.675,51.678L322.621,270.939z\\"/>
+        </g>",
+        }
+      }
+      height="40px"
+      icon="cross"
+      preserveAspectRatio="none"
+      vectorEffect="non-scaling-stroke"
+      viewBox="0 0 512.000 512.000"
+      width="40px"
+      x="0px"
+      y="0px"
     />
   </div>
   <div
@@ -254,6 +300,15 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
 `;
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (información). Debe pintar el componente con los siguientes modificadores: (Tipo: Información)(Origen: arriba-derecha). 1`] = `
+.c3 {
+  fill: #FFF;
+  height: 40px;
+  margin: 0px;
+  width: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .c0 {
   background-color: #1476FB;
   border-radius: 5px;
@@ -283,17 +338,6 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
   right: 10px;
   top: 10px;
   width: 10px;
-}
-
-.c3 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDM4LjUzM3B4IiBoZWlnaHQ9IjQzOC41MzNweCIgdmlld0JveD0iMCAwIDQzOC41MzMgNDM4LjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzMyA0MzguNTMzOyBmaWxsOiB3aGl0ZTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik00MDkuMTMzLDEwOS4yMDNjLTE5LjYwOC0zMy41OTItNDYuMjA1LTYwLjE4OS03OS43OTgtNzkuNzk2QzI5NS43MzYsOS44MDEsMjU5LjA1OCwwLDIxOS4yNzMsMGMtMzkuNzgxLDAtNzYuNDcsOS44MDEtMTEwLjA2MywyOS40MDdjLTMzLjU5NSwxOS42MDQtNjAuMTkyLDQ2LjIwMS03OS44LDc5Ljc5NkM5LjgwMSwxNDIuOCwwLDE3OS40ODksMCwyMTkuMjY3YzAsMzkuNzgsOS44MDQsNzYuNDYzLDI5LjQwNywxMTAuMDYyYzE5LjYwNywzMy41OTIsNDYuMjA0LDYwLjE4OSw3OS43OTksNzkuNzk4YzMzLjU5NywxOS42MDUsNzAuMjgzLDI5LjQwNywxMTAuMDYzLDI5LjQwN3M3Ni40Ny05LjgwMiwxMTAuMDY1LTI5LjQwN2MzMy41OTMtMTkuNjAyLDYwLjE4OS00Ni4yMDYsNzkuNzk1LTc5Ljc5OGMxOS42MDMtMzMuNTk2LDI5LjQwMy03MC4yODQsMjkuNDAzLTExMC4wNjJDNDM4LjUzMywxNzkuNDg1LDQyOC43MzIsMTQyLjc5NSw0MDkuMTMzLDEwOS4yMDN6IE0xODIuNzI3LDU0LjgxM2MwLTIuNjY2LDAuODU1LTQuODUzLDIuNTctNi41NjVjMS43MTItMS43MTEsMy45MDMtMi41Nyw2LjU2Ny0yLjU3aDU0LjgyYzIuNjYyLDAsNC44NTMsMC44NTksNi41NjEsMi41N2MxLjcxMSwxLjcxMiwyLjU3MywzLjg5OSwyLjU3Myw2LjU2NXY0NS42ODJjMCwyLjY2NC0wLjg2Miw0Ljg1NC0yLjU3Myw2LjU2NGMtMS43MDgsMS43MTItMy44OTgsMi41NjgtNi41NjEsMi41NjhoLTU0LjgyYy0yLjY2NCwwLTQuODU0LTAuODU2LTYuNTY3LTIuNTY4Yy0xLjcxNS0xLjcwOS0yLjU3LTMuOS0yLjU3LTYuNTY0VjU0LjgxM3ogTTI5Mi4zNTksMzU2LjMwOWMwLDIuNjYyLTAuODYzLDQuODUzLTIuNTcsNi41NjFjLTEuNzA0LDEuNzE0LTMuODk1LDIuNTctNi41NjMsMi41N0gxNTUuMzE3Yy0yLjY2NywwLTQuODU0LTAuODU2LTYuNTY3LTIuNTdjLTEuNzEyLTEuNzA4LTIuNTY4LTMuODk4LTIuNTY4LTYuNTY0di00NS42ODJjMC0yLjY3LDAuODU2LTQuODUzLDIuNTY4LTYuNTY3YzEuNzEzLTEuNzA4LDMuOTAzLTIuNTcsNi41NjctMi41N2gyNy40MXYtOTEuMzU4aC0yNy40MWMtMi42NjcsMC00Ljg1My0wLjg1NS02LjU2Ny0yLjU2OGMtMS43MTItMS43MTEtMi41NjgtMy45MDEtMi41NjgtNi41Njd2LTQ1LjY3OWMwLTIuNjY2LDAuODU2LTQuODUzLDIuNTY4LTYuNTY3YzEuNzE1LTEuNzEzLDMuOTA1LTIuNTY4LDYuNTY3LTIuNTY4aDkxLjM2N2MyLjY2MiwwLDQuODUzLDAuODU1LDYuNTYxLDIuNTY4YzEuNzExLDEuNzE0LDIuNTczLDMuOTAxLDIuNTczLDYuNTY3djE0Ni4xNzloMjcuNDAxYzIuNjY5LDAsNC44NTksMC44NTUsNi41NywyLjU2NmMxLjcwNCwxLjcxMiwyLjU2NiwzLjkwMSwyLjU2Niw2LjU2N3Y0NS42ODNIMjkyLjM1OXoiLz48L2c+PC9zdmc+");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px;
-  height: 40px;
-  margin: 0px;
-  padding: 0px;
-  width: 40px;
 }
 
 .c2 {
@@ -356,8 +400,35 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
   <div
     className="c2"
   >
-    <div
+    <svg
       className="c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<g>
+            <path d=\\"M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+                C438.533,179.485,428.732,142.795,409.133,109.203z M182.727,54.813c0-2.666,0.855-4.853,2.57-6.565
+                c1.712-1.711,3.903-2.57,6.567-2.57h54.82c2.662,0,4.853,0.859,6.561,2.57c1.711,1.712,2.573,3.899,2.573,6.565v45.682
+                c0,2.664-0.862,4.854-2.573,6.564c-1.708,1.712-3.898,2.568-6.561,2.568h-54.82c-2.664,0-4.854-0.856-6.567-2.568
+                c-1.715-1.709-2.57-3.9-2.57-6.564V54.813z M292.359,356.309c0,2.662-0.863,4.853-2.57,6.561c-1.704,1.714-3.895,2.57-6.563,2.57
+                H155.317c-2.667,0-4.854-0.856-6.567-2.57c-1.712-1.708-2.568-3.898-2.568-6.564v-45.682c0-2.67,0.856-4.853,2.568-6.567
+                c1.713-1.708,3.903-2.57,6.567-2.57h27.41v-91.358h-27.41c-2.667,0-4.853-0.855-6.567-2.568c-1.712-1.711-2.568-3.901-2.568-6.567
+                v-45.679c0-2.666,0.856-4.853,2.568-6.567c1.715-1.713,3.905-2.568,6.567-2.568h91.367c2.662,0,4.853,0.855,6.561,2.568
+                c1.711,1.714,2.573,3.901,2.573,6.567v146.179h27.401c2.669,0,4.859,0.855,6.57,2.566c1.704,1.712,2.566,3.901,2.566,6.567v45.683
+                H292.359z\\"/>
+        </g>",
+        }
+      }
+      height="40px"
+      icon="information"
+      preserveAspectRatio="none"
+      vectorEffect="non-scaling-stroke"
+      viewBox="0 0 512.000 512.000"
+      width="40px"
+      x="0px"
+      y="0px"
     />
   </div>
   <div
@@ -376,6 +447,15 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
 `;
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (éxito). Debe pintar el componente con los siguientes modificadores: (Tipo: Éxito)(Origen: abajo-izquierda). 1`] = `
+.c3 {
+  fill: #FFF;
+  height: 40px;
+  margin: 0px;
+  width: 40px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
 .c0 {
   background-color: #4CB050;
   border-radius: 5px;
@@ -405,17 +485,6 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (é
   right: 10px;
   top: 10px;
   width: 10px;
-}
-
-.c3 {
-  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDM4LjUzM3B4IiBoZWlnaHQ9IjQzOC41MzNweCIgdmlld0JveD0iMCAwIDQzOC41MzMgNDM4LjUzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDM4LjUzMyA0MzguNTMzOyBmaWxsOiB3aGl0ZTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik00MDkuMTMzLDEwOS4yMDNjLTE5LjYwOC0zMy41OTItNDYuMjA1LTYwLjE4OS03OS43OTgtNzkuNzk2QzI5NS43MzYsOS44MDEsMjU5LjA1OCwwLDIxOS4yNzMsMGMtMzkuNzgxLDAtNzYuNDcsOS44MDEtMTEwLjA2MywyOS40MDdjLTMzLjU5NSwxOS42MDQtNjAuMTkyLDQ2LjIwMS03OS44LDc5Ljc5NkM5LjgwMSwxNDIuOCwwLDE3OS40ODksMCwyMTkuMjY3YzAsMzkuNzgsOS44MDQsNzYuNDYzLDI5LjQwNywxMTAuMDYyYzE5LjYwNywzMy41OTIsNDYuMjA0LDYwLjE4OSw3OS43OTksNzkuNzk4YzMzLjU5NywxOS42MDUsNzAuMjgzLDI5LjQwNywxMTAuMDYzLDI5LjQwN3M3Ni40Ny05LjgwMiwxMTAuMDY1LTI5LjQwN2MzMy41OTMtMTkuNjAyLDYwLjE4OS00Ni4yMDYsNzkuNzk1LTc5Ljc5OGMxOS42MDMtMzMuNTk2LDI5LjQwMy03MC4yODQsMjkuNDAzLTExMC4wNjJDNDM4LjUzMywxNzkuNDg1LDQyOC43MzIsMTQyLjc5NSw0MDkuMTMzLDEwOS4yMDN6IE0zNjEuNDQ1LDE4NS44NjNMMjA2LjQyLDM0MC44ODljLTMuNjE3LDMuNjItNy45OTIsNS40MjgtMTMuMTM0LDUuNDI4Yy00Ljk0OCwwLTkuMjI5LTEuODA4LTEyLjg0Ny01LjQyOEw3Ny4wODMsMjM3LjUzOWMtMy40MjItMy40MjktNS4xMzctNy43MDMtNS4xMzctMTIuODQ3YzAtNS4zMjgsMS43MDktOS43MDksNS4xMzctMTMuMTM2bDI1Ljk4MS0yNS42OTNjMy42MjEtMy42MTYsNy44OTgtNS40MjQsMTIuODUtNS40MjRzOS4yMzUsMS44MDksMTIuODUsNS40MjRsNjQuNTI1LDY0LjUyM2wxMTYuNDg1LTExNi4xOTljMy42MTctMy42MTcsNy44OTgtNS40MjYsMTIuODQ3LTUuNDI2YzQuOTQ1LDAsOS4yMzMsMS44MDksMTIuODQ3LDUuNDI2bDI1Ljk4MSwyNS42OTdjMy40MzIsMy40MjQsNS4xNCw3LjgwMSw1LjE0LDEzLjEyOUMzNjYuNTg5LDE3OC4xNTQsMzY0Ljg4MSwxODIuNDM3LDM2MS40NDUsMTg1Ljg2M3oiLz48L2c+PC9zdmc+");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px;
-  height: 40px;
-  margin: 0px;
-  padding: 0px;
-  width: 40px;
 }
 
 .c2 {
@@ -488,8 +557,31 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (é
   <div
     className="c2"
   >
-    <div
+    <svg
       className="c3"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<g>
+            <path d=\\"M409.133,109.203c-19.608-33.592-46.205-60.189-79.798-79.796C295.736,9.801,259.058,0,219.273,0
+                c-39.781,0-76.47,9.801-110.063,29.407c-33.595,19.604-60.192,46.201-79.8,79.796C9.801,142.8,0,179.489,0,219.267
+                c0,39.78,9.804,76.463,29.407,110.062c19.607,33.592,46.204,60.189,79.799,79.798c33.597,19.605,70.283,29.407,110.063,29.407
+                s76.47-9.802,110.065-29.407c33.593-19.602,60.189-46.206,79.795-79.798c19.603-33.596,29.403-70.284,29.403-110.062
+                C438.533,179.485,428.732,142.795,409.133,109.203z M361.445,185.863L206.42,340.889c-3.617,3.62-7.992,5.428-13.134,5.428
+                c-4.948,0-9.229-1.808-12.847-5.428L77.083,237.539c-3.422-3.429-5.137-7.703-5.137-12.847c0-5.328,1.709-9.709,5.137-13.136
+                l25.981-25.693c3.621-3.616,7.898-5.424,12.85-5.424s9.235,1.809,12.85,5.424l64.525,64.523l116.485-116.199
+                c3.617-3.617,7.898-5.426,12.847-5.426c4.945,0,9.233,1.809,12.847,5.426l25.981,25.697c3.432,3.424,5.14,7.801,5.14,13.129
+                C366.589,178.154,364.881,182.437,361.445,185.863z\\"/>
+        </g>",
+        }
+      }
+      height="40px"
+      icon="checked"
+      preserveAspectRatio="none"
+      vectorEffect="non-scaling-stroke"
+      viewBox="0 0 512.000 512.000"
+      width="40px"
+      x="0px"
+      y="0px"
     />
   </div>
   <div
