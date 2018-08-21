@@ -41,10 +41,12 @@
 - picture
 - pinterest
 - play
+- playSign
 - plus
 - powerButton
 - printer
 - questionMark
+- refresh
 - save
 - star
 - starFull

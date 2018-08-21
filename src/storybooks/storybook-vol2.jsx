@@ -248,10 +248,10 @@ class StorybookVol2 extends Component {
                     </Option>
                     <Option>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.AnimateFadeRef.triggerEntranceAnimation(); this.AnimateFlipRef.triggerEntranceAnimation(); this.AnimateZoomRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.AnimateFadeRef.triggerEntranceAnimation(); this.AnimateFlipRef.triggerEntranceAnimation(); this.AnimateZoomRef.triggerEntranceAnimation(); }}>triggerEntrance</Button>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.AnimateFadeRef.triggerExitAnimation(); this.AnimateFlipRef.triggerExitAnimation(); this.AnimateZoomRef.triggerExitAnimation(); }}>triggerExit</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.AnimateFadeRef.triggerExitAnimation(); this.AnimateFlipRef.triggerExitAnimation(); this.AnimateZoomRef.triggerExitAnimation(); }}>triggerExit</Button>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>
@@ -259,28 +259,28 @@ class StorybookVol2 extends Component {
                     <Title>Notifications:</Title>
                     <Option>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.SuccessToastNotificationRef.show(); }}>Show success toast</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.SuccessToastNotificationRef.show(); }}>Show success toast</Button>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.ErrorToastNotificationRef.show(); }}>Show error toast</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.ErrorToastNotificationRef.show(); }}>Show error toast</Button>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.WarningToastNotificationRef.show(); }}>Show warning toast</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.WarningToastNotificationRef.show(); }}>Show warning toast</Button>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <Button theme='secondary' size='small' onClick={(event) => { this.InformationToastNotificationRef.show(); }}>Show information toast</Button>
+                            <Button theme='secondaryRed' size='small' onClick={(event) => { this.InformationToastNotificationRef.show(); }}>Show information toast</Button>
                         </OptionButtonWrapper>
                     </Option>
                     <Title>Botones:</Title>
                     <Option>
                         <OptionButtonWrapper>
-                            <IconButton theme='main' size='small' icon='plus'>Add new</IconButton>
+                            <IconButton theme='red' size='small' icon='plus'>Add new</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <IconButton theme='secondary' size='small' icon='save'>Save</IconButton>
+                            <IconButton theme='secondaryRed' size='small' icon='save'>Save</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <IconButton theme='flat' size='small' icon='pencil'>Edit</IconButton>
+                            <IconButton theme='flatRed' size='small' icon='pencil'>Edit</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
                             <IconButton theme='blue' size='small' icon='cogWheel'>Configuration</IconButton>
@@ -289,7 +289,7 @@ class StorybookVol2 extends Component {
                             <IconButton theme='flatBlue' size='small' icon='heartFull'>Like</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <RoundButton theme='secondary' size='small' icon='magnifyingGlass'/>
+                            <RoundButton theme='secondaryRed' size='small' icon='magnifyingGlass'/>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>

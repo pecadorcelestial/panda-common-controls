@@ -13,91 +13,145 @@ import { Icon } from '../icons/icons';
 
 const backgroundColor = (theme) => {
 	switch(theme) {
-		case 'main': return '#FF456A';
-		case 'secondary': return '#FFF';
-		case 'flat': return 'transparent';
+		case 'red': return '#FF456A';
+		case 'secondaryRed': return '#FFF';
+		case 'flatRed': return 'transparent';
 		case 'blue': return '#1476FB';
 		case 'flatBlue': return 'transparent';
+		case 'green': return '#4CB050';
+		case 'flatGreen': return 'transparent';
+		case 'yellow': return '#FFE200';
+		case 'flatYellow': return 'transparent';
+		case 'gray': return '#858585';
+		case 'flatGray': return 'transparent';
 	}
 };
 
 const border = (theme) => {
 	switch(theme) {
-		case 'main': return '1px solid #FF456A';
-		case 'secondary': return '1px solid #FF456A';
-		case 'flat': return '1px solid transparent';
+		case 'red': return '1px solid #FF456A';
+		case 'secondaryRed': return '1px solid #FF456A';
+		case 'flatRed': return '1px solid transparent';
 		case 'blue': return '1px solid #1476FB';
 		case 'flatBlue': return '1px solid transparent';
+		case 'green': return '1px solid #4CB050';
+		case 'flatGreen': return '1px solid transparent';
+		case 'yellow': return '1px solid #FFE200';
+		case 'flatYellow': return '1px solid transparent';
+		case 'gray': return '1px solid #858585';
+		case 'flatGray': return '1px solid transparent';
 	}
 };
 
 const color = (theme) => {
 	switch(theme) {
-		case 'main': return '#FFF';
-		case 'secondary': return '#FF456A';
-		case 'flat': return '#FF456A';
+		case 'red': return '#FFF';
+		case 'secondaryRed': return '#FF456A';
+		case 'flatRed': return '#FF456A';
 		case 'blue': return '#FFF';
 		case 'flatBlue': return '#1476FB';
+		case 'green': return '#FFF';
+		case 'flatGreen': return '#4CB050';
+		case 'yellow': return '#FFF';
+		case 'flatYellow': return '#FFE200';
+		case 'gray': return '#FFF';
+		case 'flatGray': return '#858585';
 	}
 };
 
 const hoverBackgroundColor = (theme) => {
 	switch(theme) {
-		case 'main': return '#CC1F62';
-		case 'secondary': return '#CC1F62';
-		case 'flat': return '#EBEBEB';
+		case 'red': return '#CC1F62';
+		case 'secondaryRed': return '#CC1F62';
+		case 'flatRed': return '#EBEBEB';
 		case 'blue': return '#0960D3';
 		case 'flatBlue': return '#EBEBEB';
+		case 'green': return '#3C8C40';
+		case 'flatGreen': return '#EBEBEB';
+		case 'yellow': return '#CCB400';
+		case 'flatYellow': return '#EBEBEB';
+		case 'gray': return '#6A6A6A';
+		case 'flatGray': return '#EBEBEB';
 	}
 };
 
 const hoverBorder = (theme) => {
 	switch(theme) {
-		case 'main': return '1px solid #CC1F62';
-		case 'secondary': return '1px solid #CC1F62';
-		case 'flat': return '1px solid #EBEBEB';
+		case 'red': return '1px solid #CC1F62';
+		case 'secondaryRed': return '1px solid #CC1F62';
+		case 'flatRed': return '1px solid #EBEBEB';
 		case 'blue': return '1px solid #0960D3';
 		case 'flatBlue': return '1px solid #EBEBEB';
+		case 'green': return '1px solid #3C8C40';
+		case 'flatGreen': return '1px solid #EBEBEB';
+		case 'yellow': return '1px solid #CCB400';
+		case 'flatYellow': return '1px solid #EBEBEB';
+		case 'gray': return '1px solid #6A6A6A';
+		case 'flatGray': return '1px solid #EBEBEB';
 	}
 };
 
 const hoverColor = (theme) => {
 	switch(theme) {
-		case 'main': return '#FFF';
-		case 'secondary': return '#FFF';
-		case 'flat': return '#FF456A';
+		case 'red': return '#FFF';
+		case 'secondaryRed': return '#FFF';
+		case 'flatRed': return '#FF456A';
 		case 'blue': return '#FFF';
 		case 'flatBlue': return '#1476FB';
+		case 'green': return '#FFF';
+		case 'flatGreen': return '#4CB050';
+		case 'yellow': return '#FFF';
+		case 'flatYellow': return '#FFE200';
+		case 'gray': return '#FFF';
+		case 'flatGray': return '#858585';
 	}
 };
 
 const disabledBackgroundColor = (theme) => {
 	switch(theme) {
-		case 'main': return '#BFBFBF';
-		case 'secondary': return '#BFBFBF';
-		case 'flat': return 'transparent';
+		case 'red': return '#BFBFBF';
+		case 'secondaryRed': return '#BFBFBF';
+		case 'flatRed': return 'transparent';
 		case 'blue': return '#BFBFBF';
 		case 'flatBlue': return 'transparent';
+		case 'green': return '#BFBFBF';
+		case 'flatGreen': return 'transparent';
+		case 'yellow': return '#BFBFBF';
+		case 'flatYellow': return 'transparent';
+		case 'gray': return '#BFBFBF';
+		case 'flatGray': return 'transparent';
 	}
 };
 
 const disabledBorder = (theme) => {
 	switch(theme) {
-		case 'main': return '1px solid #BFBFBF';
-		case 'secondary': return '1px solid #BFBFBF';
-		case 'flat': return '1px solid transparent';
+		case 'red': return '1px solid #BFBFBF';
+		case 'secondaryRed': return '1px solid #BFBFBF';
+		case 'flatRed': return '1px solid transparent';
 		case 'blue': return '1px solid #BFBFBF';
 		case 'flatBlue': return '1px solid transparent';
+		case 'green': return '1px solid #BFBFBF';
+		case 'flatGreen': return '1px solid transparent';
+		case 'yellow': return '1px solid #BFBFBF';
+		case 'flatYellow': return '1px solid transparent';
+		case 'gray': return '1px solid #BFBFBF';
+		case 'flatGray': return '1px solid transparent';
 	}
 };
 
 const disabledColor = (theme) => {
 	switch(theme) {
-		case 'main': return '#FFF';
-		case 'secondary': return '#FFF';
-		case 'flat': return '#BFBFBF';
+		case 'red': return '#FFF';
+		case 'secondaryRed': return '#FFF';
+		case 'flatRed': return '#BFBFBF';
 		case 'blue': return '#FFF';
 		case 'flatBlue': return '#BFBFBF';
+		case 'green': return '#FFF';
+		case 'flatGreen': return '#BFBFBF';
+		case 'yellow': return '#FFF';
+		case 'flatYellow': return '#BFBFBF';
+		case 'gray': return '#FFF';
+		case 'flatGray': return '#BFBFBF';
 	}
 };
 
@@ -182,12 +236,12 @@ export const Button = styled(({ className, children, ...props }) => (
 `;
 
 Button.propTypes = {
-	theme: PropTypes.oneOf(['main', 'secondary', 'flat', 'blue', 'flatBlue']),
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray']),
 	size: PropTypes.oneOf(['small', 'medium', 'big'])
 };
 
 Button.defaultProps = {
-	theme: 'main',
+	theme: 'red',
 	size: 'small'
 }
 

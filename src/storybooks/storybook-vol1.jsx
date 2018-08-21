@@ -359,7 +359,7 @@ class StorybookVol1 extends Component {
                     </Control>
                     <Title>JSON:</Title>
                     <Control>
-                        <Button theme='main' size='small' onClick={this.handleJSON}>Stringify</Button>
+                        <Button theme='red' size='small' onClick={this.handleJSON}>Stringify</Button>
                     </Control>
                 </RightColumn>
             </Layout>

@@ -156,6 +156,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='questionMark' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='refresh' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='save' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>

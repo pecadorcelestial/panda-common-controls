@@ -1,8 +1,9 @@
 {
   "name": "panda-common-controls",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Common controls library for websites.",
-  "main": "index.js",
+  "main": "index",
+  "typings": "index",
   "scripts": {
     "clean": "bash scripts/clean-lib.sh",
     "prebuild": "npm run clean",
@@ -27,6 +28,8 @@
     "card",
     "checkbox",
     "dropdownlist",
+    "icons",
+    "radiobutton",
     "textbox",
     "toast-notification",
     "toast",
