@@ -125,7 +125,7 @@ app.use((request, response) => {
         response.redirect(302, context.url);
         response.end();
     } else {
-        response.write(`<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>${styles}</head><body><div id='root'>${html}</div><script src="/bin/main.bundle.js"></script></body></html>`);
+        response.write(`<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>${styles}</head><body style='margin: 0px;'><div id='root'>${html}</div><script src="/bin/main.bundle.js"></script></body></html>`);
         response.end();
     }
 });

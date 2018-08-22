@@ -5,7 +5,7 @@ import styled, { keyframes } from 'styled-components';
 
 //Componentes locales.
 import { Animate } from '../animations/animations';
-import { Icon } from '../icons/icons';
+import { RoundButton } from '../buttons/buttons';
 
 const Layout = styled.div`
     box-sizing: border-box;
@@ -147,12 +147,10 @@ export class Menu extends Component {
                 }
             });
         }
-        /*
-        let delay = this.props.options.length * 600;
+        let delay = (this.props.options.length * 200) + 400;
         setTimeout(() => {
             this.setState({ show: false, hide: true });
         }, delay);
-        */
     }
     //*** RESULTADO ***
     render() {
@@ -160,7 +158,7 @@ export class Menu extends Component {
             <Layout>
                 <Header innerRef={header => this.HeaderInnerRef = header}>
                     <IconWrapper>
-                        <Icon icon='threeHorizontalLines' fill='#242424' height='30px' width='30px' onClick={this.handleIconOnClick}/>
+                        <RoundButton icon='threeHorizontalLines' theme='blue' size='small' onClick={this.handleIconOnClick}/>
                     </IconWrapper>
                     <Title>{this.props.title}</Title>
                 </Header>
