@@ -378,13 +378,13 @@ const Animation = styled.div`
     display: block;
     height: auto;
     margin: 0px;
-    opacity: 0;
+    opacity: ${props => ((!props.entrance && !props.exit) || (props.entrance && !props.exit)) ? `0` : `1`};
     padding: 0px;
     position: absolute;
     width: auto;
 
-    ${props => props.entrance ? `animation: ${getEntranceAnimation(props.type, props.from, props.enterWithBounce)} 0.6s ease-out forwards;` : ``}
-    ${props => props.exit ? `animation: ${getExitAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
+    ${props => (props.entrance && !props.exit) ? `animation: ${getEntranceAnimation(props.type, props.from, props.enterWithBounce)} 0.6s ease-out forwards;` : ``}
+    ${props => (props.exit && ! props.entrance) ? `animation: ${getExitAnimation(props.type, props.from)} 0.6s ease-out forwards;` : ``}
 `;
 
 export class Animate extends React.Component {
@@ -490,7 +490,7 @@ export class Animate extends React.Component {
 		};
 
         return(
-            <Animation {...animationProps}>
+            <Animation {...animationProps} {...this.props}>
                 {this.props.children}
             </Animation>
         );

@@ -50,14 +50,6 @@ const Control = styled.div`
     width: 100%;
 `;
 
-const CardContent = styled.div`
-    box-sizing: border-box;
-    height: 100px;
-    margin: 0px;
-    padding: 20px;
-    width: 100%;
-`;
-
 const AnimationWrapper = styled.div`
     height: 100px;
     margin: 10px 0px 0px 0px;
@@ -88,42 +80,6 @@ const Title = styled.label`
 	padding: 0px;
     text-align: left;
 	width: 100%;
-`;
-
-const OptionTitle = styled.label`
-    box-sizing: border-box;
-	color: #000;
-    display: inline-block;
-    height: auto;
-    float: left;
-	font-family: "Open Sans", sans-serif;
-	font-size: 12px;
-	font-weight: normal;
-	font-style: normal;
-	font-stretch: normal;
-	letter-spacing: normal;
-	margin: 0px;
-	padding: 10px 0px 0px 0px;
-    width: 20%;
-`;
-
-const OptionInput = styled.input`
-    background-color: transparent;
-    border-top: none;
-    border-right: none;
-    border-bottom: 1px solid #000;
-    border-left: none;
-	border-radius: 0px;box-sizing: border-box;
-	color: #000;
-    display: inline-block;
-    display: inline-block;
-    float: left;
-	font-size: 14px;
-    height: 30px;
-    margin: 0px;
-	outline: none;
-	padding: 7px 0px 0px 0px;
-	width: ${props => (props.style != undefined && props.style.width != undefined) ? props.style.width : `79%`};
 `;
 
 const OptionButtonWrapper = styled.div`

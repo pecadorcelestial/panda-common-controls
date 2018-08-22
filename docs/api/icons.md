@@ -51,6 +51,7 @@
 - star
 - starFull
 - telephone
+- threeHorizontalLines
 - time
 - trash
 - twitter
