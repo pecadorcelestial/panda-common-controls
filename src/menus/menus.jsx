@@ -35,6 +35,7 @@ const IconWrapper = styled.div`
 `;
 
 const Title = styled.h1`
+    color: #242424;
     float: left;
     font-family: "Open Sans", sans-serif;	
     font-size: 20px;
@@ -43,7 +44,7 @@ const Title = styled.h1`
     font-weight: bold;
     height: 30px;
     margin: 0px 0px 0px 10px;
-    padding: 0px;
+    padding: 2px 0px 0px 0px;
     width: auto;
 `;
 
@@ -75,17 +76,45 @@ const Options = styled.div`
     display: block;
     height: auto;
     margin: 0px;
-    min-width: 300px
+    min-width: 300px;
     opacity: 0;
     padding: 0px;
     position: absolute;
-    z-index: 99;
+    z-index: 999;
 
     transform: scale(0);
     transform-origin: 0px 0px;
 
     ${props => (props.show && !props.hide) ? `animation: ${ZoomIn()} 0.1s ease-out forwards;` : ``}
     ${props => (props.hide && !props.show) ? `animation: ${ZoomOut()} 0.1s ease-out forwards;` : ``}
+
+	@media screen and (max-width: 767px) {
+        min-width: unset;
+		width: 80%;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		min-width: unset;
+		width: 80%;
+	}
+`;
+
+const Blur = () => keyframes`
+    0% {
+        filter: blur(0px);
+    }
+    100% {
+        filter: blur(10px);
+    }
+`;
+
+const Unblur = () => keyframes`
+    0% {
+        filter: blur(10px);
+    }
+    100% {
+        filter: blur(0px);
+    }
 `;
 
 const Content = styled.div`
@@ -95,10 +124,10 @@ const Content = styled.div`
     padding: 0px;
     width: 100%;
 
-    ${props => props.blur ? `filter: blur(10px)` : ``};
+    ${props => props.blur ? `animation: ${Blur()} 0.3s ease forwards; pointer-events: none;` : `animation: ${Unblur()} 0.3s ease forwards; pointer-events: auto;`};
 `;
 
-export class Menu extends Component {
+export class MenuWithBlur extends Component {
     //*** CONSTRUCTOR ***
     constructor() {
         super();
@@ -130,57 +159,50 @@ export class Menu extends Component {
     //*** MÉTODOS ***
     show = () => {
         this.setState({ show: true, hide: false }, () => {
-            if(this.OptionsRef.length > 0) {
-                this.OptionsRef.forEach(animate => {
-                    if(animate) {
-                        animate.triggerEntranceAnimation();
-                    }
-                });
-            }
+            this.OptionsRef.forEach(animate => {
+                if(animate) {
+                    animate.triggerEntranceAnimation();
+                }
+            });
         });
     }
     hide = () => {
-        if(this.OptionsRef.length > 0) {
-            this.OptionsRef.forEach(animate => {
-                if(animate) {
-                    animate.triggerExitAnimation();
-                }
-            });
-        }
+        this.OptionsRef.forEach(animate => {
+            if(animate) {
+                animate.triggerExitAnimation();
+            }
+        });
         let delay = (this.props.options.length * 200) + 400;
         setTimeout(() => {
             this.setState({ show: false, hide: true });
         }, delay);
     }
     //*** RESULTADO ***
+    //NOTA: Falta hacer dinámica la altura de cada componente, ahora está forzada a 40px.
     render() {
         return(
             <Layout>
                 <Header innerRef={header => this.HeaderInnerRef = header}>
                     <IconWrapper>
-                        <RoundButton icon='threeHorizontalLines' theme='blue' size='small' onClick={this.handleIconOnClick}/>
+                        <RoundButton id='btn-menu-options' icon='threeHorizontalLines' theme='blue' size='small' onClick={this.handleIconOnClick}/>
                     </IconWrapper>
                     <Title>{this.props.title}</Title>
                 </Header>
-                    {
-                        this.props.options && this.props.options.length > 0 ?
-                        <Options show={this.state.show} hide={this.state.hide} innerRef={options => this.OptionsInnerRef = options}>
-                            {
-                                this.props.options.map((option, index) => {
-                                    let animateProps = {
-                                        type: 'fade',
-                                        enterWithBounce: false,
-                                        executeWhen: 'onDemand',
-                                        from: 'left'
-                                    };
-                                    let animationDelay = (index * 2) / 10;
-                                    let animationTop = index * 40;
-                                    return(<Animate key={`a-${index}`} {...animateProps} style={{ animationDelay: `${animationDelay}s`, height: '40px', top: `${animationTop}px`, width: '100%' }} ref={(animate) => { this.OptionsRef.push(animate); }} onClick={() => { this.hide(); }}>{option}</Animate>);
-                                })
-                            }
-                        </Options> :
-                        null
-					}
+                    <Options show={this.state.show} hide={this.state.hide} innerRef={options => this.OptionsInnerRef = options}>
+                        {
+                            this.props.options.map((option, index) => {
+                                let animateProps = {
+                                    type: 'fade',
+                                    enterWithBounce: false,
+                                    executeWhen: 'onDemand',
+                                    from: 'left'
+                                };
+                                let animationDelay = (index * 2) / 10;
+                                let animationTop = index * 40;
+                                return(<Animate key={`a-${index}`} {...animateProps} style={{ animationDelay: `${animationDelay}s`, height: '40px', top: `${animationTop}px`, width: '100%' }} ref={(animate) => { this.OptionsRef.push(animate); }} onClick={() => { this.hide(); }}>{option}</Animate>);
+                            })
+                        }
+                    </Options>
                 <Content blur={this.state.show}>
                     {this.props.children}
                 </Content>
@@ -189,7 +211,7 @@ export class Menu extends Component {
     }
 }
 
-Menu.propTypes = {
+MenuWithBlur.propTypes = {
     //Obligatorios.
     options: PropTypes.arrayOf(PropTypes.element).isRequired,
     title: PropTypes.string.isRequired

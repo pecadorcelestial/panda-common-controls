@@ -14,6 +14,7 @@ It contains some "fancy looking" components like:
 - Checkbox
 - Dropdown List
 - Icons
+- Menus Layout
 - RadioButton
 - TextBox (an input tag with a little more functionality)
 - Toast Notifications
@@ -28,6 +29,10 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 **NOTE:** In order to use these components you will need to install the ``styled-components`` and ``styled-theming`` packages.
+
+```
+npm install --save styled-components styled-theming
+```
 
 To install this module using **_npm_** just run this command:
 
@@ -57,6 +62,8 @@ This will install the following files into your project:
     |     |       └── dropdownlists.js
     |     ├── icons
     |     |       └── icons.js
+    |     ├── menus
+    |     |       └── menus.js
     |     ├── radiobuttons
     |     |       └── radiobuttons.js
     |     ├── textboxes
@@ -83,6 +90,7 @@ For a complete list of the files, including a running examples and tests, you ca
 * [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
 * [Icons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/icons.md)
+* [Menus](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/menus.md)
 * [RadioButtons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/radiobuttons.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 * [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)

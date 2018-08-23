@@ -153,6 +153,11 @@ const Message = styled.label`
 	width: 100%;
 `;
 
+//NOTA 1: Al utilizar una animación o transformación en un componente con posición "fixed", esta se pierde y cambia por "absolute" (°~°).
+//      Por ahora sólo en Chrome y en Safari.
+//https://bugs.chromium.org/p/chromium/issues/detail?id=20574&desc=2
+//NOTA 2: Parece que no lo van a arreglar (¬_¬').
+
 export class ToastNotification extends React.Component {
 	//*** CONSTRUCTOR ***
 	constructor() {

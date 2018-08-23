@@ -29,6 +29,14 @@ const LeftColumn = styled.div`
     margin: 0px;
     padding: 10px;
     width: 300px;
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		width: 100%;
+	}
 `;
 
 const RightColumn = styled.div`
@@ -39,6 +47,14 @@ const RightColumn = styled.div`
     margin: 0px;
     padding: 10px;
     width: calc(100% - 650px);
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		width: 100%;
+	}
 `;
 
 const Control = styled.div`
@@ -277,7 +293,6 @@ class StorybookVol2 extends Component {
                             </Animate>
                         </AnimationWrapper>
                     </Control>
-                    <div style={{ height: '2000px', width: '100%' }}/>
                 </RightColumn>
                 {/* NOTIFICACIONES */}
                 <ToastNotification notificationType='success' from='bottom' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.SuccessToastNotificationRef = notification; }} showWithBounce={true}/>

@@ -27,6 +27,14 @@ const LeftColumn = styled.div`
     margin: 0px;
     padding: 10px;
     width: 300px;
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		width: 100%;
+	}
 `;
 
 const RightColumn = styled.div`
@@ -37,6 +45,14 @@ const RightColumn = styled.div`
     margin: 0px;
     padding: 10px;
     width: calc(100% - 650px);
+
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		width: 100%;
+	}
 `;
 
 const Control = styled.div`
@@ -113,7 +129,7 @@ const OptionInput = styled.input`
     margin: 0px;
 	outline: none;
 	padding: 7px 0px 0px 0px;
-	width: ${props => (props.style != undefined && props.style.width != undefined) ? props.style.width : `79%`};
+	width: 79%;
 `;
 
 const OptionButtonWrapper = styled.div`

@@ -501,5 +501,4 @@ describe("[MÉTODOS][Componentes][Common][Animate][zoom][withBounce] - Valida la
     it('Se desmonta el componente.', () => {
         component.unmount();
     });
-
 });

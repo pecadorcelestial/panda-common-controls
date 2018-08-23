@@ -4,7 +4,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 
 //Componentes locales.
 import { IconButton} from './buttons/buttons';
-import { Menu } from './menus/menus';
+import { MenuWithBlur } from './menus/menus';
 import StorybookVol1 from './storybooks/storybook-vol1';
 import StorybookVol2 from './storybooks/storybook-vol2';
 import StorybookVol3 from './storybooks/storybook-vol3';
@@ -41,7 +41,7 @@ class App extends Component {
 		
         return(
             <div>
-                <Menu title='Storybook vol.2' options={menuOptions}>
+                <MenuWithBlur title='Title' options={menuOptions}>
                     <Switch>
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/secondpage' component={SecondPage}/>
@@ -49,7 +49,7 @@ class App extends Component {
                         <Route exact path='/storybook-vol2' component={StorybookVol2}/>
                         <Route exact path='/storybook-vol3' component={StorybookVol3}/>
                     </Switch>
-                </Menu>
+                </MenuWithBlur>
             </div>
         );
     }

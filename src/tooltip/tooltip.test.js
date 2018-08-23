@@ -430,7 +430,7 @@ describe('[FLUJO][Componentes][Common][ToolTip] - No debe mostrarse el tooltip a
    //Se crea el componente.
    //NOTA: Al utilizar la función 'mount' se detona las siguientes funciones: constructor, componentDidMount y render.
    const dummyPage = <div><ToolTip theme={tooltipTheme} {...tooltipProps}/></div>;
-   //NOTA: Si el componente hace uso de "cocument.getElementById" (o simplemente de "document"), el componente debe "adjuntarse" a este:
+   //NOTA: Si el componente hace uso de "document.getElementById" (o simplemente de "document"), el componente debe "adjuntarse" a este:
    //https://airbnb.io/enzyme/docs/api/mount.html#arguments
    //NOTA: El problema con esto es el siguiente warning:
    /*

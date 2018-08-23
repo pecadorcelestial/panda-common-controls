@@ -22,6 +22,7 @@ const { BasicCard: Card } = require('./lib/cards/cards');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
 const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
 const { Icon } = require('./lib/icons/icons');
+const { MenuWithBlur } = require('./lib/menus/menus');
 const { RadioButton, RadioButtonsGroup } = require('./lib/radiobuttons/radiobuttons');
 const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
 const { ToastNotification } = require('./lib/toastnotifications/toastnotifications');
@@ -35,6 +36,7 @@ module.exports = {
     Icon,
     IconButton,
     Loading,
+    MenuWithBlur,
     Select,
     RadioButton, 
     RadioButtonsGroup,
