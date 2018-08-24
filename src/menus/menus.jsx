@@ -184,7 +184,7 @@ export class MenuWithBlur extends Component {
             <Layout>
                 <Header innerRef={header => this.HeaderInnerRef = header}>
                     <IconWrapper>
-                        <RoundButton id='btn-menu-options' icon='threeHorizontalLines' theme='blue' size='small' onClick={this.handleIconOnClick}/>
+                        <RoundButton id='btn-menu-options' icon='nineTiles' theme='blue' size='small' onClick={this.handleIconOnClick}/>
                     </IconWrapper>
                     <Title>{this.props.title}</Title>
                 </Header>

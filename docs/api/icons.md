@@ -27,12 +27,15 @@
 - eyeCrossed
 - facebook
 - github
+- group
 - heart
 - heartFull
+- home
 - information
 - linkedIn
 - magnifyingGlass
 - mapMarker
+- nineTiles
 - padlock
 - paperBill
 - pause
@@ -48,6 +51,7 @@
 - questionMark
 - refresh
 - save
+- sitemap
 - star
 - starFull
 - telephone
@@ -55,6 +59,8 @@
 - time
 - trash
 - twitter
+- user
+- verticalEllipsis
 - warning
 - youTube
 

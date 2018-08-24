@@ -102,10 +102,16 @@ class StorybookVol3 extends Component {
                     <Icon icon='github' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='group' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='heart' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='heartFull' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='home' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='information' fill='#242424' height='40px' width='40px'/>
@@ -118,6 +124,9 @@ class StorybookVol3 extends Component {
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='mapMarker' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='nineTiles' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='padlock' fill='#242424' height='40px' width='40px'/>
@@ -162,6 +171,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='save' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='sitemap' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='star' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
@@ -171,6 +183,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='telephone' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='threeHorizontalLines' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='time' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
@@ -178,6 +193,12 @@ class StorybookVol3 extends Component {
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='twitter' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='user' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='verticalEllipsis' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='warning' fill='#242424' height='40px' width='40px'/>
