@@ -13,9 +13,11 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
 }
 
 .c6 {
+  display: inline-block;
   fill: #FFF;
   height: 50px;
   margin: 0px;
+  vertical-align: middle;
   width: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -28,10 +30,7 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;

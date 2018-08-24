@@ -2,9 +2,11 @@
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (advertencia). Debe pintar el componente con los siguientes modificadores: (Tipo: Advertencia)(Origen: arriba-izquierda). 1`] = `
 .c3 {
+  display: inline-block;
   fill: #FFF;
   height: 40px;
   margin: 0px;
+  vertical-align: middle;
   width: 40px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -143,9 +145,11 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (ad
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (error). Debe pintar el componente con los siguientes modificadores: (Tipo: Error)(Origen: abajo-derecha). 1`] = `
 .c3 {
+  display: inline-block;
   fill: #FFF;
   height: 40px;
   margin: 0px;
+  vertical-align: middle;
   width: 40px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -301,9 +305,11 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (er
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (información). Debe pintar el componente con los siguientes modificadores: (Tipo: Información)(Origen: arriba-derecha). 1`] = `
 .c3 {
+  display: inline-block;
   fill: #FFF;
   height: 40px;
   margin: 0px;
+  vertical-align: middle;
   width: 40px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -448,9 +454,11 @@ exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (in
 
 exports[`[SNAPSHOT][Componentes][Common][ToastNotifications] - Notificación (éxito). Debe pintar el componente con los siguientes modificadores: (Tipo: Éxito)(Origen: abajo-izquierda). 1`] = `
 .c3 {
+  display: inline-block;
   fill: #FFF;
   height: 40px;
   margin: 0px;
+  vertical-align: middle;
   width: 40px;
   -webkit-transition: all .3s;
   transition: all .3s;

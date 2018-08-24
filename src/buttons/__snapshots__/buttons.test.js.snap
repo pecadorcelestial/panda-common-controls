@@ -8,10 +8,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -77,10 +74,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -146,10 +140,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -215,10 +206,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #1476FB;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -284,10 +272,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #1476FB;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -353,10 +338,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #1476FB;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -422,10 +404,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #858585;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -491,10 +470,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #858585;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -560,10 +536,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #858585;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -629,10 +602,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #4CB050;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -698,10 +668,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #4CB050;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -767,10 +734,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #4CB050;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -836,10 +800,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -905,10 +866,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -974,10 +932,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1043,10 +998,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFE200;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1112,10 +1064,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFE200;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1181,10 +1130,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFE200;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1250,10 +1196,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1319,10 +1262,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1388,10 +1328,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1457,10 +1394,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1526,10 +1460,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1595,10 +1526,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1664,10 +1592,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1739,10 +1664,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1808,10 +1730,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1877,10 +1796,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -1946,10 +1862,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2015,10 +1928,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2084,10 +1994,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FF456A;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2153,10 +2060,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2222,10 +2126,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2291,10 +2192,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 18px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2354,9 +2252,11 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
 
 exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes temas: red (usando un icono). Debe pintar el componente con el tema "red", tamaño "small" y con el icono "plus". 1`] = `
 .c2 {
+  display: inline-block;
   fill: #FFF;
   height: 50px;
   margin: 0px 5px 0px 0px;
+  vertical-align: middle;
   width: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -2369,10 +2269,7 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2423,449 +2320,449 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
   width: 20px;
 }
 
-.bPJDvH:hover .c1 {
+.cTgdqQ:hover .c1 {
   fill: #FFF;
 }
 
-.bPJDvH:disabled .c1 {
+.cTgdqQ:disabled .c1 {
   fill: #FFF;
 }
 
-.bPJDvH .c1 {
+.cTgdqQ .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cDXwVJ:hover .c1 {
+.ijQLFP:hover .c1 {
   fill: #FFF;
 }
 
-.cDXwVJ:disabled .c1 {
+.ijQLFP:disabled .c1 {
   fill: #FFF;
 }
 
-.cDXwVJ .c1 {
+.ijQLFP .c1 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.eWqHie:hover .c1 {
+.cjjZue:hover .c1 {
   fill: #FFF;
 }
 
-.eWqHie:disabled .c1 {
+.cjjZue:disabled .c1 {
   fill: #FFF;
 }
 
-.eWqHie .c1 {
+.cjjZue .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.iTiyqV:hover .c1 {
+.bGLRkV:hover .c1 {
   fill: #FFF;
 }
 
-.iTiyqV:disabled .c1 {
+.bGLRkV:disabled .c1 {
   fill: #FFF;
 }
 
-.iTiyqV .c1 {
+.bGLRkV .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.iDbBHy:hover .c1 {
+.eAlJCb:hover .c1 {
   fill: #FFF;
 }
 
-.iDbBHy:disabled .c1 {
+.eAlJCb:disabled .c1 {
   fill: #FFF;
 }
 
-.iDbBHy .c1 {
+.eAlJCb .c1 {
   fill: #FF456A;
   height: 36px;
   width: 36px;
 }
 
-.jTaVYa:hover .c1 {
+.dnvmEq:hover .c1 {
   fill: #FF456A;
 }
 
-.jTaVYa:disabled .c1 {
+.dnvmEq:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.jTaVYa .c1 {
+.dnvmEq .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.eAdiTS:hover .c1 {
+.iCYNaX:hover .c1 {
   fill: #FF456A;
 }
 
-.eAdiTS:disabled .c1 {
+.iCYNaX:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.eAdiTS .c1 {
+.iCYNaX .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.gxyLEu:hover .c1 {
+.ipQZUe:hover .c1 {
   fill: #FF456A;
 }
 
-.gxyLEu:disabled .c1 {
+.ipQZUe:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.gxyLEu .c1 {
+.ipQZUe .c1 {
   fill: #FF456A;
   height: 36px;
   width: 36px;
 }
 
-.dVsGka:hover .c1 {
+.czgHnl:hover .c1 {
   fill: #FFF;
 }
 
-.dVsGka:disabled .c1 {
+.czgHnl:disabled .c1 {
   fill: #FFF;
 }
 
-.dVsGka .c1 {
+.czgHnl .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dghuOt:hover .c1 {
+.ejrzjg:hover .c1 {
   fill: #FFF;
 }
 
-.dghuOt:disabled .c1 {
+.ejrzjg:disabled .c1 {
   fill: #FFF;
 }
 
-.dghuOt .c1 {
+.ejrzjg .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.kJIbgp:hover .c1 {
+.ksApkw:hover .c1 {
   fill: #FFF;
 }
 
-.kJIbgp:disabled .c1 {
+.ksApkw:disabled .c1 {
   fill: #FFF;
 }
 
-.kJIbgp .c1 {
+.ksApkw .c1 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.jccFtq:hover .c1 {
+.fEitnn:hover .c1 {
   fill: #1476FB;
 }
 
-.jccFtq:disabled .c1 {
+.fEitnn:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.jccFtq .c1 {
+.fEitnn .c1 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.fpPMff:hover .c1 {
+.dRNcMB:hover .c1 {
   fill: #1476FB;
 }
 
-.fpPMff:disabled .c1 {
+.dRNcMB:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.fpPMff .c1 {
+.dRNcMB .c1 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dzLgIB:hover .c1 {
+.JMGCk:hover .c1 {
   fill: #1476FB;
 }
 
-.dzLgIB:disabled .c1 {
+.JMGCk:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.dzLgIB .c1 {
+.JMGCk .c1 {
   fill: #1476FB;
   height: 36px;
   width: 36px;
 }
 
-.fhxfWW:hover .c1 {
+.jROQDH:hover .c1 {
   fill: #FFF;
 }
 
-.fhxfWW:disabled .c1 {
+.jROQDH:disabled .c1 {
   fill: #FFF;
 }
 
-.fhxfWW .c1 {
-  fill: #FFF;
-  height: 20px;
-  width: 20px;
-}
-
-.dvbGzk:hover .c1 {
-  fill: #FFF;
-}
-
-.dvbGzk:disabled .c1 {
-  fill: #FFF;
-}
-
-.dvbGzk .c1 {
-  fill: #FFF;
-  height: 30px;
-  width: 30px;
-}
-
-.jqTWHq:hover .c1 {
-  fill: #FFF;
-}
-
-.jqTWHq:disabled .c1 {
-  fill: #FFF;
-}
-
-.jqTWHq .c1 {
-  fill: #FFF;
-  height: 36px;
-  width: 36px;
-}
-
-.dxRwbF:hover .c1 {
-  fill: #4CB050;
-}
-
-.dxRwbF:disabled .c1 {
-  fill: #BFBFBF;
-}
-
-.dxRwbF .c1 {
-  fill: #4CB050;
-  height: 20px;
-  width: 20px;
-}
-
-.iHEPXa:hover .c1 {
-  fill: #4CB050;
-}
-
-.iHEPXa:disabled .c1 {
-  fill: #BFBFBF;
-}
-
-.iHEPXa .c1 {
-  fill: #4CB050;
-  height: 30px;
-  width: 30px;
-}
-
-.kgfZIi:hover .c1 {
-  fill: #4CB050;
-}
-
-.kgfZIi:disabled .c1 {
-  fill: #BFBFBF;
-}
-
-.kgfZIi .c1 {
-  fill: #4CB050;
-  height: 36px;
-  width: 36px;
-}
-
-.hpBLCj:hover .c1 {
-  fill: #FFF;
-}
-
-.hpBLCj:disabled .c1 {
-  fill: #FFF;
-}
-
-.hpBLCj .c1 {
+.jROQDH .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.bsscee:hover .c1 {
+.iZcNHe:hover .c1 {
   fill: #FFF;
 }
 
-.bsscee:disabled .c1 {
+.iZcNHe:disabled .c1 {
   fill: #FFF;
 }
 
-.bsscee .c1 {
+.iZcNHe .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dLLYHv:hover .c1 {
+.cVkxMP:hover .c1 {
   fill: #FFF;
 }
 
-.dLLYHv:disabled .c1 {
+.cVkxMP:disabled .c1 {
   fill: #FFF;
 }
 
-.dLLYHv .c1 {
+.cVkxMP .c1 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.fSznXT:hover .c1 {
-  fill: #FFE200;
+.FXZQ:hover .c1 {
+  fill: #4CB050;
 }
 
-.fSznXT:disabled .c1 {
+.FXZQ:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.fSznXT .c1 {
+.FXZQ .c1 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.evmPJl:hover .c1 {
+  fill: #4CB050;
+}
+
+.evmPJl:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.evmPJl .c1 {
+  fill: #4CB050;
+  height: 30px;
+  width: 30px;
+}
+
+.iPfhdY:hover .c1 {
+  fill: #4CB050;
+}
+
+.iPfhdY:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.iPfhdY .c1 {
+  fill: #4CB050;
+  height: 36px;
+  width: 36px;
+}
+
+.jSswYV:hover .c1 {
+  fill: #FFF;
+}
+
+.jSswYV:disabled .c1 {
+  fill: #FFF;
+}
+
+.jSswYV .c1 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.fHRQjD:hover .c1 {
+  fill: #FFF;
+}
+
+.fHRQjD:disabled .c1 {
+  fill: #FFF;
+}
+
+.fHRQjD .c1 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.dliEmY:hover .c1 {
+  fill: #FFF;
+}
+
+.dliEmY:disabled .c1 {
+  fill: #FFF;
+}
+
+.dliEmY .c1 {
+  fill: #FFF;
+  height: 36px;
+  width: 36px;
+}
+
+.iLXJPP:hover .c1 {
+  fill: #FFE200;
+}
+
+.iLXJPP:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.iLXJPP .c1 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.ytYoJ:hover .c1 {
+.hSRgli:hover .c1 {
   fill: #FFE200;
 }
 
-.ytYoJ:disabled .c1 {
+.hSRgli:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.ytYoJ .c1 {
+.hSRgli .c1 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.wNWhQ:hover .c1 {
+.kMcisX:hover .c1 {
   fill: #FFE200;
 }
 
-.wNWhQ:disabled .c1 {
+.kMcisX:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.wNWhQ .c1 {
+.kMcisX .c1 {
   fill: #FFE200;
   height: 36px;
   width: 36px;
 }
 
-.dHcZTv:hover .c1 {
+.jXKnHS:hover .c1 {
   fill: #FFF;
 }
 
-.dHcZTv:disabled .c1 {
+.jXKnHS:disabled .c1 {
   fill: #FFF;
 }
 
-.dHcZTv .c1 {
+.jXKnHS .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.gOOEVc:hover .c1 {
+.bbKrbp:hover .c1 {
   fill: #FFF;
 }
 
-.gOOEVc:disabled .c1 {
+.bbKrbp:disabled .c1 {
   fill: #FFF;
 }
 
-.gOOEVc .c1 {
+.bbKrbp .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.eYQYFS:hover .c1 {
+.hNZCZB:hover .c1 {
   fill: #FFF;
 }
 
-.eYQYFS:disabled .c1 {
+.hNZCZB:disabled .c1 {
   fill: #FFF;
 }
 
-.eYQYFS .c1 {
+.hNZCZB .c1 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.hTdowP:hover .c1 {
+.fgGbfJ:hover .c1 {
   fill: #858585;
 }
 
-.hTdowP:disabled .c1 {
+.fgGbfJ:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.hTdowP .c1 {
+.fgGbfJ .c1 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.fcEUEP:hover .c1 {
+.fvqlcj:hover .c1 {
   fill: #858585;
 }
 
-.fcEUEP:disabled .c1 {
+.fvqlcj:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.fcEUEP .c1 {
+.fvqlcj .c1 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.gXPeVv:hover .c1 {
+.bfnadQ:hover .c1 {
   fill: #858585;
 }
 
-.gXPeVv:disabled .c1 {
+.bfnadQ:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.gXPeVv .c1 {
+.bfnadQ .c1 {
   fill: #858585;
   height: 36px;
   width: 36px;
@@ -2908,9 +2805,11 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
 
 exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes temas: red (usando un icono). Debe pintar el componente con el tema "red", tamaño "small" y con el icono "plus". 1`] = `
 .c3 {
+  display: inline-block;
   fill: #FFF;
   height: 50px;
   margin: 0px;
+  vertical-align: middle;
   width: 50px;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -2923,10 +2822,7 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   box-sizing: border-box;
   color: #FFF;
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-size: 14px;
   font-family: "Open Sans",sans-serif;
   font-stretch: normal;
@@ -2977,449 +2873,449 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   width: 20px;
 }
 
-.bPJDvH:hover .c2 {
+.cTgdqQ:hover .c2 {
   fill: #FFF;
 }
 
-.bPJDvH:disabled .c2 {
+.cTgdqQ:disabled .c2 {
   fill: #FFF;
 }
 
-.bPJDvH .c2 {
+.cTgdqQ .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cDXwVJ:hover .c2 {
+.ijQLFP:hover .c2 {
   fill: #FFF;
 }
 
-.cDXwVJ:disabled .c2 {
+.ijQLFP:disabled .c2 {
   fill: #FFF;
 }
 
-.cDXwVJ .c2 {
+.ijQLFP .c2 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.eWqHie:hover .c2 {
+.cjjZue:hover .c2 {
   fill: #FFF;
 }
 
-.eWqHie:disabled .c2 {
+.cjjZue:disabled .c2 {
   fill: #FFF;
 }
 
-.eWqHie .c2 {
+.cjjZue .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.iTiyqV:hover .c2 {
+.bGLRkV:hover .c2 {
   fill: #FFF;
 }
 
-.iTiyqV:disabled .c2 {
+.bGLRkV:disabled .c2 {
   fill: #FFF;
 }
 
-.iTiyqV .c2 {
+.bGLRkV .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.iDbBHy:hover .c2 {
+.eAlJCb:hover .c2 {
   fill: #FFF;
 }
 
-.iDbBHy:disabled .c2 {
+.eAlJCb:disabled .c2 {
   fill: #FFF;
 }
 
-.iDbBHy .c2 {
+.eAlJCb .c2 {
   fill: #FF456A;
   height: 36px;
   width: 36px;
 }
 
-.jTaVYa:hover .c2 {
+.dnvmEq:hover .c2 {
   fill: #FF456A;
 }
 
-.jTaVYa:disabled .c2 {
+.dnvmEq:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.jTaVYa .c2 {
+.dnvmEq .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.eAdiTS:hover .c2 {
+.iCYNaX:hover .c2 {
   fill: #FF456A;
 }
 
-.eAdiTS:disabled .c2 {
+.iCYNaX:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.eAdiTS .c2 {
+.iCYNaX .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.gxyLEu:hover .c2 {
+.ipQZUe:hover .c2 {
   fill: #FF456A;
 }
 
-.gxyLEu:disabled .c2 {
+.ipQZUe:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gxyLEu .c2 {
+.ipQZUe .c2 {
   fill: #FF456A;
   height: 36px;
   width: 36px;
 }
 
-.dVsGka:hover .c2 {
+.czgHnl:hover .c2 {
   fill: #FFF;
 }
 
-.dVsGka:disabled .c2 {
+.czgHnl:disabled .c2 {
   fill: #FFF;
 }
 
-.dVsGka .c2 {
+.czgHnl .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dghuOt:hover .c2 {
+.ejrzjg:hover .c2 {
   fill: #FFF;
 }
 
-.dghuOt:disabled .c2 {
+.ejrzjg:disabled .c2 {
   fill: #FFF;
 }
 
-.dghuOt .c2 {
+.ejrzjg .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.kJIbgp:hover .c2 {
+.ksApkw:hover .c2 {
   fill: #FFF;
 }
 
-.kJIbgp:disabled .c2 {
+.ksApkw:disabled .c2 {
   fill: #FFF;
 }
 
-.kJIbgp .c2 {
+.ksApkw .c2 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.jccFtq:hover .c2 {
+.fEitnn:hover .c2 {
   fill: #1476FB;
 }
 
-.jccFtq:disabled .c2 {
+.fEitnn:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.jccFtq .c2 {
+.fEitnn .c2 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.fpPMff:hover .c2 {
+.dRNcMB:hover .c2 {
   fill: #1476FB;
 }
 
-.fpPMff:disabled .c2 {
+.dRNcMB:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fpPMff .c2 {
+.dRNcMB .c2 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dzLgIB:hover .c2 {
+.JMGCk:hover .c2 {
   fill: #1476FB;
 }
 
-.dzLgIB:disabled .c2 {
+.JMGCk:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dzLgIB .c2 {
+.JMGCk .c2 {
   fill: #1476FB;
   height: 36px;
   width: 36px;
 }
 
-.fhxfWW:hover .c2 {
+.jROQDH:hover .c2 {
   fill: #FFF;
 }
 
-.fhxfWW:disabled .c2 {
+.jROQDH:disabled .c2 {
   fill: #FFF;
 }
 
-.fhxfWW .c2 {
-  fill: #FFF;
-  height: 20px;
-  width: 20px;
-}
-
-.dvbGzk:hover .c2 {
-  fill: #FFF;
-}
-
-.dvbGzk:disabled .c2 {
-  fill: #FFF;
-}
-
-.dvbGzk .c2 {
-  fill: #FFF;
-  height: 30px;
-  width: 30px;
-}
-
-.jqTWHq:hover .c2 {
-  fill: #FFF;
-}
-
-.jqTWHq:disabled .c2 {
-  fill: #FFF;
-}
-
-.jqTWHq .c2 {
-  fill: #FFF;
-  height: 36px;
-  width: 36px;
-}
-
-.dxRwbF:hover .c2 {
-  fill: #4CB050;
-}
-
-.dxRwbF:disabled .c2 {
-  fill: #BFBFBF;
-}
-
-.dxRwbF .c2 {
-  fill: #4CB050;
-  height: 20px;
-  width: 20px;
-}
-
-.iHEPXa:hover .c2 {
-  fill: #4CB050;
-}
-
-.iHEPXa:disabled .c2 {
-  fill: #BFBFBF;
-}
-
-.iHEPXa .c2 {
-  fill: #4CB050;
-  height: 30px;
-  width: 30px;
-}
-
-.kgfZIi:hover .c2 {
-  fill: #4CB050;
-}
-
-.kgfZIi:disabled .c2 {
-  fill: #BFBFBF;
-}
-
-.kgfZIi .c2 {
-  fill: #4CB050;
-  height: 36px;
-  width: 36px;
-}
-
-.hpBLCj:hover .c2 {
-  fill: #FFF;
-}
-
-.hpBLCj:disabled .c2 {
-  fill: #FFF;
-}
-
-.hpBLCj .c2 {
+.jROQDH .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.bsscee:hover .c2 {
+.iZcNHe:hover .c2 {
   fill: #FFF;
 }
 
-.bsscee:disabled .c2 {
+.iZcNHe:disabled .c2 {
   fill: #FFF;
 }
 
-.bsscee .c2 {
+.iZcNHe .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dLLYHv:hover .c2 {
+.cVkxMP:hover .c2 {
   fill: #FFF;
 }
 
-.dLLYHv:disabled .c2 {
+.cVkxMP:disabled .c2 {
   fill: #FFF;
 }
 
-.dLLYHv .c2 {
+.cVkxMP .c2 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.fSznXT:hover .c2 {
-  fill: #FFE200;
+.FXZQ:hover .c2 {
+  fill: #4CB050;
 }
 
-.fSznXT:disabled .c2 {
+.FXZQ:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fSznXT .c2 {
+.FXZQ .c2 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.evmPJl:hover .c2 {
+  fill: #4CB050;
+}
+
+.evmPJl:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.evmPJl .c2 {
+  fill: #4CB050;
+  height: 30px;
+  width: 30px;
+}
+
+.iPfhdY:hover .c2 {
+  fill: #4CB050;
+}
+
+.iPfhdY:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.iPfhdY .c2 {
+  fill: #4CB050;
+  height: 36px;
+  width: 36px;
+}
+
+.jSswYV:hover .c2 {
+  fill: #FFF;
+}
+
+.jSswYV:disabled .c2 {
+  fill: #FFF;
+}
+
+.jSswYV .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.fHRQjD:hover .c2 {
+  fill: #FFF;
+}
+
+.fHRQjD:disabled .c2 {
+  fill: #FFF;
+}
+
+.fHRQjD .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.dliEmY:hover .c2 {
+  fill: #FFF;
+}
+
+.dliEmY:disabled .c2 {
+  fill: #FFF;
+}
+
+.dliEmY .c2 {
+  fill: #FFF;
+  height: 36px;
+  width: 36px;
+}
+
+.iLXJPP:hover .c2 {
+  fill: #FFE200;
+}
+
+.iLXJPP:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.iLXJPP .c2 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.ytYoJ:hover .c2 {
+.hSRgli:hover .c2 {
   fill: #FFE200;
 }
 
-.ytYoJ:disabled .c2 {
+.hSRgli:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ytYoJ .c2 {
+.hSRgli .c2 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.wNWhQ:hover .c2 {
+.kMcisX:hover .c2 {
   fill: #FFE200;
 }
 
-.wNWhQ:disabled .c2 {
+.kMcisX:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.wNWhQ .c2 {
+.kMcisX .c2 {
   fill: #FFE200;
   height: 36px;
   width: 36px;
 }
 
-.dHcZTv:hover .c2 {
+.jXKnHS:hover .c2 {
   fill: #FFF;
 }
 
-.dHcZTv:disabled .c2 {
+.jXKnHS:disabled .c2 {
   fill: #FFF;
 }
 
-.dHcZTv .c2 {
+.jXKnHS .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.gOOEVc:hover .c2 {
+.bbKrbp:hover .c2 {
   fill: #FFF;
 }
 
-.gOOEVc:disabled .c2 {
+.bbKrbp:disabled .c2 {
   fill: #FFF;
 }
 
-.gOOEVc .c2 {
+.bbKrbp .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.eYQYFS:hover .c2 {
+.hNZCZB:hover .c2 {
   fill: #FFF;
 }
 
-.eYQYFS:disabled .c2 {
+.hNZCZB:disabled .c2 {
   fill: #FFF;
 }
 
-.eYQYFS .c2 {
+.hNZCZB .c2 {
   fill: #FFF;
   height: 36px;
   width: 36px;
 }
 
-.hTdowP:hover .c2 {
+.fgGbfJ:hover .c2 {
   fill: #858585;
 }
 
-.hTdowP:disabled .c2 {
+.fgGbfJ:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hTdowP .c2 {
+.fgGbfJ .c2 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.fcEUEP:hover .c2 {
+.fvqlcj:hover .c2 {
   fill: #858585;
 }
 
-.fcEUEP:disabled .c2 {
+.fvqlcj:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fcEUEP .c2 {
+.fvqlcj .c2 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.gXPeVv:hover .c2 {
+.bfnadQ:hover .c2 {
   fill: #858585;
 }
 
-.gXPeVv:disabled .c2 {
+.bfnadQ:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gXPeVv .c2 {
+.bfnadQ .c2 {
   fill: #858585;
   height: 36px;
   width: 36px;

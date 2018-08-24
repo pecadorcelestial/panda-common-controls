@@ -88,6 +88,18 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   width: 100%;
 }
 
+@media screen and (max-width:767px) {
+  .c0 {
+    min-width: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    min-width: unset;
+  }
+}
+
 <div
   className="c0"
   disabled={true}
@@ -203,6 +215,18 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
 .cxmCxD:focus ~ .c2:after {
   left: 0px;
   width: 100%;
+}
+
+@media screen and (max-width:767px) {
+  .c0 {
+    min-width: unset;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c0 {
+    min-width: unset;
+  }
 }
 
 <div

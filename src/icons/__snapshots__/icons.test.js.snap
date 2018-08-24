@@ -4,9 +4,11 @@ exports[`[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android.
 
 exports[`[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android. Debe pintar el icono correspondiente a la mascota de android. 1`] = `
 .c0 {
+  display: inline-block;
   fill: #242424;
   height: 60px;
   margin: 0px;
+  vertical-align: middle;
   width: 60px;
   -webkit-transition: all .3s;
   transition: all .3s;
