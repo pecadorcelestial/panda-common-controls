@@ -188,7 +188,7 @@ export const Button = styled(({ className, children, ...props }) => (
 	box-sizing: border-box;
 	color: ${props => color(props.theme)};
 	cursor: pointer;
-	display: flex;
+	display: inline-block;
 	font-size: ${props => fontSize(props.size)};
 	font-family: "Open Sans", sans-serif;	
 	font-stretch: normal;
