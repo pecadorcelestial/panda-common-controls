@@ -44,6 +44,14 @@ const Layout = styled.div`
 	padding: 0px;
 	position: relative;
 	width: auto;
+
+	@media screen and (max-width: 767px) {
+		min-width: unset;
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 991px) {
+		min-width: unset;
+	}
 `;
 
 const Title = styled.label`
