@@ -23,6 +23,13 @@ const notificationIcon = (type) => {
 	}
 };
 
+//K   K EEEEE Y   Y FFFFF RRRR   AAA  M   M EEEEE  SSSS
+//K  K  E      Y Y  F     R   R A   A MM MM E     S
+//KKK   EEE     Y   FFF   RRRR  AAAAA M M M EEE    SSS
+//K  K  E       Y   F     R   R A   A M   M E         S
+//K   K EEEEE  YYY  F     R   R A   A M   M EEEEE SSSS
+
+//Escritorio
 const show = (from) => keyframes`
 	0% {
 		${from}: -100%;
@@ -64,6 +71,48 @@ const hide = (from) => keyframes`
 	}
 `;
 
+//Móvil
+const showMobile = (from) => keyframes`
+	0% {
+		${from}: -100%;
+		opacity: 0;
+	}
+  	100% {
+		${from}: 0px;
+		opacity: 1;
+	}
+`;
+
+const showWithBounceMobile = (from) => keyframes`
+	0% {
+		${from}: -100%;
+		opacity: 0;
+	}
+	80% {
+		${from}: 20px;
+		opacity: 1;
+	}
+	90% {
+		${from}: -10px;
+		opacity: 1;
+	}
+  	100% {
+		${from}: 0px;
+		opacity: 1;
+	}
+`;
+
+const hideMobile = (from) => keyframes`
+	from {
+		${from}: 0px;
+		opacity: 1;
+	}
+	to {
+		${from}: -100%;
+		opacity: 0;
+	}
+`;
+
 const Layout = styled.div`
     background-color: ${backgroundColor};
 	border-radius: 5px;
@@ -85,13 +134,19 @@ const Layout = styled.div`
 	@media screen and (max-width: 767px) {
 		border-radius: 0px;
 		left: 0px;
-	    width: 100%;
+		width: 100%;
+		
+		${props => props.show ? (props.showWithBounce ? `animation: ${showWithBounceMobile(props.from)} 0.6s ease forwards;` : `animation: ${showMobile(props.from)} 0.6s ease forwards;`) : ``}
+		${props => props.hide ? `animation: ${hideMobile(props.from)} 0.6s ease forwards;` : ``}
 	}
 	
 	@media screen and (min-width: 768px) and (max-width: 991px) {
 		border-radius: 0px;
 		left: 0px;
 	    width: 100%;
+		
+		${props => props.show ? (props.showWithBounce ? `animation: ${showWithBounceMobile(props.from)} 0.6s ease forwards;` : `animation: ${showMobile(props.from)} 0.6s ease forwards;`) : ``}
+		${props => props.hide ? `animation: ${hideMobile(props.from)} 0.6s ease forwards;` : ``}
 	}
 `;
 
