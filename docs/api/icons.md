@@ -51,6 +51,8 @@
 - questionMark
 - refresh
 - save
+- signIn
+- SignOut
 - sitemap
 - star
 - starFull

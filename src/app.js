@@ -20,6 +20,7 @@ const SecondPage = (props) => {
 class App extends Component {
     
     render() {
+
         //V   V  AAA  L      OOO  RRRR  EEEEE  SSSS
         //V   V A   A L     O   O R   R E     S
         //V   V AAAAA L     O   O RRRR  EEE    SSS
@@ -40,17 +41,15 @@ class App extends Component {
 		//R   R EEEEE SSSS   UUU  LLLLL   T   A   A DDDD   OOO
 		
         return(
-            <div>
-                <MenuWithBlur title='Title' options={menuOptions}>
-                    <Switch>
-                        <Route exact path='/' component={Home}/>
-                        <Route exact path='/secondpage' component={SecondPage}/>
-                        <Route exact path='/storybook-vol1' component={StorybookVol1}/>
-                        <Route exact path='/storybook-vol2' component={StorybookVol2}/>
-                        <Route exact path='/storybook-vol3' component={StorybookVol3}/>
-                    </Switch>
-                </MenuWithBlur>
-            </div>
+            <MenuWithBlur title='Title' options={menuOptions}>
+                <Switch>
+                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/secondpage' component={SecondPage}/>
+                    <Route exact path='/storybook-vol1' component={StorybookVol1}/>
+                    <Route exact path='/storybook-vol2' component={StorybookVol2}/>
+                    <Route exact path='/storybook-vol3' component={StorybookVol3}/>
+                </Switch>
+            </MenuWithBlur>
         );
     }
 }
