@@ -269,6 +269,6 @@ export const RoundButton = styled(({ className, theme, size, children, ...props}
 	<Button className={className} theme={theme} size={size} {...props}><Icon icon={props.icon}/></Button>
 ))`
 	border-radius: 50%;
-	padding: 0px 0px 0px 4px;
+	padding: 0px;
 	width: ${props => height(props.size)};
 `;
