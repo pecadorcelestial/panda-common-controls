@@ -8,13 +8,13 @@ const SVG = styled.svg`
     fill: ${props => props.fill ? props.fill : `#FFF`};
     height: ${props => props.height ? props.height : `50px`};
     margin: ${props => props.margin ? props.margin : `0px`};
-    vertical-align: middle;
+    vertical-align: top;
     width: ${props => props.width ? props.width : `50px`};
     
 	transition: all .3s;
 	
 `;
-//'0 0 512.000 512.000'
+
 export const Icon = styled(({ ...props}) => {
     let iconFile = require(`./icons-lib`)[props.icon];
     if(iconFile) {

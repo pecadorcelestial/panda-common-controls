@@ -171,11 +171,19 @@ const height = (size) => {
 	}
 };
 
-const iconSize = (size) => {
+const lineHeight = (size) => {
 	switch(size) {
 		case 'small': return '20px';
 		case 'medium': return '30px';
 		case 'big': return '36px';
+	}
+};
+
+const iconSize = (size) => {
+	switch(size) {
+		case 'small': return '18px';
+		case 'medium': return '26px';
+		case 'big': return '32px';
 	}
 };
 
@@ -196,6 +204,7 @@ export const Button = styled(({ className, children, ...props }) => (
 	font-weight: bold;
 	height: ${props => height(props.size)};
 	letter-spacing: normal;
+	line-height: ${props => lineHeight(props.size)};
 	padding: 5px 30px;
 	text-align: center;
 	width: auto;

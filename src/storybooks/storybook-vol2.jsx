@@ -249,13 +249,13 @@ class StorybookVol2 extends Component {
                             <IconButton theme='red' size='small' icon='plus'>Add new</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <IconButton theme='secondaryRed' size='small' icon='save'>Save</IconButton>
+                            <IconButton theme='secondaryRed' size='medium' icon='save'>Save</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
                             <IconButton theme='flatRed' size='small' icon='pencil'>Edit</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <IconButton theme='blue' size='small' icon='cogWheel'>Configuration</IconButton>
+                            <IconButton theme='blue' size='big' icon='cogWheel'>Configuration</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
                             <IconButton theme='flatBlue' size='small' icon='heartFull'>Like</IconButton>
