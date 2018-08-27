@@ -75,6 +75,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='cross' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='crossSign' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='dashboard' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>

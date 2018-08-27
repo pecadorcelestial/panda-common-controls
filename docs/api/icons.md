@@ -18,6 +18,7 @@
 - comment
 - creditCard
 - cross
+- crossSign
 - dashboard
 - dollar
 - earth
