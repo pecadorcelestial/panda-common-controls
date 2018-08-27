@@ -156,6 +156,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='plus' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='plusSign' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='powerButton' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>

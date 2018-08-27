@@ -46,13 +46,14 @@
 - play
 - playSign
 - plus
+- plusSign
 - powerButton
 - printer
 - questionMark
 - refresh
 - save
 - signIn
-- SignOut
+- signOut
 - sitemap
 - star
 - starFull
