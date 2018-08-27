@@ -14,12 +14,12 @@ const SVG = styled.svg`
 	transition: all .3s;
 	
 `;
-
+//'0 0 512.000 512.000'
 export const Icon = styled(({ ...props}) => {
     let iconFile = require(`./icons-lib`)[props.icon];
     if(iconFile) {
         return(
-            <SVG {...props} x='0px' y='0px' viewBox='0 0 512.000 512.000' preserveAspectRatio='none' vectorEffect='non-scaling-stroke' dangerouslySetInnerHTML={{__html: iconFile}}>
+            <SVG {...props} x='0px' y='0px' viewBox={iconFile.viewBox} dangerouslySetInnerHTML={{__html: iconFile.path}}>
             </SVG>
         );
     } else {

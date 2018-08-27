@@ -39,6 +39,7 @@
 - nineTiles
 - padlock
 - paperBill
+- paperClip
 - pause
 - pencil
 - photoCamera

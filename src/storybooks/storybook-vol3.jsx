@@ -138,6 +138,9 @@ class StorybookVol3 extends Component {
                     <Icon icon='paperBill' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
+                    <Icon icon='paperClip' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
                     <Icon icon='pause' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
@@ -154,6 +157,9 @@ class StorybookVol3 extends Component {
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='play' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='playSign' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='plus' fill='#242424' height='40px' width='40px'/>
@@ -175,6 +181,12 @@ class StorybookVol3 extends Component {
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='save' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='signIn' fill='#242424' height='40px' width='40px'/>
+                </IconWrapper>
+                <IconWrapper>
+                    <Icon icon='signOut' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
                 <IconWrapper>
                     <Icon icon='sitemap' fill='#242424' height='40px' width='40px'/>
