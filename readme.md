@@ -1,4 +1,4 @@
-# Panda Common Controls
+# &#128060; Panda Common Controls
 
 [![npm version](https://badge.fury.io/js/panda-common-controls.svg)](https://badge.fury.io/js/panda-common-controls)
 [![Build Status](https://travis-ci.org/pecadorcelestial/panda-common-controls.svg?branch=master)](https://travis-ci.org/pecadorcelestial/panda-common-controls)
