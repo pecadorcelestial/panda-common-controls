@@ -15,6 +15,7 @@ It contains some "fancy looking" components like:
 - Dropdown List
 - Icons
 - Menus Layout
+- Modals
 - RadioButton
 - TextBox (an input tag with a little more functionality)
 - Toast Notifications
@@ -64,6 +65,8 @@ This will install the following files into your project:
     |     |       └── icons.js
     |     ├── menus
     |     |       └── menus.js
+    |     ├── modals
+    |     |       └── modals.js
     |     ├── radiobuttons
     |     |       └── radiobuttons.js
     |     ├── textboxes
@@ -91,6 +94,7 @@ For a complete list of the files, including a running examples and tests, you ca
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
 * [Icons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/icons.md)
 * [Menus](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/menus.md)
+* [Modals](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/modals.md)
 * [RadioButtons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/radiobuttons.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 * [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)
