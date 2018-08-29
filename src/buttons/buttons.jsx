@@ -24,6 +24,8 @@ const backgroundColor = (theme) => {
 		case 'flatYellow': return 'transparent';
 		case 'gray': return '#858585';
 		case 'flatGray': return 'transparent';
+
+		case 'flatWhite': return 'transparent';
 	}
 };
 
@@ -40,6 +42,8 @@ const border = (theme) => {
 		case 'flatYellow': return '1px solid transparent';
 		case 'gray': return '1px solid #858585';
 		case 'flatGray': return '1px solid transparent';
+
+		case 'flatWhite': return '1px solid transparent';
 	}
 };
 
@@ -56,6 +60,8 @@ const color = (theme) => {
 		case 'flatYellow': return '#FFE200';
 		case 'gray': return '#FFF';
 		case 'flatGray': return '#858585';
+
+		case 'flatWhite': return '#FFF';
 	}
 };
 
@@ -72,6 +78,8 @@ const hoverBackgroundColor = (theme) => {
 		case 'flatYellow': return '#EBEBEB';
 		case 'gray': return '#6A6A6A';
 		case 'flatGray': return '#EBEBEB';
+
+		case 'flatWhite': return 'rgba(235, 235, 235, 0.5)';
 	}
 };
 
@@ -88,6 +96,8 @@ const hoverBorder = (theme) => {
 		case 'flatYellow': return '1px solid #EBEBEB';
 		case 'gray': return '1px solid #6A6A6A';
 		case 'flatGray': return '1px solid #EBEBEB';
+
+		case 'flatWhite': return '1px solid rgba(235, 235, 235, 0)';
 	}
 };
 
@@ -104,6 +114,8 @@ const hoverColor = (theme) => {
 		case 'flatYellow': return '#FFE200';
 		case 'gray': return '#FFF';
 		case 'flatGray': return '#858585';
+
+		case 'flatWhite': return '#FFF';
 	}
 };
 
@@ -120,6 +132,8 @@ const disabledBackgroundColor = (theme) => {
 		case 'flatYellow': return 'transparent';
 		case 'gray': return '#BFBFBF';
 		case 'flatGray': return 'transparent';
+
+		case 'flatWhite': return 'transparent';
 	}
 };
 
@@ -136,6 +150,8 @@ const disabledBorder = (theme) => {
 		case 'flatYellow': return '1px solid transparent';
 		case 'gray': return '1px solid #BFBFBF';
 		case 'flatGray': return '1px solid transparent';
+
+		case 'flatWhite': return '1px solid transparent';
 	}
 };
 
@@ -152,14 +168,16 @@ const disabledColor = (theme) => {
 		case 'flatYellow': return '#BFBFBF';
 		case 'gray': return '#FFF';
 		case 'flatGray': return '#BFBFBF';
+
+		case 'flatWhite': return '#BFBFBF';
 	}
 };
 
 const fontSize = (size) => {
 	switch(size) {
 		case 'small': return '14px';
-		case 'medium': return '16px';
-		case 'big': return '18px';
+		case 'medium': return '18px';
+		case 'big': return '24px';
 	}
 };
 
@@ -167,14 +185,14 @@ const height = (size) => {
 	switch(size) {
 		case 'small': return '30px';
 		case 'medium': return '40px';
-		case 'big': return '46px';
+		case 'big': return '50px';
 	}
 };
 
 const lineHeight = (size) => {
 	switch(size) {
 		case 'small': return '20px';
-		case 'medium': return '30px';
+		case 'medium': return '20px';
 		case 'big': return '36px';
 	}
 };
@@ -182,8 +200,8 @@ const lineHeight = (size) => {
 const iconSize = (size) => {
 	switch(size) {
 		case 'small': return '18px';
-		case 'medium': return '26px';
-		case 'big': return '32px';
+		case 'medium': return '20px';
+		case 'big': return '30px';
 	}
 };
 
@@ -245,7 +263,7 @@ export const Button = styled(({ className, children, ...props }) => (
 `;
 
 Button.propTypes = {
-	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray']),
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
 	size: PropTypes.oneOf(['small', 'medium', 'big'])
 };
 
@@ -274,10 +292,18 @@ export const IconButton = styled(({ className, theme, size, children, ...props})
 //R   R E     D   D O   O N  NN D   D O   O
 //R   R EEEEE DDDD   OOO  N   N DDDD   OOO
 
+const padding = (size) => {
+	switch(size) {
+		case 'small': return '0px';
+		case 'medium': return '9px 0px';
+		case 'big': return '9px 0px';
+	}
+};
+
 export const RoundButton = styled(({ className, theme, size, children, ...props}) => (
 	<Button className={className} theme={theme} size={size} {...props}><Icon icon={props.icon}/></Button>
 ))`
 	border-radius: 50%;
-	padding: 0px;
+	padding: ${props => padding(props.size)};
 	width: ${props => height(props.size)};
 `;

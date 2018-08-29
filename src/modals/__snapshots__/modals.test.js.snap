@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Modal] - Modal (normal). Debe pintar el componente correctamente. 1`] = `
+.c9 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c7 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c7:hover {
+  background-color: rgba(235,235,235,0.5);
+  border: 1px solid rgba(235,235,235,0);
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c7:hover .c8 {
+  fill: #FFF;
+}
+
+.c7:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c7:disabled .c8 {
+  fill: #BFBFBF;
+}
+
+.c7:focus {
+  outline: none;
+}
+
+.c7 .c8 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c6 {
+  border-radius: 50%;
+  padding: 0px;
+  width: 30px;
+}
+
+.c0 {
+  background-color: rgba(0,0,0,0.4);
+  display: none;
+  height: 100%;
+  left: 0px;
+  overflow: auto;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 997;
+}
+
+.c1 {
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  height: auto;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: 600px;
+  z-index: 999;
+}
+
+.c2 {
+  background-color: #1476FB;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: 45px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.c3 {
+  box-sizing: border-box;
+  color: #FFF;
+  height: 24px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0px;
+  padding: 3px 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.c4 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: auto;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.c5 {
+  background-color: #FFF;
+  border-top: 1px solid #A7A7A7;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width:767px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c1 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .c3 {
+    font-size: 12px;
+    padding: 0px;
+    width: calc(100% - 15px);
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c3 {
+    font-size: 12px;
+    padding: 0px;
+    width: calc(100% - 15px);
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <label
+        className="c3"
+      >
+        Título del modal
+      </label>
+    </div>
+    <div
+      className="c4"
+    >
+      <label>
+        Cuerpo del modal
+      </label>
+    </div>
+    <div
+      className="c5"
+    >
+      <label>
+        Ⓒ Panda Corp. all rights reserved.
+      </label>
+    </div>
+    <button
+      className="c6 c7"
+      icon="crossSign"
+      onClick={[Function]}
+      size="small"
+      style={
+        Object {
+          "position": "absolute",
+          "right": "5px",
+          "top": "8px",
+        }
+      }
+      theme="flatWhite"
+      type="button"
+    >
+      <svg
+        className="c8 c9"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<g>
+                <path d=\\"M247.244,169.59l83.938-83.938c5.332-5.327,7.994-11.798,7.994-19.414c0-7.614-2.669-14.084-7.994-19.414L292.355,7.993
+                    C287.026,2.665,280.556,0,272.944,0c-7.617,0-14.085,2.665-19.417,7.993L169.59,91.931L85.651,7.993
+                    C80.325,2.665,73.854,0,66.237,0c-7.611,0-14.083,2.665-19.414,7.993L7.994,46.824C2.667,52.15,0,58.624,0,66.238
+                    c0,7.616,2.664,14.084,7.994,19.414l83.937,83.938L7.994,253.528C2.667,258.859,0,265.327,0,272.945
+                    c0,7.61,2.664,14.082,7.994,19.41l38.83,38.828c5.33,5.332,11.803,7.994,19.414,7.994c7.616,0,14.084-2.669,19.414-7.994
+                    l83.939-83.938l83.944,83.938c5.328,5.332,11.793,7.994,19.417,7.994c7.611,0,14.082-2.669,19.411-7.994l38.82-38.828
+                    c5.332-5.324,7.994-11.8,7.994-19.41c0-7.618-2.662-14.086-7.994-19.417L247.244,169.59z\\"/>
+            </g>",
+          }
+        }
+        icon="crossSign"
+        viewBox="0 0 339.177 339.177"
+        x="0px"
+        y="0px"
+      />
+    </button>
+  </div>
+</div>
+`;

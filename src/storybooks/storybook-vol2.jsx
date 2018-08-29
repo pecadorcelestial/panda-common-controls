@@ -11,6 +11,7 @@ import { Icon } from '../icons/icons';
 
 import { Calendar } from '../calendar/calendar';
 import { ToolTip } from '../tooltip/tooltip';
+import { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from '../modals/modals';
 
 const Layout = styled.div`
     display: inline-block;
@@ -95,6 +96,22 @@ const Title = styled.label`
 	margin: 0px;
 	padding: 0px;
     text-align: left;
+	width: 100%;
+`;
+
+const Footer = styled.label`
+	color: #000;
+    display: inline-block;
+	height: 15px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	margin: 0px;
+	padding: 0px;
+    text-align: right;
 	width: 100%;
 `;
 
@@ -245,23 +262,23 @@ class StorybookVol2 extends Component {
                     </Option>
                     <Title>Botones:</Title>
                     <Option>
-                        <OptionButtonWrapper>
-                            <IconButton theme='red' size='small' icon='plus'>Add new</IconButton>
+                        <OptionButtonWrapper style={{ width: '100%' }}>
+                            <IconButton theme='red' size='small' icon='plus' style={{ width: '100%' }}>Small</IconButton>
                         </OptionButtonWrapper>
-                        <OptionButtonWrapper>
-                            <IconButton theme='secondaryRed' size='medium' icon='save'>Save</IconButton>
+                        <OptionButtonWrapper style={{ width: '100%' }}>
+                            <IconButton theme='secondaryRed' size='medium' icon='save' style={{ width: '100%' }}>Medium</IconButton>
                         </OptionButtonWrapper>
-                        <OptionButtonWrapper>
-                            <IconButton theme='flatRed' size='small' icon='pencil'>Edit</IconButton>
-                        </OptionButtonWrapper>
-                        <OptionButtonWrapper>
-                            <IconButton theme='blue' size='big' icon='cogWheel'>Configuration</IconButton>
-                        </OptionButtonWrapper>
-                        <OptionButtonWrapper>
-                            <IconButton theme='flatBlue' size='small' icon='heartFull'>Like</IconButton>
+                        <OptionButtonWrapper style={{ width: '100%' }}>
+                            <IconButton theme='blue' size='big' icon='pencil' style={{ width: '100%' }}>Big</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
                             <RoundButton theme='secondaryRed' size='small' icon='magnifyingGlass'/>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <RoundButton theme='blue' size='medium' icon='crossSign'/>
+                        </OptionButtonWrapper>
+                        <OptionButtonWrapper>
+                            <RoundButton theme='red' size='big' icon='plusSign' onClick={() => { this.ModalRef.show(); }}/>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>
@@ -299,6 +316,18 @@ class StorybookVol2 extends Component {
                 <ToastNotification notificationType='error' from='bottom' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.ErrorToastNotificationRef = notification; }}/>
                 <ToastNotification notificationType='warning' from='top' side='right' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.WarningToastNotificationRef = notification; }} showWithBounce={true}/>
                 <ToastNotification notificationType='information' from='top' side='left' title='I am a toast notification' message='Yes! I am a toast notification.' timeout={0} ref={notification => { this.InformationToastNotificationRef = notification; }}/>
+                {/* MODAL */}
+                <Modal ref={modal => this.ModalRef = modal}>
+                    <ModalHeader>
+                        <ModalTitle>Título del modal</ModalTitle>
+                    </ModalHeader>
+                    <ModalBody>
+                        <Loading size={{ height: 60, width: 60 }}/>
+                    </ModalBody>
+                    <ModalFooter>
+                        <Footer>&#9400; Panda Corp. all rights reserved.</Footer>
+                    </ModalFooter>
+                </Modal>
             </Layout>
         );
     }
