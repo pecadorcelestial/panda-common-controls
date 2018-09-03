@@ -50,13 +50,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   width: 0px;
 }
 
-.hvgeRl:focus ~ .c2 {
+.gaOSds:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.hvgeRl:focus ~ .c2:after {
+.gaOSds:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }
@@ -69,6 +69,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   display: inline-block;
   font-size: 16px;
   height: 30px;
+  left: 0px;
   outline: none;
   padding: 0px;
   position: absolute;
@@ -187,6 +188,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   display: inline-block;
   font-size: 16px;
   height: 30px;
+  left: 0px;
   outline: none;
   padding: 0px;
   position: absolute;
@@ -206,13 +208,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   width: 100%;
 }
 
-.cxmCxD:focus ~ .c2 {
+.fGFQIw:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.cxmCxD:focus ~ .c2:after {
+.fGFQIw:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }
