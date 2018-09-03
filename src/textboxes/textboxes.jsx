@@ -97,6 +97,7 @@ const Textbox = styled.input`
 	display: inline-block;
 	font-size: 16px;
 	height: 30px;
+	left: 0px;
 	outline: none;
 	padding: 0px;
 	position: absolute;

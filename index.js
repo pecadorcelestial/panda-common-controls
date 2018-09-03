@@ -38,7 +38,7 @@ module.exports = {
     IconButton,
     Loading,
     MenuWithBlur,
-    Modal,
+    Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter,
     Select,
     RadioButton, 
     RadioButtonsGroup,
