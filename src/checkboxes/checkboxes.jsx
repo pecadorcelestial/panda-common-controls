@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Layout = styled.div`
+    box-sizing: border-box;
 	display: inline-block;
 	height: 30px;
 	margin: 0px;
@@ -15,6 +16,7 @@ const CheckMark = styled.div`
     background-color: ${props => props.checked ? `#1476FB`: `#BFBFBF`};
     border: none;
     border-radius: 5px;
+    box-sizing: border-box;
     cursor: pointer;
     display: inline-block;
     float: left;
@@ -33,9 +35,7 @@ const CheckMark = styled.div`
             content: "";
             display: block;
             height: 10px;
-            left: 6px;
-            position: absolute;
-            top: 2px;
+            margin: 2px 0px 0px 6px;
             width: 5px;
 
             transform: rotate(45deg);
