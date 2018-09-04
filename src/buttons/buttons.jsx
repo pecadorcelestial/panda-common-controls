@@ -294,7 +294,7 @@ export const IconButton = styled(({ className, theme, size, children, ...props})
 
 const padding = (size) => {
 	switch(size) {
-		case 'small': return '0px';
+		case 'small': return '1px 0px 0px 0px';
 		case 'medium': return '9px 0px';
 		case 'big': return '9px 0px';
 	}

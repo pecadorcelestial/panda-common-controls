@@ -40,17 +40,17 @@ const Layout = styled.div`
 	display: inline-block;
 	height: 60px;
 	margin: 0px;
-	min-width: 150px;
+	min-width: 250px;
 	padding: 0px;
 	position: relative;
 	width: auto;
 
 	@media screen and (max-width: 767px) {
-		min-width: unset;
+		/*min-width: unset;*/
 	}
 	
 	@media screen and (min-width: 768px) and (max-width: 991px) {
-		min-width: unset;
+		/*min-width: unset;*/
 	}
 `;
 

@@ -5,9 +5,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   display: inline-block;
   height: 60px;
   margin: 0px;
+  min-width: 250px;
   padding: 0px;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 .c4 {
@@ -183,9 +184,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   display: inline-block;
   height: 60px;
   margin: 0px;
+  min-width: 250px;
   padding: 0px;
   position: relative;
-  width: 100%;
+  width: auto;
 }
 
 .c4 {

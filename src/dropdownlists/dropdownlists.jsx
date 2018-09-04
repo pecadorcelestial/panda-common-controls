@@ -40,9 +40,10 @@ const Layout = styled.div`
 	display: inline-block;
 	height: 60px;
 	margin: 0px;
+	min-width: 250px;
 	padding: 0px;
 	position: relative;
-	width: 100%;
+	width: auto;
 `;
 
 const Title = styled.label`

@@ -8,8 +8,7 @@ const Layout = styled.div`
 	height: 30px;
 	margin: 0px;
 	padding: 0px;
-	position: relative;
-    width: 100%;
+    width: auto;
 `;
 
 const CheckMark = styled.div`
@@ -17,11 +16,10 @@ const CheckMark = styled.div`
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
+    float: left;
     height: 20px;
-    left: 0;
     margin: 0px;
-    position: absolute;
-    top: 5px;
     width: 20px;
     
     ${Layout}:hover & {
@@ -48,19 +46,18 @@ const Title = styled.label`
     box-sizing: border-box;
     color: #242424;
     cursor: pointer;
+    display: inline-block;
+    float: left;
 	height: 30px;
 	font-family: "Open Sans", sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: normal;
-	left: 20px;
 	letter-spacing: normal;
 	margin: 0px;
 	padding: 4px 0px 0px 5px;
-	position: absolute;
 	text-align: left;
-	top: 0px;
 	width: auto;
     white-space: nowrap;
 `;

@@ -92,6 +92,14 @@ RadioButton.defaultProps = {
 
 const Layout = styled.div`
     box-sizing: border-box;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+`;
+
+const Buttons = styled.div`
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -119,9 +127,11 @@ export class RadioButtonsGroup extends Component {
     render() {
         return(
             <Layout>
-                {
-                    this.props.options.map((option, index) => <RadioButton key={`rbt-opt-${index}`} value={option.value} checked={option.value == this.state.selectedValue} onChange={(value) => { this.setState({ selectedValue: value }); if(this.props.onChange) { this.props.onChange(value); } }}>{option.name}</RadioButton>)
-                }
+                <Buttons>
+                    {
+                        this.props.options.map((option, index) => <RadioButton key={`rbt-opt-${index}`} value={option.value} checked={option.value == this.state.selectedValue} onChange={(value) => { this.setState({ selectedValue: value }); if(this.props.onChange) { this.props.onChange(value); } }}>{option.name}</RadioButton>)
+                    }
+                </Buttons>
             </Layout>
         );
     }

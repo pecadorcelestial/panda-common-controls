@@ -5,7 +5,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   display: inline-block;
   height: 60px;
   margin: 0px;
-  min-width: 150px;
+  min-width: 250px;
   padding: 0px;
   position: relative;
   width: auto;
@@ -89,18 +89,6 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   width: 100%;
 }
 
-@media screen and (max-width:767px) {
-  .c0 {
-    min-width: unset;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:991px) {
-  .c0 {
-    min-width: unset;
-  }
-}
-
 <div
   className="c0"
   disabled={true}
@@ -135,7 +123,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   display: inline-block;
   height: 60px;
   margin: 0px;
-  min-width: 150px;
+  min-width: 250px;
   padding: 0px;
   position: relative;
   width: auto;
@@ -217,18 +205,6 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
 .fGFQIw:focus ~ .c2:after {
   left: 0px;
   width: 100%;
-}
-
-@media screen and (max-width:767px) {
-  .c0 {
-    min-width: unset;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:991px) {
-  .c0 {
-    min-width: unset;
-  }
 }
 
 <div
