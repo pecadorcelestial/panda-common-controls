@@ -43,7 +43,7 @@ exports[`[SNAPSHOT][Componentes][Common][RadioButton] - RadioButton normal. Debe
   background-color: #A7A7A7;
 }
 
-.c0:hover .bzriCp {
+.c0:hover .c3 {
   background-color: #11AAFF;
 }
 
@@ -86,7 +86,7 @@ exports[`[SNAPSHOT][Componentes][Common][RadioButton] - RadioButton normal. Debe
   white-space: nowrap;
 }
 
-.c0:hover .gnaWqM {
+.c0:hover .c3 {
   background-color: #A7A7A7;
 }
 

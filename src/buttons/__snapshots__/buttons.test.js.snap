@@ -35,7 +35,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -46,7 +46,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -54,7 +54,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -102,7 +102,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -113,7 +113,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -121,7 +121,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -169,7 +169,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -180,7 +180,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -188,7 +188,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -236,7 +236,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #1476FB;
 }
 
@@ -247,7 +247,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -255,7 +255,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #1476FB;
   height: 18px;
   width: 18px;
@@ -303,7 +303,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #1476FB;
 }
 
@@ -314,7 +314,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -322,7 +322,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
@@ -370,7 +370,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #1476FB;
 }
 
@@ -381,7 +381,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -389,7 +389,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
@@ -437,7 +437,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #858585;
 }
 
@@ -448,7 +448,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -456,7 +456,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #858585;
   height: 18px;
   width: 18px;
@@ -504,7 +504,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #858585;
 }
 
@@ -515,7 +515,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -523,7 +523,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #858585;
   height: 20px;
   width: 20px;
@@ -571,7 +571,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #858585;
 }
 
@@ -582,7 +582,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -590,7 +590,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #858585;
   height: 30px;
   width: 30px;
@@ -638,7 +638,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #4CB050;
 }
 
@@ -649,7 +649,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -657,7 +657,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #4CB050;
   height: 18px;
   width: 18px;
@@ -705,7 +705,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #4CB050;
 }
 
@@ -716,7 +716,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -724,7 +724,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #4CB050;
   height: 20px;
   width: 20px;
@@ -772,7 +772,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #4CB050;
 }
 
@@ -783,7 +783,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -791,7 +791,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #4CB050;
   height: 30px;
   width: 30px;
@@ -839,7 +839,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FF456A;
 }
 
@@ -850,7 +850,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -858,7 +858,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
@@ -906,7 +906,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FF456A;
 }
 
@@ -917,7 +917,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -925,7 +925,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
@@ -973,7 +973,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FF456A;
 }
 
@@ -984,7 +984,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -992,7 +992,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
@@ -1040,7 +1040,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1051,7 +1051,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1059,7 +1059,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -1107,7 +1107,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1118,7 +1118,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1126,7 +1126,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -1174,7 +1174,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1185,7 +1185,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1193,7 +1193,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -1241,7 +1241,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFE200;
 }
 
@@ -1252,7 +1252,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1260,7 +1260,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFE200;
   height: 18px;
   width: 18px;
@@ -1308,7 +1308,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFE200;
 }
 
@@ -1319,7 +1319,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1327,7 +1327,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
@@ -1375,7 +1375,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFE200;
 }
 
@@ -1386,7 +1386,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #BFBFBF;
 }
 
@@ -1394,7 +1394,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
@@ -1442,7 +1442,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1453,7 +1453,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1461,7 +1461,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -1509,7 +1509,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1520,7 +1520,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1528,7 +1528,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -1576,7 +1576,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1587,7 +1587,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1595,7 +1595,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -1643,7 +1643,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1654,7 +1654,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1662,7 +1662,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -1710,7 +1710,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1721,7 +1721,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1729,7 +1729,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -1777,7 +1777,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1788,7 +1788,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1796,7 +1796,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -1844,7 +1844,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1855,7 +1855,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1863,7 +1863,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -1917,7 +1917,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1928,7 +1928,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -1936,7 +1936,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -1984,7 +1984,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -1995,7 +1995,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2003,7 +2003,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -2051,7 +2051,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2062,7 +2062,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2070,7 +2070,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -2118,7 +2118,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2129,7 +2129,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2137,7 +2137,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
@@ -2185,7 +2185,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2196,7 +2196,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2204,7 +2204,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
@@ -2252,7 +2252,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2263,7 +2263,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2271,7 +2271,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
@@ -2319,7 +2319,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2330,7 +2330,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2338,7 +2338,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -2386,7 +2386,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2397,7 +2397,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2405,7 +2405,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -2453,7 +2453,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   text-decoration: none;
 }
 
-.c0:hover .sc-bwzfXH {
+.c0:hover .c1 {
   fill: #FFF;
 }
 
@@ -2464,7 +2464,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   pointer-events: none;
 }
 
-.c0:disabled .sc-bwzfXH {
+.c0:disabled .c1 {
   fill: #FFF;
 }
 
@@ -2472,7 +2472,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   outline: none;
 }
 
-.c0 .sc-bwzfXH {
+.c0 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -2556,491 +2556,491 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
   width: 18px;
 }
 
-.eLqEyC:hover .c1 {
+.c3:hover .c1 {
   fill: #FFF;
 }
 
-.eLqEyC:disabled .c1 {
+.c3:disabled .c1 {
   fill: #FFF;
 }
 
-.eLqEyC .c1 {
+.c3 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.fkrEAu:hover .c1 {
+.c4:hover .c1 {
   fill: #FFF;
 }
 
-.fkrEAu:disabled .c1 {
+.c4:disabled .c1 {
   fill: #FFF;
 }
 
-.fkrEAu .c1 {
+.c4 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.eLeNVn:hover .c1 {
+.c5:hover .c1 {
   fill: #FFF;
 }
 
-.eLeNVn:disabled .c1 {
+.c5:disabled .c1 {
   fill: #FFF;
 }
 
-.eLeNVn .c1 {
+.c5 .c1 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.ggHuZO:hover .c1 {
+.c6:hover .c1 {
   fill: #FFF;
 }
 
-.ggHuZO:disabled .c1 {
+.c6:disabled .c1 {
   fill: #FFF;
 }
 
-.ggHuZO .c1 {
+.c6 .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.dkOUuu:hover .c1 {
+.c7:hover .c1 {
   fill: #FFF;
 }
 
-.dkOUuu:disabled .c1 {
+.c7:disabled .c1 {
   fill: #FFF;
 }
 
-.dkOUuu .c1 {
+.c7 .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.lcqJer:hover .c1 {
+.c8:hover .c1 {
   fill: #FF456A;
 }
 
-.lcqJer:disabled .c1 {
+.c8:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.lcqJer .c1 {
+.c8 .c1 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.iPCzYB:hover .c1 {
+.c9:hover .c1 {
   fill: #FF456A;
 }
 
-.iPCzYB:disabled .c1 {
+.c9:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.iPCzYB .c1 {
+.c9 .c1 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.elhzGX:hover .c1 {
+.c10:hover .c1 {
   fill: #FF456A;
 }
 
-.elhzGX:disabled .c1 {
+.c10:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.elhzGX .c1 {
+.c10 .c1 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.hThPWc:hover .c1 {
+.c11:hover .c1 {
   fill: #FFF;
 }
 
-.hThPWc:disabled .c1 {
+.c11:disabled .c1 {
   fill: #FFF;
 }
 
-.hThPWc .c1 {
+.c11 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.AWlLV:hover .c1 {
+.c12:hover .c1 {
   fill: #FFF;
 }
 
-.AWlLV:disabled .c1 {
+.c12:disabled .c1 {
   fill: #FFF;
 }
 
-.AWlLV .c1 {
+.c12 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.cceUYT:hover .c1 {
+.c13:hover .c1 {
   fill: #FFF;
 }
 
-.cceUYT:disabled .c1 {
+.c13:disabled .c1 {
   fill: #FFF;
 }
 
-.cceUYT .c1 {
+.c13 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.hkdgRd:hover .c1 {
+.c14:hover .c1 {
   fill: #1476FB;
 }
 
-.hkdgRd:disabled .c1 {
+.c14:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.hkdgRd .c1 {
+.c14 .c1 {
   fill: #1476FB;
   height: 18px;
   width: 18px;
 }
 
-.gCPJNp:hover .c1 {
+.c15:hover .c1 {
   fill: #1476FB;
 }
 
-.gCPJNp:disabled .c1 {
+.c15:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.gCPJNp .c1 {
+.c15 .c1 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.ixsFmi:hover .c1 {
+.c16:hover .c1 {
   fill: #1476FB;
 }
 
-.ixsFmi:disabled .c1 {
+.c16:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.ixsFmi .c1 {
+.c16 .c1 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dMDZWY:hover .c1 {
+.c17:hover .c1 {
   fill: #FFF;
 }
 
-.dMDZWY:disabled .c1 {
+.c17:disabled .c1 {
   fill: #FFF;
 }
 
-.dMDZWY .c1 {
+.c17 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.jyvRpa:hover .c1 {
+.c18:hover .c1 {
   fill: #FFF;
 }
 
-.jyvRpa:disabled .c1 {
+.c18:disabled .c1 {
   fill: #FFF;
 }
 
-.jyvRpa .c1 {
+.c18 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kuQuAk:hover .c1 {
+.c19:hover .c1 {
   fill: #FFF;
 }
 
-.kuQuAk:disabled .c1 {
+.c19:disabled .c1 {
   fill: #FFF;
 }
 
-.kuQuAk .c1 {
+.c19 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cBEylu:hover .c1 {
+.c20:hover .c1 {
   fill: #4CB050;
 }
 
-.cBEylu:disabled .c1 {
+.c20:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.cBEylu .c1 {
+.c20 .c1 {
   fill: #4CB050;
   height: 18px;
   width: 18px;
 }
 
-.grhPew:hover .c1 {
+.c21:hover .c1 {
   fill: #4CB050;
 }
 
-.grhPew:disabled .c1 {
+.c21:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.grhPew .c1 {
+.c21 .c1 {
   fill: #4CB050;
   height: 20px;
   width: 20px;
 }
 
-.gPJEbi:hover .c1 {
+.c22:hover .c1 {
   fill: #4CB050;
 }
 
-.gPJEbi:disabled .c1 {
+.c22:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.gPJEbi .c1 {
+.c22 .c1 {
   fill: #4CB050;
   height: 30px;
   width: 30px;
 }
 
-.kvrFrd:hover .c1 {
+.c23:hover .c1 {
   fill: #FFF;
 }
 
-.kvrFrd:disabled .c1 {
+.c23:disabled .c1 {
   fill: #FFF;
 }
 
-.kvrFrd .c1 {
+.c23 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.kurbjj:hover .c1 {
+.c24:hover .c1 {
   fill: #FFF;
 }
 
-.kurbjj:disabled .c1 {
+.c24:disabled .c1 {
   fill: #FFF;
 }
 
-.kurbjj .c1 {
+.c24 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kiQMnY:hover .c1 {
+.c25:hover .c1 {
   fill: #FFF;
 }
 
-.kiQMnY:disabled .c1 {
+.c25:disabled .c1 {
   fill: #FFF;
 }
 
-.kiQMnY .c1 {
+.c25 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dlWHso:hover .c1 {
+.c26:hover .c1 {
   fill: #FFE200;
 }
 
-.dlWHso:disabled .c1 {
+.c26:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.dlWHso .c1 {
+.c26 .c1 {
   fill: #FFE200;
   height: 18px;
   width: 18px;
 }
 
-.fLEPtd:hover .c1 {
+.c27:hover .c1 {
   fill: #FFE200;
 }
 
-.fLEPtd:disabled .c1 {
+.c27:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.fLEPtd .c1 {
+.c27 .c1 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.dldNsa:hover .c1 {
+.c28:hover .c1 {
   fill: #FFE200;
 }
 
-.dldNsa:disabled .c1 {
+.c28:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.dldNsa .c1 {
+.c28 .c1 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.iSnbTb:hover .c1 {
+.c29:hover .c1 {
   fill: #FFF;
 }
 
-.iSnbTb:disabled .c1 {
+.c29:disabled .c1 {
   fill: #FFF;
 }
 
-.iSnbTb .c1 {
+.c29 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.bdACEm:hover .c1 {
+.c30:hover .c1 {
   fill: #FFF;
 }
 
-.bdACEm:disabled .c1 {
+.c30:disabled .c1 {
   fill: #FFF;
 }
 
-.bdACEm .c1 {
+.c30 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.drlEWn:hover .c1 {
+.c31:hover .c1 {
   fill: #FFF;
 }
 
-.drlEWn:disabled .c1 {
+.c31:disabled .c1 {
   fill: #FFF;
 }
 
-.drlEWn .c1 {
+.c31 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.bSwSlG:hover .c1 {
+.c32:hover .c1 {
   fill: #858585;
 }
 
-.bSwSlG:disabled .c1 {
+.c32:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.bSwSlG .c1 {
+.c32 .c1 {
   fill: #858585;
   height: 18px;
   width: 18px;
 }
 
-.ieWbCw:hover .c1 {
+.c33:hover .c1 {
   fill: #858585;
 }
 
-.ieWbCw:disabled .c1 {
+.c33:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.ieWbCw .c1 {
+.c33 .c1 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.llmvhI:hover .c1 {
+.c34:hover .c1 {
   fill: #858585;
 }
 
-.llmvhI:disabled .c1 {
+.c34:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.llmvhI .c1 {
+.c34 .c1 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.cwRUoR:hover .c1 {
+.c35:hover .c1 {
   fill: #FFF;
 }
 
-.cwRUoR:disabled .c1 {
+.c35:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.cwRUoR .c1 {
+.c35 .c1 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.hzhBwL:hover .c1 {
+.c36:hover .c1 {
   fill: #FFF;
 }
 
-.hzhBwL:disabled .c1 {
+.c36:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.hzhBwL .c1 {
+.c36 .c1 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dfRgJh:hover .c1 {
+.c37:hover .c1 {
   fill: #FFF;
 }
 
-.dfRgJh:disabled .c1 {
+.c37:disabled .c1 {
   fill: #BFBFBF;
 }
 
-.dfRgJh .c1 {
+.c37 .c1 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -3091,29 +3091,29 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   transition: all .3s;
 }
 
-.iugCxF:hover .c2 {
+.c4:hover .c2 {
   fill: #FFF;
 }
 
-.iugCxF:disabled .c2 {
+.c4:disabled .c2 {
   fill: #FFF;
 }
 
-.iugCxF .c2 {
+.c4 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.eLqEyC:hover .c2 {
+.c5:hover .c2 {
   fill: #FFF;
 }
 
-.eLqEyC:disabled .c2 {
+.c5:disabled .c2 {
   fill: #FFF;
 }
 
-.eLqEyC .c2 {
+.c5 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
@@ -3178,463 +3178,463 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   width: 30px;
 }
 
-.eLeNVn:hover .c2 {
+.c6:hover .c2 {
   fill: #FFF;
 }
 
-.eLeNVn:disabled .c2 {
+.c6:disabled .c2 {
   fill: #FFF;
 }
 
-.eLeNVn .c2 {
+.c6 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.ggHuZO:hover .c2 {
+.c7:hover .c2 {
   fill: #FFF;
 }
 
-.ggHuZO:disabled .c2 {
+.c7:disabled .c2 {
   fill: #FFF;
 }
 
-.ggHuZO .c2 {
+.c7 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.dkOUuu:hover .c2 {
+.c8:hover .c2 {
   fill: #FFF;
 }
 
-.dkOUuu:disabled .c2 {
+.c8:disabled .c2 {
   fill: #FFF;
 }
 
-.dkOUuu .c2 {
+.c8 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.lcqJer:hover .c2 {
+.c9:hover .c2 {
   fill: #FF456A;
 }
 
-.lcqJer:disabled .c2 {
+.c9:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.lcqJer .c2 {
+.c9 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.iPCzYB:hover .c2 {
+.c10:hover .c2 {
   fill: #FF456A;
 }
 
-.iPCzYB:disabled .c2 {
+.c10:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.iPCzYB .c2 {
+.c10 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.elhzGX:hover .c2 {
+.c11:hover .c2 {
   fill: #FF456A;
 }
 
-.elhzGX:disabled .c2 {
+.c11:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.elhzGX .c2 {
+.c11 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.hThPWc:hover .c2 {
+.c12:hover .c2 {
   fill: #FFF;
 }
 
-.hThPWc:disabled .c2 {
+.c12:disabled .c2 {
   fill: #FFF;
 }
 
-.hThPWc .c2 {
+.c12 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.AWlLV:hover .c2 {
+.c13:hover .c2 {
   fill: #FFF;
 }
 
-.AWlLV:disabled .c2 {
+.c13:disabled .c2 {
   fill: #FFF;
 }
 
-.AWlLV .c2 {
+.c13 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.cceUYT:hover .c2 {
+.c14:hover .c2 {
   fill: #FFF;
 }
 
-.cceUYT:disabled .c2 {
+.c14:disabled .c2 {
   fill: #FFF;
 }
 
-.cceUYT .c2 {
+.c14 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.hkdgRd:hover .c2 {
+.c15:hover .c2 {
   fill: #1476FB;
 }
 
-.hkdgRd:disabled .c2 {
+.c15:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hkdgRd .c2 {
+.c15 .c2 {
   fill: #1476FB;
   height: 18px;
   width: 18px;
 }
 
-.gCPJNp:hover .c2 {
+.c16:hover .c2 {
   fill: #1476FB;
 }
 
-.gCPJNp:disabled .c2 {
+.c16:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gCPJNp .c2 {
+.c16 .c2 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.ixsFmi:hover .c2 {
+.c17:hover .c2 {
   fill: #1476FB;
 }
 
-.ixsFmi:disabled .c2 {
+.c17:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ixsFmi .c2 {
+.c17 .c2 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dMDZWY:hover .c2 {
+.c18:hover .c2 {
   fill: #FFF;
 }
 
-.dMDZWY:disabled .c2 {
+.c18:disabled .c2 {
   fill: #FFF;
 }
 
-.dMDZWY .c2 {
+.c18 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.jyvRpa:hover .c2 {
+.c19:hover .c2 {
   fill: #FFF;
 }
 
-.jyvRpa:disabled .c2 {
+.c19:disabled .c2 {
   fill: #FFF;
 }
 
-.jyvRpa .c2 {
+.c19 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kuQuAk:hover .c2 {
+.c20:hover .c2 {
   fill: #FFF;
 }
 
-.kuQuAk:disabled .c2 {
+.c20:disabled .c2 {
   fill: #FFF;
 }
 
-.kuQuAk .c2 {
+.c20 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cBEylu:hover .c2 {
+.c21:hover .c2 {
   fill: #4CB050;
 }
 
-.cBEylu:disabled .c2 {
+.c21:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cBEylu .c2 {
+.c21 .c2 {
   fill: #4CB050;
   height: 18px;
   width: 18px;
 }
 
-.grhPew:hover .c2 {
+.c22:hover .c2 {
   fill: #4CB050;
 }
 
-.grhPew:disabled .c2 {
+.c22:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.grhPew .c2 {
+.c22 .c2 {
   fill: #4CB050;
   height: 20px;
   width: 20px;
 }
 
-.gPJEbi:hover .c2 {
+.c23:hover .c2 {
   fill: #4CB050;
 }
 
-.gPJEbi:disabled .c2 {
+.c23:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gPJEbi .c2 {
+.c23 .c2 {
   fill: #4CB050;
   height: 30px;
   width: 30px;
 }
 
-.kvrFrd:hover .c2 {
+.c24:hover .c2 {
   fill: #FFF;
 }
 
-.kvrFrd:disabled .c2 {
+.c24:disabled .c2 {
   fill: #FFF;
 }
 
-.kvrFrd .c2 {
+.c24 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.kurbjj:hover .c2 {
+.c25:hover .c2 {
   fill: #FFF;
 }
 
-.kurbjj:disabled .c2 {
+.c25:disabled .c2 {
   fill: #FFF;
 }
 
-.kurbjj .c2 {
+.c25 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kiQMnY:hover .c2 {
+.c26:hover .c2 {
   fill: #FFF;
 }
 
-.kiQMnY:disabled .c2 {
+.c26:disabled .c2 {
   fill: #FFF;
 }
 
-.kiQMnY .c2 {
+.c26 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dlWHso:hover .c2 {
+.c27:hover .c2 {
   fill: #FFE200;
 }
 
-.dlWHso:disabled .c2 {
+.c27:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dlWHso .c2 {
+.c27 .c2 {
   fill: #FFE200;
   height: 18px;
   width: 18px;
 }
 
-.fLEPtd:hover .c2 {
+.c28:hover .c2 {
   fill: #FFE200;
 }
 
-.fLEPtd:disabled .c2 {
+.c28:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fLEPtd .c2 {
+.c28 .c2 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.dldNsa:hover .c2 {
+.c29:hover .c2 {
   fill: #FFE200;
 }
 
-.dldNsa:disabled .c2 {
+.c29:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dldNsa .c2 {
+.c29 .c2 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.iSnbTb:hover .c2 {
+.c30:hover .c2 {
   fill: #FFF;
 }
 
-.iSnbTb:disabled .c2 {
+.c30:disabled .c2 {
   fill: #FFF;
 }
 
-.iSnbTb .c2 {
+.c30 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.bdACEm:hover .c2 {
+.c31:hover .c2 {
   fill: #FFF;
 }
 
-.bdACEm:disabled .c2 {
+.c31:disabled .c2 {
   fill: #FFF;
 }
 
-.bdACEm .c2 {
+.c31 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.drlEWn:hover .c2 {
+.c32:hover .c2 {
   fill: #FFF;
 }
 
-.drlEWn:disabled .c2 {
+.c32:disabled .c2 {
   fill: #FFF;
 }
 
-.drlEWn .c2 {
+.c32 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.bSwSlG:hover .c2 {
+.c33:hover .c2 {
   fill: #858585;
 }
 
-.bSwSlG:disabled .c2 {
+.c33:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.bSwSlG .c2 {
+.c33 .c2 {
   fill: #858585;
   height: 18px;
   width: 18px;
 }
 
-.ieWbCw:hover .c2 {
+.c34:hover .c2 {
   fill: #858585;
 }
 
-.ieWbCw:disabled .c2 {
+.c34:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ieWbCw .c2 {
+.c34 .c2 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.llmvhI:hover .c2 {
+.c35:hover .c2 {
   fill: #858585;
 }
 
-.llmvhI:disabled .c2 {
+.c35:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.llmvhI .c2 {
+.c35 .c2 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.cwRUoR:hover .c2 {
+.c36:hover .c2 {
   fill: #FFF;
 }
 
-.cwRUoR:disabled .c2 {
+.c36:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cwRUoR .c2 {
+.c36 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.hzhBwL:hover .c2 {
+.c37:hover .c2 {
   fill: #FFF;
 }
 
-.hzhBwL:disabled .c2 {
+.c37:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hzhBwL .c2 {
+.c37 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dfRgJh:hover .c2 {
+.c38:hover .c2 {
   fill: #FFF;
 }
 
-.dfRgJh:disabled .c2 {
+.c38:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dfRgJh .c2 {
+.c38 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -3691,15 +3691,15 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   transition: all .3s;
 }
 
-.iugCxF:hover .c2 {
+.c4:hover .c2 {
   fill: #FFF;
 }
 
-.iugCxF:disabled .c2 {
+.c4:disabled .c2 {
   fill: #FFF;
 }
 
-.iugCxF .c2 {
+.c4 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
@@ -3764,477 +3764,477 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   width: 20px;
 }
 
-.fkrEAu:hover .c2 {
+.c5:hover .c2 {
   fill: #FFF;
 }
 
-.fkrEAu:disabled .c2 {
+.c5:disabled .c2 {
   fill: #FFF;
 }
 
-.fkrEAu .c2 {
+.c5 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.eLeNVn:hover .c2 {
+.c6:hover .c2 {
   fill: #FFF;
 }
 
-.eLeNVn:disabled .c2 {
+.c6:disabled .c2 {
   fill: #FFF;
 }
 
-.eLeNVn .c2 {
+.c6 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.ggHuZO:hover .c2 {
+.c7:hover .c2 {
   fill: #FFF;
 }
 
-.ggHuZO:disabled .c2 {
+.c7:disabled .c2 {
   fill: #FFF;
 }
 
-.ggHuZO .c2 {
+.c7 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.dkOUuu:hover .c2 {
+.c8:hover .c2 {
   fill: #FFF;
 }
 
-.dkOUuu:disabled .c2 {
+.c8:disabled .c2 {
   fill: #FFF;
 }
 
-.dkOUuu .c2 {
+.c8 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.lcqJer:hover .c2 {
+.c9:hover .c2 {
   fill: #FF456A;
 }
 
-.lcqJer:disabled .c2 {
+.c9:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.lcqJer .c2 {
+.c9 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.iPCzYB:hover .c2 {
+.c10:hover .c2 {
   fill: #FF456A;
 }
 
-.iPCzYB:disabled .c2 {
+.c10:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.iPCzYB .c2 {
+.c10 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.elhzGX:hover .c2 {
+.c11:hover .c2 {
   fill: #FF456A;
 }
 
-.elhzGX:disabled .c2 {
+.c11:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.elhzGX .c2 {
+.c11 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.hThPWc:hover .c2 {
+.c12:hover .c2 {
   fill: #FFF;
 }
 
-.hThPWc:disabled .c2 {
+.c12:disabled .c2 {
   fill: #FFF;
 }
 
-.hThPWc .c2 {
+.c12 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.AWlLV:hover .c2 {
+.c13:hover .c2 {
   fill: #FFF;
 }
 
-.AWlLV:disabled .c2 {
+.c13:disabled .c2 {
   fill: #FFF;
 }
 
-.AWlLV .c2 {
+.c13 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.cceUYT:hover .c2 {
+.c14:hover .c2 {
   fill: #FFF;
 }
 
-.cceUYT:disabled .c2 {
+.c14:disabled .c2 {
   fill: #FFF;
 }
 
-.cceUYT .c2 {
+.c14 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.hkdgRd:hover .c2 {
+.c15:hover .c2 {
   fill: #1476FB;
 }
 
-.hkdgRd:disabled .c2 {
+.c15:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hkdgRd .c2 {
+.c15 .c2 {
   fill: #1476FB;
   height: 18px;
   width: 18px;
 }
 
-.gCPJNp:hover .c2 {
+.c16:hover .c2 {
   fill: #1476FB;
 }
 
-.gCPJNp:disabled .c2 {
+.c16:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gCPJNp .c2 {
+.c16 .c2 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.ixsFmi:hover .c2 {
+.c17:hover .c2 {
   fill: #1476FB;
 }
 
-.ixsFmi:disabled .c2 {
+.c17:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ixsFmi .c2 {
+.c17 .c2 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dMDZWY:hover .c2 {
+.c18:hover .c2 {
   fill: #FFF;
 }
 
-.dMDZWY:disabled .c2 {
+.c18:disabled .c2 {
   fill: #FFF;
 }
 
-.dMDZWY .c2 {
+.c18 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.jyvRpa:hover .c2 {
+.c19:hover .c2 {
   fill: #FFF;
 }
 
-.jyvRpa:disabled .c2 {
+.c19:disabled .c2 {
   fill: #FFF;
 }
 
-.jyvRpa .c2 {
+.c19 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kuQuAk:hover .c2 {
+.c20:hover .c2 {
   fill: #FFF;
 }
 
-.kuQuAk:disabled .c2 {
+.c20:disabled .c2 {
   fill: #FFF;
 }
 
-.kuQuAk .c2 {
+.c20 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cBEylu:hover .c2 {
+.c21:hover .c2 {
   fill: #4CB050;
 }
 
-.cBEylu:disabled .c2 {
+.c21:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cBEylu .c2 {
+.c21 .c2 {
   fill: #4CB050;
   height: 18px;
   width: 18px;
 }
 
-.grhPew:hover .c2 {
+.c22:hover .c2 {
   fill: #4CB050;
 }
 
-.grhPew:disabled .c2 {
+.c22:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.grhPew .c2 {
+.c22 .c2 {
   fill: #4CB050;
   height: 20px;
   width: 20px;
 }
 
-.gPJEbi:hover .c2 {
+.c23:hover .c2 {
   fill: #4CB050;
 }
 
-.gPJEbi:disabled .c2 {
+.c23:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gPJEbi .c2 {
+.c23 .c2 {
   fill: #4CB050;
   height: 30px;
   width: 30px;
 }
 
-.kvrFrd:hover .c2 {
+.c24:hover .c2 {
   fill: #FFF;
 }
 
-.kvrFrd:disabled .c2 {
+.c24:disabled .c2 {
   fill: #FFF;
 }
 
-.kvrFrd .c2 {
+.c24 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.kurbjj:hover .c2 {
+.c25:hover .c2 {
   fill: #FFF;
 }
 
-.kurbjj:disabled .c2 {
+.c25:disabled .c2 {
   fill: #FFF;
 }
 
-.kurbjj .c2 {
+.c25 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kiQMnY:hover .c2 {
+.c26:hover .c2 {
   fill: #FFF;
 }
 
-.kiQMnY:disabled .c2 {
+.c26:disabled .c2 {
   fill: #FFF;
 }
 
-.kiQMnY .c2 {
+.c26 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dlWHso:hover .c2 {
+.c27:hover .c2 {
   fill: #FFE200;
 }
 
-.dlWHso:disabled .c2 {
+.c27:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dlWHso .c2 {
+.c27 .c2 {
   fill: #FFE200;
   height: 18px;
   width: 18px;
 }
 
-.fLEPtd:hover .c2 {
+.c28:hover .c2 {
   fill: #FFE200;
 }
 
-.fLEPtd:disabled .c2 {
+.c28:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fLEPtd .c2 {
+.c28 .c2 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.dldNsa:hover .c2 {
+.c29:hover .c2 {
   fill: #FFE200;
 }
 
-.dldNsa:disabled .c2 {
+.c29:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dldNsa .c2 {
+.c29 .c2 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.iSnbTb:hover .c2 {
+.c30:hover .c2 {
   fill: #FFF;
 }
 
-.iSnbTb:disabled .c2 {
+.c30:disabled .c2 {
   fill: #FFF;
 }
 
-.iSnbTb .c2 {
+.c30 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.bdACEm:hover .c2 {
+.c31:hover .c2 {
   fill: #FFF;
 }
 
-.bdACEm:disabled .c2 {
+.c31:disabled .c2 {
   fill: #FFF;
 }
 
-.bdACEm .c2 {
+.c31 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.drlEWn:hover .c2 {
+.c32:hover .c2 {
   fill: #FFF;
 }
 
-.drlEWn:disabled .c2 {
+.c32:disabled .c2 {
   fill: #FFF;
 }
 
-.drlEWn .c2 {
+.c32 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.bSwSlG:hover .c2 {
+.c33:hover .c2 {
   fill: #858585;
 }
 
-.bSwSlG:disabled .c2 {
+.c33:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.bSwSlG .c2 {
+.c33 .c2 {
   fill: #858585;
   height: 18px;
   width: 18px;
 }
 
-.ieWbCw:hover .c2 {
+.c34:hover .c2 {
   fill: #858585;
 }
 
-.ieWbCw:disabled .c2 {
+.c34:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ieWbCw .c2 {
+.c34 .c2 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.llmvhI:hover .c2 {
+.c35:hover .c2 {
   fill: #858585;
 }
 
-.llmvhI:disabled .c2 {
+.c35:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.llmvhI .c2 {
+.c35 .c2 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.cwRUoR:hover .c2 {
+.c36:hover .c2 {
   fill: #FFF;
 }
 
-.cwRUoR:disabled .c2 {
+.c36:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cwRUoR .c2 {
+.c36 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.hzhBwL:hover .c2 {
+.c37:hover .c2 {
   fill: #FFF;
 }
 
-.hzhBwL:disabled .c2 {
+.c37:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hzhBwL .c2 {
+.c37 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dfRgJh:hover .c2 {
+.c38:hover .c2 {
   fill: #FFF;
 }
 
-.dfRgJh:disabled .c2 {
+.c38:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dfRgJh .c2 {
+.c38 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
@@ -4350,491 +4350,491 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   width: 18px;
 }
 
-.eLqEyC:hover .c2 {
+.c4:hover .c2 {
   fill: #FFF;
 }
 
-.eLqEyC:disabled .c2 {
+.c4:disabled .c2 {
   fill: #FFF;
 }
 
-.eLqEyC .c2 {
+.c4 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.fkrEAu:hover .c2 {
+.c5:hover .c2 {
   fill: #FFF;
 }
 
-.fkrEAu:disabled .c2 {
+.c5:disabled .c2 {
   fill: #FFF;
 }
 
-.fkrEAu .c2 {
+.c5 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.eLeNVn:hover .c2 {
+.c6:hover .c2 {
   fill: #FFF;
 }
 
-.eLeNVn:disabled .c2 {
+.c6:disabled .c2 {
   fill: #FFF;
 }
 
-.eLeNVn .c2 {
+.c6 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.ggHuZO:hover .c2 {
+.c7:hover .c2 {
   fill: #FFF;
 }
 
-.ggHuZO:disabled .c2 {
+.c7:disabled .c2 {
   fill: #FFF;
 }
 
-.ggHuZO .c2 {
+.c7 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.dkOUuu:hover .c2 {
+.c8:hover .c2 {
   fill: #FFF;
 }
 
-.dkOUuu:disabled .c2 {
+.c8:disabled .c2 {
   fill: #FFF;
 }
 
-.dkOUuu .c2 {
+.c8 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.lcqJer:hover .c2 {
+.c9:hover .c2 {
   fill: #FF456A;
 }
 
-.lcqJer:disabled .c2 {
+.c9:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.lcqJer .c2 {
+.c9 .c2 {
   fill: #FF456A;
   height: 18px;
   width: 18px;
 }
 
-.iPCzYB:hover .c2 {
+.c10:hover .c2 {
   fill: #FF456A;
 }
 
-.iPCzYB:disabled .c2 {
+.c10:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.iPCzYB .c2 {
+.c10 .c2 {
   fill: #FF456A;
   height: 20px;
   width: 20px;
 }
 
-.elhzGX:hover .c2 {
+.c11:hover .c2 {
   fill: #FF456A;
 }
 
-.elhzGX:disabled .c2 {
+.c11:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.elhzGX .c2 {
+.c11 .c2 {
   fill: #FF456A;
   height: 30px;
   width: 30px;
 }
 
-.hThPWc:hover .c2 {
+.c12:hover .c2 {
   fill: #FFF;
 }
 
-.hThPWc:disabled .c2 {
+.c12:disabled .c2 {
   fill: #FFF;
 }
 
-.hThPWc .c2 {
+.c12 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.AWlLV:hover .c2 {
+.c13:hover .c2 {
   fill: #FFF;
 }
 
-.AWlLV:disabled .c2 {
+.c13:disabled .c2 {
   fill: #FFF;
 }
 
-.AWlLV .c2 {
+.c13 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.cceUYT:hover .c2 {
+.c14:hover .c2 {
   fill: #FFF;
 }
 
-.cceUYT:disabled .c2 {
+.c14:disabled .c2 {
   fill: #FFF;
 }
 
-.cceUYT .c2 {
+.c14 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.hkdgRd:hover .c2 {
+.c15:hover .c2 {
   fill: #1476FB;
 }
 
-.hkdgRd:disabled .c2 {
+.c15:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hkdgRd .c2 {
+.c15 .c2 {
   fill: #1476FB;
   height: 18px;
   width: 18px;
 }
 
-.gCPJNp:hover .c2 {
+.c16:hover .c2 {
   fill: #1476FB;
 }
 
-.gCPJNp:disabled .c2 {
+.c16:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gCPJNp .c2 {
+.c16 .c2 {
   fill: #1476FB;
   height: 20px;
   width: 20px;
 }
 
-.ixsFmi:hover .c2 {
+.c17:hover .c2 {
   fill: #1476FB;
 }
 
-.ixsFmi:disabled .c2 {
+.c17:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ixsFmi .c2 {
+.c17 .c2 {
   fill: #1476FB;
   height: 30px;
   width: 30px;
 }
 
-.dMDZWY:hover .c2 {
+.c18:hover .c2 {
   fill: #FFF;
 }
 
-.dMDZWY:disabled .c2 {
+.c18:disabled .c2 {
   fill: #FFF;
 }
 
-.dMDZWY .c2 {
+.c18 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.jyvRpa:hover .c2 {
+.c19:hover .c2 {
   fill: #FFF;
 }
 
-.jyvRpa:disabled .c2 {
+.c19:disabled .c2 {
   fill: #FFF;
 }
 
-.jyvRpa .c2 {
+.c19 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kuQuAk:hover .c2 {
+.c20:hover .c2 {
   fill: #FFF;
 }
 
-.kuQuAk:disabled .c2 {
+.c20:disabled .c2 {
   fill: #FFF;
 }
 
-.kuQuAk .c2 {
+.c20 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.cBEylu:hover .c2 {
+.c21:hover .c2 {
   fill: #4CB050;
 }
 
-.cBEylu:disabled .c2 {
+.c21:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cBEylu .c2 {
+.c21 .c2 {
   fill: #4CB050;
   height: 18px;
   width: 18px;
 }
 
-.grhPew:hover .c2 {
+.c22:hover .c2 {
   fill: #4CB050;
 }
 
-.grhPew:disabled .c2 {
+.c22:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.grhPew .c2 {
+.c22 .c2 {
   fill: #4CB050;
   height: 20px;
   width: 20px;
 }
 
-.gPJEbi:hover .c2 {
+.c23:hover .c2 {
   fill: #4CB050;
 }
 
-.gPJEbi:disabled .c2 {
+.c23:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.gPJEbi .c2 {
+.c23 .c2 {
   fill: #4CB050;
   height: 30px;
   width: 30px;
 }
 
-.kvrFrd:hover .c2 {
+.c24:hover .c2 {
   fill: #FFF;
 }
 
-.kvrFrd:disabled .c2 {
+.c24:disabled .c2 {
   fill: #FFF;
 }
 
-.kvrFrd .c2 {
+.c24 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.kurbjj:hover .c2 {
+.c25:hover .c2 {
   fill: #FFF;
 }
 
-.kurbjj:disabled .c2 {
+.c25:disabled .c2 {
   fill: #FFF;
 }
 
-.kurbjj .c2 {
+.c25 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.kiQMnY:hover .c2 {
+.c26:hover .c2 {
   fill: #FFF;
 }
 
-.kiQMnY:disabled .c2 {
+.c26:disabled .c2 {
   fill: #FFF;
 }
 
-.kiQMnY .c2 {
+.c26 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.dlWHso:hover .c2 {
+.c27:hover .c2 {
   fill: #FFE200;
 }
 
-.dlWHso:disabled .c2 {
+.c27:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dlWHso .c2 {
+.c27 .c2 {
   fill: #FFE200;
   height: 18px;
   width: 18px;
 }
 
-.fLEPtd:hover .c2 {
+.c28:hover .c2 {
   fill: #FFE200;
 }
 
-.fLEPtd:disabled .c2 {
+.c28:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.fLEPtd .c2 {
+.c28 .c2 {
   fill: #FFE200;
   height: 20px;
   width: 20px;
 }
 
-.dldNsa:hover .c2 {
+.c29:hover .c2 {
   fill: #FFE200;
 }
 
-.dldNsa:disabled .c2 {
+.c29:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dldNsa .c2 {
+.c29 .c2 {
   fill: #FFE200;
   height: 30px;
   width: 30px;
 }
 
-.iSnbTb:hover .c2 {
+.c30:hover .c2 {
   fill: #FFF;
 }
 
-.iSnbTb:disabled .c2 {
+.c30:disabled .c2 {
   fill: #FFF;
 }
 
-.iSnbTb .c2 {
+.c30 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.bdACEm:hover .c2 {
+.c31:hover .c2 {
   fill: #FFF;
 }
 
-.bdACEm:disabled .c2 {
+.c31:disabled .c2 {
   fill: #FFF;
 }
 
-.bdACEm .c2 {
+.c31 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.drlEWn:hover .c2 {
+.c32:hover .c2 {
   fill: #FFF;
 }
 
-.drlEWn:disabled .c2 {
+.c32:disabled .c2 {
   fill: #FFF;
 }
 
-.drlEWn .c2 {
+.c32 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;
 }
 
-.bSwSlG:hover .c2 {
+.c33:hover .c2 {
   fill: #858585;
 }
 
-.bSwSlG:disabled .c2 {
+.c33:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.bSwSlG .c2 {
+.c33 .c2 {
   fill: #858585;
   height: 18px;
   width: 18px;
 }
 
-.ieWbCw:hover .c2 {
+.c34:hover .c2 {
   fill: #858585;
 }
 
-.ieWbCw:disabled .c2 {
+.c34:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.ieWbCw .c2 {
+.c34 .c2 {
   fill: #858585;
   height: 20px;
   width: 20px;
 }
 
-.llmvhI:hover .c2 {
+.c35:hover .c2 {
   fill: #858585;
 }
 
-.llmvhI:disabled .c2 {
+.c35:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.llmvhI .c2 {
+.c35 .c2 {
   fill: #858585;
   height: 30px;
   width: 30px;
 }
 
-.cwRUoR:hover .c2 {
+.c36:hover .c2 {
   fill: #FFF;
 }
 
-.cwRUoR:disabled .c2 {
+.c36:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.cwRUoR .c2 {
+.c36 .c2 {
   fill: #FFF;
   height: 18px;
   width: 18px;
 }
 
-.hzhBwL:hover .c2 {
+.c37:hover .c2 {
   fill: #FFF;
 }
 
-.hzhBwL:disabled .c2 {
+.c37:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.hzhBwL .c2 {
+.c37 .c2 {
   fill: #FFF;
   height: 20px;
   width: 20px;
 }
 
-.dfRgJh:hover .c2 {
+.c38:hover .c2 {
   fill: #FFF;
 }
 
-.dfRgJh:disabled .c2 {
+.c38:disabled .c2 {
   fill: #BFBFBF;
 }
 
-.dfRgJh .c2 {
+.c38 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;

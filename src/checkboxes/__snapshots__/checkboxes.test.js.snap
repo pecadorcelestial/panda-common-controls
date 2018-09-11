@@ -75,7 +75,7 @@ exports[`[SNAPSHOT][Componentes][Common][CheckBox] - Checkbox normal. Debe pinta
   width: auto;
 }
 
-.c0:hover .cKpdCI {
+.c0:hover .c4 {
   background-color: #A7A7A7;
 }
 

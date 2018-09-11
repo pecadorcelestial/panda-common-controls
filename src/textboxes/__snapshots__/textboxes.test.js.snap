@@ -50,13 +50,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto deshabil
   width: 0px;
 }
 
-.gaOSds:focus ~ .c2 {
+.c4:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.gaOSds:focus ~ .c2:after {
+.c4:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }
@@ -196,13 +196,13 @@ exports[`[SNAPSHOT][Componentes][Common][BasicTextBox] - Campo de texto normal. 
   width: 100%;
 }
 
-.fGFQIw:focus ~ .c2 {
+.c4:focus ~ .c2 {
   color: #1476FB;
   font-size: 11px;
   padding: 0px;
 }
 
-.fGFQIw:focus ~ .c2:after {
+.c4:focus ~ .c2:after {
   left: 0px;
   width: 100%;
 }

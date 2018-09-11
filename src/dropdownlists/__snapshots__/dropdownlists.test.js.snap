@@ -52,11 +52,11 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   width: 0px;
 }
 
-.irNQBU:focus ~ .c3 {
+.c5:focus ~ .c3 {
   color: #1476FB;
 }
 
-.irNQBU:focus ~ .c3:after {
+.c5:focus ~ .c3:after {
   left: 0px;
   width: 100%;
 }
