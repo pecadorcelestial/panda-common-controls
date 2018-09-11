@@ -2,23 +2,55 @@
 import React, { Component } from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
 
+//Rutas.
+import Routes from './routes';
+
 //Componentes locales.
 import { IconButton} from './buttons/buttons';
 import { MenuWithBlur } from './menus/menus';
-import StorybookVol1 from './storybooks/storybook-vol1';
-import StorybookVol2 from './storybooks/storybook-vol2';
-import StorybookVol3 from './storybooks/storybook-vol3';
-
-const Home = (props) => {
-    return(<div>¡Hola mundo!</div>);
-};
-
-const SecondPage = (props) => {
-    return(<div>Segunda página.</div>);
-};
 
 class App extends Component {
-    
+    //*** FUNCIONES DEL CICLO DE VIDA DE LA PAGINA ***
+    componentDidMount() {
+        if(__CLIENT__) {
+            //Se utiliza el evento "BeforeUnload" de la ventana para guardar el estado actual.
+            window.addEventListener('beforeunload', this.handleWindowOnBeforeUnload);
+        }
+    }
+    componentWillUnmount() {
+        if(__CLIENT__) {
+            //Se remueve el evento "BeforeUnload".
+            window.addEventListener('beforeunload', this.handleWindowOnBeforeUnload);
+        }
+    }
+    //*** HANDLERS ***
+    handleWindowOnBeforeUnload = () => {
+        //Se intenta guardar el estado actual en el localStorage.
+        try {
+            localStorage.setItem('reduxStore', JSON.stringify(this.props.store));
+        } catch(exception) {
+            //No tiene caso "loggear" información del lado del cliente, ya que la pagina se va a actualizar y esta información podría perderse.
+        }
+    }
+    handleAppSuccess = (message) => {
+        /*
+        Operaciones a ralizar cuando una operación fue exitosa.
+        */
+       console.log('[APP][handleAppSuccess]');
+    }
+    handleAppError = (error) => {
+        /*
+        Operaciones a ralizar cuando una operación falló.
+        */
+       console.log('[APP][handleAppError]');
+    }
+    handleAppWorking = (working) => {
+        /*
+        Operaciones a ralizar cuando una operación está en proceso.
+        */
+       console.log('[APP][handleAppWorking]');
+    }
+    //*** RESULTADO ***
     render() {
 
         //V   V  AAA  L      OOO  RRRR  EEEEE  SSSS
@@ -28,10 +60,8 @@ class App extends Component {
         //  V   A   A LLLLL  OOO  R   R EEEEE SSSS
 
         const menuOptions = [];
-        menuOptions.push(<Link to='/' style={{ textDecoration: 'none' }}><IconButton icon='earth' theme='blue' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Inicio</IconButton></Link>);
-        menuOptions.push(<Link to='/secondpage' style={{ textDecoration: 'none' }}><IconButton icon='blankFile' theme='green' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Información de usuario</IconButton></Link>);
-        menuOptions.push(<Link to='/storybook-vol1' style={{ textDecoration: 'none' }}><IconButton icon='magnifyingGlass' theme='yellow' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 1</IconButton></Link>);
-        menuOptions.push(<Link to='/storybook-vol2' style={{ textDecoration: 'none' }}><IconButton icon='calendar' theme='gray' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 2</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol1' style={{ textDecoration: 'none' }}><IconButton icon='magnifyingGlass' theme='blue' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 1</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol2' style={{ textDecoration: 'none' }}><IconButton icon='calendar' theme='green' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 2</IconButton></Link>);
         menuOptions.push(<Link to='/storybook-vol3' style={{ textDecoration: 'none' }}><IconButton icon='android' theme='red' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 3</IconButton></Link>);
 
 		//RRRR  EEEEE  SSSS U   U L     TTTTT  AAA  DDDD   OOO
@@ -43,11 +73,18 @@ class App extends Component {
         return(
             <MenuWithBlur title='Title' options={menuOptions}>
                 <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route exact path='/secondpage' component={SecondPage}/>
-                    <Route exact path='/storybook-vol1' component={StorybookVol1}/>
-                    <Route exact path='/storybook-vol2' component={StorybookVol2}/>
-                    <Route exact path='/storybook-vol3' component={StorybookVol3}/>
+                    {
+                        Routes.map((route, index) => {
+                            //Propiedades compartidas entre TODAS las rutas.
+                            let routeProps = {
+                                onSuccess: (message) => this.handleAppSuccess(message),
+                                onError: (error) => this.handleAppError(error),
+                                onWorking: (working) => this.handleAppWorking(working)
+                            };
+                            //Se devuelve la ruta.
+                            return <Route key={`route-${index}`} {...route} render={() => <route.componentToRender {...routeProps}/>}/>
+                        })
+                    }
                 </Switch>
             </MenuWithBlur>
         );

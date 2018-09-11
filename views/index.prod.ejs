@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<!-- ESTILOS -->
+		<%=htmlWebpackPlugin.options.styles%>
+    </head>
+    <body>
+        <!-- HTML(SSR) -->
+        <div id="root"><%=htmlWebpackPlugin.options.root%></div>
+        <!-- STORE -->
+		<script type="text/javascript" charset="utf-8">
+			window.__REDUX_STATE__ = '<%=htmlWebpackPlugin.options.reduxState%>';
+		</script>
+    </body>
+</html>

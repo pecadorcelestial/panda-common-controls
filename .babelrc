@@ -1,3 +1,40 @@
 {
-    "presets": ["es2015", "stage-0", "react"]
+	"presets": [
+		"@babel/preset-env",
+		"@babel/preset-react"
+	],
+	"plugins": [
+		"@babel/plugin-syntax-dynamic-import",
+		"@babel/plugin-proposal-class-properties",
+		[
+			"module-resolver",
+			{
+				"root": [
+					"./src"
+				],
+				"alias": {
+					"test": "./test",
+					"underscore": "lodash",
+					"scripts": "./src/scripts",
+					"actions": "./src/actions",
+					"reducers": "./src/reducers",
+					"config": "./config.js",
+					"common": "./src/components/common",
+					"lottie": "./src/lottie"
+				}
+			}
+		]
+	],
+	"env": {
+		"test": {
+			"presets": [
+				"@babel/preset-env",
+				"@babel/preset-react"
+			],
+			"plugins": [
+				"@babel/plugin-syntax-dynamic-import",
+				"@babel/plugin-proposal-class-properties"
+			]
+		}
+	}
 }

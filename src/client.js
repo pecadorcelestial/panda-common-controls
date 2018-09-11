@@ -5,7 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 /*
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import info from './reducers/reducers';
 */
 import WebFont from 'webfontloader';
 
@@ -26,6 +25,10 @@ WebFont.load({
     }
 });
 
+//NOTA: Para poder hacer uso de la variable __CLIENT__ se debe inicializar/definir de la siguiente manera:
+global.__CLIENT__ = true;
+global.__SERVER__ = false;
+
 class Routes extends Component {
     render() {
         return(
@@ -38,8 +41,6 @@ class Routes extends Component {
 
 ReactDOM.render(<Routes/>, document.getElementById('root'));
 
-if (module.hot) {
+if(process.env.NODE_ENV.trim().toLowerCase() === 'development' && module.hot) {
     module.hot.accept();
 }
-
-//export default Routes;
