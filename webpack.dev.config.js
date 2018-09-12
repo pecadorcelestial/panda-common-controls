@@ -1,19 +1,26 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const hotMiddlewareScript = 'webpack-hot-middleware/client';
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     devtool: 'source-map',
+    devServer: {
+        contentBase: path.join(__dirname + '/dist'),
+        hot: true,
+        open: true,
+        overlay: true,
+        publicPath: '/'
+    },
     entry: {
-        main: './src/client'
+        main: ['./src/client', hotMiddlewareScript]
     },
     output: {
-		path: path.join(__dirname + '/dist'),
+        path: path.join(__dirname + '/dist'),
         filename: '[name].bundle.js',
         chunkFilename: '[name].js',
-        publicPath: '/dist/'
+        publicPath: '/'
     },
     resolve: {
         alias: {
@@ -63,19 +70,14 @@ module.exports = {
         }
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
         new webpack.EnvironmentPlugin({
-            NODE_ENV: 'production',
+            NODE_ENV: 'development',
             DEBUG: false
         }),
+        new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
-            template: path.join(__dirname, 'views/index.prod.ejs'),
-            filename: path.join(__dirname, 'views/index.ejs'),
-			chunksSortMode: 'dependency',
-            inject: true,
-            root: '<%-root%>',
-			styles: '<%-styles%>',
-			reduxState: '<%=reduxState%>'
+            template: path.join(__dirname, 'views/index.dev.ejs'),
+            inject: false
         })
     ]
 }
