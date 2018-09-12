@@ -114,10 +114,11 @@ describe('[FLUJO][Componentes][Common][Modal] - Se muestra la ventana modal y se
 	//U   U N N N M M M O   O U   U N N N   T
 	//U   U N  NN M   M O   O U   U N  NN   T
 	// UUU  N   N M   M  OOO   UUU  N   N   T
-
+    /*
     it('Se desmonta el componente.', () => {
         component.unmount();
     });
+    */
 });
 
 //Flujo + Métodos #2.
@@ -179,8 +180,8 @@ describe('[FLUJO][Componentes][Common][Modal] - Se muestra la ventana modal y se
 	//U   U N N N M M M O   O U   U N N N   T
 	//U   U N  NN M   M O   O U   U N  NN   T
 	// UUU  N   N M   M  OOO   UUU  N   N   T
-
+    
     it('Se desmonta el componente.', () => {
         component.unmount();
-    });
+    });    
 });

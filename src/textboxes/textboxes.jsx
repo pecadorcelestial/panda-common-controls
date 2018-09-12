@@ -137,7 +137,7 @@ const Error = styled.label`
 	z-index: 1;
 `;
 
-const ShowPasswordIcon = Icon.extend`
+const ShowPasswordIcon = styled(Icon)`
 	cursor: pointer;
 	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
 	pointer-events: ${props => props.disabled ? `none` : `all`};
@@ -147,7 +147,7 @@ const ShowPasswordIcon = Icon.extend`
 	z-index: 3;
 `;
 
-const CalendarIcon = Icon.extend`
+const CalendarIcon = styled(Icon)`
 	cursor: pointer;
 	fill: ${props => props.disabled ? `#BFBFBF` : `#242424`};
 	pointer-events: ${props => props.disabled ? `none` : `all`};
