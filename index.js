@@ -13,7 +13,7 @@ Until support shows up natively, you'll have to continue using classic require s
 const express = require("express");
 */
 
-require('babel-register');
+require('@babel/register');
 
 const { Loading, Animate } = require('./lib/animations/animations');
 const { Button, IconButton, RoundButton } = require('./lib/buttons/buttons');
