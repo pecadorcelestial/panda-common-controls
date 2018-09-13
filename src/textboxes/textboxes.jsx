@@ -478,7 +478,7 @@ export class BasicTextBox extends React.Component {
 			disabled: this.props.disabled,
 			height: '20px',
 			icon: 'calendar',
-			id: 'svg-calendar-icon',
+			id: `${this.props.id}-svg-calendar-icon`,
 			width: '20px',
 			onClick: () => { 
 				this.ToolTipInnerRef.show(); 
