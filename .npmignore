@@ -5,13 +5,17 @@ coverage/
 lib/**/*.test.js
 lib/app.js
 lib/client.js
+lib/routes.js
 lib/storybooks/*.js
 node_modules/
+scripts/
 src/
 stories/
+views/
 .babelrc
 jest.config.js
 package-lock.json
 server-body.js
 server.js
+webpack.dev.config.js
 webpack.config.js
