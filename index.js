@@ -16,6 +16,7 @@ const express = require("express");
 require('@babel/register');
 
 const { Loading, Animate } = require('./lib/animations/animations');
+const { Badge, IconBadge } = require('./lib/badges/badges');
 const { Button, IconButton, RoundButton } = require('./lib/buttons/buttons');
 const { Calendar } = require('./lib/calendar/calendar');
 const { BasicCard: Card } = require('./lib/cards/cards');
