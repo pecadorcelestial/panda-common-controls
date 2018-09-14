@@ -36,7 +36,7 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import { Badge, IconBadge } from './badges';
+import { Badge, IconBadge, NotificationBadge } from './badges';
 
 //Snapshots (Temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray).
 describe('[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray.', () => {
@@ -322,6 +322,16 @@ describe('[SNAPSHOT][Componentes][Common][IconBadge] - Badge con los siguientes 
 
         //Snapshot [red][small].
         let component = renderer.create(<IconBadge theme='red' size='small' icon='plus'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+});
+
+//Snapshots (Notificación).
+describe('[SNAPSHOT][Componentes][Common][NotificationBadge] - Badge tipo notificación.', () => {
+	//Tema: red.
+	it('Debe pintar el componente tipo notificación.', () => {
+        //Snapshot.
+        let component = renderer.create(<NotificationBadge counter='+9'><label>Contador</label></NotificationBadge>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //Componentes locales.
-import { Badge, IconBadge } from '../badges/badges';
+import { Badge, IconBadge, NotificationBadge } from '../badges/badges';
 import { Icon } from '../icons/icons';
 
 const Layout = styled.div`
@@ -233,6 +233,7 @@ class StorybookVol3 extends Component {
                 <IconWrapper>
                     <Icon icon='youTube' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
+                <Title style={{ marginTop: '20px' }}>Cintillas:</Title>
                 <Controls>
                     <Badge theme='red' size='small' style={{ marginRight: '10px' }}>Red badge</Badge>
                     <Badge theme='blue' size='small' style={{ marginRight: '10px' }}>Blue badge</Badge>
@@ -256,6 +257,20 @@ class StorybookVol3 extends Component {
                     <IconBadge icon='earth' theme='green' size='small' showCloseButton={true} closeOnClick={() => { console.log('[STORYBOOK][BADGE][closeOnClick] Cerrado.'); }} style={{ marginRight: '10px' }}>Small badge</IconBadge>
                     <IconBadge icon='earth' theme='green' size='medium' showCloseButton={true} style={{ marginRight: '10px' }}>Medium badge</IconBadge>
                     <IconBadge icon='earth' theme='green' size='big' showCloseButton={true} style={{ marginRight: '10px' }}>Big badge</IconBadge>
+                </Controls>
+                <Controls>
+                    <NotificationBadge counter='+9' style={{ marginRight: '20px' }}>
+                        <Icon icon='comment' fill='#242424' height='40px' width='40px'/>
+                    </NotificationBadge>
+                    <NotificationBadge counter='+9' style={{ marginRight: '20px' }}>
+                        <Icon icon='calendar' fill='#242424' height='40px' width='40px'/>
+                    </NotificationBadge>
+                    <NotificationBadge counter='2' style={{ marginRight: '20px' }}>
+                        <Icon icon='user' fill='#242424' height='40px' width='40px'/>
+                    </NotificationBadge>
+                    <NotificationBadge counter='4' style={{ marginRight: '20px' }}>
+                        <Title style={{ padding: '0px 10px' }}>Un texto cualquiera</Title>
+                    </NotificationBadge>
                 </Controls>
             </Layout>
         );

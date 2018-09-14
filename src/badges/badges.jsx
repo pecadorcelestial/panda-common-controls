@@ -180,7 +180,7 @@ Badge.defaultProps = {
     showCloseButton: false,
 	size: 'small',
 	theme: 'red'
-}
+};
 
 // CCCC  OOO  N   N      IIIII  CCCC  OOO  N   N  OOO
 //C     O   O NN  N        I   C     O   O NN  N O   O
@@ -207,4 +207,47 @@ IconBadge.propTypes = {
 IconBadge.defaultProps = {
 	theme: 'red',
 	size: 'small'
-}
+};
+
+const NotificationContainer = styled.div`
+    box-sizing: border-box;    
+    display: inline-block;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: auto;
+`;
+
+const NotificationBubble = styled.div`
+    background-color: #FF456A;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 11px;
+	font-family: "Open Sans", sans-serif;	
+	font-stretch: normal;
+	font-style: normal;	
+	font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -10px;
+    width: 20px;
+`;
+
+//export const NotificationBadge = (props) => {
+export const NotificationBadge = styled(({ className, children, ...props}) => (
+    <NotificationContainer className={className} {...props}>
+        <NotificationBubble>{props.counter}</NotificationBubble>
+        {children}
+    </NotificationContainer>
+))``;
+
+NotificationBadge.propTypes = {
+    counter: PropTypes.string.isRequired
+};

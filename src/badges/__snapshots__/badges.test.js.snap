@@ -2828,3 +2828,49 @@ exports[`[SNAPSHOT][Componentes][Common][IconBadge] - Badge con los siguientes t
   />
 </label>
 `;
+
+exports[`[SNAPSHOT][Componentes][Common][NotificationBadge] - Badge tipo notificación. Debe pintar el componente tipo notificación. 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: auto;
+}
+
+.c1 {
+  background-color: #FF456A;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 11px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -10px;
+  width: 20px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    +9
+  </div>
+  <label>
+    Contador
+  </label>
+</div>
+`;
