@@ -30,11 +30,13 @@ const { ToastNotification } = require('./lib/toastnotifications/toastnotificatio
 
 module.exports = {
     Animate,
+    Badge,
     Button,
     Calendar,
     Card,
     CheckBox,
     Icon,
+    IconBadge,
     IconButton,
     Loading,
     MenuWithBlur,
