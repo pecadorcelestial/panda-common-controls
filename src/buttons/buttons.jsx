@@ -286,6 +286,17 @@ export const IconButton = styled(({ className, theme, size, children, ...props})
 	<Button className={className} theme={theme} size={size} {...props}><Icon icon={props.icon} margin='0px 5px 0px 0px'/>{children}</Button>
 ))``;
 
+IconButton.propTypes = {
+    icon: PropTypes.string.isRequired,
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
+	size: PropTypes.oneOf(['small', 'medium', 'big'])
+};
+
+IconButton.defaultProps = {
+	theme: 'red',
+	size: 'small'
+}
+
 //RRRR  EEEEE DDDD   OOO  N   N DDDD   OOO
 //R   R E     D   D O   O NN  N D   D O   O
 //RRRR  EEE   D   D O   O N N N D   D O   O

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 //Componentes locales.
+import { Badge, IconBadge } from '../badges/badges';
 import { Icon } from '../icons/icons';
 
 const Layout = styled.div`
@@ -37,6 +38,14 @@ const IconWrapper = styled.div`
     margin: 0px;
     padding: 5px;
     width: 50px;
+`;
+
+const Controls = styled.div`
+    display: inline-block;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
 `;
 
 class StorybookVol3 extends Component {
@@ -224,6 +233,30 @@ class StorybookVol3 extends Component {
                 <IconWrapper>
                     <Icon icon='youTube' fill='#242424' height='40px' width='40px'/>
                 </IconWrapper>
+                <Controls>
+                    <Badge theme='red' size='small' style={{ marginRight: '10px' }}>Red badge</Badge>
+                    <Badge theme='blue' size='small' style={{ marginRight: '10px' }}>Blue badge</Badge>
+                    <Badge theme='green' size='small' style={{ marginRight: '10px' }}>Green badge</Badge>
+                    <Badge theme='yellow' size='small' style={{ marginRight: '10px' }}>Yellow badge</Badge>
+                    <Badge theme='gray' size='small' style={{ marginRight: '10px' }}>Gray badge</Badge>
+                </Controls>
+                <Controls>
+                    <Badge theme='flatRed' size='small' style={{ marginRight: '10px' }}>Red badge</Badge>
+                    <Badge theme='flatBlue' size='small' style={{ marginRight: '10px' }}>Blue badge</Badge>
+                    <Badge theme='flatGreen' size='small' style={{ marginRight: '10px' }}>Green badge</Badge>
+                    <Badge theme='flatYellow' size='small' style={{ marginRight: '10px' }}>Yellow badge</Badge>
+                    <Badge theme='flatGray' size='small' style={{ marginRight: '10px' }}>Gray badge</Badge>
+                </Controls>
+                <Controls>
+                    <Badge theme='blue' size='small' showCloseButton={true} closeOnClick={() => { console.log('[STORYBOOK][BADGE][closeOnClick] Cerrado.'); }} style={{ marginRight: '10px' }}>Small badge</Badge>
+                    <Badge theme='blue' size='medium' showCloseButton={true} style={{ marginRight: '10px' }}>Medium badge</Badge>
+                    <Badge theme='blue' size='big' showCloseButton={true} style={{ marginRight: '10px' }}>Big badge</Badge>
+                </Controls>
+                <Controls>
+                    <IconBadge icon='earth' theme='green' size='small' showCloseButton={true} closeOnClick={() => { console.log('[STORYBOOK][BADGE][closeOnClick] Cerrado.'); }} style={{ marginRight: '10px' }}>Small badge</IconBadge>
+                    <IconBadge icon='earth' theme='green' size='medium' showCloseButton={true} style={{ marginRight: '10px' }}>Medium badge</IconBadge>
+                    <IconBadge icon='earth' theme='green' size='big' showCloseButton={true} style={{ marginRight: '10px' }}>Big badge</IconBadge>
+                </Controls>
             </Layout>
         );
     }

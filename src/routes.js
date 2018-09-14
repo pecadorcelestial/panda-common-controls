@@ -74,17 +74,23 @@ const routes = [
         isPrivate: false,
         path: '/'
     },
+    { 
+        componentToRender: StorybookVol1,
+        exact: true,
+        isPrivate: false,
+        path: '/storybook-vol1'
+    },
     {
         componentToRender: StorybookVol2,
         exact: true,
         isPrivate: false,
-        path: '/login'
+        path: '/storybook-vol2'
     },
     {
         componentToRender: StorybookVol3,
         exact: true,
-        isPrivate: true,
-        path: '/clients'
+        isPrivate: false,
+        path: '/storybook-vol3'
     }
 ];
 
