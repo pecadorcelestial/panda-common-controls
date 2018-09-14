@@ -8,6 +8,7 @@ This library came out as a personal project to create a list of reusable compone
 
 It contains some "fancy looking" components like:
 - Animations
+- Badges
 - Button
 - Calendar
 - Card
@@ -50,6 +51,8 @@ This will install the following files into your project:
     ├── lib
     |     ├── animations
     |     |       └── animations.js
+    |     ├── badges
+    |     |       └── badges.js
     |     ├── buttons
     |     |       └── buttons.js
     |     ├── calendar
@@ -89,6 +92,7 @@ For a complete list of the files, including a running examples and tests, you ca
 ### Components
 
 * [Animations](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/animations.md)
+* [Badges](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/badges.md)
 * [Buttons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/buttons.md)
 * [Calendar](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/calendar.md)
 * [Cards](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/cards.md)
