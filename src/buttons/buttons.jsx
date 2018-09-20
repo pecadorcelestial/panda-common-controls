@@ -281,7 +281,7 @@ export const Button = styled(({ className, children, ...props }) => (
 `;
 
 Button.propTypes = {
-	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite', 'orange', 'flatOrange']),
 	size: PropTypes.oneOf(['small', 'medium', 'big'])
 };
 
@@ -306,7 +306,7 @@ export const IconButton = styled(({ className, theme, size, children, ...props})
 
 IconButton.propTypes = {
     icon: PropTypes.string.isRequired,
-	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite', 'orange', 'flatOrange']),
 	size: PropTypes.oneOf(['small', 'medium', 'big'])
 };
 

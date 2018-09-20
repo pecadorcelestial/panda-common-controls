@@ -178,7 +178,7 @@ export const Badge = styled(({ className, children, closeOnClick, showCloseButto
 Badge.propTypes = {
     showCloseButton: PropTypes.bool,
     size: PropTypes.oneOf(['small', 'medium', 'big']),
-    theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
+    theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite', 'orange', 'flatOrange']),
     closeOnClick: PropTypes.func
 };
 
@@ -205,7 +205,7 @@ export const IconBadge = styled(({ className, theme, size, closeOnClick, childre
 
 IconBadge.propTypes = {
     icon: PropTypes.string.isRequired,
-	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite']),
+	theme: PropTypes.oneOf(['red', 'secondaryRed', 'flatRed', 'blue', 'flatBlue', 'green', 'flatGreen', 'yellow', 'flatYellow', 'gray', 'flatGray', 'flatWhite', 'orange', 'flatOrange']),
 	size: PropTypes.oneOf(['small', 'medium', 'big']),
     closeOnClick: PropTypes.func
 };
