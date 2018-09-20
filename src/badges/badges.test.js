@@ -249,7 +249,7 @@ describe('[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes tema
         component = renderer.create(<Badge theme='flatGray' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
-    //Tema: flatGray.
+    //Tema: flatWhite.
 	it('Debe pintar el componente con el tema "flatWhite" y los tamaños "small", "medium" y "big".', () => {
         
         //FFFFF L      AAA  TTTTT W   W H   H IIIII TTTTT EEEEE
@@ -266,6 +266,44 @@ describe('[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes tema
 		expect(component).toMatchSnapshot();
         //Snapshot [flatWhite][big].
         component = renderer.create(<Badge theme='flatWhite' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+    //Tema: orange.
+	it('Debe pintar el componente con el tema "orange" y los tamaños "small", "medium" y "big".', () => {
+        
+        // OOO  RRRR   AAA  N   N  GGGG EEEEE
+        //O   O R   R A   A NN  N G     E
+        //O   O RRRR  AAAAA N N N G  GG EEE
+        //O   O R   R A   A N  NN G   G E
+        // OOO  R   R A   A N   N  GGGG EEEEE
+
+        //Snapshot [orange][small].
+        let component = renderer.create(<Badge theme='orange' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [orange][medium].
+        component = renderer.create(<Badge theme='orange' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [orange][big].
+        component = renderer.create(<Badge theme='orange' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+    //Tema: flatOrange.
+	it('Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big".', () => {
+        
+        //FFFFF L      AAA  TTTTT  OOO  RRRR   AAA  N   N  GGGG EEEEE
+        //F     L     A   A   T   O   O R   R A   A NN  N G     E
+        //FFF   L     AAAAA   T   O   O RRRR  AAAAA N N N G  GG EEE
+        //F     L     A   A   T   O   O R   R A   A N  NN G   G E
+        //F     LLLLL A   A   T    OOO  R   R A   A N   N  GGGG EEEEE
+
+        //Snapshot [flatOrange][small].
+        let component = renderer.create(<Badge theme='flatOrange' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatOrange][medium].
+        component = renderer.create(<Badge theme='flatOrange' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatOrange][big].
+        component = renderer.create(<Badge theme='flatOrange' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
     //Tema: red, Tamaño: small y botón de cierre (cons "float" y "width" asignados).

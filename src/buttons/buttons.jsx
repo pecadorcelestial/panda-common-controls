@@ -26,6 +26,8 @@ const backgroundColor = (theme) => {
 		case 'flatGray': return 'transparent';
 
 		case 'flatWhite': return 'transparent';
+		case 'orange': return '#FF9700';
+		case 'flatOrange': return 'transparent';
 	}
 };
 
@@ -44,6 +46,8 @@ const border = (theme) => {
 		case 'flatGray': return '1px solid transparent';
 
 		case 'flatWhite': return '1px solid transparent';
+		case 'orange': return '1px solid #FF9700';
+		case 'flatOrange': return '1px solid transparent';
 	}
 };
 
@@ -62,6 +66,8 @@ const color = (theme) => {
 		case 'flatGray': return '#858585';
 
 		case 'flatWhite': return '#FFF';
+		case 'orange': return '#FFF';
+		case 'flatOrange': return '#FF9700';
 	}
 };
 
@@ -80,6 +86,8 @@ const hoverBackgroundColor = (theme) => {
 		case 'flatGray': return '#EBEBEB';
 
 		case 'flatWhite': return 'rgba(235, 235, 235, 0.5)';
+		case 'orange': return '#CC7800';
+		case 'flatOrange': return '#EBEBEB';
 	}
 };
 
@@ -98,6 +106,8 @@ const hoverBorder = (theme) => {
 		case 'flatGray': return '1px solid #EBEBEB';
 
 		case 'flatWhite': return '1px solid rgba(235, 235, 235, 0)';
+		case 'orange': return '#1px solid #CC7800';
+		case 'flatOrange': return '1px solid #EBEBEB';
 	}
 };
 
@@ -116,6 +126,8 @@ const hoverColor = (theme) => {
 		case 'flatGray': return '#858585';
 
 		case 'flatWhite': return '#FFF';
+		case 'orange': return '#FFF';
+		case 'flatOrange': return '#FF9700';
 	}
 };
 
@@ -134,6 +146,8 @@ const disabledBackgroundColor = (theme) => {
 		case 'flatGray': return 'transparent';
 
 		case 'flatWhite': return 'transparent';
+		case 'orange': return '#BFBFBF';
+		case 'flatOrange': return 'transparent'
 	}
 };
 
@@ -152,6 +166,8 @@ const disabledBorder = (theme) => {
 		case 'flatGray': return '1px solid transparent';
 
 		case 'flatWhite': return '1px solid transparent';
+		case 'orange': return '1px solid #BFBFBF';
+		case 'flatOrange': return '1px solid transparent';
 	}
 };
 
@@ -170,6 +186,8 @@ const disabledColor = (theme) => {
 		case 'flatGray': return '#BFBFBF';
 
 		case 'flatWhite': return '#BFBFBF';
+		case 'orange': return '#FFF';
+		case 'flatOrange': return '#BFBFBF';
 	}
 };
 

@@ -110,7 +110,7 @@ export const ModalTitle = styled.label`
     box-sizing: border-box;
 	color: #FFF;	
 	height: 24px;
-	font-family: Open Sans;
+	font-family: "Open Sans", sans-serif;
 	font-size: 18px;
 	font-stretch: normal;
 	font-style: normal;
@@ -179,7 +179,7 @@ export class Modal extends React.Component {
 	//*** RESULTADOS ***
 	render() {
 		return(
-			<Layout lock={this.state.lock}>
+			<Layout lock={this.state.lock} {...this.props}>
 				<Content show={this.state.show} hide={this.state.hide}>
 					{this.props.children}
 					<RoundButton type='button' theme='flatWhite' size='small' icon='crossSign' style={{ position: 'absolute', right: '5px', top: '8px' }} onClick={(event) => { event.preventDefault(); this.hide(); }}/>

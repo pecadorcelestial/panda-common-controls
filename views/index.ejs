@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<!-- ESTILOS -->
+		<%-styles%>
+    </head>
+    <body>
+        <!-- HTML(SSR) -->
+        <div id="root"><%-root%></div>
+        <!-- STORE -->
+		<script type="text/javascript" charset="utf-8">
+			window.__REDUX_STATE__ = '<%=reduxState%>';
+		</script>
+    <script type="text/javascript" src="/dist/vendors.js"></script><script type="text/javascript" src="/dist/main.bundle.js"></script></body>
+</html>

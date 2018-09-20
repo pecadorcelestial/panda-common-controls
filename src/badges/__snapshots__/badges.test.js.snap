@@ -516,6 +516,135 @@ exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas
 />
 `;
 
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid #FF9700;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #FF9700;
+  display: inline-block;
+  font-size: 11px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 22px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 0px 10px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF9700;
+  height: 15px;
+  width: 15px;
+}
+
+<label
+  className="c0"
+  size="small"
+  theme="flatOrange"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid #FF9700;
+  border-radius: 14px;
+  box-sizing: border-box;
+  color: #FF9700;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 28px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  padding: 0px 15px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+<label
+  className="c0"
+  size="medium"
+  theme="flatOrange"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid #FF9700;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #FF9700;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 34px;
+  padding: 0px 20px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF9700;
+  height: 30px;
+  width: 30px;
+}
+
+<label
+  className="c0"
+  size="big"
+  theme="flatOrange"
+/>
+`;
+
 exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatRed" y los tamaños "small", "medium" y "big". 1`] = `
 .c0 {
   background-color: transparent;
@@ -1161,6 +1290,135 @@ exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas
 />
 `;
 
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "orange" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  background-color: #FF9700;
+  border: 1px solid #FF9700;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  font-size: 11px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 22px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 0px 10px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 15px;
+  width: 15px;
+}
+
+<label
+  className="c0"
+  size="small"
+  theme="orange"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "orange" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  background-color: #FF9700;
+  border: 1px solid #FF9700;
+  border-radius: 14px;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 28px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 24px;
+  padding: 0px 15px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+<label
+  className="c0"
+  size="medium"
+  theme="orange"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "orange" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  background-color: #FF9700;
+  border: 1px solid #FF9700;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #FFF;
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 34px;
+  padding: 0px 20px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+<label
+  className="c0"
+  size="big"
+  theme="orange"
+/>
+`;
+
 exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "red" y los tamaños "small", "medium" y "big". 1`] = `
 .c0 {
   background-color: #FF456A;
@@ -1542,6 +1800,42 @@ exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas
   width: 20px;
 }
 
+.c43 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c44 .c2 {
+  fill: #FF9700;
+  height: 15px;
+  width: 15px;
+}
+
+.c45 .c2 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c46 .c2 {
+  fill: #FF9700;
+  height: 30px;
+  width: 30px;
+}
+
+.c47 .c2 {
+  fill: #FFF;
+  height: 15px;
+  width: 15px;
+}
+
+.c48 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
 .c0 {
   background-color: #FF456A;
   border: 1px solid #FF456A;
@@ -1863,6 +2157,42 @@ exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas
   width: 15px;
 }
 
+.c42 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c43 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c44 .c2 {
+  fill: #FF9700;
+  height: 15px;
+  width: 15px;
+}
+
+.c45 .c2 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c46 .c2 {
+  fill: #FF9700;
+  height: 30px;
+  width: 30px;
+}
+
+.c47 .c2 {
+  fill: #FFF;
+  height: 15px;
+  width: 15px;
+}
+
 .c0 {
   background-color: #FF456A;
   border: 1px solid #FF456A;
@@ -2174,6 +2504,42 @@ exports[`[SNAPSHOT][Componentes][Common][Badge] - Badge con los siguientes temas
 
 .c40 .c2 {
   fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c41 .c2 {
+  fill: #FFF;
+  height: 15px;
+  width: 15px;
+}
+
+.c42 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c43 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c44 .c2 {
+  fill: #FF9700;
+  height: 15px;
+  width: 15px;
+}
+
+.c45 .c2 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c46 .c2 {
+  fill: #FF9700;
   height: 30px;
   width: 30px;
 }
@@ -2787,6 +3153,42 @@ exports[`[SNAPSHOT][Componentes][Common][IconBadge] - Badge con los siguientes t
 }
 
 .c42 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c43 .c2 {
+  fill: #FF9700;
+  height: 15px;
+  width: 15px;
+}
+
+.c44 .c2 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c45 .c2 {
+  fill: #FF9700;
+  height: 30px;
+  width: 30px;
+}
+
+.c46 .c2 {
+  fill: #FFF;
+  height: 15px;
+  width: 15px;
+}
+
+.c47 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c48 .c2 {
   fill: #FFF;
   height: 30px;
   width: 30px;

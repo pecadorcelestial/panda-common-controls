@@ -117,7 +117,7 @@ exports[`[SNAPSHOT][Componentes][Common][Modal] - Modal (normal). Debe pintar el
   box-sizing: border-box;
   color: #FFF;
   height: 24px;
-  font-family: Open Sans;
+  font-family: "Open Sans",sans-serif;
   font-size: 18px;
   font-stretch: normal;
   font-style: normal;

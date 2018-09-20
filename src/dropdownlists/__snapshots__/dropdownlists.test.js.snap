@@ -124,6 +124,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 
 <div
   className="c0"
+  disabled={true}
+  id="options"
+  onChange={[Function]}
+  title="Estado: normal"
 >
   <select
     className="c1"
@@ -294,6 +298,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 
 <div
   className="c0"
+  disabled={false}
+  id="options"
+  onChange={[Function]}
+  title="Estado: normal"
 >
   <select
     className="c1"

@@ -332,7 +332,7 @@ export class BasicSelect extends React.Component {
 
 		return(
 			<ThemeProvider theme={{ status }}>
-				<Layout>
+				<Layout {...this.props}>
 						<Select 
 							id={this.props.id}
 							disabled={this.props.disabled}

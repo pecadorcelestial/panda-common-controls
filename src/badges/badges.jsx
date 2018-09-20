@@ -26,6 +26,8 @@ const backgroundColor = (theme) => {
 		case 'flatGray': return 'transparent';
 
 		case 'flatWhite': return 'transparent';
+		case 'orange': return '#FF9700';
+		case 'flatOrange': return 'transparent';
 	}
 };
 
@@ -44,6 +46,8 @@ const border = (theme) => {
 		case 'flatGray': return '1px solid #858585';
 
 		case 'flatWhite': return '1px solid transparent';
+		case 'orange': return '1px solid #FF9700';
+		case 'flatOrange': return '1px solid #FF9700';
 	}
 };
 
@@ -62,6 +66,8 @@ const color = (theme) => {
 		case 'flatGray': return '#858585';
 
 		case 'flatWhite': return '#FFF';
+		case 'orange': return '#FFF';
+		case 'flatOrange': return '#FF9700';
 	}
 };
 
