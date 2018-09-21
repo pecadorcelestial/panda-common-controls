@@ -333,7 +333,7 @@ describe('[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes
         //M   M A   A IIIII N   N
 
         //Snapshot [red][small].
-        let component = renderer.create(<IconButton theme='red' size='small' icon='plus'/>).toJSON();
+        let component = renderer.create(<IconButton theme='red' size='small' icon='solidPlusCircle'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });
@@ -342,17 +342,17 @@ describe('[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes
 describe('[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes temas: red (usando un icono).', () => {
 	it('Debe pintar el componente con el tema "red", tamaño "small" y con el icono "plus".', () => {
         //Snapshot [red][small].
-        let component = renderer.create(<RoundButton theme='red' size='small' icon='plus'/>).toJSON();
+        let component = renderer.create(<RoundButton theme='red' size='small' icon='solidPlusCircle'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 	it('Debe pintar el componente con el tema "red", tamaño "medium" y con el icono "plus".', () => {
         //Snapshot [red][medium].
-        let component = renderer.create(<RoundButton theme='red' size='medium' icon='plus'/>).toJSON();
+        let component = renderer.create(<RoundButton theme='red' size='medium' icon='solidPlusCircle'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 	it('Debe pintar el componente con el tema "red", tamaño "big" y con el icono "plus".', () => {
         //Snapshot [red][big].
-        let component = renderer.create(<RoundButton theme='red' size='big' icon='plus'/>).toJSON();
+        let component = renderer.create(<RoundButton theme='red' size='big' icon='solidPlusCircle'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

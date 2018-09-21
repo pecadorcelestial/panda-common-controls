@@ -16,10 +16,11 @@ const SVG = styled.svg`
 `;
 
 export const Icon = styled(({ ...props}) => {
-    let iconFile = require(`./icons-lib`)[props.icon];
+    //console.log('[ICONS][constant] Icono: ', props.icon);
+    let iconFile = require(`./icons-lib-v2`)[props.icon];
     if(iconFile) {
         return(
-            <SVG {...props} x='0px' y='0px' viewBox={iconFile.viewBox} dangerouslySetInnerHTML={{__html: iconFile.path}}>
+            <SVG {...props} x='0px' y='0px' viewBox={iconFile.viewBox} dangerouslySetInnerHTML={{__html: iconFile.path}} alt={props.icon}>
             </SVG>
         );
     } else {

@@ -263,28 +263,28 @@ class StorybookVol2 extends Component {
                     <Title>Botones:</Title>
                     <Option>
                         <OptionButtonWrapper style={{ width: '100%' }}>
-                            <IconButton theme='red' size='small' icon='plus' style={{ width: '100%' }}>Small</IconButton>
+                            <IconButton theme='red' size='small' icon='solidPlusCircle' style={{ width: '100%' }}>Small</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper style={{ width: '100%' }}>
-                            <IconButton theme='secondaryRed' size='medium' icon='save' style={{ width: '100%' }}>Medium</IconButton>
+                            <IconButton theme='secondaryRed' size='medium' icon='solidSave' style={{ width: '100%' }}>Medium</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper style={{ width: '100%' }}>
-                            <IconButton theme='blue' size='big' icon='pencil' style={{ width: '100%' }}>Big</IconButton>
+                            <IconButton theme='blue' size='big' icon='solidPencilAlt' style={{ width: '100%' }}>Big</IconButton>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <RoundButton theme='secondaryRed' size='small' icon='magnifyingGlass'/>
+                            <RoundButton theme='secondaryRed' size='small' icon='solidSearch'/>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <RoundButton theme='blue' size='medium' icon='crossSign'/>
+                            <RoundButton theme='blue' size='medium' icon='solidTimesCircle'/>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper>
-                            <RoundButton theme='red' size='big' icon='plusSign' onClick={() => { this.ModalRef.show(); }}/>
+                            <RoundButton theme='red' size='big' icon='solidPlusCircle' onClick={() => { this.ModalRef.show(); }}/>
                         </OptionButtonWrapper>
                     </Option>
                 </LeftColumn>
                 <RightColumn>
                     <Control>
-                        <Icon icon='android' fill='#242424' height='60px' width='60px'/>
+                        <Icon icon='brandAndroid' fill='#242424' height='60px' width='60px'/>
                     </Control>
                     <Control>
                         <Calendar selectedDate='08/15/2018' language='es-ES' theme='default' onChange={(date) => { console.log('[STORYBOOK vol.2][render][CALENDARIO][onChange] Fecha: ', date); }}/>

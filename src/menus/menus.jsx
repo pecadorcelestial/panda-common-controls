@@ -124,7 +124,7 @@ const Content = styled.div`
     padding: 0px;
     width: 100%;
 
-    ${props => props.blur ? `animation: ${Blur()} 0.3s ease forwards; pointer-events: none;` : `animation: ${Unblur()} 0.3s ease forwards; pointer-events: auto;`};
+    ${props => props.blur ? `animation: ${Blur()} 0.2s ease forwards; pointer-events: none;` : `animation: ${Unblur()} 0.2s ease forwards; pointer-events: auto;`};
 `;
 
 export class MenuWithBlur extends Component {
@@ -172,7 +172,7 @@ export class MenuWithBlur extends Component {
                 animate.triggerExitAnimation();
             }
         });
-        let delay = (this.props.options.length * 200) + 400;
+        let delay = (this.props.options.length * 100) + 400;
         setTimeout(() => {
             this.setState({ show: false, hide: true });
         }, delay);
@@ -184,7 +184,7 @@ export class MenuWithBlur extends Component {
             <Layout>
                 <Header innerRef={header => this.HeaderInnerRef = header}>
                     <IconWrapper>
-                        <RoundButton id='btn-menu-options' icon='nineTiles' theme='blue' size='small' onClick={this.handleIconOnClick}/>
+                        <RoundButton id='btn-menu-options' icon='solidTh' theme='blue' size='small' onClick={this.handleIconOnClick}/>
                     </IconWrapper>
                     <Title>{this.props.title}</Title>
                 </Header>

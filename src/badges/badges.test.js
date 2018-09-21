@@ -359,7 +359,7 @@ describe('[SNAPSHOT][Componentes][Common][IconBadge] - Badge con los siguientes 
         //M   M A   A IIIII N   N
 
         //Snapshot [red][small].
-        let component = renderer.create(<IconBadge theme='red' size='small' icon='plus'/>).toJSON();
+        let component = renderer.create(<IconBadge theme='red' size='small' icon='solidPlusCircle'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

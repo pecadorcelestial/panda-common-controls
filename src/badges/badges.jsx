@@ -142,7 +142,7 @@ const CloseButton = styled(Icon)`
 `;
 
 export const Badge = styled(({ className, children, closeOnClick, showCloseButton, ...props }) => (
-	<label className={className} {...props}>{children}{showCloseButton ? <CloseButton icon='cross' onClick={(event) => { if(closeOnClick) closeOnClick(event); }}/> : null}</label>
+	<label className={className} {...props}>{children}{showCloseButton ? <CloseButton icon='solidTimesCircle' onClick={(event) => { if(closeOnClick) closeOnClick(event); }}/> : null}</label>
 ))`
 	background-color: ${props => backgroundColor(props.theme)};
 	border: ${props => border(props.theme)};

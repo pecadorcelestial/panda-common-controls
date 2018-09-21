@@ -454,7 +454,7 @@ export class BasicTextBox extends React.Component {
 		const showPasswordIconProps = {
 			disabled: this.props.disabled,
 			height: '20px',
-			icon: this.state.inputType === 'password' ? 'eye' : 'eyeCrossed',
+			icon: this.state.inputType === 'password' ? 'eye' : 'eyeSlash',
 			id: 'svg-show-password-icon',
 			width: '20px',
 			onMouseDown: () => {

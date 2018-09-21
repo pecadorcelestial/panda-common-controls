@@ -80,7 +80,7 @@ class BasicForm extends Component {
         //Result.
         return(
             <div>
-                <Icon icon='android' fill='#242424' height='40px' width='40px'/>
+                <Icon icon='brandAndroid' fill='#242424' height='40px' width='40px'/>
                 <Icon icon='apple' fill='#242424' height='40px' width='40px'/>
                 <Icon icon='earth' fill='#242424' height='40px' width='40px'/>px'/>
                 <Icon icon='facebook' fill='#242424' height='40px' width='40px'/>

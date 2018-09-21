@@ -43,7 +43,7 @@ describe('[SNAPSHOT][Componentes][Common][Icon] - Icono de la mascota de android
 	//Icono: android.
 	it('Debe pintar el icono correspondiente a la mascota de android.', () => {
         //Snapshot.
-        let component = renderer.create(<Icon icon='android' fill='#242424' height='60px' width='60px'/>).toJSON();
+        let component = renderer.create(<Icon icon='brandAndroid' fill='#242424' height='60px' width='60px'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
     //Icono: no existente.
