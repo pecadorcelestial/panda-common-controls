@@ -10,7 +10,7 @@ import { ToastNotification } from '../toastnotifications/toastnotifications';
 import { Icon } from '../icons/icons';
 
 import { Calendar } from '../calendar/calendar';
-import { ToolTip } from '../tooltip/tooltip';
+import ToolTip from '../tooltip/tooltip';
 import { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } from '../modals/modals';
 
 const Layout = styled.div`
@@ -148,6 +148,17 @@ class StorybookVol2 extends Component {
     }
     render() {
 
+		let tooltipTheme = {
+			content: {
+				backgroundColor: '#FFF',
+				borderColor: '#1476FB'
+			},
+			arrow: {
+				backgroundColor: '#FFF',
+				borderColor: '#1476FB'
+			}
+		};
+
         //V   V  AAA  L      OOO  RRRR  EEEEE  SSSS
         //V   V A   A L     O   O R   R E     S
         //V   V AAAAA L     O   O RRRR  EEE    SSS
@@ -263,7 +274,10 @@ class StorybookVol2 extends Component {
                     <Title>Botones:</Title>
                     <Option>
                         <OptionButtonWrapper style={{ width: '100%' }}>
-                            <IconButton theme='red' size='small' icon='solidPlusCircle' style={{ width: '100%' }}>Small</IconButton>
+                            <IconButton id='btn-small-tooltip' theme='red' size='small' icon='solidPlusCircle' style={{ width: '100%' }} onClick={() => { this.ToolTipInnerRef.show(); }}>Small</IconButton>
+                            <ToolTip elevation={14} anchorID='btn-small-tooltip' theme={tooltipTheme} at='bottom-left' innerRef={tooltip => this.ToolTipInnerRef = tooltip}>
+							    <p>¡HOLA!</p>
+						    </ToolTip>
                         </OptionButtonWrapper>
                         <OptionButtonWrapper style={{ width: '100%' }}>
                             <IconButton theme='secondaryRed' size='medium' icon='solidSave' style={{ width: '100%' }}>Medium</IconButton>

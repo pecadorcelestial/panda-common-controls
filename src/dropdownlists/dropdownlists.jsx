@@ -199,23 +199,26 @@ export class BasicSelect extends React.Component {
 		}
 	}
 	//*** HANDLERS ***
-	handleOnChange = (item) => {
-		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target: ', item.target);
-		let id = this.props.idIsNumeric ? parseInt(item.target.value) : item.target.value;
+	handleOnChange = (event) => {
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target: ', event.target);
+		//let id = this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value;
 		//NOTA: Se cambió la manera de obtener la descripción del elemento.
-		let description = '';
+		//let description = '';
+		let item;
 		for(let i=0; i<this.props.options.length; i++) {
-			if(this.props.options[i].id == item.target.value) {
-				description = this.props.options[i].description;
+			if(this.props.options[i].id == event.target.value) {
+				item = this.props.options[i];
 				break;
 			}
 		}
+		/*
 		let selectedItem = {
 			id,
 			description
 		};
+		*/
 		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', selectedItem);
-		this.setState({ item: (id == '' || id < 0) ? undefined : selectedItem, selectedOption: id }, () => {
+		this.setState({ item: (id == '' || id < 0) ? undefined : item, selectedOption: id }, () => {
 			this.validate();
 		});
 		this.props.onChange(item);
