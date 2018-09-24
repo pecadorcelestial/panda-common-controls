@@ -28,6 +28,7 @@ const { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } = require('./li
 const { RadioButton, RadioButtonsGroup } = require('./lib/radiobuttons/radiobuttons');
 const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
 const { ToastNotification } = require('./lib/toastnotifications/toastnotifications');
+const ToolTip = require('./lib/tooltip/tooltip');
 
 module.exports = {
     Animate,
@@ -48,5 +49,6 @@ module.exports = {
     RadioButtonsGroup,
     RoundButton,
     TextBox,
-    ToastNotification
+    ToastNotification,
+    ToolTip
 };
