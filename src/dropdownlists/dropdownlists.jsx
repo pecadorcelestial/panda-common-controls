@@ -218,7 +218,7 @@ export class BasicSelect extends React.Component {
 		};
 		*/
 		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', selectedItem);
-		this.setState({ item: (id == '' || id < 0) ? undefined : item, selectedOption: id }, () => {
+		this.setState({ item: (event.target.value == '' || event.target.value < 0) ? undefined : item, selectedOption: (this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value) }, () => {
 			this.validate();
 		});
 		this.props.onChange(item);
