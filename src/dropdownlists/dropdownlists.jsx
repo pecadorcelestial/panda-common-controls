@@ -284,16 +284,16 @@ export class BasicSelect extends React.Component {
 	getValue = () => {
 		return this.state.item;
     }
-    setValue = (value) => {
-        this.setState({ item: value, selectedOption: value.id });
-        /*
-        for(let i=0; i < nextProps.options.length; i++) {
-            if(nextProps.options[i].id == nextProps.selectedOption) {
-                this.setState({ item: nextProps.options[i], selectedOption: nextProps.selectedOption });
+    setValue = (id) => {
+        //this.setState({ item: value, selectedOption: value.id });
+        let item;
+        for(let i=0; i < this.props.options.length; i++) {
+            if(this.props.options[i].id == id) {
+                item = this.props.options[i];
                 break;
             }
-        }
-        */
+		}
+		this.setState({ item, selectedOption: id });
     }
 	//*** RESULTADO ***
 	render() {

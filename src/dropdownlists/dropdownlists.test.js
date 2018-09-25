@@ -845,7 +845,7 @@ describe("[MÉTODOS][Componentes][Common][BasicSelect] - Valida las llamadas a l
 
 	it('Debe asignar el valor enviado en el control.', () => {
 		//Simulación.
-		component.instance().setValue({ id: 2, description: 'Opción #2' });
+		component.instance().setValue(2);
 		//Expectativa.
 		expect(JSON.stringify(component.state().item)).toEqual(JSON.stringify({ id: 2, description: 'Opción #2' }));
         expect(component.state().selectedOption).toBe(2);
