@@ -200,6 +200,7 @@ export class BasicSelect extends React.Component {
 	}
 	//*** HANDLERS ***
 	handleOnChange = (event) => {
+		event.preventDefault();
 		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target: ', event.target);
 		//let id = this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value;
 		//NOTA: Se cambió la manera de obtener la descripción del elemento.

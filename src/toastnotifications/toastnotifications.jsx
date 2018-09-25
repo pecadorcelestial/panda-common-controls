@@ -16,10 +16,10 @@ const backgroundColor = theme('type', {
 
 const notificationIcon = (type) => {
 	switch(type) {
-		case 'success': return('checked');
-		case 'error': return('cross');
-		case 'warning': return('warning');
-		case 'information': return('information');
+		case 'success': return('solidCheckCircle');
+		case 'error': return('solidTimesCircle');
+		case 'warning': return('solidExclamationCircle');
+		case 'information': return('solidQuestionCircle');
 	}
 };
 
