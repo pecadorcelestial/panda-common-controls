@@ -272,8 +272,17 @@ class StorybookVol1 extends Component {
             error: 'You must select an option.',
             options: inputTypes,
             selectedOption: this.state.inputType,
-            onChange: (event) => { this.setState({ inputType: event.target.value }); },
-            id: '',
+            onChange: (event) => { 
+                event.preventDefault();
+                console.log('[STORYBOOK][INPUT TYPE][onChange] Valor: ', event.target.value);
+                this.setState({ inputType: event.target.value }); 
+            },
+            onOptionChange: (item) => { 
+                //item.preventDefault();
+                console.log('[STORYBOOK][INPUT TYPE][onOptionChange] Elemento: ', item);
+                //this.setState({ inputType: event.target.value }); 
+            },
+            id: 'ddl-unique-id',
             placeHolder: 'Select a type',
             disabled: false,
             isRequired: false,

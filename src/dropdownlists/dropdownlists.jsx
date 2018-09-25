@@ -222,7 +222,7 @@ export class BasicSelect extends React.Component {
 		this.setState({ item: (event.target.value == '' || event.target.value < 0) ? undefined : item, selectedOption: (this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value) }, () => {
 			this.validate();
 		});
-		this.props.onChange(item);
+		if(this.props.onOptionChange) this.props.onOptionChange(item);
 	}
 	handleOnBlur = () => {
 		this.validate();
@@ -373,7 +373,7 @@ BasicSelect.propTypes={
 		PropTypes.number
     ]).isRequired,
     //Funciones
-	onChange: PropTypes.func,
+	onOptionChange: PropTypes.func,
 	//Opcionales.
 	id: PropTypes.string,
 	placeHolder: PropTypes.string,

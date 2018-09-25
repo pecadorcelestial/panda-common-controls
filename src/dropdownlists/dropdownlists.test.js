@@ -84,7 +84,7 @@ describe('[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable.', ()
             isRequired: true,
             idIsNumeric: true,
             //Funciones.
-            onChange: handleOnChange
+            onOptionChange: handleOnChange
         };
         //Se crea el componente.
         const component = renderer.create(<BasicSelect {...dropdownlistProps}/>).toJSON();
@@ -134,7 +134,7 @@ describe('[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable.', ()
             isRequired: true,
             idIsNumeric: true,
             //Funciones.
-            onChange: handleOnChange
+            onOptionChange: handleOnChange
         };
         //Se crea el componente.
         const component = renderer.create(<BasicSelect {...dropdownlistProps}/>).toJSON();
@@ -147,7 +147,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	//Eventos (por pasos):
 	//1. componentDidMount
 	//2. componentWillReceiveProps
-	//4. onChange
+	//4. onOptionChange
 	//5. onBlur
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
@@ -191,7 +191,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
         isRequired: true,
         idIsNumeric: true,
         //Funciones.
-        onChange: handleOnChange
+        onOptionChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función "mount" se detona las siguientes funciones: constructor, componentDidMount y render.
@@ -237,7 +237,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [CORRECTO].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [CORRECTO].', () => {
 		//Simulación.
         select.instance().value = 5;
         select.simulate('change');
@@ -271,7 +271,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [ERROR].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [ERROR].', () => {
 		//Simulación.
         select.instance().value = -1;
         select.simulate('change');
@@ -304,7 +304,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	//Eventos (por pasos):
 	//1. componentDidMount
 	//2. componentWillReceiveProps
-	//4. onChange
+	//4. onOptionChange
 	//5. onBlur
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
@@ -348,7 +348,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
         isRequired: true,
         idIsNumeric: false,
         //Funciones.
-        onChange: handleOnChange
+        onOptionChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función "mount" se detona las siguientes funciones: constructor, componentDidMount y render.
@@ -394,7 +394,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [CORRECTO].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [CORRECTO].', () => {
 		//Simulación.
         select.instance().value = 'No5';
         select.simulate('change');
@@ -428,7 +428,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al ser reque
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [ERROR].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [ERROR].', () => {
 		//Simulación.
         select.instance().value = '';
         select.simulate('change');
@@ -464,7 +464,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	//Eventos (por pasos):
 	//1. componentDidMount
 	//2. componentWillReceiveProps
-	//4. onChange
+	//4. onOptionChange
 	//5. onBlur
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
@@ -508,7 +508,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
         isRequired: false,
         idIsNumeric: true,
         //Funciones.
-        onChange: handleOnChange
+        //onOptionChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función "mount" se detona las siguientes funciones: constructor, componentDidMount y render.
@@ -554,12 +554,12 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [CORRECTO].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [CORRECTO].', () => {
 		//Simulación.
         select.instance().value = 5;
         select.simulate('change');
 		//Expectativas.
-		expect(handleOnChange).toHaveBeenCalled();
+		expect(handleOnChange).not.toHaveBeenCalled();
 		expect(JSON.stringify(component.state().item)).toEqual(JSON.stringify({ id: 5, description: 'Opción #5' }));
         expect(component.state().selectedOption).toBe(5);
 	});
@@ -588,12 +588,12 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [ERROR].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [ERROR].', () => {
 		//Simulación.
         select.instance().value = -1;
         select.simulate('change');
 		//Expectativas.
-		expect(handleOnChange).toHaveBeenCalled();
+		expect(handleOnChange).not.toHaveBeenCalled();
 		expect(component.state().item).toBe(undefined);
         expect(component.state().selectedOption).toBe(-1);
 	});
@@ -621,7 +621,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	//Eventos (por pasos):
 	//1. componentDidMount
 	//2. componentWillReceiveProps
-	//4. onChange
+	//4. onOptionChange
 	//5. onBlur
 	//Funciones 'dummy'.
 	const handleOnChange = jest.fn(event => {
@@ -665,7 +665,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
         isRequired: false,
         idIsNumeric: false,
         //Funciones.
-        onChange: handleOnChange
+        onOptionChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA: Al utilizar la función "mount" se detona las siguientes funciones: constructor, componentDidMount y render.
@@ -711,7 +711,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [CORRECTO].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [CORRECTO].', () => {
 		//Simulación.
         select.instance().value = 'No5';
         select.simulate('change');
@@ -745,7 +745,7 @@ describe("[FLUJO][Componentes][Common][BasicSelect] - Validar campo al no ser re
 	// OOO  N   N  CCCC H   H A   A N   N  GGGG EEEEE
 
 	//Se cambia el texto.
-	it('Debe modificar el elemento seleccionado y llamar la función "onChange" [ERROR].', () => {
+	it('Debe modificar el elemento seleccionado y llamar la función "onOptionChange" [ERROR].', () => {
 		//Simulación.
         select.instance().value = '';
         select.simulate('change');
@@ -817,7 +817,7 @@ describe("[MÉTODOS][Componentes][Common][BasicSelect] - Valida las llamadas a l
         isRequired: true,
         idIsNumeric: true,
         //Funciones.
-        onChange: handleOnChange
+        onOptionChange: handleOnChange
     };
 	//Se crea el componente.
 	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".

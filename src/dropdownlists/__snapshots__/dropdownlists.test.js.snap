@@ -126,7 +126,6 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   className="c0"
   disabled={true}
   id="options"
-  onChange={[Function]}
   title="Estado: normal"
 >
   <select
@@ -300,7 +299,6 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   className="c0"
   disabled={false}
   id="options"
-  onChange={[Function]}
   title="Estado: normal"
 >
   <select
