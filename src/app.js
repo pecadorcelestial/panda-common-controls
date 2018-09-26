@@ -60,9 +60,10 @@ class App extends Component {
         //  V   A   A LLLLL  OOO  R   R EEEEE SSSS
 
         const menuOptions = [];
-        menuOptions.push(<Link to='/storybook-vol1' style={{ textDecoration: 'none' }}><IconButton icon='solidSearch' theme='blue' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 1</IconButton></Link>);
-        menuOptions.push(<Link to='/storybook-vol2' style={{ textDecoration: 'none' }}><IconButton icon='calendar' theme='green' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 2</IconButton></Link>);
-        menuOptions.push(<Link to='/storybook-vol3' style={{ textDecoration: 'none' }}><IconButton icon='brandAndroid' theme='red' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 3</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol1' style={{ textDecoration: 'none' }}><IconButton icon='solidTerminal' theme='blue' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 1</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol2' style={{ textDecoration: 'none' }}><IconButton icon='solidSpinner' theme='green' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 2</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol3' style={{ textDecoration: 'none' }}><IconButton icon='solidPalette' theme='red' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 3</IconButton></Link>);
+        menuOptions.push(<Link to='/storybook-vol4' style={{ textDecoration: 'none' }}><IconButton icon='chartBar' theme='orange' size='medium' style={{ borderRadius: '0px', width: '100%' }}>Storybook vol. 4</IconButton></Link>);
 
 		//RRRR  EEEEE  SSSS U   U L     TTTTT  AAA  DDDD   OOO
 		//R   R E     S     U   U L       T   A   A D   D O   O

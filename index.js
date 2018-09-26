@@ -22,6 +22,7 @@ const { Calendar } = require('./lib/calendar/calendar');
 const { BasicCard: Card } = require('./lib/cards/cards');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
 const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
+const { CircularGraph } = require('./lib/graphs/graphs');
 const { Icon } = require('./lib/icons/icons');
 const { MenuWithBlur } = require('./lib/menus/menus');
 const { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } = require('./lib/modals/modals');
@@ -37,6 +38,7 @@ module.exports = {
     Calendar,
     Card,
     CheckBox,
+    CircularGraph,
     Icon,
     IconBadge,
     IconButton,

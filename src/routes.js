@@ -60,6 +60,15 @@ const StorybookVol3 = (props) => (
         }
     </DynamicImport>
 );
+const StorybookVol4 = (props) => (
+    <DynamicImport load={() => import('./storybooks/storybook-vol4')}>
+        {
+            (Component) => Component === null ?
+            <p>Loading...</p> :
+            <Component {...props}/>
+        }
+    </DynamicImport>
+);
 
 //RRRR  U   U TTTTT  AAA   SSSS
 //R   R U   U   T   A   A S
@@ -91,6 +100,12 @@ const routes = [
         exact: true,
         isPrivate: false,
         path: '/storybook-vol3'
+    },
+    {
+        componentToRender: StorybookVol4,
+        exact: true,
+        isPrivate: false,
+        path: '/storybook-vol4'
     }
 ];
 
