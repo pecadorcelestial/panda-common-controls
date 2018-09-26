@@ -62,7 +62,7 @@ const Text = styled.text`
 export class CircularGraph extends Component {
     render() {
         return(
-            <Layout>
+            <Layout {...this.props}>
                 <SVG viewBox="0 0 36 36">
                     <OutterPath
                         d="M18 2.0845

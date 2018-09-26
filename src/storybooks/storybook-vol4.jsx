@@ -53,7 +53,7 @@ class StorybookVol4 extends Component {
             <Layout>
                 <Title>Gráficas:</Title>
                 <Controls>
-                    <CircularGraph percent={75} theme='green'/>
+                    <CircularGraph percent={75} theme='green' style={{ width: '150px' }}/>
                     <CircularGraph percent={45} theme='orange'/>
                     <CircularGraph percent={10} theme='red'/>
                 </Controls>
