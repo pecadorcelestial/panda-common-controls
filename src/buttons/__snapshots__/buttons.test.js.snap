@@ -3693,7 +3693,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
 
 exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryOrange" y los tamaños "small", "medium" y "big". 1`] = `
 .c0 {
-  background-color: #FF9700;
+  background-color: #FFF;
   border: 1px solid #FF9700;
   border-radius: 5px;
   box-sizing: border-box;
@@ -3760,7 +3760,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
 
 exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryOrange" y los tamaños "small", "medium" y "big". 2`] = `
 .c0 {
-  background-color: #FF9700;
+  background-color: #FFF;
   border: 1px solid #FF9700;
   border-radius: 5px;
   box-sizing: border-box;
@@ -3827,7 +3827,7 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
 
 exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryOrange" y los tamaños "small", "medium" y "big". 3`] = `
 .c0 {
-  background-color: #FF9700;
+  background-color: #FFF;
   border: 1px solid #FF9700;
   border-radius: 5px;
   box-sizing: border-box;
