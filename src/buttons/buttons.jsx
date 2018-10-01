@@ -32,7 +32,7 @@ const backgroundColor = (theme) => {
 		case 'flatWhite': return 'transparent';
 
 		case 'orange': return '#FF9700';
-		case 'secondaryOrange': return '#FF9700';
+		case 'secondaryOrange': return '#FFF';
 		case 'flatOrange': return 'transparent';
 		case 'black': return '#242424';
 		case 'secondaryBlack': return '#FFF';
