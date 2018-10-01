@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { CircularGraph } from '../graphs/graphs';
 
 const Layout = styled.div`
+    box-sizing: border-box;
     display: inline-block;
     height: auto;
     margin: 0px;
@@ -30,6 +31,7 @@ const Title = styled.label`
 `;
 
 const Controls = styled.div`
+    box-sizing: border-box;
     display: flex;
     flex-flow: row nowrap;
     height: auto;

@@ -1206,6 +1206,207 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
 />
 `;
 
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatIENTC" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #CC0000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #CC0000;
+}
+
+.c0:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+<button
+  className="c0"
+  size="small"
+  theme="flatIENTC"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatIENTC" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #CC0000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #CC0000;
+}
+
+.c0:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+<button
+  className="c0"
+  size="medium"
+  theme="flatIENTC"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatIENTC" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 50px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #CC0000;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #CC0000;
+}
+
+.c0:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+<button
+  className="c0"
+  size="big"
+  theme="flatIENTC"
+/>
+`;
+
 exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big". 1`] = `
 .c0 {
   background-color: transparent;
@@ -2409,6 +2610,207 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   className="c0"
   size="big"
   theme="green"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "ientc" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+<button
+  className="c0"
+  size="small"
+  theme="ientc"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "ientc" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+<button
+  className="c0"
+  size="medium"
+  theme="ientc"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "ientc" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 50px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+<button
+  className="c0"
+  size="big"
+  theme="ientc"
 />
 `;
 
@@ -3688,6 +4090,207 @@ exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tema
   className="c0"
   size="big"
   theme="secondaryGreen"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryIENTC" y los tamaños "small", "medium" y "big". 1`] = `
+.c0 {
+  background-color: #FFF;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+<button
+  className="c0"
+  size="small"
+  theme="secondaryIENTC"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryIENTC" y los tamaños "small", "medium" y "big". 2`] = `
+.c0 {
+  background-color: #FFF;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+<button
+  className="c0"
+  size="medium"
+  theme="secondaryIENTC"
+/>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray. Debe pintar el componente con el tema "secondaryIENTC" y los tamaños "small", "medium" y "big". 3`] = `
+.c0 {
+  background-color: #FFF;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF0000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 50px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 36px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c0:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover .c1 {
+  fill: #FFF;
+}
+
+.c0:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c0:disabled .c1 {
+  fill: #FFF;
+}
+
+.c0:focus {
+  outline: none;
+}
+
+.c0 .c1 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+<button
+  className="c0"
+  size="big"
+  theme="secondaryIENTC"
 />
 `;
 
@@ -5476,6 +6079,132 @@ exports[`[SNAPSHOT][Componentes][Common][IconButton] - Boton con los siguientes 
   width: 30px;
 }
 
+.c68:hover .c1 {
+  fill: #FFF;
+}
+
+.c68:disabled .c1 {
+  fill: #FFF;
+}
+
+.c68 .c1 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c69:hover .c1 {
+  fill: #FFF;
+}
+
+.c69:disabled .c1 {
+  fill: #FFF;
+}
+
+.c69 .c1 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c70:hover .c1 {
+  fill: #FFF;
+}
+
+.c70:disabled .c1 {
+  fill: #FFF;
+}
+
+.c70 .c1 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c71:hover .c1 {
+  fill: #FFF;
+}
+
+.c71:disabled .c1 {
+  fill: #FFF;
+}
+
+.c71 .c1 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c72:hover .c1 {
+  fill: #FFF;
+}
+
+.c72:disabled .c1 {
+  fill: #FFF;
+}
+
+.c72 .c1 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c73:hover .c1 {
+  fill: #FFF;
+}
+
+.c73:disabled .c1 {
+  fill: #FFF;
+}
+
+.c73 .c1 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+.c74:hover .c1 {
+  fill: #CC0000;
+}
+
+.c74:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c74 .c1 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c75:hover .c1 {
+  fill: #CC0000;
+}
+
+.c75:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c75 .c1 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c76:hover .c1 {
+  fill: #CC0000;
+}
+
+.c76:disabled .c1 {
+  fill: #BFBFBF;
+}
+
+.c76 .c1 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
 <button
   className="c0"
   icon="solidPlusCircle"
@@ -6475,6 +7204,132 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
 
 .c68 .c2 {
   fill: #242424;
+  height: 30px;
+  width: 30px;
+}
+
+.c69:hover .c2 {
+  fill: #FFF;
+}
+
+.c69:disabled .c2 {
+  fill: #FFF;
+}
+
+.c69 .c2 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c70:hover .c2 {
+  fill: #FFF;
+}
+
+.c70:disabled .c2 {
+  fill: #FFF;
+}
+
+.c70 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c71:hover .c2 {
+  fill: #FFF;
+}
+
+.c71:disabled .c2 {
+  fill: #FFF;
+}
+
+.c71 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c72:hover .c2 {
+  fill: #FFF;
+}
+
+.c72:disabled .c2 {
+  fill: #FFF;
+}
+
+.c72 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c73:hover .c2 {
+  fill: #FFF;
+}
+
+.c73:disabled .c2 {
+  fill: #FFF;
+}
+
+.c73 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c74:hover .c2 {
+  fill: #FFF;
+}
+
+.c74:disabled .c2 {
+  fill: #FFF;
+}
+
+.c74 .c2 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+.c75:hover .c2 {
+  fill: #CC0000;
+}
+
+.c75:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c75 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c76:hover .c2 {
+  fill: #CC0000;
+}
+
+.c76:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c76 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c77:hover .c2 {
+  fill: #CC0000;
+}
+
+.c77:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c77 .c2 {
+  fill: #FF0000;
   height: 30px;
   width: 30px;
 }
@@ -7488,6 +8343,132 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
   width: 30px;
 }
 
+.c69:hover .c2 {
+  fill: #FFF;
+}
+
+.c69:disabled .c2 {
+  fill: #FFF;
+}
+
+.c69 .c2 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c70:hover .c2 {
+  fill: #FFF;
+}
+
+.c70:disabled .c2 {
+  fill: #FFF;
+}
+
+.c70 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c71:hover .c2 {
+  fill: #FFF;
+}
+
+.c71:disabled .c2 {
+  fill: #FFF;
+}
+
+.c71 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c72:hover .c2 {
+  fill: #FFF;
+}
+
+.c72:disabled .c2 {
+  fill: #FFF;
+}
+
+.c72 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c73:hover .c2 {
+  fill: #FFF;
+}
+
+.c73:disabled .c2 {
+  fill: #FFF;
+}
+
+.c73 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c74:hover .c2 {
+  fill: #FFF;
+}
+
+.c74:disabled .c2 {
+  fill: #FFF;
+}
+
+.c74 .c2 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+.c75:hover .c2 {
+  fill: #CC0000;
+}
+
+.c75:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c75 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c76:hover .c2 {
+  fill: #CC0000;
+}
+
+.c76:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c76 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c77:hover .c2 {
+  fill: #CC0000;
+}
+
+.c77:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c77 .c2 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
 .c0 {
   border-radius: 50%;
   padding: 9px 0px;
@@ -8493,6 +9474,132 @@ exports[`[SNAPSHOT][Componentes][Common][RoundButton] - Boton con los siguientes
 
 .c68 .c2 {
   fill: #242424;
+  height: 30px;
+  width: 30px;
+}
+
+.c69:hover .c2 {
+  fill: #FFF;
+}
+
+.c69:disabled .c2 {
+  fill: #FFF;
+}
+
+.c69 .c2 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c70:hover .c2 {
+  fill: #FFF;
+}
+
+.c70:disabled .c2 {
+  fill: #FFF;
+}
+
+.c70 .c2 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c71:hover .c2 {
+  fill: #FFF;
+}
+
+.c71:disabled .c2 {
+  fill: #FFF;
+}
+
+.c71 .c2 {
+  fill: #FFF;
+  height: 30px;
+  width: 30px;
+}
+
+.c72:hover .c2 {
+  fill: #FFF;
+}
+
+.c72:disabled .c2 {
+  fill: #FFF;
+}
+
+.c72 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c73:hover .c2 {
+  fill: #FFF;
+}
+
+.c73:disabled .c2 {
+  fill: #FFF;
+}
+
+.c73 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c74:hover .c2 {
+  fill: #FFF;
+}
+
+.c74:disabled .c2 {
+  fill: #FFF;
+}
+
+.c74 .c2 {
+  fill: #FF0000;
+  height: 30px;
+  width: 30px;
+}
+
+.c75:hover .c2 {
+  fill: #CC0000;
+}
+
+.c75:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c75 .c2 {
+  fill: #FF0000;
+  height: 18px;
+  width: 18px;
+}
+
+.c76:hover .c2 {
+  fill: #CC0000;
+}
+
+.c76:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c76 .c2 {
+  fill: #FF0000;
+  height: 20px;
+  width: 20px;
+}
+
+.c77:hover .c2 {
+  fill: #CC0000;
+}
+
+.c77:disabled .c2 {
+  fill: #BFBFBF;
+}
+
+.c77 .c2 {
+  fill: #FF0000;
   height: 30px;
   width: 30px;
 }

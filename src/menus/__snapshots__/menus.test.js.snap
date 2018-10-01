@@ -100,6 +100,7 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
   background-color: #FFF;
   box-sizing: border-box;
   display: inline-block;
+  float: left;
   height: 50px;
   margin: 0px;
   padding: 10px;
@@ -134,7 +135,7 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
   box-sizing: border-box;
   display: block;
   height: auto;
-  margin: 0px;
+  margin: 50px 0px 0px 0px;
   min-width: 300px;
   opacity: 0;
   padding: 0px;
@@ -150,6 +151,8 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
 
 .c10 {
   box-sizing: border-box;
+  display: inline-block;
+  float: left;
   height: auto;
   margin: 0px;
   padding: 0px;
@@ -189,6 +192,344 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
         onClick={[Function]}
         size="small"
         theme="blue"
+      >
+        <svg
+          alt="solidTh"
+          className="c5 c6"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<path d=\\"M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z\\"/>",
+            }
+          }
+          icon="solidTh"
+          viewBox="0 0 512 512"
+          x="0px"
+          y="0px"
+        />
+      </button>
+    </div>
+    <h1
+      className="c7"
+    >
+      Title
+    </h1>
+  </div>
+  <div
+    className="c8"
+  >
+    <div
+      className="c9"
+      from="left"
+      onClick={[Function]}
+      style={
+        Object {
+          "animationDelay": "0s",
+          "height": "40px",
+          "top": "0px",
+          "width": "100%",
+        }
+      }
+      type="fade"
+    >
+      <label>
+        Inicio
+      </label>
+    </div>
+    <div
+      className="c9"
+      from="left"
+      onClick={[Function]}
+      style={
+        Object {
+          "animationDelay": "0.2s",
+          "height": "40px",
+          "top": "40px",
+          "width": "100%",
+        }
+      }
+      type="fade"
+    >
+      <label>
+        Información de usuario
+      </label>
+    </div>
+    <div
+      className="c9"
+      from="left"
+      onClick={[Function]}
+      style={
+        Object {
+          "animationDelay": "0.4s",
+          "height": "40px",
+          "top": "80px",
+          "width": "100%",
+        }
+      }
+      type="fade"
+    >
+      <label>
+        Storybook vol. 1
+      </label>
+    </div>
+    <div
+      className="c9"
+      from="left"
+      onClick={[Function]}
+      style={
+        Object {
+          "animationDelay": "0.6s",
+          "height": "40px",
+          "top": "120px",
+          "width": "100%",
+        }
+      }
+      type="fade"
+    >
+      <label>
+        Storybook vol. 2
+      </label>
+    </div>
+    <div
+      className="c9"
+      from="left"
+      onClick={[Function]}
+      style={
+        Object {
+          "animationDelay": "0.8s",
+          "height": "40px",
+          "top": "160px",
+          "width": "100%",
+        }
+      }
+      type="fade"
+    >
+      <label>
+        Storybook vol. 3
+      </label>
+    </div>
+  </div>
+  <div
+    className="c10"
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#8394DE",
+          "height": "100px",
+          "width": "100px",
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur" y tema "IENTC" sobre el contenido. Debe pintar correctamente el menú con las opciones configuradas. 1`] = `
+.c9 {
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin: 0px;
+  opacity: 0;
+  padding: 0px;
+  position: absolute;
+  width: auto;
+}
+
+.c6 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c11:hover .c5 {
+  fill: #FFF;
+}
+
+.c11:disabled .c5 {
+  fill: #FFF;
+}
+
+.c11 .c5 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c4 {
+  background-color: #FF0000;
+  border: 1px solid #FF0000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c4:hover {
+  background-color: #CC0000;
+  border: 1px solid #CC0000;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c4:hover .c5 {
+  fill: #FFF;
+}
+
+.c4:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c4:disabled .c5 {
+  fill: #FFF;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4 .c5 {
+  fill: #FFF;
+  height: 18px;
+  width: 18px;
+}
+
+.c3 {
+  border-radius: 50%;
+  padding: 1px 0px 0px 0px;
+  width: 30px;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  background-color: #242424;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: 50px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.c2 {
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  margin: 0px;
+  padding: 1px 0px 0px 0px;
+  width: 30px;
+}
+
+.c7 {
+  color: #FFF;
+  float: left;
+  font-family: "Open Sans",sans-serif;
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 30px;
+  margin: 0px 0px 0px 10px;
+  padding: 2px 0px 0px 0px;
+  width: auto;
+}
+
+.c8 {
+  background-color: transparent;
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin: 50px 0px 0px 0px;
+  min-width: 300px;
+  opacity: 0;
+  padding: 0px;
+  position: absolute;
+  z-index: 999;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+}
+
+.c10 {
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  -webkit-animation: jRxbiA 0.2s ease forwards;
+  animation: jRxbiA 0.2s ease forwards;
+  pointer-events: auto;
+}
+
+@media screen and (max-width:767px) {
+  .c8 {
+    min-width: unset;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  .c8 {
+    min-width: unset;
+    width: 80%;
+  }
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <button
+        className="c3 c4"
+        icon="solidTh"
+        id="btn-menu-options"
+        onClick={[Function]}
+        size="small"
+        theme="ientc"
       >
         <svg
           alt="solidTh"

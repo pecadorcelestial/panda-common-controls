@@ -461,7 +461,7 @@ export class Animate extends React.Component {
 		} else {
 			window.innerHeight;
 		}
-		console.log('[ANIMATIONS][ANIMATE][handleScroll] innerHeight (variable) = ', innerHeight);
+		//console.log('[ANIMATIONS][ANIMATE][handleScroll] innerHeight (variable) = ', innerHeight);
 		//let innerWidth = event.path[1].innerWidth;
 		if (this.amIVisible(innerHeight, top, height)) this.triggerEntranceAnimation();
 		else if (!this.amIVisible(innerHeight, top, height) && this.state.entrance) this.triggerExitAnimation();

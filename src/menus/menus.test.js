@@ -38,7 +38,7 @@ import 'jest-styled-components';
 
 import { MenuWithBlur } from './menus';
 
-//Snapshots (MENÚ CON BLUR).
+//Snapshots (MENÚ CON BLUR)(Tema: default).
 describe('[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur" sobre el contenido.', () => {
     it('Debe pintar correctamente el menú con las opciones configuradas.', () => {
         const options = [];
@@ -49,6 +49,21 @@ describe('[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur
         options.push(<label>Storybook vol. 3</label>);
         const child = <div style={{ backgroundColor: '#8394DE', height: '100px', width: '100px' }}/>;
         const component = renderer.create(<MenuWithBlur title='Title' options={options}>{child}</MenuWithBlur>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+});
+
+//Snapshots (MENÚ CON BLUR)(Tema: IENTC... (¬_¬')).
+describe('[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur" y tema "IENTC" sobre el contenido.', () => {
+    it('Debe pintar correctamente el menú con las opciones configuradas.', () => {
+        const options = [];
+        options.push(<label>Inicio</label>);
+        options.push(<label>Información de usuario</label>);
+        options.push(<label>Storybook vol. 1</label>);
+        options.push(<label>Storybook vol. 2</label>);
+        options.push(<label>Storybook vol. 3</label>);
+        const child = <div style={{ backgroundColor: '#8394DE', height: '100px', width: '100px' }}/>;
+        const component = renderer.create(<MenuWithBlur title='Title' options={options} theme='ientc'>{child}</MenuWithBlur>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

@@ -304,6 +304,42 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='flatBlack' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: ientc.
+	it('Debe pintar el componente con el tema "ientc" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [ientc][small].
+        let component = renderer.create(<Button theme='ientc' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [ientc][medium].
+        component = renderer.create(<Button theme='ientc' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [ientc][big].
+        component = renderer.create(<Button theme='ientc' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+    //Tema: secondaryIENTC.
+	it('Debe pintar el componente con el tema "secondaryIENTC" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryIENTC][small].
+        let component = renderer.create(<Button theme='secondaryIENTC' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryIENTC][medium].
+        component = renderer.create(<Button theme='secondaryIENTC' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryIENTC][big].
+        component = renderer.create(<Button theme='secondaryIENTC' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
+    //Tema: flatIENTC.
+	it('Debe pintar el componente con el tema "flatIENTC" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [flatIENTC][small].
+        let component = renderer.create(<Button theme='flatIENTC' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatIENTC][medium].
+        component = renderer.create(<Button theme='flatIENTC' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatIENTC][big].
+        component = renderer.create(<Button theme='flatIENTC' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
     //Tema: red (cons "float" y "width" asignados).
 	it('Debe pintar el componente con el tema "red" con estilo para "float" y "width".', () => {
         //Snapshot [red][small].

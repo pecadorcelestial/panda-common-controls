@@ -7,6 +7,39 @@ import styled, { keyframes } from 'styled-components';
 import { Animate } from '../animations/animations';
 import { RoundButton } from '../buttons/buttons';
 
+//TTTTT EEEEE M   M  AAA
+//  T   E     MM MM A   A
+//  T   EEE   M M M AAAAA
+//  T   E     M   M A   A
+//  T   EEEEE M   M A   A
+
+const headerBackgroundColor = (theme) => {
+	switch(theme) {
+		case 'ientc': return '#242424';
+		case 'default': default: return '#FFF';
+	}
+};
+
+const titleColor = (theme) => {
+	switch(theme) {
+		case 'ientc': return '#FFF';
+		case 'default': default: return '#242424';
+	}
+};
+
+const buttonTheme = (theme) => {
+    switch(theme) {
+		case 'ientc': return 'ientc';
+		case 'default': default: return 'blue';
+	}
+};
+
+//EEEEE  SSSS TTTTT IIIII L      OOO   SSS
+//E     S       T     I   L     O   O S
+//EEE    SSS    T     I   L     O   O  SSS
+//E         S   T     I   L     O   O     S
+//EEEEE SSSS    T   IIIII LLLLL  OOO  SSSS
+
 const Layout = styled.div`
     box-sizing: border-box;
     height: auto;
@@ -16,9 +49,10 @@ const Layout = styled.div`
 `;
 
 const Header = styled.div`
-    background-color: #FFF;
+    background-color: ${props => headerBackgroundColor(props.theme)};
     box-sizing: border-box;
     display: inline-block;
+    float: left;
     height: 50px;
     margin: 0px;
     padding: 10px;
@@ -35,7 +69,7 @@ const IconWrapper = styled.div`
 `;
 
 const Title = styled.h1`
-    color: #242424;
+    color: ${props => titleColor(props.theme)};
     float: left;
     font-family: "Open Sans", sans-serif;	
     font-size: 20px;
@@ -75,7 +109,7 @@ const Options = styled.div`
     box-sizing: border-box;
     display: block;
     height: auto;
-    margin: 0px;
+    margin: 50px 0px 0px 0px;
     min-width: 300px;
     opacity: 0;
     padding: 0px;
@@ -119,6 +153,8 @@ const Unblur = () => keyframes`
 
 const Content = styled.div`
     box-sizing: border-box;
+    display: inline-block;
+    float: left;
     height: auto;
     margin: 0px;
     padding: 0px;
@@ -182,27 +218,27 @@ export class MenuWithBlur extends Component {
     render() {
         return(
             <Layout>
-                <Header innerRef={header => this.HeaderInnerRef = header}>
+                <Header theme={this.props.theme} innerRef={header => this.HeaderInnerRef = header}>
                     <IconWrapper>
-                        <RoundButton id='btn-menu-options' icon='solidTh' theme='blue' size='small' onClick={this.handleIconOnClick}/>
+                        <RoundButton id='btn-menu-options' icon='solidTh' theme={buttonTheme(this.props.theme)} size='small' onClick={this.handleIconOnClick}/>
                     </IconWrapper>
-                    <Title>{this.props.title}</Title>
+                    <Title theme={this.props.theme}>{this.props.title}</Title>
                 </Header>
-                    <Options show={this.state.show} hide={this.state.hide} innerRef={options => this.OptionsInnerRef = options}>
-                        {
-                            this.props.options.map((option, index) => {
-                                let animateProps = {
-                                    type: 'fade',
-                                    enterWithBounce: false,
-                                    executeWhen: 'onDemand',
-                                    from: 'left'
-                                };
-                                let animationDelay = (index * 2) / 10;
-                                let animationTop = index * 40;
-                                return(<Animate key={`a-${index}`} {...animateProps} style={{ animationDelay: `${animationDelay}s`, height: '40px', top: `${animationTop}px`, width: '100%' }} ref={(animate) => { this.OptionsRef.push(animate); }} onClick={() => { this.hide(); }}>{option}</Animate>);
-                            })
-                        }
-                    </Options>
+                <Options show={this.state.show} hide={this.state.hide} innerRef={options => this.OptionsInnerRef = options}>
+                    {
+                        this.props.options.map((option, index) => {
+                            let animateProps = {
+                                type: 'fade',
+                                enterWithBounce: false,
+                                executeWhen: 'onDemand',
+                                from: 'left'
+                            };
+                            let animationDelay = (index * 2) / 10;
+                            let animationTop = index * 40;
+                            return(<Animate key={`a-${index}`} {...animateProps} style={{ animationDelay: `${animationDelay}s`, height: '40px', top: `${animationTop}px`, width: '100%' }} ref={(animate) => { this.OptionsRef.push(animate); }} onClick={() => { this.hide(); }}>{option}</Animate>);
+                        })
+                    }
+                </Options>
                 <Content blur={this.state.show}>
                     {this.props.children}
                 </Content>
@@ -214,5 +250,11 @@ export class MenuWithBlur extends Component {
 MenuWithBlur.propTypes = {
     //Obligatorios.
     options: PropTypes.arrayOf(PropTypes.element).isRequired,
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    //Opcionales.
+    theme: PropTypes.oneOf(['default', 'ientc'])
+};
+
+MenuWithBlur.defaultProps = {
+    theme: 'default'
 };
