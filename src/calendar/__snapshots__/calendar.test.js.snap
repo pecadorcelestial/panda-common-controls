@@ -1079,14 +1079,14 @@ exports[`[SNAPSHOT][Componentes][Common][Calendar] - Meses. Debe pintar el compo
         M08
       </button>
       <button
-        className="c6"
+        className="c5"
         onClick={[Function]}
         type="button"
       >
         M09
       </button>
       <button
-        className="c5"
+        className="c6"
         onClick={[Function]}
         type="button"
       >
