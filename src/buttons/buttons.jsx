@@ -17,17 +17,26 @@ const backgroundColor = (theme) => {
 		case 'secondaryRed': return '#FFF';
 		case 'flatRed': return 'transparent';
 		case 'blue': return '#1476FB';
+		case 'secondaryBlue': return '#FFF';
 		case 'flatBlue': return 'transparent';
 		case 'green': return '#4CB050';
+		case 'secondaryGreen': return '#FFF';
 		case 'flatGreen': return 'transparent';
 		case 'yellow': return '#FFE200';
+		case 'secondaryYellow': return '#FFF';
 		case 'flatYellow': return 'transparent';
 		case 'gray': return '#858585';
+		case 'secondaryGray': return '#FFF';
 		case 'flatGray': return 'transparent';
 
 		case 'flatWhite': return 'transparent';
+
 		case 'orange': return '#FF9700';
+		case 'secondaryOrange': return '';
 		case 'flatOrange': return 'transparent';
+		case 'black': return '#242424';
+		case 'secondaryBlack': return '#FFF';
+		case 'flatBlack': return 'transparent';
 	}
 };
 
@@ -37,17 +46,26 @@ const border = (theme) => {
 		case 'secondaryRed': return '1px solid #FF456A';
 		case 'flatRed': return '1px solid transparent';
 		case 'blue': return '1px solid #1476FB';
+		case 'secondaryBlue': return '1px solid #1476FB';
 		case 'flatBlue': return '1px solid transparent';
 		case 'green': return '1px solid #4CB050';
+		case 'secondaryGreen': return '1px solid #4CB050';
 		case 'flatGreen': return '1px solid transparent';
 		case 'yellow': return '1px solid #FFE200';
+		case 'secondaryYellow': return '1px solid #FFE200';
 		case 'flatYellow': return '1px solid transparent';
 		case 'gray': return '1px solid #858585';
+		case 'secondaryGray': return '1px solid #858585';
 		case 'flatGray': return '1px solid transparent';
 
 		case 'flatWhite': return '1px solid transparent';
+
 		case 'orange': return '1px solid #FF9700';
+		case 'secondaryOrange': return '1px solid #FF9700';
 		case 'flatOrange': return '1px solid transparent';
+		case 'black': return '1px solid #242424';
+		case 'secondaryBlack': return '1px solid #242424';
+		case 'flatBlack': return '1px solid transparent';
 	}
 };
 
@@ -57,17 +75,26 @@ const color = (theme) => {
 		case 'secondaryRed': return '#FF456A';
 		case 'flatRed': return '#FF456A';
 		case 'blue': return '#FFF';
+		case 'secondaryBlue': return '#1476FB';
 		case 'flatBlue': return '#1476FB';
 		case 'green': return '#FFF';
+		case 'secondaryGreen': return '#4CB050';
 		case 'flatGreen': return '#4CB050';
 		case 'yellow': return '#FFF';
+		case 'secondaryYellow': return '#FFE200';
 		case 'flatYellow': return '#FFE200';
 		case 'gray': return '#FFF';
+		case 'secondaryGray': return '#858585';
 		case 'flatGray': return '#858585';
 
 		case 'flatWhite': return '#FFF';
+
 		case 'orange': return '#FFF';
+		case 'secondaryOrange': return '#FF9700';
 		case 'flatOrange': return '#FF9700';
+		case 'black': return '#FFF';
+		case 'secondaryBlack': return '#242424';
+		case 'flatBlack': return '#242424';
 	}
 };
 
@@ -77,17 +104,26 @@ const hoverBackgroundColor = (theme) => {
 		case 'secondaryRed': return '#CC1F62';
 		case 'flatRed': return '#EBEBEB';
 		case 'blue': return '#0960D3';
+		case 'secondaryBlue': return '#0960D3';
 		case 'flatBlue': return '#EBEBEB';
 		case 'green': return '#3C8C40';
+		case 'secondaryGreen': return '#3C8C40'
 		case 'flatGreen': return '#EBEBEB';
 		case 'yellow': return '#CCB400';
+		case 'secondaryYellow': return '#CCB400';
 		case 'flatYellow': return '#EBEBEB';
 		case 'gray': return '#6A6A6A';
+		case 'secondaryGray': return '#6A6A6A';
 		case 'flatGray': return '#EBEBEB';
 
 		case 'flatWhite': return 'rgba(235, 235, 235, 0.5)';
+
 		case 'orange': return '#CC7800';
+		case 'secondaryOrange': return '#CC7800';
 		case 'flatOrange': return '#EBEBEB';
+		case 'black': return '#4F4F4F';
+		case 'secondaryBlack': return '#4F4F4F';
+		case 'flatBlack': return '#EBEBEB';
 	}
 };
 
@@ -97,17 +133,26 @@ const hoverBorder = (theme) => {
 		case 'secondaryRed': return '1px solid #CC1F62';
 		case 'flatRed': return '1px solid #EBEBEB';
 		case 'blue': return '1px solid #0960D3';
+		case 'secondaryBlue': return '1px solid #0960D3';
 		case 'flatBlue': return '1px solid #EBEBEB';
 		case 'green': return '1px solid #3C8C40';
+		case 'secondaryGreen': return '1px solid #3C8C40';
 		case 'flatGreen': return '1px solid #EBEBEB';
 		case 'yellow': return '1px solid #CCB400';
+		case 'secondaryYellow': return '1px solid #CCB400';
 		case 'flatYellow': return '1px solid #EBEBEB';
 		case 'gray': return '1px solid #6A6A6A';
+		case 'secondaryGray': return '1px solid #6A6A6A';
 		case 'flatGray': return '1px solid #EBEBEB';
 
 		case 'flatWhite': return '1px solid rgba(235, 235, 235, 0)';
+
 		case 'orange': return '#1px solid #CC7800';
+		case 'secondaryOrange': return '#1px solid #CC7800';
 		case 'flatOrange': return '1px solid #EBEBEB';
+		case 'black': return '#1px solid #4F4F4F';
+		case 'secondaryBlack': return '#1px solid #4F4F4F';
+		case 'flatBlack': return '1px solid #EBEBEB';
 	}
 };
 
@@ -117,17 +162,26 @@ const hoverColor = (theme) => {
 		case 'secondaryRed': return '#FFF';
 		case 'flatRed': return '#FF456A';
 		case 'blue': return '#FFF';
+		case 'secondaryBlue': return '#FFF';
 		case 'flatBlue': return '#1476FB';
 		case 'green': return '#FFF';
+		case 'secondaryGreen': return '#FFF';
 		case 'flatGreen': return '#4CB050';
 		case 'yellow': return '#FFF';
+		case 'secondaryYellow': return '#FFF';
 		case 'flatYellow': return '#FFE200';
 		case 'gray': return '#FFF';
+		case 'secondaryGray': return '#FFF';
 		case 'flatGray': return '#858585';
 
 		case 'flatWhite': return '#FFF';
+
 		case 'orange': return '#FFF';
+		case 'secondaryOrange': return '#FFF';
 		case 'flatOrange': return '#FF9700';
+		case 'black': return '#FFF';
+		case 'secondaryBlack': return '#FFF';
+		case 'flatBlack': return '#4F4F4F';
 	}
 };
 
@@ -137,17 +191,26 @@ const disabledBackgroundColor = (theme) => {
 		case 'secondaryRed': return '#BFBFBF';
 		case 'flatRed': return 'transparent';
 		case 'blue': return '#BFBFBF';
+		case 'secondaryBlue': return '#BFBFBF';
 		case 'flatBlue': return 'transparent';
 		case 'green': return '#BFBFBF';
+		case 'secondaryGreen': return '#BFBFBF';
 		case 'flatGreen': return 'transparent';
 		case 'yellow': return '#BFBFBF';
+		case 'secondaryYellow': return '#BFBFBF';
 		case 'flatYellow': return 'transparent';
 		case 'gray': return '#BFBFBF';
+		case 'secondaryGray': return '#BFBFBF';
 		case 'flatGray': return 'transparent';
 
 		case 'flatWhite': return 'transparent';
+
 		case 'orange': return '#BFBFBF';
+		case 'secondaryOrange': return '#BFBFBF';
 		case 'flatOrange': return 'transparent'
+		case 'black': return '#BFBFBF';
+		case 'secondaryBlack': return '#BFBFBF';
+		case 'flatBlack': return 'transparent'
 	}
 };
 
@@ -157,17 +220,26 @@ const disabledBorder = (theme) => {
 		case 'secondaryRed': return '1px solid #BFBFBF';
 		case 'flatRed': return '1px solid transparent';
 		case 'blue': return '1px solid #BFBFBF';
+		case 'secondaryBlue': return '1px solid #BFBFBF';
 		case 'flatBlue': return '1px solid transparent';
 		case 'green': return '1px solid #BFBFBF';
+		case 'secondaryGreen': return '1px solid #BFBFBF';
 		case 'flatGreen': return '1px solid transparent';
 		case 'yellow': return '1px solid #BFBFBF';
+		case 'secondaryYellow': return '1px solid #BFBFBF';
 		case 'flatYellow': return '1px solid transparent';
 		case 'gray': return '1px solid #BFBFBF';
+		case 'secondaryGray': return '1px solid #BFBFBF';
 		case 'flatGray': return '1px solid transparent';
 
 		case 'flatWhite': return '1px solid transparent';
+
 		case 'orange': return '1px solid #BFBFBF';
+		case 'secondaryOrange': return '1px solid #BFBFBF';
 		case 'flatOrange': return '1px solid transparent';
+		case 'black': return '1px solid #BFBFBF';
+		case 'secondaryBlack': return '1px solid #BFBFBF';
+		case 'flatBlack': return '1px solid transparent';
 	}
 };
 
@@ -177,17 +249,26 @@ const disabledColor = (theme) => {
 		case 'secondaryRed': return '#FFF';
 		case 'flatRed': return '#BFBFBF';
 		case 'blue': return '#FFF';
+		case 'secondaryBlue': return '#FFF';
 		case 'flatBlue': return '#BFBFBF';
 		case 'green': return '#FFF';
+		case 'secondaryGreen': return '#FFF';
 		case 'flatGreen': return '#BFBFBF';
 		case 'yellow': return '#FFF';
+		case 'secondaryYellow': return '#FFF';
 		case 'flatYellow': return '#BFBFBF';
 		case 'gray': return '#FFF';
+		case 'secondaryGray': return '#FFF';
 		case 'flatGray': return '#BFBFBF';
 
 		case 'flatWhite': return '#BFBFBF';
+
 		case 'orange': return '#FFF';
+		case 'secondaryOrange': return '#FFF';
 		case 'flatOrange': return '#BFBFBF';
+		case 'black': return '#FFF';
+		case 'secondaryBlack': return '#FFF';
+		case 'flatBlack': return '#BFBFBF';
 	}
 };
 
