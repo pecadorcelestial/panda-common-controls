@@ -454,7 +454,8 @@ export class Animate extends React.Component {
 		//console.log('[ANIMATIONS][ANIMATE][handleScroll] Top = ', top);
 		//console.log('[ANIMATIONS][ANIMATE][handleScroll] Top + Height = ', top + height);
 		//console.log('[ANIMATIONS][ANIMATE][handleScroll] innerHeight = ', window.innerHeight);
-		let innerHeight = event.path[1].innerHeight;
+		console.log('[ANIMATIONS][ANIMATE][handleScroll] innerHeight = ', event.path[1].innerHeight);
+		let innerHeight = window.innerHeight; //event.path[1].innerHeight;
 		//let innerWidth = event.path[1].innerWidth;
 		if (this.amIVisible(innerHeight, top, height)) this.triggerEntranceAnimation();
 		else if (!this.amIVisible(innerHeight, top, height) && this.state.entrance) this.triggerExitAnimation();
