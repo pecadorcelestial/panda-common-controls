@@ -42,13 +42,6 @@ import { Button, IconButton, RoundButton } from './buttons';
 describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes temas: red, secondaryRed, flatRed, blue, flatBlue, green, flatGreen, yellow, flatYellow, gray, flatGray.', () => {
 	//Tema: red.
 	it('Debe pintar el componente con el tema "red" y los tamaños "small", "medium" y "big".', () => {
-        
-        //M   M  AAA  IIIII N   N
-        //MM MM A   A   I   NN  N
-        //M M M AAAAA   I   N N N
-        //M   M A   A   I   N  NN
-        //M   M A   A IIIII N   N
-
         //Snapshot [red][small].
         let component = renderer.create(<Button theme='red' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -61,13 +54,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: secondaryRed.
 	it('Debe pintar el componente con el tema "secondaryRed" y los tamaños "small", "medium" y "big".', () => {
-        
-        // SSSS EEEEE  CCCC  OOO  N   N DDDD   AAA  RRRR  Y   Y
-        //S     E     C     O   O NN  N D   D A   A R   R  Y Y
-        // SSS  EEE   C     O   O N N N D   D AAAAA RRRR    Y
-        //    S E     C     O   O N  NN D   D A   A R   R   Y
-        //SSSS  EEEEE  CCCC  OOO  N   N DDDD  A   A R   R  YYY
-
         //Snapshot [secondaryRed][small].
         let component = renderer.create(<Button theme='secondaryRed' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -80,13 +66,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
 	});
     //Tema: flatRed.
 	it('Debe pintar el componente con el tema "flatRed" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT
-        //F     L     A   A   T
-        //FFF   L     AAAAA   T
-        //F     L     A   A   T
-        //F     LLLLL A   A   T
-
         //Snapshot [flatRed][small].
         let component = renderer.create(<Button theme='flatRed' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -99,13 +78,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
 	});
     //Tema: blue.
 	it('Debe pintar el componente con el tema "blue" y los tamaños "small", "medium" y "big".', () => {
-        
-        //BBBB  L     U   U EEEEE
-        //B   B L     U   U E
-        //BBBB  L     U   U EEE
-        //B   B L     U   U E
-        //BBBB  LLLLL  UUU  EEEEE
-
         //Snapshot [blue][small].
         let component = renderer.create(<Button theme='blue' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -116,15 +88,20 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='blue' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
+    //Tema: secondaryBlue.
+	it('Debe pintar el componente con el tema "secondaryBlue" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryBlue][small].
+        let component = renderer.create(<Button theme='secondaryBlue' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryBlue][medium].
+        component = renderer.create(<Button theme='secondaryBlue' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryBlue][big].
+        component = renderer.create(<Button theme='secondaryBlue' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
     //Tema: flatBlue.
 	it('Debe pintar el componente con el tema "flatBlue" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT BBBB  L     U   U EEEEE
-        //F     L     A   A   T   B   B L     U   U E
-        //FFF   L     AAAAA   T   BBBB  L     U   U EEE
-        //F     L     A   A   T   B   B L     U   U E
-        //F     LLLLL A   A   T   BBBB  LLLLL  UUU  EEEEE
-
         //Snapshot [flatBlue][small].
         let component = renderer.create(<Button theme='flatBlue' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -137,13 +114,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: green.
 	it('Debe pintar el componente con el tema "green" y los tamaños "small", "medium" y "big".', () => {
-        
-        // GGGG RRRR  EEEEE EEEEE N   N
-        //G     R   R E     E     NN  N
-        //G  GG RRRR  EEE   EEE   N N N
-        //G   G R   R E     E     N  NN
-        // GGGG R   R EEEEE EEEEE N   N
-
         //Snapshot [green][small].
         let component = renderer.create(<Button theme='green' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -154,15 +124,20 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='green' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: secondaryGreen.
+	it('Debe pintar el componente con el tema "secondaryGreen" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryGreen][small].
+        let component = renderer.create(<Button theme='secondaryGreen' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryGreen][medium].
+        component = renderer.create(<Button theme='secondaryGreen' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryGreen][big].
+        component = renderer.create(<Button theme='secondaryGreen' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
     //Tema: flatGreen.
 	it('Debe pintar el componente con el tema "flatGreen" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT  GGGG RRRR  EEEEE EEEEE N   N
-        //F     L     A   A   T   G     R   R E     E     NN  N
-        //FFF   L     AAAAA   T   G  GG RRRR  EEE   EEE   N N N
-        //F     L     A   A   T   G   G R   R E     E     N  NN
-        //F     LLLLL A   A   T    GGGG R   R EEEEE EEEEE N   N
-
         //Snapshot [flatGreen][small].
         let component = renderer.create(<Button theme='flatGreen' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -175,13 +150,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: yellow.
 	it('Debe pintar el componente con el tema "yellow" y los tamaños "small", "medium" y "big".', () => {
-        
-        //Y   Y EEEEE L     L      OOO  W   W
-        // Y Y  E     L     L     O   O W   W
-        //  Y   EEE   L     L     O   O W W W
-        //  Y   E     L     L     O   O WW WW
-        // YYY  EEEEE LLLLL LLLLL  OOO  W   W
-
         //Snapshot [yellow][small].
         let component = renderer.create(<Button theme='yellow' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -192,15 +160,20 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='yellow' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: secondaryYellow.
+	it('Debe pintar el componente con el tema "secondaryYellow" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryYellow][small].
+        let component = renderer.create(<Button theme='secondaryYellow' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryYellow][medium].
+        component = renderer.create(<Button theme='secondaryYellow' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryYellow][big].
+        component = renderer.create(<Button theme='secondaryYellow' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
     //Tema: flatYellow.
 	it('Debe pintar el componente con el tema "flatYellow" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT Y   Y EEEEE L     L      OOO  W   W
-        //F     L     A   A   T    Y Y  E     L     L     O   O W   W
-        //FFF   L     AAAAA   T     Y   EEE   L     L     O   O W W W
-        //F     L     A   A   T     Y   E     L     L     O   O WW WW
-        //F     LLLLL A   A   T    YYY  EEEEE LLLLL LLLLL  OOO  W   W
-
         //Snapshot [flatYellow][small].
         let component = renderer.create(<Button theme='flatYellow' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -213,13 +186,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: gray.
 	it('Debe pintar el componente con el tema "gray" y los tamaños "small", "medium" y "big".', () => {
-        
-        // GGGG RRRR   AAA  Y   Y
-        //G     R   R A   A  Y Y
-        //G  GG RRRR  AAAAA   Y
-        //G   G R   R A   A   Y
-        // GGGG R   R A   A  YYY
-
         //Snapshot [gray][small].
         let component = renderer.create(<Button theme='gray' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -230,15 +196,20 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='gray' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: secondaryGray.
+	it('Debe pintar el componente con el tema "secondaryGray" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryGray][small].
+        let component = renderer.create(<Button theme='secondaryGray' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryGray][medium].
+        component = renderer.create(<Button theme='secondaryGray' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryGray][big].
+        component = renderer.create(<Button theme='secondaryGray' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
     //Tema: flatGray.
 	it('Debe pintar el componente con el tema "flatGray" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT  GGGG RRRR   AAA  Y   Y
-        //F     L     A   A   T   G     R   R A   A  Y Y
-        //FFF   L     AAAAA   T   G  GG RRRR  AAAAA   Y
-        //F     L     A   A   T   G   G R   R A   A   Y
-        //F     LLLLL A   A   T    GGGG R   R A   A  YYY
-
         //Snapshot [flatGray][small].
         let component = renderer.create(<Button theme='flatGray' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -251,13 +222,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: flatWhite.
 	it('Debe pintar el componente con el tema "flatWhite" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT W   W H   H IIIII TTTTT EEEEE
-        //F     L     A   A   T   W   W H   H   I     T   E
-        //FFF   L     AAAAA   T   W W W HHHHH   I     T   EEE
-        //F     L     A   A   T   WW WW H   H   I     T   E
-        //F     LLLLL A   A   T   W   W H   H IIIII   T   EEEEE
-
         //Snapshot [flatWhite][small].
         let component = renderer.create(<Button theme='flatWhite' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -270,13 +234,6 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
     });
     //Tema: orange.
 	it('Debe pintar el componente con el tema "orange" y los tamaños "small", "medium" y "big".', () => {
-        
-        // OOO  RRRR   AAA  N   N  GGGG EEEEE
-        //O   O R   R A   A NN  N G     E
-        //O   O RRRR  AAAAA N N N G  GG EEE
-        //O   O R   R A   A N  NN G   G E
-        // OOO  R   R A   A N   N  GGGG EEEEE
-
         //Snapshot [orange][small].
         let component = renderer.create(<Button theme='orange' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -287,15 +244,20 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='orange' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: secondaryOrange.
+	it('Debe pintar el componente con el tema "secondaryOrange" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryOrange][small].
+        let component = renderer.create(<Button theme='secondaryOrange' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryOrange][medium].
+        component = renderer.create(<Button theme='secondaryOrange' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryOrange][big].
+        component = renderer.create(<Button theme='secondaryOrange' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
     //Tema: flatOrange.
 	it('Debe pintar el componente con el tema "flatOrange" y los tamaños "small", "medium" y "big".', () => {
-        
-        //FFFFF L      AAA  TTTTT  OOO  RRRR   AAA  N   N  GGGG EEEEE
-        //F     L     A   A   T   O   O R   R A   A NN  N G     E
-        //FFF   L     AAAAA   T   O   O RRRR  AAAAA N N N G  GG EEE
-        //F     L     A   A   T   O   O R   R A   A N  NN G   G E
-        //F     LLLLL A   A   T    OOO  R   R A   A N   N  GGGG EEEEE
-
         //Snapshot [flatOrange][small].
         let component = renderer.create(<Button theme='flatOrange' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
@@ -306,15 +268,44 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='flatOrange' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
+    //Tema: black.
+	it('Debe pintar el componente con el tema "black" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [black][small].
+        let component = renderer.create(<Button theme='black' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [black][medium].
+        component = renderer.create(<Button theme='black' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [black][big].
+        component = renderer.create(<Button theme='black' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+    //Tema: secondaryBlack.
+	it('Debe pintar el componente con el tema "secondaryBlack" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [secondaryBlack][small].
+        let component = renderer.create(<Button theme='secondaryBlack' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryBlack][medium].
+        component = renderer.create(<Button theme='secondaryBlack' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [secondaryBlack][big].
+        component = renderer.create(<Button theme='secondaryBlack' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+	});
+    //Tema: flatBlack.
+	it('Debe pintar el componente con el tema "flatBlack" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [flatBlack][small].
+        let component = renderer.create(<Button theme='flatBlack' size='small'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatBlack][medium].
+        component = renderer.create(<Button theme='flatBlack' size='medium'/>).toJSON();
+		expect(component).toMatchSnapshot();
+        //Snapshot [flatBlack][big].
+        component = renderer.create(<Button theme='flatBlack' size='big'/>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
     //Tema: red (cons "float" y "width" asignados).
 	it('Debe pintar el componente con el tema "red" con estilo para "float" y "width".', () => {
-        
-        //M   M  AAA  IIIII N   N
-        //MM MM A   A   I   NN  N
-        //M M M AAAAA   I   N N N
-        //M   M A   A   I   N  NN
-        //M   M A   A IIIII N   N
-
         //Snapshot [red][small].
         let component = renderer.create(<Button theme='red' size='small' style={{ float: 'left', width: '100%' }}/>).toJSON();
 		expect(component).toMatchSnapshot();
