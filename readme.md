@@ -14,6 +14,7 @@ It contains some "fancy looking" components like:
 - Card
 - Checkbox
 - Dropdown List
+- Graphs
 - Icons
 - Menus Layout
 - Modals
@@ -66,6 +67,8 @@ This will install the following files into your project:
     |     |       └── checkboxes.js
     |     ├── dropdownlists
     |     |       └── dropdownlists.js
+    |     ├── graphs
+    |     |       └── graphs.js
     |     ├── icons
     |     |       └── icons.js
     |     ├── menus
@@ -98,6 +101,7 @@ For a complete list of the files, including a running examples and tests, you ca
 * [Cards](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/cards.md)
 * [CheckBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/checkboxes.md)
 * [DropDown Lists](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/dropdownlists.md)
+* [Graphs](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/graphs.md)
 * [Icons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/icons.md)
 * [Menus](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/menus.md)
 * [Modals](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/modals.md)

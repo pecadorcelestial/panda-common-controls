@@ -1,0 +1,569 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "black". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #242424;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "blue". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #1476FB;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "gray". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #858585;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "green". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #4CB050;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "ientc". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #FF0000;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "orange". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #FF9700;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "red". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #FF456A;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo con los siguientes temas: red, blue, green, yellow, gray, orange y black. Debe pintar el componente con el tema "yellow". 1`] = `
+.c0 {
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.c1 {
+  display: block;
+  margin: 10px auto;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.c2 {
+  fill: none;
+  stroke: #EEE;
+  stroke-width: 2.8;
+}
+
+.c3 {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #FFE200;
+  stroke-width: 2.8;
+  -webkit-animation: czDoju 1s ease-out forwards;
+  animation: czDoju 1s ease-out forwards;
+}
+
+.c4 {
+  fill: #666;
+  font-family: "Open Sans",sans-serif;
+  font-size: 0.5em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+<div
+  className="c0"
+>
+  <svg
+    className="c1"
+    viewBox="0 0 36 36"
+  >
+    <path
+      className="c2"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <path
+      className="c3"
+      d="M18 2.0845
+ a 15.9155 15.9155 0 0 1 0 31.831
+ a 15.9155 15.9155 0 0 1 0 -31.831"
+    />
+    <text
+      className="c4"
+      x="18"
+      y="20.35"
+    >
+      100%
+    </text>
+  </svg>
+</div>
+`;
