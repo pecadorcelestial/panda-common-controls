@@ -72,7 +72,7 @@ class App extends Component {
 		//R   R EEEEE SSSS   UUU  LLLLL   T   A   A DDDD   OOO
 		
         return(
-            <MenuWithBlur title='Title' options={menuOptions} theme='ientc'>
+            <MenuWithBlur title='A very very very long title (A very very very long subtitle)' options={menuOptions} theme='ientc'>
                 <Switch>
                     {
                         Routes.map((route, index) => {

@@ -78,8 +78,11 @@ const Title = styled.h1`
     font-weight: bold;
     height: 30px;
     margin: 0px 0px 0px 10px;
-    padding: 2px 0px 0px 0px;
-    width: auto;
+	overflow: hidden;
+    padding: 5px 0px 0px 0px;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+    width: calc(100% - 40px);
 `;
 
 const ZoomIn = () => keyframes`
