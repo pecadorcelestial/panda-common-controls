@@ -166,9 +166,9 @@ export class BasicSelect extends React.Component {
 
 		//1. Se busca el elemento correspondiente al índice seleccionado.
 		let item;
-		for(let i=0; i < this.props.options.length; i++) {
-			if(this.props.options[i].id == this.props.selectedOption) {
-				item = this.props.options[i];
+		for(let i=0; i < props.options.length; i++) {
+			if(props.options[i].id == props.selectedOption) {
+				item = props.options[i];
 				break;
 			}
 		}
@@ -185,9 +185,15 @@ export class BasicSelect extends React.Component {
 		};
 	}
 	//*** FUNCIONES DEL CONTROL ***
+	componentDidMount() {
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][componentDidMount] State: ', this.state);
+	}
 	componentWillReceiveProps(nextProps) {
         //Aquí sólo se revisa la propiedad "selectedOption", ya que es la única que se cambia en el estado.
-		if(nextProps.selectedOption == '' || parseInt(nextProps.selectedOption) < 0) {
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][componentWillReceiveProps] Item seleccionado: ', parseInt(nextProps.selectedOption));
+		if(nextProps.selectedOption === '' || parseInt(nextProps.selectedOption) < 0) {
+			//console.log('[COMÚN][ESTILIZADOS][SELECT][componentWillReceiveProps] ¿Es una cadena vacía? R =', nextProps.selectedOption === '');
+			//console.log('[COMÚN][ESTILIZADOS][SELECT][componentWillReceiveProps] ¿Es menor a 0? R =', (parseInt(nextProps.selectedOption) < 0));
 			this.setState({ item: undefined, selectedOption: nextProps.selectedOption });
 		} else {
 			for(let i=0; i < nextProps.options.length; i++) {
@@ -201,15 +207,20 @@ export class BasicSelect extends React.Component {
 	//*** HANDLERS ***
 	handleOnChange = (event) => {
 		event.preventDefault();
-		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target: ', event.target);
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Target.Value: ', event.target.value);
 		//let id = this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value;
 		//NOTA: Se cambió la manera de obtener la descripción del elemento.
 		//let description = '';
 		let item;
-		for(let i=0; i<this.props.options.length; i++) {
-			if(this.props.options[i].id == event.target.value) {
-				item = this.props.options[i];
-				break;
+		if(event.target.value == '' || event.target.value < 0) {
+			//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Item debe ser indefinido.');
+			item = undefined;
+		} else {
+			for(let i=0; i<this.props.options.length; i++) {
+				if(this.props.options[i].id == event.target.value) {
+					item = this.props.options[i];
+					break;
+				}
 			}
 		}
 		/*
@@ -218,8 +229,10 @@ export class BasicSelect extends React.Component {
 			description
 		};
 		*/
-		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', selectedItem);
-		this.setState({ item: (event.target.value == '' || event.target.value < 0) ? undefined : item, selectedOption: (this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value) }, () => {
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', (event.target.value == '' || event.target.value < 0) ? undefined : item);
+		//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] Información seleccionada: ', item);
+		this.setState({ item: item, selectedOption: (this.props.idIsNumeric ? parseInt(event.target.value) : event.target.value) }, () => {
+			//console.log('[COMÚN][ESTILIZADOS][SELECT][handleOnChange] State: ', this.state);
 			this.validate();
 		});
 		if(this.props.onOptionChange) this.props.onOptionChange(item);
@@ -244,6 +257,7 @@ export class BasicSelect extends React.Component {
 					return false;
 				}
 			} else {
+				//console.log('[COMÚN][DROPDOWNLIST][validate] Item: ', this.state.item);
                 //NO es requerido.
 				if(this.state.item != undefined && parseInt(this.state.item.id) >= 0) {
 					let errors = { isEmpty: false};
