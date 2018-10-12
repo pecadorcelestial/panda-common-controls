@@ -122,6 +122,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   white-space: nowrap;
 }
 
+.c2:disabled {
+  color: #BFBFBF;
+}
+
 <div
   className="c0"
   disabled={true}
@@ -145,30 +149,35 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
     </option>
     <option
       className="c2"
+      disabled={false}
       value={1}
     >
       Opción #1
     </option>
     <option
       className="c2"
+      disabled={false}
       value={2}
     >
       Opción #2
     </option>
     <option
       className="c2"
+      disabled={false}
       value={3}
     >
       Opción #3
     </option>
     <option
       className="c2"
+      disabled={false}
       value={4}
     >
       Opción #4
     </option>
     <option
       className="c2"
+      disabled={false}
       value={5}
     >
       Opción #5
@@ -295,6 +304,10 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
   white-space: nowrap;
 }
 
+.c2:disabled {
+  color: #BFBFBF;
+}
+
 <div
   className="c0"
   disabled={false}
@@ -318,30 +331,35 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
     </option>
     <option
       className="c2"
+      disabled={false}
       value={1}
     >
       Opción #1
     </option>
     <option
       className="c2"
+      disabled={false}
       value={2}
     >
       Opción #2
     </option>
     <option
       className="c2"
+      disabled={false}
       value={3}
     >
       Opción #3
     </option>
     <option
       className="c2"
+      disabled={true}
       value={4}
     >
       Opción #4
     </option>
     <option
       className="c2"
+      disabled={false}
       value={5}
     >
       Opción #5

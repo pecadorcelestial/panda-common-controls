@@ -62,7 +62,8 @@ describe('[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable.', ()
             },
             {
                 id: 4,
-                description: 'Opción #4'
+				description: 'Opción #4',
+				disabled: true
             },
             {
                 id: 5,

@@ -137,6 +137,10 @@ const Option = styled.option`
 	text-align: left;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+
+	&:disabled {
+		color: #BFBFBF;
+	}
 `;
 
 const Error = styled.label`
@@ -360,7 +364,7 @@ export class BasicSelect extends React.Component {
 							onBlur={this.handleOnBlur} >
 							<Option value={this.props.idIsNumeric ? '-1' : ''}>{(this.props.placeHolder != undefined && this.props.placeHolder != '') ? this.props.placeHolder : 'Selecciona una opción'}</Option>
 							{
-								this.props.options.map(option=><Option value={option.id} key={option.id}>{option.description}</Option>)
+								this.props.options.map(option=><Option value={option.id} disabled={(option.disabled) ? option.disabled : false} key={option.id}>{option.description}</Option>)
 							}
 						</Select>
 					<Title>{this.props.title}</Title>

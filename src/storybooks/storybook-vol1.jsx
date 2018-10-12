@@ -219,7 +219,8 @@ class StorybookVol1 extends Component {
             },
             {
                 id: 'decimal',
-                description: 'Decimal'
+                description: 'Decimal',
+                disabled: true
             },
             {
                 id: 'text',
