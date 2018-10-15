@@ -15,7 +15,7 @@ const express = require("express");
 
 require('@babel/register');
 
-const { Loading, Animate } = require('./lib/animations/animations');
+const { Loading, Animate, FlipCard, FrontContent, BackContent } = require('./lib/animations/animations');
 const { Badge, IconBadge, NotificationBadge } = require('./lib/badges/badges');
 const { Button, IconButton, RoundButton } = require('./lib/buttons/buttons');
 const { Calendar } = require('./lib/calendar/calendar');
@@ -39,6 +39,7 @@ module.exports = {
     Card,
     CheckBox,
     CircularGraph,
+    FlipCard, FrontContent, BackContent,
     Icon,
     IconBadge,
     IconButton,

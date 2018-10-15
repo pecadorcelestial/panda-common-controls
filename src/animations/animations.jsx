@@ -516,3 +516,77 @@ Animate.propTypes = {
 Animate.defaultProps = {
 	enterWithBounce: false
 };
+
+//FFFFF L     IIIII PPPP        CCCC  AAA  RRRR  DDDD
+//F     L       I   P   P      C     A   A R   R D   D
+//FFF   L       I   PPPP       C     AAAAA RRRR  D   D
+//F     L       I   P          C     A   A R   R D   D
+//F     LLLLL IIIII P           CCCC A   A R   R DDDD
+
+//NOTA SÚPER IMPORTANTE: El contenido de la parte de atrás de la tarjeta no puede debe ser mayor al de la parte del frente.
+
+const Card = styled.div`
+	box-sizing: border-box;
+    display: block;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+    width: 100%;
+
+    transform-style: preserve-3d;
+    transition: all 0.3s linear;
+
+	&:after {
+		clear: both; 
+		content: "";
+		display: table; 
+	}
+
+    ${props => props.flip ? `transform: rotateY(180deg);` : ``}
+`;
+
+const Content = styled.div`
+    backface-visibility: hidden;
+	box-sizing: border-box;
+	display: inline-block;
+	height: auto;
+    margin: 0px;
+	padding: 0px;
+    width: 100%;
+`;
+
+export const FrontContent = styled(Content)`
+	
+`;
+
+export const BackContent = styled(Content)`
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	
+    transform: rotateY(180deg);
+`;
+
+export class FlipCard extends React.Component {
+	//*** CONSTRUCTOR ***
+    constructor() {
+        super();
+        this.state = {
+            flip: false
+        };
+	}
+	//*** MÉTODOS ***
+	flip = () => {
+		let flip = !this.state.flip;
+		this.setState({ flip });
+	}
+    //*** RESULTADO ***
+	render() {
+		return(
+			<Card {...this.props} flip={this.state.flip}>
+				{this.props.children}
+			</Card>
+		);
+	}
+}

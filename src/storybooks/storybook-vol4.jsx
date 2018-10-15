@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 //Componentes locales.
 import { CircularGraph } from '../graphs/graphs';
+import { FrontContent, BackContent, FlipCard} from '../animations/animations';
 
 const Layout = styled.div`
     box-sizing: border-box;
@@ -23,7 +24,8 @@ const Title = styled.label`
 	font-weight: bold;
 	font-style: normal;
 	font-stretch: normal;
-	letter-spacing: normal;
+    letter-spacing: normal;
+    line-height: 35px;
 	margin: 0px;
 	padding: 0px;
     text-align: left;
@@ -58,6 +60,19 @@ class StorybookVol4 extends Component {
                     <CircularGraph percent={75} theme='green' style={{ width: '150px' }}/>
                     <CircularGraph percent={45} theme='orange'/>
                     <CircularGraph percent={10} theme='red'/>
+                </Controls>
+                <Title>Tarjeta con giro:</Title>
+                <Controls>
+                    <div style={{ boxSizing: 'border-box', width: '150px' }}>
+                        <FlipCard style={{ border: '1px dotted #000', cursor: 'pointer' }} ref={card => this.FlipCardRef = card} onClick={() => { this.FlipCardRef.flip(); }}>
+                            <FrontContent>
+                                <Title style={{ cursor: 'pointer', textAlign: 'center' }}>FRONT</Title>
+                            </FrontContent>
+                            <BackContent>
+                                <Title style={{ cursor: 'pointer', textAlign: 'center' }}>BACK</Title>
+                            </BackContent>
+                        </FlipCard>
+                    </div>
                 </Controls>
             </Layout>
         );

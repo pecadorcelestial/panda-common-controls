@@ -216,6 +216,68 @@ exports[`[SNAPSHOT][Componentes][Common][Animate] - Animación de entrada y sali
 </div>
 `;
 
+exports[`[SNAPSHOT][Componentes][Common][FlipCard] - Tarjeta de doble cara. Debe pintar la tarjeta correctamente. 1`] = `
+.c0 {
+  box-sizing: border-box;
+  display: block;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.c0:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.c1 {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  display: inline-block;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c2 {
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <label>
+      FRONT
+    </label>
+  </div>
+  <div
+    className="c2 c1"
+  >
+    <label>
+      BACK
+    </label>
+  </div>
+</div>
+`;
+
 exports[`[SNAPSHOT][Componentes][Common][Loading] - Animación "Loading...". Debe pintar el componente correctamente. 1`] = `
 .c0 {
   height: 50px;

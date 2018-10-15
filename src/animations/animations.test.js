@@ -36,7 +36,7 @@ import 'jest-styled-components';
 //C     O   O M   M P     O   O N  NN E     N  NN   T   E         S
 // CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   EEEEE SSSS
 
-import { Loading, Animate } from './animations';
+import { Loading, Animate, FlipCard, FrontContent, BackContent } from './animations';
 
 //Snapshot (LOADING).
 describe('[SNAPSHOT][Componentes][Common][Loading] - Animación "Loading...".', () => {
@@ -589,6 +589,71 @@ describe("[MÉTODOS][Componentes][Common][Animate][event.path = undefined] - Val
 	// UUU  N   N M   M  OOO   UUU  N   N   T
 
     it('Se desmonta el componente.', () => {
+        component.unmount();
+    });
+});
+
+//Snapshots (FLIPCARD).
+describe('[SNAPSHOT][Componentes][Common][FlipCard] - Tarjeta de doble cara.', () => {
+	it('Debe pintar la tarjeta correctamente.', () => {
+        const component = renderer.create(<FlipCard>
+                <FrontContent>
+                    <label>FRONT</label>
+                </FrontContent>
+                <BackContent>
+                    <label>BACK</label>
+                </BackContent>
+            </FlipCard>).toJSON();
+		expect(component).toMatchSnapshot();
+    });
+});
+
+//Métodos (FLIPCARD - flip).
+describe("[MÉTODOS][Componentes][Common][FlipCard][flip] - Valida las llamadas a los métodos dentro del componente.", () => {
+	//Se crea el componente.
+	//NOTA [1]: Al utilizar la función "mount" se detona la función "componentDidMount".
+    //NOTA [2]: Además, con "mount" se puede utilizar el método "attachTo" para utilizar "document".
+    const component = enzyme.mount(<FlipCard>
+            <FrontContent>
+                <label>FRONT</label>
+            </FrontContent>
+            <BackContent>
+                <label>BACK</label>
+            </BackContent>
+        </FlipCard>);
+	
+	// CCCC  OOO  M   M PPPP   OOO  N   N EEEEE N   N TTTTT DDDD  IIIII DDDD  M   M  OOO  U   U N   N TTTTT
+	//C     O   O MM MM P   P O   O NN  N E     NN  N   T   D   D   I   D   D MM MM O   O U   U NN  N   T
+	//C     O   O M M M PPPP  O   O N N N EEE   N N N   T   D   D   I   D   D M M M O   O U   U N N N   T
+	//C     O   O M   M P     O   O N  NN E     N  NN   T   D   D   I   D   D M   M O   O U   U N  NN   T
+	// CCCC  OOO  M   M P      OOO  N   N EEEEE N   N   T   DDDD  IIIII DDDD  M   M  OOO   UUU  N   N   T
+
+	//La única propiedad que se revisa en la función 'componentWillReceiveProps' es el valor por defecto.
+	it('Se verifica que la información inicial sea correcta.', () => {
+		//Expectativas.
+        expect(component.state().flip).toBe(false);
+	});
+
+    //FFFFF L     IIIII PPPP
+    //F     L       I   P   P
+    //FFF   L       I   PPPP
+    //F     L       I   P
+    //F     LLLLL IIIII P
+
+    it('Debe detonar la animación de giro.', () => {
+        //Simulación.
+        component.instance().flip();
+        //Expectativas.
+		expect(component.state().flip).toBe(true);
+    });
+
+	//U   U N   N M   M  OOO  U   U N   N TTTTT
+	//U   U NN  N MM MM O   O U   U NN  N   T
+	//U   U N N N M M M O   O U   U N N N   T
+	//U   U N  NN M   M O   O U   U N  NN   T
+	// UUU  N   N M   M  OOO   UUU  N   N   T
+
+    it('Desmonta el componente.', () => {
         component.unmount();
     });
 });
