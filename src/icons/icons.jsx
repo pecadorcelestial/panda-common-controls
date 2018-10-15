@@ -17,10 +17,17 @@ const SVG = styled.svg`
 
 export const Icon = styled(({ ...props}) => {
     //console.log('[ICONS][constant] Icono: ', props.icon);
-    let iconFile = require(`./icons-lib-v2`)[props.icon];
+    let iconFile;
+    if(props.icon.startsWith('solid')) {
+        iconFile = require(`./icons-lib-solid`)[props.icon];
+    } else if(props.icon.startsWith('brand')) {
+        iconFile = require(`./icons-lib-brands`)[props.icon];
+    } else {
+        iconFile = require(`./icons-lib-normal`)[props.icon];
+    }
     if(iconFile) {
         return(
-            <SVG {...props} x='0px' y='0px' viewBox={iconFile.viewBox} dangerouslySetInnerHTML={{__html: iconFile.path}} alt={props.icon}>
+            <SVG {...props} x='0px' y='0px' viewBox={`0 0 ${iconFile.v}`} dangerouslySetInnerHTML={{__html: iconFile.p}} alt={props.icon}>
             </SVG>
         );
     } else {

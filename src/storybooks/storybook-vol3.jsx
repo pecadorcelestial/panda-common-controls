@@ -6,7 +6,9 @@ import styled from 'styled-components';
 import { Badge, IconBadge, NotificationBadge } from '../badges/badges';
 import { Icon } from '../icons/icons';
 
-import Icons from '../icons/icons-lib-v2';
+import NormalIcons from '../icons/icons-lib-normal';
+import SolidIcons from '../icons/icons-lib-solid';
+import BrandIcons from '../icons/icons-lib-brands';
 
 const Layout = styled.div`
     display: inline-block;
@@ -54,17 +56,27 @@ class StorybookVol3 extends Component {
     constructor() {
         super();
         this.state = {
-            iconsList: []
+            normalIconsList: [],
+            solidIconsList: [],
+            brandIconsList: []
         };
     }
     componentDidMount() {
-        let iconsList = [];
-        Object.keys(Icons).map((key, index) => {
-            iconsList.push(key);
+        let normalIconsList = [];
+        Object.keys(NormalIcons).map((key, index) => {
+            normalIconsList.push(key);
         });
-        this.setState({ iconsList });
-        //console.log('[STORYBOOK-3][componentDidMount] Lista: ', iconsList);
-        //this.download(iconsList, 'json.txt', 'text/plain');
+        let solidIconsList = [];
+        Object.keys(SolidIcons).map((key, index) => {
+            solidIconsList.push(key);
+        });
+        let brandIconsList = [];
+        Object.keys(BrandIcons).map((key, index) => {
+            brandIconsList.push(key);
+        });
+        this.setState({ normalIconsList, solidIconsList, brandIconsList });
+        //console.log('[STORYBOOK-3][componentDidMount] Lista: ', normalIconsList);
+        //this.download(normalIconsList, 'json.txt', 'text/plain');
     }
     /*
     download = (content, fileName, contentType) => {
@@ -76,13 +88,33 @@ class StorybookVol3 extends Component {
     }
     */
     render() {
-        //console.log('[STORYBOOK-3][componentDidMount] Lista: ', this.state.iconsList);
+        //console.log('[STORYBOOK-3][componentDidMount] Lista: ', this.state.normalIconsList);
         return(
             <Layout>
-                <Title>Iconos:</Title>
+                <Title>Iconos (normales):</Title>
                 {
-                    this.state.iconsList.length > 0 ?
-                    this.state.iconsList.map((icon, index) => 
+                    this.state.normalIconsList.length > 0 ?
+                    this.state.normalIconsList.map((icon, index) => 
+                        <IconWrapper key={`icon-${index}`}>
+                            <Icon icon={icon} fill='#242424' height='40px' width='40px'/>
+                        </IconWrapper> 
+                    ):
+                    null
+                }
+                <Title>Iconos (solidos):</Title>
+                {
+                    this.state.solidIconsList.length > 0 ?
+                    this.state.solidIconsList.map((icon, index) => 
+                        <IconWrapper key={`icon-${index}`}>
+                            <Icon icon={icon} fill='#242424' height='40px' width='40px'/>
+                        </IconWrapper> 
+                    ):
+                    null
+                }
+                <Title>Iconos (marcas):</Title>
+                {
+                    this.state.brandIconsList.length > 0 ?
+                    this.state.brandIconsList.map((icon, index) => 
                         <IconWrapper key={`icon-${index}`}>
                             <Icon icon={icon} fill='#242424' height='40px' width='40px'/>
                         </IconWrapper> 
