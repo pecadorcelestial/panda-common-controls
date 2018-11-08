@@ -427,6 +427,7 @@ export class BasicTextBox extends React.Component {
 					let validInput = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
 					switch(this.props.valueType) {
 						case 'decimal':
+							validInput.push(45);
 							validInput.push(46);
 							break;
 					}
