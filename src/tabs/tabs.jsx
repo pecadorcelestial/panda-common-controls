@@ -28,7 +28,7 @@ const border = (theme) => {
 		case 'gray': return '1px solid #858585';
 		case 'orange': return '1px solid #FF9700';
 		case 'black': return '1px solid #242424';
-		case 'ientc': return '1px solid #FF0000';
+		case 'IENTC': return '1px solid #FF0000';
 	}
 };
 
@@ -136,7 +136,7 @@ Tabs.propTypes = {
 		'gray',
 		'orange',
 		'black',
-		'ientc',
+		'IENTC',
 	])
 }
 

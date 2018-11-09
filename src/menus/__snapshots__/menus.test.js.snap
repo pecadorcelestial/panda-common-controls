@@ -535,7 +535,7 @@ exports[`[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur"
         id="btn-menu-options"
         onClick={[Function]}
         size="small"
-        theme="ientc"
+        theme="IENTC"
       >
         <svg
           alt="solidTh"

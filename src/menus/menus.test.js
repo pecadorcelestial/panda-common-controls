@@ -63,7 +63,7 @@ describe('[SNAPSHOT][Componentes][Common][MenuWithBlur] - Menú con efecto "blur
         options.push(<label>Storybook vol. 2</label>);
         options.push(<label>Storybook vol. 3</label>);
         const child = <div style={{ backgroundColor: '#8394DE', height: '100px', width: '100px' }}/>;
-        const component = renderer.create(<MenuWithBlur title='Title' options={options} theme='ientc'>{child}</MenuWithBlur>).toJSON();
+        const component = renderer.create(<MenuWithBlur title='Title' options={options} theme='IENTC'>{child}</MenuWithBlur>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

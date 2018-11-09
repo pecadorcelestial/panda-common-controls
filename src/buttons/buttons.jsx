@@ -38,7 +38,7 @@ const backgroundColor = (theme) => {
 		case 'secondaryBlack': return '#FFF';
 		case 'flatBlack': return 'transparent';
 
-		case 'ientc': return '#FF0000';
+		case 'IENTC': return '#FF0000';
 		case 'secondaryIENTC': return '#FFF';
 		case 'flatIENTC': return 'transparent';
 	}
@@ -71,7 +71,7 @@ const border = (theme) => {
 		case 'secondaryBlack': return '1px solid #242424';
 		case 'flatBlack': return '1px solid transparent';
 
-		case 'ientc': return '1px solid #FF0000';
+		case 'IENTC': return '1px solid #FF0000';
 		case 'secondaryIENTC': return '1px solid #FF0000';
 		case 'flatIENTC': return '1px solid transparent';
 	}
@@ -104,7 +104,7 @@ const color = (theme) => {
 		case 'secondaryBlack': return '#242424';
 		case 'flatBlack': return '#242424';
 
-		case 'ientc': return '#FFF';
+		case 'IENTC': return '#FFF';
 		case 'secondaryIENTC': return '#FF0000';
 		case 'flatIENTC': return '#FF0000';
 	}
@@ -137,7 +137,7 @@ const hoverBackgroundColor = (theme) => {
 		case 'secondaryBlack': return '#4F4F4F';
 		case 'flatBlack': return '#EBEBEB';
 
-		case 'ientc': return '#CC0000';
+		case 'IENTC': return '#CC0000';
 		case 'secondaryIENTC': return '#CC0000';
 		case 'flatIENTC': return '#EBEBEB';
 	}
@@ -170,7 +170,7 @@ const hoverBorder = (theme) => {
 		case 'secondaryBlack': return '#1px solid #4F4F4F';
 		case 'flatBlack': return '1px solid #EBEBEB';
 
-		case 'ientc': return '1px solid #CC0000';
+		case 'IENTC': return '1px solid #CC0000';
 		case 'secondaryIENTC': return '1px solid #CC0000';
 		case 'flatIENTC': return '1px solid #EBEBEB';
 	}
@@ -203,7 +203,7 @@ const hoverColor = (theme) => {
 		case 'secondaryBlack': return '#FFF';
 		case 'flatBlack': return '#4F4F4F';
 
-		case 'ientc': return '#FFF';
+		case 'IENTC': return '#FFF';
 		case 'secondaryIENTC': return '#FFF';
 		case 'flatIENTC': return '#CC0000';
 	}
@@ -236,7 +236,7 @@ const disabledBackgroundColor = (theme) => {
 		case 'secondaryBlack': return '#BFBFBF';
 		case 'flatBlack': return 'transparent'
 
-		case 'ientc': return '#BFBFBF';
+		case 'IENTC': return '#BFBFBF';
 		case 'secondaryIENTC': return '#BFBFBF';
 		case 'flatIENTC': return 'transparent';
 	}
@@ -269,7 +269,7 @@ const disabledBorder = (theme) => {
 		case 'secondaryBlack': return '1px solid #BFBFBF';
 		case 'flatBlack': return '1px solid transparent';
 
-		case 'ientc': return '1px solid #BFBFBF';
+		case 'IENTC': return '1px solid #BFBFBF';
 		case 'secondaryIENTC': return '1px solid #BFBFBF';
 		case 'flatIENTC': return '1px solid transparent';
 	}
@@ -302,7 +302,7 @@ const disabledColor = (theme) => {
 		case 'secondaryBlack': return '#FFF';
 		case 'flatBlack': return '#BFBFBF';
 
-		case 'ientc': return '#FFF';
+		case 'IENTC': return '#FFF';
 		case 'secondaryIENTC': return '#FFF';
 		case 'flatIENTC': return '#BFBFBF';
 	}
@@ -421,7 +421,7 @@ Button.propTypes = {
 		'black',
 		'secondaryBlack',
 		'flatBlack',
-		'ientc',
+		'IENTC',
 		'secondaryIENTC',
 		'flatIENTC'
 	]),
@@ -472,7 +472,7 @@ IconButton.propTypes = {
 		'black',
 		'secondaryBlack',
 		'flatBlack',
-		'ientc',
+		'IENTC',
 		'secondaryIENTC',
 		'flatIENTC'
 	]),

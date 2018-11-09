@@ -304,16 +304,16 @@ describe('[SNAPSHOT][Componentes][Common][Button] - Boton con los siguientes tem
         component = renderer.create(<Button theme='flatBlack' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
-    //Tema: ientc.
-	it('Debe pintar el componente con el tema "ientc" y los tamaños "small", "medium" y "big".', () => {
-        //Snapshot [ientc][small].
-        let component = renderer.create(<Button theme='ientc' size='small'/>).toJSON();
+    //Tema: IENTC.
+	it('Debe pintar el componente con el tema "IENTC" y los tamaños "small", "medium" y "big".', () => {
+        //Snapshot [IENTC][small].
+        let component = renderer.create(<Button theme='IENTC' size='small'/>).toJSON();
 		expect(component).toMatchSnapshot();
-        //Snapshot [ientc][medium].
-        component = renderer.create(<Button theme='ientc' size='medium'/>).toJSON();
+        //Snapshot [IENTC][medium].
+        component = renderer.create(<Button theme='IENTC' size='medium'/>).toJSON();
 		expect(component).toMatchSnapshot();
-        //Snapshot [ientc][big].
-        component = renderer.create(<Button theme='ientc' size='big'/>).toJSON();
+        //Snapshot [IENTC][big].
+        component = renderer.create(<Button theme='IENTC' size='big'/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
     //Tema: secondaryIENTC.

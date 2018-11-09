@@ -15,21 +15,21 @@ import { RoundButton } from '../buttons/buttons';
 
 const headerBackgroundColor = (theme) => {
 	switch(theme) {
-		case 'ientc': return '#242424';
+		case 'IENTC': return '#242424';
 		case 'default': default: return '#FFF';
 	}
 };
 
 const titleColor = (theme) => {
 	switch(theme) {
-		case 'ientc': return '#FFF';
+		case 'IENTC': return '#FFF';
 		case 'default': default: return '#242424';
 	}
 };
 
 const buttonTheme = (theme) => {
     switch(theme) {
-		case 'ientc': return 'ientc';
+		case 'IENTC': return 'IENTC';
 		case 'default': default: return 'blue';
 	}
 };
@@ -255,7 +255,7 @@ MenuWithBlur.propTypes = {
     options: PropTypes.arrayOf(PropTypes.element).isRequired,
     title: PropTypes.string.isRequired,
     //Opcionales.
-    theme: PropTypes.oneOf(['default', 'ientc'])
+    theme: PropTypes.oneOf(['default', 'IENTC'])
 };
 
 MenuWithBlur.defaultProps = {

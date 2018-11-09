@@ -1,5 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "IENTC"). 1`] = `
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #FF0000;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c2 {
+  border: 1px solid #FF0000;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+  <div
+    className="c2"
+  />
+</div>
+`;
+
 exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "black"). 1`] = `
 .c5 {
   display: inline-block;
@@ -1349,50 +1393,6 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
       Whatsapp
     </div>
   </div>
-</div>
-`;
-
-exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "ientc"). 1`] = `
-.c0 {
-  box-sizing: border-box;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-
-.c1 {
-  border: 1px solid #FF0000;
-  border-radius: 5px 5px 0px 0px;
-  box-sizing: border-box;
-  height: auto;
-  margin: 0px;
-  overflow: hidden;
-  padding: 0px;
-  width: 100%;
-}
-
-.c2 {
-  border: 1px solid #FF0000;
-  border-radius: 0px 0px 5px 5px;
-  border-top: unset;
-  box-sizing: border-box;
-  height: auto;
-  margin: 0px;
-  overflow: hidden;
-  padding: 10px;
-  width: 100%;
-}
-
-<div
-  className="c0"
->
-  <div
-    className="c1"
-  />
-  <div
-    className="c2"
-  />
 </div>
 `;
 

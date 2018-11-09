@@ -229,8 +229,8 @@ describe('[SNAPSHOT][Componentes][Common][Tabs] - Pestañas.', () => {
         const component = renderer.create(<Tabs tabs={tabs} theme='black'/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
-    //Tema: "ientc".
-	it('Debe pintar el componente con 3 pestañas correctamente (Tema: "ientc").', () => {
+    //Tema: "IENTC".
+	it('Debe pintar el componente con 3 pestañas correctamente (Tema: "IENTC").', () => {
         //Valores.
         let tabs = [
             {
@@ -253,7 +253,7 @@ describe('[SNAPSHOT][Componentes][Common][Tabs] - Pestañas.', () => {
             }
         ];
         //Se crea el componente.
-        const component = renderer.create(<Tabs tabs={[]} theme='ientc'/>).toJSON();
+        const component = renderer.create(<Tabs tabs={[]} theme='IENTC'/>).toJSON();
 		expect(component).toMatchSnapshot();
 	});
 });
