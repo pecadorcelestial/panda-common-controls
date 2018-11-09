@@ -1,0 +1,2362 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "black"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover .c4 {
+  fill: #FFF;
+}
+
+.c10:disabled .c4 {
+  fill: #FFF;
+}
+
+.c10 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c11:hover .c4 {
+  fill: #1476FB;
+}
+
+.c11:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c11 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c12:hover .c4 {
+  fill: #FFF;
+}
+
+.c12:disabled .c4 {
+  fill: #FFF;
+}
+
+.c12 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c13:hover .c4 {
+  fill: #4CB050;
+}
+
+.c13:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c13 .c4 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.c14:hover .c4 {
+  fill: #FFF;
+}
+
+.c14:disabled .c4 {
+  fill: #FFF;
+}
+
+.c14 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c15:hover .c4 {
+  fill: #FFE200;
+}
+
+.c15:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c15 .c4 {
+  fill: #FFE200;
+  height: 20px;
+  width: 20px;
+}
+
+.c16:hover .c4 {
+  fill: #FFF;
+}
+
+.c16:disabled .c4 {
+  fill: #FFF;
+}
+
+.c16 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c17:hover .c4 {
+  fill: #858585;
+}
+
+.c17:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c17 .c4 {
+  fill: #858585;
+  height: 20px;
+  width: 20px;
+}
+
+.c18:hover .c4 {
+  fill: #FFF;
+}
+
+.c18:disabled .c4 {
+  fill: #FFF;
+}
+
+.c18 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c19:hover .c4 {
+  fill: #FF9700;
+}
+
+.c19:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c19 .c4 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #242424;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #4F4F4F;
+  border: #1px solid #4F4F4F;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #242424;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #4F4F4F;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #4F4F4F;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #242424;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #242424;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #242424;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="black"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatBlack"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatBlack"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "blue"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #1476FB;
+  border: 1px solid #1476FB;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #0960D3;
+  border: 1px solid #0960D3;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #1476FB;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #1476FB;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #1476FB;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #1476FB;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #1476FB;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="blue"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatBlue"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatBlue"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "gray"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover .c4 {
+  fill: #FFF;
+}
+
+.c10:disabled .c4 {
+  fill: #FFF;
+}
+
+.c10 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c11:hover .c4 {
+  fill: #1476FB;
+}
+
+.c11:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c11 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c12:hover .c4 {
+  fill: #FFF;
+}
+
+.c12:disabled .c4 {
+  fill: #FFF;
+}
+
+.c12 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c13:hover .c4 {
+  fill: #4CB050;
+}
+
+.c13:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c13 .c4 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.c14:hover .c4 {
+  fill: #FFF;
+}
+
+.c14:disabled .c4 {
+  fill: #FFF;
+}
+
+.c14 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c15:hover .c4 {
+  fill: #FFE200;
+}
+
+.c15:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c15 .c4 {
+  fill: #FFE200;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #858585;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #6A6A6A;
+  border: 1px solid #6A6A6A;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #858585;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #858585;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #858585;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #858585;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #858585;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #858585;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="gray"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatGray"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatGray"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "green"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover .c4 {
+  fill: #FFF;
+}
+
+.c10:disabled .c4 {
+  fill: #FFF;
+}
+
+.c10 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c11:hover .c4 {
+  fill: #1476FB;
+}
+
+.c11:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c11 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #4CB050;
+  border: 1px solid #4CB050;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #3C8C40;
+  border: 1px solid #3C8C40;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #4CB050;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #4CB050;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #4CB050;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #4CB050;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #4CB050;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="green"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatGreen"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatGreen"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "ientc"). 1`] = `
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #FF0000;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c2 {
+  border: 1px solid #FF0000;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+  <div
+    className="c2"
+  />
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "orange"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover .c4 {
+  fill: #FFF;
+}
+
+.c10:disabled .c4 {
+  fill: #FFF;
+}
+
+.c10 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c11:hover .c4 {
+  fill: #1476FB;
+}
+
+.c11:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c11 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c12:hover .c4 {
+  fill: #FFF;
+}
+
+.c12:disabled .c4 {
+  fill: #FFF;
+}
+
+.c12 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c13:hover .c4 {
+  fill: #4CB050;
+}
+
+.c13:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c13 .c4 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.c14:hover .c4 {
+  fill: #FFF;
+}
+
+.c14:disabled .c4 {
+  fill: #FFF;
+}
+
+.c14 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c15:hover .c4 {
+  fill: #FFE200;
+}
+
+.c15:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c15 .c4 {
+  fill: #FFE200;
+  height: 20px;
+  width: 20px;
+}
+
+.c16:hover .c4 {
+  fill: #FFF;
+}
+
+.c16:disabled .c4 {
+  fill: #FFF;
+}
+
+.c16 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c17:hover .c4 {
+  fill: #858585;
+}
+
+.c17:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c17 .c4 {
+  fill: #858585;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #FF9700;
+  border: 1px solid #FF9700;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #CC7800;
+  border: #1px solid #CC7800;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF9700;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FF9700;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #FF9700;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #FF9700;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #FF9700;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #FF9700;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="orange"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatOrange"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatOrange"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "red"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3 {
+  background-color: #FF456A;
+  border: 1px solid #FF456A;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #CC1F62;
+  border: 1px solid #CC1F62;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FF456A;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FF456A;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #FF456A;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #FF456A;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #FF456A;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="red"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatRed"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatRed"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;
+
+exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el componente con 3 pestañas correctamente (Tema: "yellow"). 1`] = `
+.c5 {
+  display: inline-block;
+  fill: #FFF;
+  height: 50px;
+  margin: 0px 5px 0px 0px;
+  vertical-align: top;
+  width: 50px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c8:hover .c4 {
+  fill: #FFF;
+}
+
+.c8:disabled .c4 {
+  fill: #FFF;
+}
+
+.c8 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c9:hover .c4 {
+  fill: #FF456A;
+}
+
+.c9:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c9 .c4 {
+  fill: #FF456A;
+  height: 20px;
+  width: 20px;
+}
+
+.c10:hover .c4 {
+  fill: #FFF;
+}
+
+.c10:disabled .c4 {
+  fill: #FFF;
+}
+
+.c10 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c11:hover .c4 {
+  fill: #1476FB;
+}
+
+.c11:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c11 .c4 {
+  fill: #1476FB;
+  height: 20px;
+  width: 20px;
+}
+
+.c12:hover .c4 {
+  fill: #FFF;
+}
+
+.c12:disabled .c4 {
+  fill: #FFF;
+}
+
+.c12 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c13:hover .c4 {
+  fill: #4CB050;
+}
+
+.c13:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c13 .c4 {
+  fill: #4CB050;
+  height: 20px;
+  width: 20px;
+}
+
+.c3 {
+  background-color: #FFE200;
+  border: 1px solid #FFE200;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c3:hover {
+  background-color: #CCB400;
+  border: 1px solid #CCB400;
+  color: #FFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c3:hover .c4 {
+  fill: #FFF;
+}
+
+.c3:disabled {
+  background-color: #BFBFBF;
+  border: 1px solid #BFBFBF;
+  color: #FFF;
+  pointer-events: none;
+}
+
+.c3:disabled .c4 {
+  fill: #FFF;
+}
+
+.c3:focus {
+  outline: none;
+}
+
+.c3 .c4 {
+  fill: #FFF;
+  height: 20px;
+  width: 20px;
+}
+
+.c6 {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #FFE200;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Open Sans",sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: bold;
+  height: 40px;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  padding: 5px 30px;
+  text-align: center;
+  width: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.c6:hover {
+  background-color: #EBEBEB;
+  border: 1px solid #EBEBEB;
+  color: #FFE200;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c6:hover .c4 {
+  fill: #FFE200;
+}
+
+.c6:disabled {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #BFBFBF;
+  pointer-events: none;
+}
+
+.c6:disabled .c4 {
+  fill: #BFBFBF;
+}
+
+.c6:focus {
+  outline: none;
+}
+
+.c6 .c4 {
+  fill: #FFE200;
+  height: 20px;
+  width: 20px;
+}
+
+.c2 {
+  border-radius: unset;
+}
+
+.c0 {
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.c1 {
+  border: 1px solid #FFE200;
+  border-radius: 5px 5px 0px 0px;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.c7 {
+  border: 1px solid #FFE200;
+  border-radius: 0px 0px 5px 5px;
+  border-top: unset;
+  box-sizing: border-box;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 10px;
+  width: 100%;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <button
+      className="c2 c3"
+      icon="brandWhatsappSquare"
+      size="medium"
+      theme="yellow"
+    >
+      <svg
+        alt="brandWhatsappSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M224 122.8c-72.7 0-131.8 59.1-131.9 131.8 0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6 49.9-13.1 4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8 0-35.2-15.2-68.3-40.1-93.2-25-25-58-38.7-93.2-38.7zm77.5 188.4c-3.3 9.3-19.1 17.7-26.7 18.8-12.6 1.9-22.4.9-47.5-9.9-39.7-17.2-65.7-57.2-67.7-59.8-2-2.6-16.2-21.5-16.2-41s10.2-29.1 13.9-33.1c3.6-4 7.9-5 10.6-5 2.6 0 5.3 0 7.6.1 2.4.1 5.7-.9 8.9 6.8 3.3 7.9 11.2 27.4 12.2 29.4s1.7 4.3.3 6.9c-7.6 15.2-15.7 14.6-11.6 21.6 15.3 26.3 30.6 35.4 53.9 47.1 4 2 6.3 1.7 8.6-1 2.3-2.6 9.9-11.6 12.5-15.5 2.6-4 5.3-3.3 8.9-2 3.6 1.3 23.1 10.9 27.1 12.9s6.6 3 7.6 4.6c.9 1.9.9 9.9-2.4 19.1zM400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM223.9 413.2c-26.6 0-52.7-6.7-75.8-19.3L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5 29.9 30 47.9 69.8 47.9 112.2 0 87.4-72.7 158.5-160.1 158.5z\\"/>",
+          }
+        }
+        icon="brandWhatsappSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #1
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandFacebookSquare"
+      onClick={[Function]}
+      size="medium"
+      theme="flatYellow"
+    >
+      <svg
+        alt="brandFacebookSquare"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z\\"/>",
+          }
+        }
+        icon="brandFacebookSquare"
+        viewBox="0 0 448 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #2
+    </button>
+    <button
+      className="c2 c6"
+      icon="brandReact"
+      onClick={[Function]}
+      size="medium"
+      theme="flatYellow"
+    >
+      <svg
+        alt="brandReact"
+        className="c4 c5"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<path d=\\"M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zm-130 189.1c4.6 8.8 9.3 17.5 14.3 26.1 5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5zm0-50.6c-6.3-14.9-11.6-29.5-16-43.6 14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26zm11.4 25.3c6.6-13.8 13.8-27.3 21.4-40.6 7.6-13.3 15.8-26.2 24.4-38.9 15-1.1 30.3-1.7 45.9-1.7 15.6 0 31 .6 45.9 1.7 8.5 12.6 16.6 25.5 24.3 38.7 7.7 13.2 14.9 26.7 21.7 40.4-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6-15.7 0-30.9-.5-45.6-1.4-8.7-12.7-16.9-25.7-24.6-39-7.7-13.3-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 210.2c25.3 0 45.8 20.5 45.8 45.8 0 25.3-20.5 45.8-45.8 45.8-25.3 0-45.8-20.5-45.8-45.8 0-25.3 20.5-45.8 45.8-45.8\\"/>",
+          }
+        }
+        icon="brandReact"
+        viewBox="0 0 512 512"
+        x="0px"
+        y="0px"
+      />
+      Tab #3
+    </button>
+  </div>
+  <div
+    className="c7"
+  >
+    <div>
+      Whatsapp
+    </div>
+  </div>
+</div>
+`;

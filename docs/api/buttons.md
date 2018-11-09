@@ -5,7 +5,7 @@
 | Name  | Type   | Required | Comments |
 | ------|--------|----------|----------|
 | size  | string | false     | Sets the size of the button, 3 options are available: ``small``*, ``medium`` and ``big``. |
-| theme | string | false     | Sets the theme (color scheme) for the button, these are the options currently available: ``red``*, ``secondaryRed``, ``flatRed``, ``blue``, ``flatBlue``, ``green``, ``flatGreen``, ``yellow``, ``flatYellow``, ``gray`` y ``flatGray``. |
+| theme | string | false     | Sets the theme (color scheme) for the button, these are the options currently available: ``red``*, ``secondaryRed``, ``flatRed``, ``blue``, ``flatBlue``, ``green``, ``flatGreen``, ``yellow``, ``flatYellow``, ``gray`` and ``flatGray``. |
 
 **\*** _default_ value.
 <br/>_Note: The **style** values for **width** and **float** can be overriden._

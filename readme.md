@@ -19,6 +19,7 @@ It contains some "fancy looking" components like:
 - Menus Layout
 - Modals
 - RadioButton
+- Tabs
 - TextBox (an input tag with a little more functionality)
 - Toast Notifications
 - ToolTip
@@ -77,6 +78,8 @@ This will install the following files into your project:
     |     |       └── modals.js
     |     ├── radiobuttons
     |     |       └── radiobuttons.js
+    |     ├── tabs
+    |     |       └── tabs.js
     |     ├── textboxes
     |     |       └── textboxes.js
     |     ├── toastnotifications
@@ -106,6 +109,7 @@ For a complete list of the files, including a running examples and tests, you ca
 * [Menus](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/menus.md)
 * [Modals](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/modals.md)
 * [RadioButtons](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/radiobuttons.md)
+* [Tabs](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/tabs.md)
 * [TextBoxes](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/textboxes.md)
 * [Toast Notifications](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/toastnotifications.md)
 * [ToolTip](https://github.com/pecadorcelestial/panda-common-controls/blob/master/docs/api/tooltip.md)

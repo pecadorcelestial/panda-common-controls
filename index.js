@@ -28,6 +28,7 @@ const { MenuWithBlur } = require('./lib/menus/menus');
 const { Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter } = require('./lib/modals/modals');
 const { RadioButton, RadioButtonsGroup } = require('./lib/radiobuttons/radiobuttons');
 const { BasicTextBox: TextBox } = require('./lib/textboxes/textboxes');
+const { Tabs } = require('./lib/tabs/tabs');
 const { ToastNotification } = require('./lib/toastnotifications/toastnotifications');
 const ToolTip = require('./lib/tooltip/tooltip');
 
@@ -51,6 +52,7 @@ module.exports = {
     RadioButton, 
     RadioButtonsGroup,
     RoundButton,
+    Tabs,
     TextBox,
     ToastNotification,
     ToolTip

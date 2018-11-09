@@ -5,6 +5,7 @@ import styled from 'styled-components';
 //Componentes locales.
 import { CircularGraph } from '../graphs/graphs';
 import { FrontContent, BackContent, FlipCard} from '../animations/animations';
+import { Tabs } from '../tabs/tabs';
 
 const Layout = styled.div`
     box-sizing: border-box;
@@ -45,8 +46,31 @@ const Controls = styled.div`
 class StorybookVol4 extends Component {
     constructor() {
         super();
+
+        let tabs = [
+            {
+                id: 'tab-1',
+                title: 'Tab #1',
+                icon: 'brandWhatsappSquare',
+                content: <div>Whatsapp</div>
+            },
+            {
+                id: 'tab-2',
+                title: 'Tab #2',
+                icon: 'brandFacebookSquare',
+                content: <div>Facebook</div>
+            },
+            {
+                id: 'tab-3',
+                title: 'Tab #3',
+                icon: 'brandReact',
+                content: <div>React</div>
+            }
+        ];
+
         this.state = {
-            iconsList: []
+            iconsList: [],
+            tabs
         };
     }
     componentDidMount() {
@@ -73,6 +97,10 @@ class StorybookVol4 extends Component {
                             </BackContent>
                         </FlipCard>
                     </div>
+                </Controls>
+                <Title>Pestañas:</Title>
+                <Controls>
+                    <Tabs tabs={this.state.tabs} theme='blue'/>
                 </Controls>
             </Layout>
         );
