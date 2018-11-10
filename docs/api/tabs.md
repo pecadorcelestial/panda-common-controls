@@ -7,6 +7,19 @@
 | tabs  | array  | true     | Array of objects with the information of each tab. <br/>_Note: Each object should at least contain an **id** (string), a **title** (string), the **icon** name (string / optional) and the **content** (object) that will be displayed when that tab is selected._ |
 | theme | string | false    | Sets the theme (color scheme) for the button, these are the options currently available: ``red``*, ``blue``, ``green``, ``yellow``, ``gray``, ``orange`` and ``black``. |
 
+## Functions
+
+| Name        | Parameters | Type            | Description |
+|-------------|------------|-----------------|-------------|
+| onTabChange | index      | string / number | Returns the selected tab. |
+
+## Methods
+
+| Name           | Parameters      | Type            | Description |
+|----------------|-----------------|-----------------|-------------|
+| getSelectedTab | N/A             | N/A             | Gets the selected tab. |
+| setSelectedTab | string / number | string / number | Sets the selected tab. |
+
 ## Usage
 
 ```javascript
