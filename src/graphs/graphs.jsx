@@ -12,7 +12,7 @@ const backgroundColor = (theme) => {
 		case 'gray': return '#858585';
         case 'orange': return '#FF9700';
 		case 'black': return '#242424';
-        case 'ientc': return '#FF0000';
+        case 'IENTC': return '#FF0000';
 	}
 };
 
@@ -83,7 +83,7 @@ export class CircularGraph extends Component {
 
 CircularGraph.propTypes = {
     percent: PropTypes.number.isRequired,
-    theme: PropTypes.oneOf(['red', 'blue', 'green', 'yellow', 'gray', 'orange', 'black', 'ientc'])
+    theme: PropTypes.oneOf(['red', 'blue', 'green', 'yellow', 'gray', 'orange', 'black', 'IENTC'])
 };
 
 CircularGraph.defaultProps = {

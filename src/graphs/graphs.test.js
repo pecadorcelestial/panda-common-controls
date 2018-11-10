@@ -85,7 +85,7 @@ describe('[SNAPSHOT][Componentes][Common][CircularGraph] - Gráfica de círculo 
     //Tema: ientc.
 	it('Debe pintar el componente con el tema "ientc".', () => {
         //Snapshot [ientc].
-        let component = renderer.create(<CircularGraph theme='ientc' percent={100}/>).toJSON();
+        let component = renderer.create(<CircularGraph theme='IENTC' percent={100}/>).toJSON();
 		expect(component).toMatchSnapshot();
     });
 });

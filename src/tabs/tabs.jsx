@@ -89,6 +89,33 @@ export class Tabs extends React.Component {
             activeTab
         };
     }
+    //*** MÉTODOS ***
+    getSelectedTab = () => {
+        if(this.props.tabs.length > 0 && this.state.activeTab != '') {
+            let selectedTab = -1;
+            this.props.tabs.forEach((tab, index) => {
+                if(tab.id === this.state.activeTab) {
+                    selectedTab = index;
+                    //break;
+                }
+            });
+            return selectedTab;
+        } else {
+            return -1;
+        }
+    }
+    setSelectedTab = (tabID) => {
+        if(typeof tabID === "string") {
+            let activeTab = this.props.tabs.filter(tab => tab.id === tabID);
+            if(activeTab.length > 0) {
+                this.setState({ activeTab: activeTab[0].id });
+            }
+        } else if(typeof tabID === "number") {
+            if(this.props.tabs.length > 0 && parseInt(tabID) < this.props.tabs.length) {
+                this.setState({ activeTab: this.props.tabs[tabID].id });
+            }
+        }
+    }
     //*** RESULTADO ***
     render() {
 
@@ -104,7 +131,7 @@ export class Tabs extends React.Component {
                                 return(<TabIconButton key={`tab-${tab.id}-${index}`} icon={tab.icon} theme={this.props.theme} size='medium' /*onClick={(event) => { event.preventDefault(); this.setState({ activeTab: tab.id}); }}*/>{tab.title}</TabIconButton>);
                             } else {
                                 let theme = `flat${capitalizeString(this.props.theme)}`;
-                                return(<TabIconButton key={`tab-${tab.id}-${index}`} icon={tab.icon} theme={theme} size='medium' onClick={(event) => { event.preventDefault(); this.setState({ activeTab: tab.id}); }}>{tab.title}</TabIconButton>);
+                                return(<TabIconButton key={`tab-${tab.id}-${index}`} icon={tab.icon} theme={theme} size='medium' onClick={(event) => { event.preventDefault(); this.setState({ activeTab: tab.id}, () => { if(this.props.onTabChange) this.props.onTabChange(index); }); }}>{tab.title}</TabIconButton>);
                             }
                         })
                     }
@@ -137,7 +164,9 @@ Tabs.propTypes = {
 		'orange',
 		'black',
 		'IENTC',
-	])
+    ]),
+    //Funciones.
+    onTabChange: PropTypes.func
 }
 
 Tabs.defaultProps = {
