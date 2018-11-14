@@ -1034,6 +1034,9 @@ describe('[FLUJO][Componentes][Common][AdvancedSelect] - Se muestra el listado y
         let outsideInput = component.find('#txt-anchor');
         let select = component.find('AdvancedSelect');
         let button = component.find('button');
+        let insideLabels = component.find('label');
+        //La última etiqueta es el título.
+        //console.log('ETIQUETA: ', insideLabels.at(6).instance())
         
         //M   M  OOO   SSSS TTTTT RRRR   AAA  RRRR
         //MM MM O   O S       T   R   R A   A R   R
@@ -1054,11 +1057,11 @@ describe('[FLUJO][Componentes][Common][AdvancedSelect] - Se muestra el listado y
         
         //Simulación.
         let event = {
-            target: outsideInput.instance()
+            target: insideLabels.at(6).instance()
         }
         select.instance().handleMouseDown(event);
         //Expectativa.
-        expect(select.instance().state.show).toBe(false);
+        expect(select.instance().state.show).toBe(true);
 
         // OOO   CCCC U   U L     TTTTT  AAA  RRRR
         //O   O C     U   U L       T   A   A R   R
@@ -1066,8 +1069,19 @@ describe('[FLUJO][Componentes][Common][AdvancedSelect] - Se muestra el listado y
         //O   O C     U   U L       T   A   A R   R
         // OOO   CCCC  UUU  LLLLL   T   A   A R   R
         
-        //Al emular un click fuera del componente, la función para ocultarlo se manda llamar.
+        //M   M  OOO  U   U  SSSS EEEEE DDDD   OOO  W   W N   N
+        //MM MM O   O U   U S     E     D   D O   O W   W NN  N
+        //M M M O   O U   U  SSS  EEE   D   D O   O W W W N N N
+        //M   M O   O U   U     S E     D   D O   O WW WW N  NN
+        //M   M  OOO   UUU  SSSS  EEEEE DDDD   OOO  W   W N   N
         
+        //Simulación.
+        event = {
+            target: outsideInput.instance()
+        }
+        select.instance().handleMouseDown(event);
+        //Expectativa.
+        expect(select.instance().state.show).toBe(false);        
     });
 });
 

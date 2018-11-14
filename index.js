@@ -21,7 +21,7 @@ const { Button, IconButton, RoundButton } = require('./lib/buttons/buttons');
 const { Calendar } = require('./lib/calendar/calendar');
 const { BasicCard: Card } = require('./lib/cards/cards');
 const { CheckBox } = require('./lib/checkboxes/checkboxes');
-const { BasicSelect: Select } = require('./lib/dropdownlists/dropdownlists');
+const { BasicSelect: Select, AdvancedSelect } = require('./lib/dropdownlists/dropdownlists');
 const { CircularGraph } = require('./lib/graphs/graphs');
 const { Icon } = require('./lib/icons/icons');
 const { MenuWithBlur } = require('./lib/menus/menus');
@@ -48,7 +48,7 @@ module.exports = {
     MenuWithBlur,
     Modal, ModalHeader, ModalTitle, ModalBody, ModalFooter,
     NotificationBadge,
-    Select,
+    Select, AdvancedSelect,
     RadioButton, 
     RadioButtonsGroup,
     RoundButton,
