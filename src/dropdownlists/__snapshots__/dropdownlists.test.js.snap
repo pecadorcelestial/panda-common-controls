@@ -2,6 +2,7 @@
 
 exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe pintar el componente con los siguientes modificadores: (Deshabilitado: cierto)(ID: numérico). 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: inline-block;
   height: 60px;
   margin: 0px;
@@ -193,6 +194,7 @@ exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe 
 
 exports[`[SNAPSHOT][Componentes][Common][BasicSelect] - Lista desplegable. Debe pintar el componente con los siguientes modificadores: (Deshabilitado: falso)(ID: numérico). 1`] = `
 .c0 {
+  box-sizing: border-box;
   display: inline-block;
   height: 60px;
   margin: 0px;

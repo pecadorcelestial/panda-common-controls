@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 //Componentes locales.
 import { Button, IconButton, RoundButton } from '../buttons/buttons';
-import { BasicSelect } from '../dropdownlists/dropdownlists';
+import { BasicSelect, AdvancedSelect } from '../dropdownlists/dropdownlists';
 import { Loading, Animate } from '../animations/animations';
 import { ToastNotification } from '../toastnotifications/toastnotifications';
 import { Icon } from '../icons/icons';
@@ -195,6 +195,22 @@ class StorybookVol2 extends Component {
             }
         ];
 
+        const flipEXFromOptions = [
+            {
+                id: 'vertical',
+                icon: 'solidUndoAlt',
+                title: 'Vertical',
+                description: 'Vertical flip.'
+            },
+            {
+                id: 'horizontal',
+                icon: 'solidUndoAlt',
+                title: 'Horizontal',
+                description: 'Horizontal flip.',
+                disabled: true
+            }
+        ];
+
 		//PPPP  RRRR   OOO  PPPP  IIIII EEEEE DDDD   AAA  DDDD  EEEEE  SSSS
 		//P   P R   R O   O P   P   I   E     D   D A   A D   D E     S
 		//PPPP  RRRR  O   O PPPP    I   EEE   D   D AAAAA D   D EEE    SSS
@@ -227,6 +243,20 @@ class StorybookVol2 extends Component {
             idIsNumeric: false
         };
 
+        const flipEXFromProps = {
+            title: 'Flip animation (from):',
+            error: 'You must select an option.',
+            options: flipEXFromOptions,
+            selectedOption: this.state.flipFrom,
+            onChange: (event) => { this.setState({ flipFrom: event.target.value }); },
+            id: '',
+            itemsType: 'icon-title-description',
+            placeHolder: 'Select a type',
+            disabled: false,
+            isRequired: false,
+            idIsNumeric: false
+        };
+
 		//RRRR  EEEEE  SSSS U   U L     TTTTT  AAA  DDDD   OOO
 		//R   R E     S     U   U L       T   A   A D   D O   O
 		//RRRR  EEE    SSS  U   U L       T   AAAAA D   D O   O
@@ -244,7 +274,10 @@ class StorybookVol2 extends Component {
                         <BasicSelect {...fadeFromProps}/>
                     </Option>
                     <Option>
-                        <BasicSelect {...flipFromProps}/>
+                        <AdvancedSelect {...flipFromProps}/>
+                    </Option>
+                    <Option>
+                        <AdvancedSelect {...flipEXFromProps}/>
                     </Option>
                     <Option>
                         <OptionButtonWrapper>
