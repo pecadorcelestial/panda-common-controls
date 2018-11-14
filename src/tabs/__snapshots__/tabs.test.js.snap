@@ -17,6 +17,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -344,6 +345,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -362,6 +364,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -619,6 +622,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -637,6 +641,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -978,6 +983,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -996,6 +1002,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -1281,6 +1288,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -1299,6 +1307,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -1668,6 +1677,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -1686,6 +1696,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -1915,6 +1926,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -1933,6 +1945,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
@@ -2246,6 +2259,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
 
 .c2 {
   border-radius: unset;
+  float: left;
 }
 
 .c0 {
@@ -2264,6 +2278,7 @@ exports[`[SNAPSHOT][Componentes][Common][Tabs] - Pestañas. Debe pintar el compo
   margin: 0px;
   overflow: hidden;
   padding: 0px;
+  text-align: left;
   width: 100%;
 }
 
