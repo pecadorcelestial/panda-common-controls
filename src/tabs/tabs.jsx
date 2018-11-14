@@ -11,6 +11,7 @@ import { IconButton } from '../buttons/buttons';
 
 const TabIconButton = styled(IconButton)`
     border-radius: unset;
+    float: left;
 `;
 
 //TTTTT EEEEE M   M  AAA
@@ -54,6 +55,7 @@ const TabsHeader = styled.div`
     margin: 0px;
     overflow: hidden;
     padding: 0px;
+    text-align: left;
     width: 100%;
 `;
 
