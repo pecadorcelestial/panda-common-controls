@@ -18,6 +18,13 @@ const SVG = styled.svg`
 export const Icon = styled(({ ...props}) => {
     //console.log('[ICONS][constant] Icono: ', props.icon);
     let iconFile;
+    try {
+        iconFile = require(`./icons/${props.icon}`).icon;
+    } catch(e) {
+        iconFile = undefined;
+    }
+    //console.log('[ICONS][constant] Icono: ', iconFile);
+    /*
     if(props.icon.startsWith('solid')) {
         iconFile = require(`./icons-lib-solid`)[props.icon];
     } else if(props.icon.startsWith('brand')) {
@@ -25,6 +32,7 @@ export const Icon = styled(({ ...props}) => {
     } else {
         iconFile = require(`./icons-lib-normal`)[props.icon];
     }
+    */
     if(iconFile) {
         return(
             <SVG {...props} x='0px' y='0px' viewBox={`0 0 ${iconFile.v}`} dangerouslySetInnerHTML={{__html: iconFile.p}} alt={props.icon}>

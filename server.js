@@ -9,6 +9,7 @@ import express from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
+import fs from 'fs';
 let app = express();
 
 //RRRR  EEEEE  AAA   CCCC TTTTT
@@ -117,6 +118,33 @@ process.on('unhandledRejection', (reason, p) => {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+// GGGG EEEEE TTTTT
+//G     E       T
+//G  GG EEE     T
+//G   G E       T
+// GGGG EEEEE   T
+
+app.get('/splitIcons', (request, response) => {
+    //let icons = require(`./src/icons/icons-lib-solid`);
+    //let icons = require(`./src/icons/icons-lib-normal`);
+    let icons = require(`./src/icons/icons-lib-brands`);
+    //
+    for (let icon in icons) {
+        if (icons.hasOwnProperty(icon)) {
+            //
+            let content = `export const icon = { p: \`${icons[icon].p}\`, v: '${icons[icon].v}' };`;
+            fs.writeFile(`./tmp/icons/${icon}.js`, content, (error) => {
+                if(error) {
+                    return console.error(error);
+                }    
+                console.log(`Archivo guardado: ${icon}.js`);
+            }); 
+        }
+    }
+    //
+    response.status(200).end("LISTO!");
+});
 
 //RRRR  EEEEE  SSSS PPPP  U   U EEEEE  SSSS TTTTT  AAA
 //R   R E     S     P   P U   U E     S       T   A   A

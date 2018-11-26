@@ -5,6 +5,7 @@ coverage/
 lib/**/*.test.js
 lib/app.js
 lib/client.js
+lib/icons/icons-lib-*.js
 lib/routes.js
 lib/storybooks/*.js
 node_modules/

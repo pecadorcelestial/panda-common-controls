@@ -1,0 +1,1 @@
+export const icon = { p: `<path d="M512 512H0V0h512v512z"/>`, v: '512 512' };
